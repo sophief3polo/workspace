@@ -196,6 +196,10 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "mission-control/monday-live-status.json",
+    "mission-control/monday-autosave.png",
+    "mission-control/monday-session-state.json",
+    "mission-control/monday-after-login.png",
     "mission-control/monday-check.png",
     "mission-control/monday-login.png",
     "mission-control/monday-home.png",
@@ -209,7 +213,6 @@
     "mission-control/node_modules/playwright/types/testReporter.d.ts",
     "mission-control/node_modules/playwright/types/test.d.ts",
     "mission-control/node_modules/playwright/types",
-    "mission-control/node_modules/playwright/index.d.ts",
     "mission-control/node_modules/playwright/README.md",
     "mission-control/node_modules/playwright/lib/agents/playwright-test-planner.agent.md",
     "mission-control/node_modules/playwright/lib/agents/playwright-test-plan.prompt.md",
@@ -238,9 +241,6 @@
     "mission-control/AGENTS.md",
     "mission-control/node_modules/next/README.md",
     "mission-control/node_modules/next/dist/compiled/regenerator-runtime/README.md",
-    "mission-control/node_modules/next/dist/compiled/react-refresh/README.md",
-    "mission-control/public/window.svg",
-    "mission-control/public/vercel.svg",
-    "mission-control/public/next.svg"
+    "mission-control/node_modules/next/dist/compiled/react-refresh/README.md"
   ]
 }
