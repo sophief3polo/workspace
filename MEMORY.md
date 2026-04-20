@@ -68,6 +68,11 @@
 ## Other Simon business interests
 - Simon also owns another business called Just Pay.
 - Just Pay will operate as a reseller for Fiserv through a Fiserv Referral Partnership.
+- Under the Fiserv Referral Partnership model, Just Pay identifies and submits prospective merchant leads to Fiserv, and Fiserv's sales team engages the merchant, identifies the right product solution, completes paperwork, and aims to convert the lead into a sales opportunity.
+- Fiserv may cross-sell other products and services to referred merchants.
+- Just Pay is paid only when the referred merchant purchases a product or service.
+- Lead submission is handled through the dedicated Just Pay partner referral webform: `https://merchants.fiserv.com/en-au/lp/partner-referral/?partner_id=JustPay`.
+- Fiserv has a two-business-day SLA for first contact on referred leads, copies partners into shared merchant communication, provides auto-updates through the connection cycle, shares applications digitally with merchants, and handles onboarding, credit assessment, branded collateral, training, reporting, and ongoing customer support.
 
 ## How Simon wants help
 - Simon wants help finding sponsorship leads.
