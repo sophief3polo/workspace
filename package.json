@@ -1,0 +1,13 @@
+{
+  "name": "sophie-mission-control-root",
+  "private": true,
+  "scripts": {
+    "dev": "cd mission-control && npm run dev",
+    "build": "cd mission-control && npm run build",
+    "start": "cd mission-control && npm run start",
+    "lint": "cd mission-control && npm run lint"
+  },
+  "dependencies": {
+    "next": "16.2.4"
+  }
+}
