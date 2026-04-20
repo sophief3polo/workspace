@@ -1,326 +1,242 @@
-const tasks = [
+const locations = [
   {
-    title: "Australia major sponsor outreach",
-    status: "In progress",
-    owner: "Sophie",
-    due: "Today",
-    priority: "Critical",
+    name: "Auckland",
+    venue: "Auckland Domain",
+    href: "#auckland",
+    keywords: ["polo event auckland", "vip event tickets auckland", "luxury event auckland"],
+    body:
+      "A premium polo event in the heart of Auckland, with VIP hospitality, private marquees, fashion, food, music and client entertainment built into one day.",
   },
   {
-    title: "Portsea marquee inventory clean-up",
-    status: "Ready",
-    owner: "Debbie",
-    due: "Tomorrow",
-    priority: "High",
-  },
-  {
-    title: "Mission Control v1 build",
-    status: "Shipping",
-    owner: "Sophie",
-    due: "This week",
-    priority: "Critical",
+    name: "Christchurch",
+    venue: "Hagley Park",
+    href: "#christchurch",
+    keywords: ["polo event christchurch", "corporate hospitality christchurch", "private marquee christchurch"],
+    body:
+      "A polished Christchurch event experience designed for groups, corporate hosting, premium ticket buyers and guests looking for a luxury day out.",
   },
 ];
 
-const pipeline = [
-  {
-    stage: "Ideas",
-    count: 8,
-    items: ["Sponsor case study reel", "Behind the scenes at Urban Polo"],
-  },
-  {
-    stage: "Scripting",
-    count: 3,
-    items: ["Why premium hospitality converts", "F3Polo launch narrative"],
-  },
-  {
-    stage: "Thumbnail",
-    count: 2,
-    items: ["Portsea hero image refresh", "Sponsor montage concept"],
-  },
-  {
-    stage: "Filming",
-    count: 1,
-    items: ["Lexus Urban Polo premium positioning explainer"],
-  },
+const marqueeBenefits = [
+  "Private marquees for corporate hospitality and premium hosting",
+  "VIP ticket options with champagne, canapés and premium viewing",
+  "Auckland and Christchurch event information in one place",
+  "Brand-safe language built around premium positioning, not discounting",
 ];
 
-const calendar = [
-  { time: "08:30", item: "Inbox sweep and sponsor follow-up", type: "Recurring" },
-  { time: "11:00", item: "Marquee pricing review", type: "Ops" },
-  { time: "14:00", item: "Agent memory maintenance", type: "System" },
-  { time: "16:30", item: "Content pipeline update", type: "Marketing" },
-];
-
-const memories = [
+const faqs = [
   {
-    title: "Premium brand rule",
-    body: "Protect premium positioning. Do not reach for discounting as the default tactic.",
-    source: "MEMORY.md",
+    question: "What is Lexus Urban Polo?",
+    answer:
+      "Lexus Urban Polo is a premium polo event experience combining polo, hospitality, fashion, food, music and corporate hosting in major city locations including Auckland and Christchurch.",
   },
   {
-    title: "Debbie operating preference",
-    body: "Automate repetitive operational work so more time goes toward outreach, systems, and sales.",
-    source: "USER.md",
+    question: "Who is this site for?",
+    answer:
+      "This site is designed for people searching for polo events, VIP tickets, private marquees, corporate hospitality and premium event experiences in Auckland and Christchurch.",
   },
   {
-    title: "Current strategic pressure",
-    body: "The Australia major sponsor matters disproportionately right now.",
-    source: "MEMORY.md",
+    question: "Why focus so heavily on marquees and VIP?",
+    answer:
+      "Because those are the highest-intent, highest-value search journeys. They match the most commercially important offers on the Urban Polo side of the business.",
   },
 ];
-
-const team = [
-  {
-    name: "Sophie",
-    role: "Mission lead",
-    focus: "Commercial ops, sponsor systems, proactive execution",
-    status: "Working",
-  },
-  {
-    name: "Developer Agent",
-    role: "Builder",
-    focus: "Apps, integrations, automation, UI",
-    status: "Available",
-  },
-  {
-    name: "Writer Agent",
-    role: "Messaging",
-    focus: "Outreach, proposals, scripts, sponsor copy",
-    status: "Available",
-  },
-  {
-    name: "Designer Agent",
-    role: "Creative",
-    focus: "Layouts, thumbnails, event collateral",
-    status: "Available",
-  },
-];
-
-const office = [
-  { name: "Sophie", activity: "Building Mission Control", desk: "Command desk" },
-  { name: "Developer", activity: "Preparing components", desk: "Product bay" },
-  { name: "Writer", activity: "Waiting for brief", desk: "Copy room" },
-  { name: "Designer", activity: "Waiting for brief", desk: "Creative studio" },
-];
-
-function Section({
-  title,
-  subtitle,
-  children,
-}: {
-  title: string;
-  subtitle: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <section className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.18)] backdrop-blur">
-      <div className="mb-5 flex items-start justify-between gap-4">
-        <div>
-          <h2 className="text-xl font-semibold text-white">{title}</h2>
-          <p className="mt-1 text-sm text-slate-400">{subtitle}</p>
-        </div>
-        <button className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300 transition hover:bg-white/10">
-          Open
-        </button>
-      </div>
-      {children}
-    </section>
-  );
-}
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[radial-gradient(circle_at_top,#1e293b_0%,#0f172a_45%,#020617_100%)] text-slate-100">
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-6 py-8 lg:px-10">
-        <div className="overflow-hidden rounded-[32px] border border-cyan-400/20 bg-gradient-to-br from-cyan-400/15 via-slate-900/80 to-fuchsia-500/10 p-8 shadow-[0_25px_120px_rgba(8,145,178,0.18)]">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-3xl">
-              <div className="mb-3 inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs uppercase tracking-[0.22em] text-cyan-200">
-                Sophie Mission Control
-              </div>
-              <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                One place to run tasks, memory, agents, and scheduled work.
-              </h1>
-              <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
-                Built for a proactive OpenClaw setup, with the operating surfaces that actually matter: tasks,
-                content flow, calendar, memory, team structure, and a live office view.
-              </p>
+    <main className="bg-stone-950 text-stone-100">
+      <section className="border-b border-white/10 bg-[radial-gradient(circle_at_top,rgba(244,114,182,0.16),transparent_30%),linear-gradient(180deg,#1c1917_0%,#0c0a09_100%)]">
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-16 lg:px-8 lg:py-24">
+          <div className="max-w-4xl">
+            <div className="inline-flex rounded-full border border-amber-200/20 bg-amber-100/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.24em] text-amber-100">
+              Premium polo event, VIP hospitality, private marquees
             </div>
-            <div className="grid min-w-[280px] grid-cols-2 gap-3 rounded-3xl border border-white/10 bg-slate-950/40 p-4">
-              <div className="rounded-2xl bg-white/5 p-4">
-                <div className="text-xs uppercase tracking-[0.2em] text-slate-400">Active tasks</div>
-                <div className="mt-2 text-3xl font-semibold text-white">12</div>
-              </div>
-              <div className="rounded-2xl bg-white/5 p-4">
-                <div className="text-xs uppercase tracking-[0.2em] text-slate-400">Agents online</div>
-                <div className="mt-2 text-3xl font-semibold text-white">4</div>
-              </div>
-              <div className="rounded-2xl bg-white/5 p-4">
-                <div className="text-xs uppercase tracking-[0.2em] text-slate-400">Memories indexed</div>
-                <div className="mt-2 text-3xl font-semibold text-white">186</div>
-              </div>
-              <div className="rounded-2xl bg-white/5 p-4">
-                <div className="text-xs uppercase tracking-[0.2em] text-slate-400">Next scheduled action</div>
-                <div className="mt-2 text-sm font-medium text-cyan-200">16:30 content update</div>
-              </div>
+            <h1 className="mt-6 text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Lexus Urban Polo, the premium polo event in Auckland and Christchurch.
+            </h1>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-300">
+              Discover VIP tickets, private marquees, corporate hospitality and a luxury day out built around polo,
+              fashion, music, premium food and unforgettable client entertainment.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3 text-sm text-stone-200">
+              <a className="rounded-full bg-amber-200 px-5 py-3 font-medium text-stone-950 transition hover:bg-amber-100" href="#hospitality">
+                Explore private marquees
+              </a>
+              <a className="rounded-full border border-white/15 px-5 py-3 font-medium transition hover:bg-white/5" href="#locations">
+                View Auckland and Christchurch events
+              </a>
             </div>
           </div>
-        </div>
 
-        <div className="grid gap-6 xl:grid-cols-[1.35fr_0.95fr]">
-          <Section
-            title="Tasks board"
-            subtitle="Shared task visibility for Debbie and Sophie, with owner and status front and center."
-          >
-            <div className="space-y-3">
-              {tasks.map((task) => (
-                <div
-                  key={task.title}
-                  className="grid gap-3 rounded-2xl border border-white/10 bg-slate-950/40 p-4 md:grid-cols-[1.6fr_repeat(4,minmax(0,1fr))]"
-                >
+          <div className="grid gap-4 md:grid-cols-3">
+            <Stat title="Primary search intent" body="Polo event Auckland, polo event Christchurch, VIP event tickets, private marquee hospitality." />
+            <Stat title="Commercial focus" body="Corporate hospitality, client hosting, premium ticket buyers and luxury event demand." />
+            <Stat title="Positioning" body="Premium lifestyle event, premium sporting spectacle, exceptional hospitality and prestige." />
+          </div>
+        </div>
+      </section>
+
+      <section id="hospitality" className="border-b border-white/10 bg-stone-900/60">
+        <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-200">Corporate hospitality</p>
+            <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
+              Private marquees and VIP hospitality built for corporate hosting.
+            </h2>
+            <p className="mt-5 max-w-2xl text-base leading-8 text-stone-300">
+              If you are searching for corporate hospitality in Auckland or Christchurch, Urban Polo is built for that exact
+              moment. Private marquees give your business a premium hosting environment, while VIP options create a polished,
+              lower-commitment entry point for guests, teams and clients.
+            </p>
+            <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              {marqueeBenefits.map((benefit) => (
+                <div key={benefit} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-sm leading-6 text-stone-200">
+                  {benefit}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="rounded-[28px] border border-white/10 bg-white/5 p-6 shadow-[0_30px_80px_rgba(0,0,0,0.25)]">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-200">Target terms</p>
+            <ul className="mt-5 space-y-3 text-sm leading-7 text-stone-200">
+              <li>corporate hospitality auckland</li>
+              <li>corporate hospitality christchurch</li>
+              <li>private marquee auckland</li>
+              <li>private marquee christchurch</li>
+              <li>vip hospitality auckland</li>
+              <li>vip hospitality christchurch</li>
+              <li>premium event hospitality nz</li>
+              <li>client entertainment auckland</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="locations" className="border-b border-white/10">
+        <div className="mx-auto w-full max-w-6xl px-6 py-16 lg:px-8">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-200">Locations</p>
+          <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">Rankable location content for Auckland and Christchurch.</h2>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            {locations.map((location) => (
+              <article key={location.name} id={location.name.toLowerCase()} className="rounded-[28px] border border-white/10 bg-white/5 p-6">
+                <div className="flex items-start justify-between gap-4">
                   <div>
-                    <div className="font-medium text-white">{task.title}</div>
-                    <div className="mt-1 text-sm text-slate-400">Revenue-driving work with visible ownership.</div>
-                  </div>
-                  <Stat label="Status" value={task.status} />
-                  <Stat label="Owner" value={task.owner} />
-                  <Stat label="Due" value={task.due} />
-                  <Stat label="Priority" value={task.priority} accent />
-                </div>
-              ))}
-            </div>
-          </Section>
-
-          <Section
-            title="Calendar"
-            subtitle="A visible schedule for recurring agent work, task runs, and operational checkpoints."
-          >
-            <div className="space-y-3">
-              {calendar.map((entry) => (
-                <div key={entry.time + entry.item} className="flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-950/40 p-4">
-                  <div className="min-w-16 rounded-xl bg-cyan-400/10 px-3 py-2 text-center text-sm font-semibold text-cyan-200">
-                    {entry.time}
-                  </div>
-                  <div className="flex-1">
-                    <div className="font-medium text-white">{entry.item}</div>
-                    <div className="text-sm text-slate-400">{entry.type}</div>
+                    <h3 className="text-2xl font-semibold text-white">{location.name} Urban Polo</h3>
+                    <p className="mt-2 text-sm uppercase tracking-[0.18em] text-stone-400">{location.venue}</p>
                   </div>
                 </div>
-              ))}
-            </div>
-          </Section>
+                <p className="mt-5 text-base leading-8 text-stone-300">{location.body}</p>
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {location.keywords.map((keyword) => (
+                    <span key={keyword} className="rounded-full border border-amber-200/20 bg-amber-100/10 px-3 py-1 text-xs uppercase tracking-[0.12em] text-amber-100">
+                      {keyword}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
+      </section>
 
-        <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
-          <Section
-            title="Content pipeline"
-            subtitle="A board for idea capture through scripting, thumbnail work, and filming handoff."
-          >
-            <div className="grid gap-3">
-              {pipeline.map((column) => (
-                <div key={column.stage} className="rounded-2xl border border-white/10 bg-slate-950/40 p-4">
-                  <div className="flex items-center justify-between">
-                    <div className="font-medium text-white">{column.stage}</div>
-                    <span className="rounded-full bg-white/10 px-2.5 py-1 text-xs text-slate-300">{column.count}</span>
-                  </div>
-                  <div className="mt-3 space-y-2">
-                    {column.items.map((item) => (
-                      <div key={item} className="rounded-xl bg-white/5 px-3 py-2 text-sm text-slate-300">
-                        {item}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Section>
-
-          <Section
-            title="Memory"
-            subtitle="Searchable memory cards so context is visible instead of hidden in markdown."
-          >
-            <div className="mb-4 rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-slate-400">
-              Search memories, conversations, decisions, and operating rules.
-            </div>
-            <div className="space-y-3">
-              {memories.map((memory) => (
-                <article key={memory.title} className="rounded-2xl border border-white/10 bg-slate-950/40 p-4">
-                  <div className="text-sm font-medium text-cyan-200">{memory.title}</div>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">{memory.body}</p>
-                  <div className="mt-3 text-xs uppercase tracking-[0.16em] text-slate-500">{memory.source}</div>
-                </article>
-              ))}
-            </div>
-          </Section>
-
-          <Section
-            title="Team"
-            subtitle="The digital org chart, with distinct roles so work can be delegated cleanly."
-          >
-            <div className="space-y-3">
-              {team.map((member) => (
-                <div key={member.name} className="rounded-2xl border border-white/10 bg-slate-950/40 p-4">
-                  <div className="flex items-center justify-between gap-3">
-                    <div>
-                      <div className="font-medium text-white">{member.name}</div>
-                      <div className="text-sm text-slate-400">{member.role}</div>
-                    </div>
-                    <span className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs text-emerald-200">{member.status}</span>
-                  </div>
-                  <p className="mt-3 text-sm leading-6 text-slate-300">{member.focus}</p>
-                </div>
-              ))}
-            </div>
-          </Section>
-        </div>
-
-        <Section
-          title="Office"
-          subtitle="A live visual-feeling layer for who is at work, where they are, and what they are doing."
-        >
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {office.map((agent) => (
-              <div
-                key={agent.name}
-                className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(34,211,238,0.12),rgba(15,23,42,0.65))] p-5"
-              >
-                <div className="mb-6 flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-lg font-semibold text-white">
-                    {agent.name.slice(0, 1)}
-                  </div>
-                  <div>
-                    <div className="font-medium text-white">{agent.name}</div>
-                    <div className="text-sm text-slate-400">{agent.desk}</div>
-                  </div>
-                </div>
-                <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-4">
-                  <div className="text-xs uppercase tracking-[0.18em] text-slate-500">Current activity</div>
-                  <div className="mt-2 text-sm leading-6 text-slate-200">{agent.activity}</div>
-                </div>
-                <div className="mt-4 h-24 rounded-[24px] border border-dashed border-white/10 bg-white/5" />
+      <section className="border-b border-white/10 bg-stone-900/60">
+        <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 py-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-200">What this site should rank for</p>
+            <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">Search terms that actually map to revenue.</h2>
+            <p className="mt-5 text-base leading-8 text-stone-300">
+              This site is structured to target the terms that matter commercially: event discovery, VIP ticket demand,
+              corporate hospitality, private marquee buying intent and location-led searches.
+            </p>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {[
+              "polo event auckland",
+              "polo event christchurch",
+              "vip event tickets auckland",
+              "vip event tickets christchurch",
+              "luxury event auckland",
+              "luxury event christchurch",
+              "corporate hospitality auckland",
+              "corporate hospitality christchurch",
+              "private marquee auckland",
+              "private marquee christchurch",
+              "summer events auckland",
+              "summer events christchurch",
+            ].map((keyword) => (
+              <div key={keyword} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-sm font-medium text-stone-200">
+                {keyword}
               </div>
             ))}
           </div>
-        </Section>
-      </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10">
+        <div className="mx-auto w-full max-w-6xl px-6 py-16 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-200">Why Urban Polo</p>
+            <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">A premium event experience, not just another ticketed day out.</h2>
+            <p className="mt-5 text-base leading-8 text-stone-300">
+              Urban Polo sits in a stronger search position when it is described clearly as a premium lifestyle event,
+              a premium sporting and entertainment spectacle, and a serious corporate hospitality product. That language
+              gives Google clearer relevance signals and gives buyers clearer reasons to enquire.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <ValueCard title="Premium sporting event" body="A city-based polo event with style, spectacle, food, music and social energy." />
+            <ValueCard title="Corporate hosting" body="Private marquees and VIP formats that work for client entertainment, team hosting and brand hospitality." />
+            <ValueCard title="Luxury day out" body="Auckland and Christchurch event pages aligned to real location and seasonal search behaviour." />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-stone-950">
+        <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[1fr_0.9fr] lg:px-8">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-200">FAQs</p>
+            <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">Questions searchers are likely to ask.</h2>
+            <div className="mt-8 space-y-4">
+              {faqs.map((faq) => (
+                <article key={faq.question} className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                  <h3 className="text-lg font-medium text-white">{faq.question}</h3>
+                  <p className="mt-3 text-sm leading-7 text-stone-300">{faq.answer}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-200">Next SEO build steps</p>
+            <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-7 text-stone-200">
+              <li>Create dedicated pages for Auckland, Christchurch, VIP tickets and private marquees.</li>
+              <li>Add unique title tags and meta descriptions for each page.</li>
+              <li>Write venue-specific copy around Auckland Domain and Hagley Park.</li>
+              <li>Link through to ticketing and enquiry pages with clear conversion paths.</li>
+              <li>Add FAQ schema and organisation/event schema once event details are locked.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
 
-function Stat({
-  label,
-  value,
-  accent = false,
-}: {
-  label: string;
-  value: string;
-  accent?: boolean;
-}) {
+function Stat({ title, body }: { title: string; body: string }) {
   return (
-    <div>
-      <div className="text-xs uppercase tracking-[0.16em] text-slate-500">{label}</div>
-      <div className={`mt-2 text-sm font-medium ${accent ? "text-cyan-200" : "text-slate-200"}`}>{value}</div>
+    <div className="rounded-[24px] border border-white/10 bg-white/5 p-5">
+      <h2 className="text-lg font-medium text-white">{title}</h2>
+      <p className="mt-3 text-sm leading-7 text-stone-300">{body}</p>
     </div>
+  );
+}
+
+function ValueCard({ title, body }: { title: string; body: string }) {
+  return (
+    <article className="rounded-[28px] border border-white/10 bg-white/5 p-6">
+      <h3 className="text-xl font-semibold text-white">{title}</h3>
+      <p className="mt-4 text-sm leading-7 text-stone-300">{body}</p>
+    </article>
   );
 }
