@@ -40,6 +40,16 @@ He wants premium positioning protected, dislikes discounting as a tactic, and wa
 
 His long-term ambition is to build the business into an asset attractive to a buyer or major investor.
 
+## Sam Hopkinson
+- **Name:** Sam Hopkinson
+- **What to call them:** Sam
+- **Pronouns:** _(optional)_
+- **Timezone:** Pacific/Auckland
+- **Notes:** Part of the Urban Events team. Mentioned that there are multiple users and asked to be added to the user file.
+
+### Context
+Sam should be treated as an additional user in this workspace context, not folded into Sophie's entry.
+
 ---
 
 The more you know, the better you can help. But remember, you're learning about people, not building a dossier. Respect the difference.
