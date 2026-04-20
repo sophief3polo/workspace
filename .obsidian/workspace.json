@@ -196,6 +196,7 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "mission-control/monday-home.png",
     "package.json",
     "vercel.json",
     "mission-control/f3polo-instagram.png",
@@ -207,7 +208,6 @@
     "mission-control/node_modules/playwright/types/test.d.ts",
     "mission-control/node_modules/playwright/types",
     "mission-control/node_modules/playwright/index.d.ts",
-    "mission-control/node_modules/playwright/jsx-runtime.mjs",
     "mission-control/node_modules/playwright/README.md",
     "mission-control/node_modules/playwright/lib/agents/playwright-test-planner.agent.md",
     "mission-control/node_modules/playwright/lib/agents/playwright-test-plan.prompt.md",
