@@ -196,6 +196,7 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "mission-control/f3polo-instagram.png",
     "mission-control/playwright-smoke.js",
     "mission-control/node_modules/playwright/lib/agents/copilot-setup-steps.yml",
     "mission-control/node_modules/playwright/ThirdPartyNotices.txt",
@@ -206,7 +207,6 @@
     "mission-control/node_modules/playwright/index.d.ts",
     "mission-control/node_modules/playwright/jsx-runtime.mjs",
     "mission-control/node_modules/playwright/test.mjs",
-    "mission-control/node_modules/playwright/index.mjs",
     "mission-control/node_modules/playwright/README.md",
     "mission-control/node_modules/playwright/lib/agents/playwright-test-planner.agent.md",
     "mission-control/node_modules/playwright/lib/agents/playwright-test-plan.prompt.md",
