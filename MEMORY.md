@@ -59,11 +59,15 @@
 - Simon wants support understanding actual margins and how sales convert into ticket holders and attendees.
 
 ## Team and roles
-- Simon does sales and leads the marketing look and feel.
+- Simon is the Managing Director of the business, does sales, and leads the marketing look and feel.
 - Debbie runs operations.
 - Sam handles accounts, finance, and the polo aspects of the business.
 - Fran handles proposals and marketing.
 - Event delivery also relies on asset hire teams for marquees, fences, and physical event-day infrastructure, plus bar staff, catering teams, and security.
+
+## Other Simon business interests
+- Simon also owns another business called Just Pay.
+- Just Pay will operate as a reseller for Fiserv through a Fiserv Referral Partnership.
 
 ## How Simon wants help
 - Simon wants help finding sponsorship leads.

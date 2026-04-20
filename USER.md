@@ -23,7 +23,7 @@ She wants the assistant to help with templates, supplier analysis, sponsor renew
 - **What to call them:** Simon
 - **Pronouns:** _(optional)_
 - **Timezone:** Pacific/Auckland
-- **Notes:** Commercial leader for Urban Events Ltd and the canonical source for premium polo business strategy, sponsorship priorities, revenue goals, and brand positioning.
+- **Notes:** Managing Director of Urban Events Ltd, commercial leader for the business, and the canonical source for premium polo business strategy, sponsorship priorities, revenue goals, and brand positioning. Also owns Just Pay, which will operate as a Fiserv Referral Partnership reseller.
 
 ### Context
 Simon leads sales and the marketing look and feel for Urban Events Ltd.
