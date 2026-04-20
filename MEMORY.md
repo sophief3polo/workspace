@@ -67,6 +67,7 @@
 
 ## Debbie operating preferences and judgments
 - Debbie says the market often underestimates the value of private marquee corporate hosting, especially its ability to foster internal and external business relationships.
+- Debbie does not want me to ask for permission before deploying in the future. If deployment is the clear next step, I should just deploy.
 - She believes people underestimate the premium nature of the event, the networking opportunities across marquees, how fun the event is, and the sporting ability of the players and ponies.
 - Trends Debbie sees: customers want stronger value for money, more tailored event experiences, sponsors always want value for money and clear ROI, and sponsors want premium association with high-end events.
 - Debbie says customer data is never shared with other parties.
