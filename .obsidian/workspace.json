@@ -196,6 +196,8 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "media/sophie-avatar-2026-04-21.png",
+    "media",
     "run_gws_draft.py",
     "tmp-draft.json",
     "tmp-signature.jpeg",
@@ -206,8 +208,6 @@
     "brisbane-luxury-toilets.csv",
     "brisbane-traffic-management-companies.csv",
     "mission-control/node_modules/fsevents/package.json",
-    "mission-control/node_modules/fsevents/fsevents.node",
-    "mission-control/node_modules/fsevents/fsevents.js",
     "mission-control/node_modules/fsevents/README.md",
     "mission-control/monday-autosave.png",
     "mission-control/monday-after-login.png",
