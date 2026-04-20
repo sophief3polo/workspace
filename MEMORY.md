@@ -65,6 +65,25 @@
 - Fran handles proposals and marketing.
 - Event delivery also relies on asset hire teams for marquees, fences, and physical event-day infrastructure, plus bar staff, catering teams, and security.
 
+## Debbie operating preferences and judgments
+- Debbie says the market often underestimates the value of private marquee corporate hosting, especially its ability to foster internal and external business relationships.
+- She believes people underestimate the premium nature of the event, the networking opportunities across marquees, how fun the event is, and the sporting ability of the players and ponies.
+- Trends Debbie sees: customers want stronger value for money, more tailored event experiences, sponsors always want value for money and clear ROI, and sponsors want premium association with high-end events.
+- Debbie says customer data is never shared with other parties.
+- Protecting the brand is non-negotiable. In her words, the brand is not for sale.
+- She wants the business to be known as a premium lifestyle event, a premium sporting and entertainment spectacle, with exceptional hospitality, prestige, memorable client experiences, and an experience like no other.
+- Debbie chooses quality over speed, and when priorities are unclear she asks Simon for direction.
+- Good growth for Debbie means more profitable events, not growth for appearances. Healthy growth signs include strong sponsorship sales, first-year marquee attendance around 600, first-year VIP sales above 600, first-year GA sales around 600, and strong inbound demand for marquee and sponsorship information from the website.
+- Personal success for Debbie means automating as many processes as possible using tools like Monday and the assistant, ensuring marquee customers have the information they need at least 2 months before the event, and keeping supplier budgets under control.
+- Debbie wants her role to become more sales-focused, more systems-focused, and more strategic across all areas of the event.
+- Debbie's strengths include being highly organised, creating easy-to-follow processes, contributing useful ideas in brainstorming, and detecting operational issues before they happen.
+- Debbie's weak points or disliked work include analysing data, doing reports, chasing people, and repeating herself.
+- Debbie works through problems by writing down the steps, using lists, manually drawing workflows, and sometimes physically working through a computer problem step by step.
+- Debbie wants the assistant to ask her to describe the issue, break work into steps, give options, summarise decisions, and push toward a recommendation when useful.
+- She wants pushback when it is genuinely necessary, but if she explicitly says "just execute", she wants straight execution.
+- Debbie wants both concise and deeper decision support depending on stakes, and she may specify speed using a 1 to 10 scale.
+- Debbie is not naturally a risk taker. She wants to review all emails drafted by the assistant before they are sent, and wants to review all reports before use.
+
 ## Other Simon business interests
 - Simon also owns another business called Just Pay.
 - Just Pay will operate as a reseller for Fiserv through a Fiserv Referral Partnership.
