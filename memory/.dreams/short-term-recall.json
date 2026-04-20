@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-20T03:39:57.843Z",
+  "entries": {
+    "memory:memory/2026-04-20.md:21:26": {
+      "key": "memory:memory/2026-04-20.md:21:26",
+      "path": "memory/2026-04-20.md",
+      "startLine": 21,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "- Best customers value value-for-money, high-end experience, smooth delivery, prestige, networking, socialising, and social media shareability. - Differentiation: unique all-day premium urban event combining sport, lifestyle, music, fashion, hospitality, and prestige. Competes with ASB Classic, rugby, and other sporting options. - Market differences: Christchurch buyers purchase earlier; Auckland ticket buyers are later and weather-sensitive. Debbie explicitly asked for this information to be saved to long-term memory.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.43687669634819026,
+      "maxScore": 0.43687669634819026,
+      "firstRecalledAt": "2026-04-20T03:39:57.843Z",
+      "lastRecalledAt": "2026-04-20T03:39:57.843Z",
+      "queryHashes": [
+        "375305be9604"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "network",
+        "value-for-money",
+        "high-end",
+        "all-day",
+        "weather-sensitive",
+        "long-term",
+        "best",
+        "customers"
+      ]
+    },
+    "memory:memory/2026-04-20.md:11:17": {
+      "key": "memory:memory/2026-04-20.md:11:17",
+      "path": "memory/2026-04-20.md",
+      "startLine": 11,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "- Sponsorship is sold year-round, with a mix of annual and multi-year deals. Private marquees sell as soon as dates launch. VIP and GA launch together after sponsorship and marquees. Biggest cash flow squeeze is immediately after events when supplier invoices land. - Hardest sales: team sponsorships. Most predictable in NZ: marquee sales. - Long-term ambition: be the number 1 sporting and lifestyle event in NZ and Australia, premium, iconic, culturally relevant, exclusive, globally recognised, selling out in the first week. - Growth goals include more Australian cities, possible USA cities, doubled sponsorship revenue, multi-day events in some markets, stronger recurring sponsorship, repeata",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4272368937730789,
+      "maxScore": 0.4272368937730789,
+      "firstRecalledAt": "2026-04-20T03:39:57.843Z",
+      "lastRecalledAt": "2026-04-20T03:39:57.843Z",
+      "queryHashes": [
+        "375305be9604"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "year-round",
+        "multi-year",
+        "long-term",
+        "multi-day",
+        "sponsorship",
+        "sold",
+        "round",
+        "mix"
+      ]
+    }
+  }
+}
