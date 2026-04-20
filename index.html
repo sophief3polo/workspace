@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sophie</title>
+    <meta
+      name="description"
+      content="A simple landing page for Sophie."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f4ee;
+        --surface: rgba(255, 255, 255, 0.82);
+        --text: #1f1a17;
+        --muted: #6b625a;
+        --accent: #b76e79;
+        --accent-strong: #8f4b58;
+        --border: rgba(31, 26, 23, 0.08);
+        --shadow: 0 18px 50px rgba(71, 52, 36, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top, rgba(183, 110, 121, 0.18), transparent 35%),
+          linear-gradient(180deg, #fbf8f2 0%, var(--bg) 100%);
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      main {
+        width: min(760px, 100%);
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 28px;
+        padding: 56px 40px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(10px);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(183, 110, 121, 0.12);
+        color: var(--accent-strong);
+        font-size: 0.92rem;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+      }
+
+      h1 {
+        margin: 22px 0 16px;
+        font-size: clamp(2.5rem, 7vw, 4.8rem);
+        line-height: 0.95;
+        letter-spacing: -0.04em;
+      }
+
+      p {
+        margin: 0;
+        max-width: 38rem;
+        font-size: 1.08rem;
+        line-height: 1.75;
+        color: var(--muted);
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 32px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 20px;
+        border-radius: 999px;
+        font-weight: 600;
+        transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+      }
+
+      .button.primary {
+        background: var(--accent);
+        color: white;
+        box-shadow: 0 10px 25px rgba(183, 110, 121, 0.25);
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--text);
+        border: 1px solid var(--border);
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+      }
+
+      footer {
+        margin-top: 44px;
+        font-size: 0.92rem;
+        color: var(--muted);
+      }
+
+      @media (max-width: 640px) {
+        main {
+          padding: 36px 22px;
+          border-radius: 22px;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.65;
+        }
+
+        .actions {
+          flex-direction: column;
+        }
+
+        .button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="eyebrow">Sophie</div>
+      <h1>One clear page, live soon.</h1>
+      <p>
+        This is a lightweight landing page for sophie.f3polo.com.au. It is ready to
+        customize with a bio, links, contact details, portfolio highlights, or a short
+        call to action.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="mailto:hello@sophie.f3polo.com.au">Get in touch</a>
+        <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">View GitHub</a>
+      </div>
+      <footer>
+        Built as a clean single-file starter so it can be deployed quickly to Vercel.
+      </footer>
+    </main>
+  </body>
+</html>
