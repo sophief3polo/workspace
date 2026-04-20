@@ -53,16 +53,6 @@
       "_crHasCrossSiteAncestor": false
     },
     {
-      "name": "email_first__email",
-      "value": "debbie%40urbanevents.co.nz",
-      "domain": ".monday.com",
-      "path": "/",
-      "expires": 1776661724.261976,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "dapulse_session",
       "value": "UU9xaGV6c01aMk00QThOdFA0dlRBSDg2SU9FQk1KOGNQdXVHbHpDekJKRER3R3dlYngwY0xTTUxzSXZWQ2xCbEZaTFFqK2llZkoweGdJTHkyTjN4MUV5WkhESEU5dGN6ZmNoYldVdWtiY045aFlBd0g3ajgxL0F4QnRyYk0vNHl3VitOWW5LWDBmdGJWT1V6OG8yTXRLSXpjaXRtK2kxeTdJRGtzNHJHRjFtMHFOZjZaeUF2ZjcwRDJzV0VKV0gxdjByUUxHSlFIL3VZUTVwWm5EZjlPODFKcURZSVBFaEFoaU9ESEQvVWJvZFYyQjFPSW1pc1dhelJIZ2hISHZ5Q2V3VVYzcG52QWwwQ25LcUdrV25PalZjR2QyQkk4NGI3VmZNMUFIR09UWklpNHlWNFdOZUJaa3JoVFhUdG5xbjM3eCtNdVJBS3BIN1dZY0FvcStMdDZBPT0tLWpyWGZlVVhJVmNQL3BkUTQvMTNtekE9PQ%3D%3D--a64082678a6d873d85f64b22d21f5d0a9cc0b974",
       "domain": "auth.monday.com",
@@ -465,7 +455,7 @@
         },
         {
           "name": "last_checked_tab_MTc3NjY2MTQ1Njk2NF81Nzg5LjVfaHR0cHM6Ly91cmJhbmV2ZW50cy1iYW5kLm1vbmRheS5jb20vYm9hcmRzLzIwNDM1NzA5Mjk=",
-          "value": "{\"lastAliveTime\":1776661576970,\"memoryObject\":{\"jsHeapSizeLimit\":4294967296,\"totalJSHeapSize\":232422116,\"usedJSHeapSize\":212090504},\"tags\":{\"deferred_callback\":\"debounce timeout - running callbacks with unresolved dependencies \",\"mf_package\":\"load package mf-timeline-components\",\"pusher\":\"pusher:subscription_succeeded\",\"redux_no_spam\":\"FETCH_COLUMN_GROUPS_FOOTER_SUCCESS\",\"mf_skeleton\":\"mark mf-announcements-banner as loaded\",\"main_init\":\"main-init document ready start\",\"bigbrain\":\"hc_button_rendered\",\"vulcan_logger_middleware\":\"tipsSeenEntities.syncTipSeen\",\"mf_container\":\"render mf-announcements-banner\",\"mf_api\":\"/feature-enforcement/active-feature-enforcement?featureName=ai-workflow-blocks\",\"navigation\":\"navigated to BOARD\",\"mf_table\":\"mark mf-table as loaded\"},\"url\":\"https://urbanevents-band.monday.com/boards/2043570929\"}"
+          "value": "{\"lastAliveTime\":1776661750966,\"memoryObject\":{\"jsHeapSizeLimit\":4294967296,\"totalJSHeapSize\":219260614,\"usedJSHeapSize\":186497450},\"tags\":{\"deferred_callback\":\"debounce timeout - running callbacks with unresolved dependencies \",\"mf_package\":\"load package mf-timeline-components\",\"pusher\":\"pusher:subscription_succeeded\",\"redux_no_spam\":\"FETCH_COLUMN_GROUPS_FOOTER_SUCCESS\",\"mf_skeleton\":\"mark mf-announcements-banner as loaded\",\"main_init\":\"main-init document ready start\",\"bigbrain\":\"hc_button_rendered\",\"vulcan_logger_middleware\":\"usersEntities.aggregatedFetchMissingUsersByIdsAction\",\"mf_container\":\"render mf-announcements-banner\",\"mf_api\":\"/feature-enforcement/active-feature-enforcement?featureName=ai-workflow-blocks\",\"navigation\":\"navigated to BOARD\",\"mf_table\":\"mark mf-table as loaded\"},\"url\":\"https://urbanevents-band.monday.com/boards/2043570929\"}"
         },
         {
           "name": "ab.storage.ccDismissals.c3f41b74-f946-4349-a835-020a66f84a7d",
@@ -525,7 +515,11 @@
         },
         {
           "name": "KEEP_ALIVE_TAB_EVENT",
-          "value": "1776661577116"
+          "value": "1776661752114"
+        },
+        {
+          "name": "show_notifications_bar",
+          "value": "false"
         },
         {
           "name": "ab.storage.device.c3f41b74-f946-4349-a835-020a66f84a7d",
