@@ -2,15 +2,21 @@
 
 _Learn about the person you're helping. Update this as you go._
 
-- **Name:**
-- **What to call them:**
+- **Name:** Debbie
+- **What to call them:** Debbie
 - **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+- **Timezone:** Pacific/Auckland
+- **Notes:** Operations Manager for a premium polo events business operating in NZ and Australia, with Singapore on hold.
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+Debbie wants this interview to be the canonical reference point for future work requiring deep business context, strategy, judgment, or alignment.
+
+She is highly focused on operational consistency, reducing admin burden, improving supplier sourcing and comparison, and building scalable systems across event markets.
+
+Her biggest practical priorities include private marquee sales, sponsorship administration, invoicing, supplier coordination, and streamlining workflows so she can spend more time on outreach and sales.
+
+She wants the assistant to help with templates, supplier analysis, sponsor renewals, sponsor onboarding, and long-term context retention.
 
 ---
 
