@@ -1,0 +1,78 @@
+# MEMORY.md
+
+## Simon Wilson and Urban Events context
+- Simon Wilson uses this thread as the canonical reference point for business context, strategic judgment, and alignment for future work.
+- Simon's parent company is Urban Events Ltd, based in New Zealand.
+- Urban Events Ltd operates multiple event brands:
+  - New Zealand: Lexus Urban Polo, social handle `@urbanpolo`, website `urbanpolo.co.nz`
+  - Australia: F3Polo, social handle `@f3polo`, main multi-city brand covering Sydney, Brisbane, Melbourne and potentially Perth, website `f3polo.com.au`
+  - Australia: Portsea Polo, social handle `@portseapolo`, a one-off event in Portsea, Victoria, website `portseapolo.com.au`
+- The business runs premium polo events in different locations and countries.
+- Main offerings are general admission tickets, VIP tickets, private marquees, and sponsorship.
+- Customer segments include individual attendees, high-net-worth guests, corporate clients, sponsors, brands, hospitality buyers, and younger ticket holders.
+- Customers are buying status, entertainment, networking, hospitality, brand exposure, client hosting, lifestyle, social scene, and the experience of dressing up.
+- The business differentiates through high-quality imagery, premium positioning, and the promise of mingling with high-net-worth clientele.
+- The business tries to avoid clashes with competing events and avoids direct competition in polo because it is a niche market and cities cannot sustain two similar events.
+
+## Commercial model and priorities
+- Sponsorship is the best-margin revenue line and the main underwriting mechanism for events.
+- Sponsorship types include major sponsor, team sponsors, and alcohol category sponsors including champagne, beer, RTD, wine, and non-alcoholic.
+- Private marquees are the most expensive ticketing/hospitality item, followed by VIP, then general admission.
+- VIP margin is around 60 percent.
+- General admission is not very profitable below roughly 500 attendees, but margins improve significantly from roughly 800 to 2,500 attendees.
+- The business has head office costs with three full-time staff members plus event-based delivery costs.
+- Simon's top priorities are revenue, sponsorship, and venues.
+- The biggest current strategic risk is not securing a major sponsor in each country, especially Australia. After that, ticket sales and weather are major risks.
+- The biggest current opportunity is getting four events in Australia with strong sponsorship, then securing six venues in the USA.
+- Success means cash flow, profits, sold-out events, and strong sponsorship.
+- Failure means events without sponsorship that underwrites the event.
+- Simon wants help getting revenue in the door.
+
+## Growth stage and ambitions
+- The business is established in New Zealand, newer and growing in Australia, and launching into the USA.
+- Simon's top 12-month goals are to lock in major sponsorship for Australia and find event sites in the USA for expansion.
+- Simon's longer-term ambition is to find a buyer or major investor for the business.
+- An unusually good year would mean 5,000-person events over three days across major cities in different parts of the world.
+
+## What is working and what is fragile
+- Email marketing is the strongest marketing channel where there is an existing database.
+- Social media, traditional media, digital and print, and word-of-mouth also contribute.
+- Repeat attendance, sponsor demand, premium positioning, partnerships, pricing, event experience, operations, sales process, and team execution are all considered current strengths.
+- Weak points include the cost and time required to execute marketing campaigns, difficulty finding sponsors because it relies heavily on direct sales, missing leads and sponsorship opportunities, and missing deadlines for venues and government sponsorship.
+- Key constraints are cash, time, leads, and databases.
+- The business repeats too much work that has already been done before, for example finding social media managers again and again.
+- The business is strong at delivery during event week and event day, but it is hard work.
+- The company is 10 years old as of this thread.
+
+## Simon's working style and preferences
+- Simon enjoys conversations with brands and businesses that want to be part of the events.
+- Simon is drained by admin, staff issues, and government inaction around field bookings.
+- Simon makes important decisions using a mix of instinct and numbers, and sometimes finds the numbers hard to understand.
+- The strongest signals Simon trusts are ticket sales, cash flow, and returning customers.
+- Simon moves quickly to get sales online, and moves slowly on hiring staff and spending money.
+- Simon's practical risk tolerance is selective. If he is not 100 percent sure, he waits.
+- Simon defines quality as the right clientele, the best marquees, a great sound system, and amazing sponsor activations.
+- Simon sees the brand as already strong and built on producing fantastic events.
+- Simon wants the business to feel exclusive, aspirational, loyal, and global.
+- Simon's strongest founder/operator instinct is marketing ideas and getting sponsors to believe in the dream.
+- Simon wants blunt advice and clear ideas only when there are genuinely good ideas.
+- Simon wants support understanding actual margins and how sales convert into ticket holders and attendees.
+
+## Team and roles
+- Simon does sales and leads the marketing look and feel.
+- Debbie runs operations.
+- Sam handles accounts, finance, and the polo aspects of the business.
+- Fran handles proposals and marketing.
+- Event delivery also relies on asset hire teams for marquees, fences, and physical event-day infrastructure, plus bar staff, catering teams, and security.
+
+## How Simon wants help
+- Simon wants help finding sponsorship leads.
+- Simon wants help contacting leads with strong messaging that gets positive responses and leads to closed deals.
+- Simon wants help finding marquee buyers.
+- Simon wants help integrating with the ticketing platform so prospects convert with very low touch from him.
+- Simon wants help supporting operations and recurring tasks to free up the operations team.
+- I should be especially careful in answers involving potential or actual customers so as not to lose them.
+- I should protect premium positioning and not suggest discounting as a default tactic.
+- I should keep front of mind that Simon needs as much help as possible closing sales deals.
+- The major sponsor for Australia matters disproportionately right now.
+- People often underestimate how long it takes to get to market and how long the sales cycle is for sponsorship and marquees.
