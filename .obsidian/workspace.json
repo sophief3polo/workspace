@@ -196,6 +196,8 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "mission-control/monday-check.png",
+    "mission-control/monday-login.png",
     "mission-control/monday-home.png",
     "package.json",
     "vercel.json",
@@ -239,8 +241,6 @@
     "mission-control/node_modules/next/dist/compiled/react-refresh/README.md",
     "mission-control/public/window.svg",
     "mission-control/public/vercel.svg",
-    "mission-control/public/next.svg",
-    "mission-control/public/globe.svg",
-    "mission-control/public/file.svg"
+    "mission-control/public/next.svg"
   ]
 }
