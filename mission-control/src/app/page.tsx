@@ -71,6 +71,7 @@ const launchQueue = [
 const navItems = [
   { label: "Overview", href: "/", active: true },
   { label: "Calendar", href: "/calendar", active: false },
+  { label: "Projects", href: "/projects", active: false },
   { label: "Revenue", href: "#", active: false },
   { label: "Operations", href: "#", active: false },
   { label: "Tools", href: "#", active: false },
