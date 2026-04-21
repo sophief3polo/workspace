@@ -74,6 +74,7 @@ const navItems = [
   { label: "Projects", href: "/projects", active: false },
   { label: "Memory", href: "/memory", active: false },
   { label: "Docs", href: "/docs", active: false },
+  { label: "Team", href: "/team", active: false },
   { label: "Revenue", href: "#", active: false },
   { label: "Operations", href: "#", active: false },
   { label: "Tools", href: "#", active: false },

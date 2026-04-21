@@ -196,6 +196,8 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "mission-control/src/app/team/page.tsx",
+    "mission-control/src/app/team",
     "mission-control/src/app/docs/page.tsx",
     "mission-control/src/app/docs",
     "mission-control/src/app/memory/page.tsx",
@@ -205,8 +207,6 @@
     "mission-control/src/app/calendar/page.tsx",
     "mission-control/src/app/calendar",
     "output/portsea_contacts_merged.xlsx",
-    "output/Key Contacts + Suppliers All Markets - Portsea tab merged with cities, filters, and table.xlsx",
-    "output/Key Contacts + Suppliers All Markets - Portsea tab merged with cities and filters.xlsx",
     "legal-battle-gazecki-dossier.md",
     "interview-gap-list-2026-04-21.md",
     "canonical-profile-debbie-and-urban-events.md",
