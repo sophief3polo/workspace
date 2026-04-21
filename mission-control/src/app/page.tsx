@@ -69,12 +69,13 @@ const launchQueue = [
 ];
 
 const navItems = [
-  { label: "Overview", active: true },
-  { label: "Revenue", active: false },
-  { label: "Operations", active: false },
-  { label: "Tools", active: false },
-  { label: "Activity", active: false },
-  { label: "Settings", active: false },
+  { label: "Overview", href: "/", active: true },
+  { label: "Calendar", href: "/calendar", active: false },
+  { label: "Revenue", href: "#", active: false },
+  { label: "Operations", href: "#", active: false },
+  { label: "Tools", href: "#", active: false },
+  { label: "Activity", href: "#", active: false },
+  { label: "Settings", href: "#", active: false },
 ];
 
 export default function Home() {
@@ -96,7 +97,7 @@ export default function Home() {
             {navItems.map((item) => (
               <a
                 key={item.label}
-                href="#"
+                href={item.href}
                 className={`flex items-center justify-between rounded-xl px-3 py-2.5 transition ${
                   item.active
                     ? "bg-white/[0.06] text-white"
