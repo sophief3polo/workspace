@@ -13,40 +13,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sophie.urbanpolo.co.nz"),
-  title: "Lexus Urban Polo | Polo Event Auckland, Christchurch, VIP Hospitality & Private Marquees",
+  metadataBase: new URL("https://sophie.f3polo.com.au"),
+  title: "Sophie Mission Control",
   description:
-    "Explore Lexus Urban Polo in Auckland and Christchurch, with VIP tickets, private marquees, corporate hospitality and a premium polo event experience.",
-  keywords: [
-    "polo event auckland",
-    "polo event christchurch",
-    "vip event tickets auckland",
-    "vip event tickets christchurch",
-    "corporate hospitality auckland",
-    "corporate hospitality christchurch",
-    "private marquee auckland",
-    "private marquee christchurch",
-    "luxury event auckland",
-    "luxury event christchurch",
-    "lexus urban polo",
-  ],
+    "Private mission control for Urban Events, built to run revenue, operations, and custom internal tools.",
+  applicationName: "Sophie Mission Control",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Lexus Urban Polo | Premium Polo Event in Auckland and Christchurch",
+    title: "Sophie Mission Control",
     description:
-      "VIP tickets, private marquees, corporate hospitality and premium polo event experiences in Auckland and Christchurch.",
-    url: "https://sophie.urbanpolo.co.nz",
-    siteName: "Lexus Urban Polo",
+      "A private operating layer for revenue, operations, and custom internal tools.",
+    url: "https://sophie.f3polo.com.au",
+    siteName: "Sophie Mission Control",
     locale: "en_NZ",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lexus Urban Polo | Premium Polo Event in Auckland and Christchurch",
+    title: "Sophie Mission Control",
     description:
-      "VIP tickets, private marquees, corporate hospitality and premium polo event experiences in Auckland and Christchurch.",
+      "Private mission control for Urban Events, built in Next.js and ready for custom tools.",
+  },
+  robots: {
+    index: false,
+    follow: false,
   },
 };
 
