@@ -196,6 +196,7 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "interview-gap-list-2026-04-21.md",
     "canonical-profile-debbie-and-urban-events.md",
     "retained-context-debbie-2026-04-21.md",
     "media/sophie-avatar-2026-04-21.png",
@@ -240,7 +241,6 @@
     "mission-control/node_modules/playwright-core/lib/vite/recorder/playwright-logo.svg",
     "mission-control/node_modules/playwright-core/lib/tools/trace/SKILL.md",
     "mission-control/CLAUDE.md",
-    "mission-control/AGENTS.md",
-    "mission-control/node_modules/next/README.md"
+    "mission-control/AGENTS.md"
   ]
 }
