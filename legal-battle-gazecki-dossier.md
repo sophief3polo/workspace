@@ -133,10 +133,78 @@ These may be useful for colour or public narrative, but should not be treated as
 - Double Bay Today article, which appears satirical and should be treated as satire only
 - Daily Mail result, which may be useful for lead generation but should not be relied on as a primary source
 
+## Identifiers and company details supplied in-channel by Simon, not yet independently verified in this draft
+
+### Personal identifiers supplied by Simon
+- Name: John Gazecki
+- Date of birth: 25/11/1973
+- Place of birth: Warsaw, Poland
+
+These details are useful for matching against court and registry material, but remain user-supplied until independently confirmed.
+
+### Company and director details supplied by Simon
+The following company links were supplied in-channel by Simon and should be treated as lead material pending independent registry confirmation.
+
+- Polo Enterprises Holdings Pty Ltd
+  - ACN: 165 452 684
+  - ABN: 57 165 452 684
+  - Status: Registered
+  - Address: Unit 4005, 343-357 Pitt Street, Sydney NSW 2000
+  - Role heading: Director
+  - Appointment date: 23/08/2013
+
+- Hussar Holdings Pty. Ltd.
+  - ACN: 167 731 277
+  - ABN: 71 167 731 277
+  - Status: Registered
+  - Address: Unit 4005, 343-357 Pitt Street, Sydney NSW 2000
+  - Role heading: Director
+  - Appointment date: 27/01/2014
+
+- Polo Events Australasia Pty. Ltd.
+  - ACN: 167 436 544
+  - ABN: 96 167 436 544
+  - Status: Registered
+  - Address: Unit 4005, 343-357 Pitt Street, Sydney NSW 2000
+  - Role heading: Director
+  - Appointment date: 07/01/2014
+
+- Polo Events Australia Pty. Ltd.
+  - ACN: 167 572 385
+  - ABN: 38 167 572 385
+  - Status: Registered
+  - Address: Unit 4005, 343-357 Pitt Street, Sydney NSW 2000
+  - Role heading: Director
+  - Appointment date: 16/01/2014
+
+- Southern Land Productions Pty Ltd
+  - ACN: 159 348 786
+  - ABN: 12 159 348 786
+  - Status: Registered
+  - Address: Unit 4005, 343-357 Pitt Street, Sydney NSW 2000
+  - Role heading: Director
+  - Appointment date: 04/07/2012
+
+- Urban Polo Association Limited
+  - ACN: 168 372 398
+  - ABN: 64 168 372 398
+  - Status: Registered
+  - Address: Unit 4005, 343-357 Pitt Street, Sydney NSW 2000
+  - Role heading: Director
+  - Appointment date: 04/03/2014
+
+- Gazecki Family Holdings Pty Ltd
+  - ACN: 164 523 308
+  - Status: Registered
+  - Address: Unit 4005, 343-357 Pitt Street, Sydney NSW 2000
+  - Role heading: Director
+  - Appointment date: 27/06/2013
+
 ## Working assumptions and cautions
 - Do not assume every public mention of John Gazecki is necessarily the same individual without matching context.
 - Do not assume Janek Gazecki and John Christopher Gazecki are the same person for formal use until a court record or company record links them cleanly.
 - Search snippets are not evidence. They are leads only.
+- User-supplied identifiers and company lists are useful working leads, but should be labeled as such until independently verified.
 - Court records should outrank media reporting in this dossier.
 
 ## Immediate next-step tracking checklist
@@ -150,4 +218,6 @@ These may be useful for colour or public narrative, but should not be treated as
 ### 2026-04-21
 - Created Version 1 dossier from public web reporting and user-supplied case references.
 - Bondi / Amalfi Beach Club reporting reviewed and summarised.
+- Added user-supplied personal identifiers for John Gazecki, pending independent confirmation.
+- Added user-supplied company and director links, pending independent confirmation.
 - Court records for the three named matters not yet independently captured in this draft.
