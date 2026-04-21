@@ -196,6 +196,8 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "mission-control/src/app/office/page.tsx",
+    "mission-control/src/app/office",
     "mission-control/src/app/team/page.tsx",
     "mission-control/src/app/team",
     "mission-control/src/app/docs/page.tsx",
@@ -205,8 +207,6 @@
     "mission-control/src/app/projects/page.tsx",
     "mission-control/src/app/projects",
     "mission-control/src/app/calendar/page.tsx",
-    "mission-control/src/app/calendar",
-    "output/portsea_contacts_merged.xlsx",
     "legal-battle-gazecki-dossier.md",
     "interview-gap-list-2026-04-21.md",
     "canonical-profile-debbie-and-urban-events.md",
