@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 const products = [
@@ -71,13 +74,23 @@ const faqs = [
   },
 ];
 
+const navLinks = [
+  { href: "#products", label: "Solutions" },
+  { href: "#how-it-works", label: "How it works" },
+  { href: "#contact", label: "Contact us" },
+];
+
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <main className="min-h-screen bg-[#f6fbff] text-[#0f172a]">
       <section className="relative overflow-hidden border-b border-[#d7e7f4] bg-[linear-gradient(180deg,#f7fcff_0%,#eef8ff_50%,#e7f7f3_100%)]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,197,94,0.14),transparent_24%),radial-gradient(circle_at_top_right,rgba(59,130,246,0.16),transparent_28%),radial-gradient(circle_at_center_right,rgba(20,184,166,0.12),transparent_24%)]" />
         <div className="relative mx-auto max-w-[1240px] px-5 py-6 sm:px-6 lg:px-8">
-          <header className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+          <header className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-4">
               <Image
                 src="/justpay-logo.png"
@@ -91,21 +104,57 @@ export default function Home() {
               <p className="hidden text-sm text-[#5b7083] sm:block">Payment referral partner for growing merchants</p>
             </div>
 
-            <div className="flex flex-wrap gap-3">
-              <a
-                href="#contact"
-                className="rounded-full bg-[#33ddff] px-5 py-3 text-sm font-semibold text-[#082032] transition hover:bg-[#1ec8ef]"
-              >
-                Speak to us
-              </a>
-              <a
-                href="#products"
-                className="rounded-full border border-[#c7dceb] bg-white/80 px-5 py-3 text-sm font-medium text-[#163247] transition hover:border-[#9ac4dd] hover:bg-white"
-              >
-                Explore solutions
-              </a>
+            <div className="hidden flex-wrap gap-3 md:flex">
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className={`rounded-full px-5 py-3 text-sm transition ${
+                    link.href === "#contact"
+                      ? "bg-[#33ddff] font-semibold text-[#082032] hover:bg-[#1ec8ef]"
+                      : "border border-[#c7dceb] bg-white/80 font-medium text-[#163247] hover:border-[#9ac4dd] hover:bg-white"
+                  }`}
+                >
+                  {link.label}
+                </a>
+              ))}
             </div>
+
+            <button
+              type="button"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
+              className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-[#c7dceb] bg-white/85 text-[#163247] shadow-sm transition hover:border-[#9ac4dd] hover:bg-white md:hidden"
+              onClick={() => setIsMenuOpen((open) => !open)}
+            >
+              <span className="flex flex-col gap-1.5">
+                <span className={`h-0.5 w-5 rounded-full bg-current transition ${isMenuOpen ? "translate-y-2 rotate-45" : ""}`} />
+                <span className={`h-0.5 w-5 rounded-full bg-current transition ${isMenuOpen ? "opacity-0" : ""}`} />
+                <span className={`h-0.5 w-5 rounded-full bg-current transition ${isMenuOpen ? "-translate-y-2 -rotate-45" : ""}`} />
+              </span>
+            </button>
           </header>
+
+          {isMenuOpen ? (
+            <div className="mt-4 rounded-[28px] border border-[#cfe6f2] bg-white/95 p-4 shadow-[0_24px_80px_rgba(34,84,122,0.12)] backdrop-blur md:hidden">
+              <nav className="flex flex-col gap-3">
+                {navLinks.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={closeMenu}
+                    className={`rounded-2xl px-4 py-3 text-sm transition ${
+                      link.href === "#contact"
+                        ? "bg-[#33ddff] font-semibold text-[#082032] hover:bg-[#1ec8ef]"
+                        : "border border-[#c7dceb] bg-[#f8fcff] font-medium text-[#163247] hover:border-[#9ac4dd] hover:bg-white"
+                    }`}
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </nav>
+            </div>
+          ) : null}
 
           <div className="grid gap-12 py-14 lg:grid-cols-[1.15fr_0.85fr] lg:py-24">
             <div>
