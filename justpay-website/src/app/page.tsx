@@ -98,31 +98,33 @@ export default function Home() {
         <div className="absolute inset-x-0 bottom-16 hidden lg:block" style={{ transform: "translateY(28px)" }}>
           <div className="mx-auto h-24 max-w-[1120px] rounded-full border border-white/8 bg-white/[0.03] blur-2xl" />
         </div>
-        <div className="relative mx-auto max-w-[1240px] px-5 py-6 sm:px-6 lg:px-8">
-          <header className="flex items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
-              <div className="rounded-[24px] border border-white/10 bg-[#081723]/90 px-4 py-3 shadow-[0_18px_50px_rgba(0,0,0,0.24)] backdrop-blur-sm">
+        <div className="sticky top-0 z-40 border-b border-white/10 bg-[#07141f]/78 backdrop-blur-xl">
+          <header className="mx-auto flex max-w-[1240px] items-start justify-between gap-4 px-5 py-4 sm:px-6 lg:px-8">
+            <div className="flex min-w-0 flex-1 items-start gap-3 sm:gap-4">
+              <div className="rounded-[20px] border border-white/10 bg-[#081723]/90 px-3 py-2.5 shadow-[0_18px_50px_rgba(0,0,0,0.24)] backdrop-blur-sm sm:px-4 sm:py-3">
                 <Image
                   src="/justpay-logo.png"
                   alt="Just Pay"
                   width={220}
                   height={72}
-                  className="h-auto w-[180px] sm:w-[230px]"
+                  className="h-auto w-[132px] sm:w-[230px]"
                   priority
                 />
               </div>
-              <div className="hidden h-8 w-px bg-white/12 sm:block" />
-              <div className="hidden items-center gap-3 sm:flex">
-                <p className="text-sm text-[#b7c9d8]">Payment referral partner for growing merchants</p>
-                <div className="inline-flex items-center gap-1.5 rounded-full border border-[#f97316]/20 bg-white px-2.5 py-1 shadow-sm">
-                  <span className="text-[9px] font-semibold uppercase tracking-[0.16em] text-[#9a5a28]">Powered by</span>
-                  <Image
-                    src="/fiserv-logo-orange-ff6600.svg"
-                    alt="Fiserv"
-                    width={48}
-                    height={24}
-                    className="h-auto w-[48px]"
-                  />
+              <div className="min-w-0 flex-1">
+                <div className="hidden h-8 w-px bg-white/12 sm:block" />
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
+                  <p className="text-xs leading-5 text-[#b7c9d8] sm:text-sm">Payment referral partner for growing merchants</p>
+                  <div className="inline-flex w-fit items-center gap-1.5 rounded-full border border-[#f97316]/20 bg-white px-2.5 py-1 shadow-sm">
+                    <span className="text-[9px] font-semibold uppercase tracking-[0.16em] text-[#9a5a28]">Powered by</span>
+                    <Image
+                      src="/fiserv-logo-orange-ff6600.svg"
+                      alt="Fiserv"
+                      width={48}
+                      height={24}
+                      className="h-auto w-[48px]"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -147,7 +149,7 @@ export default function Home() {
               type="button"
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMenuOpen}
-              className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/14 bg-white/10 text-white shadow-sm transition hover:border-[#59dfff] hover:bg-white/14 md:hidden"
+              className="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/14 bg-white/10 text-white shadow-sm transition hover:border-[#59dfff] hover:bg-white/14 md:hidden"
               onClick={() => setIsMenuOpen((open) => !open)}
             >
               <span className="flex flex-col gap-1.5">
@@ -159,7 +161,8 @@ export default function Home() {
           </header>
 
           {isMenuOpen ? (
-            <div className="mt-4 rounded-[28px] border border-white/12 bg-[#0b1d2b]/95 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur md:hidden">
+            <div className="mx-auto max-w-[1240px] px-5 pb-4 sm:px-6 lg:px-8">
+              <div className="rounded-[28px] border border-white/12 bg-[#0b1d2b]/95 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur md:hidden">
               <nav className="flex flex-col gap-3">
                 {navLinks.map((link) => (
                   <a
@@ -176,10 +179,13 @@ export default function Home() {
                   </a>
                 ))}
               </nav>
+              </div>
             </div>
           ) : null}
+        </div>
 
-          <div className="grid gap-12 py-14 lg:grid-cols-[1.15fr_0.85fr] lg:py-24">
+        <div className="relative mx-auto max-w-[1240px] px-5 py-10 sm:px-6 lg:px-8 lg:py-24">
+          <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr]">
             <div>
               <p className="inline-flex items-center gap-2 rounded-full border border-[#1f526d] bg-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.24em] text-[#8fe8ff] shadow-sm">
                 New Zealand and Australia
@@ -351,16 +357,6 @@ export default function Home() {
               >
                 info@justpay.co.nz
               </a>
-              <div className="mt-5 inline-flex items-center gap-1.5 rounded-full border border-[#f97316]/20 bg-white px-2.5 py-1 shadow-sm sm:hidden">
-                <span className="text-[9px] font-semibold uppercase tracking-[0.16em] text-[#9a5a28]">Powered by</span>
-                <Image
-                  src="/fiserv-logo-orange-ff6600.svg"
-                  alt="Fiserv"
-                  width={48}
-                  height={24}
-                  className="h-auto w-[48px]"
-                />
-              </div>
               <p className="mt-4 text-sm text-[#678198]">Also intended for justpay.au</p>
             </div>
           </div>
