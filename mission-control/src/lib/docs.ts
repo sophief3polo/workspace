@@ -208,3 +208,7 @@ export const allDocs = docCategories.flatMap((category) => category.docs);
 export function getDocBySlug(slug: string) {
   return allDocs.find((doc) => doc.slug === slug);
 }
+
+export function getDocDownloadHref(doc: DocRecord) {
+  return `/api/docs/${doc.slug}/download`;
+}

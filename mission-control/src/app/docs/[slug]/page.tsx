@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { allDocs, getDocBySlug } from "@/lib/docs";
+import { allDocs, getDocBySlug, getDocDownloadHref } from "@/lib/docs";
 import { bundledDocContent } from "@/lib/docs-content";
 
 const MAX_TABLE_ROWS = 50;
@@ -120,6 +120,13 @@ export default async function DocViewerPage({
                 >
                   Back to docs
                 </Link>
+                <a
+                  href={getDocDownloadHref(doc)}
+                  download
+                  className="rounded-2xl border border-[#5e6ad2]/40 bg-[#5e6ad2]/12 px-4 py-3 text-sm text-white transition hover:bg-[#5e6ad2]/20"
+                >
+                  Download file
+                </a>
               </div>
             </div>
           </header>
@@ -185,6 +192,9 @@ export default async function DocViewerPage({
                   <div className="mt-5 space-y-3 text-sm leading-7 text-[#98a2b3]">
                     <p>
                       Markdown files render as readable text blocks, CSV files render as inline tables, and XLSX files now preview worksheet data.
+                    </p>
+                    <p>
+                      Every tracked document also has a direct download action so the original file can be saved from Mission Control.
                     </p>
                     <p>
                       Spreadsheet previews are intentionally capped so the page stays fast and usable.

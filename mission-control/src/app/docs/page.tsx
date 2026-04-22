@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { docCategories } from "@/lib/docs";
+import { docCategories, getDocDownloadHref } from "@/lib/docs";
 
 const searchTokens = [
   "sponsorship",
@@ -104,10 +104,9 @@ export default function DocsPage() {
 
                         <div className="mt-5 grid gap-3">
                           {category.docs.map((doc) => (
-                            <Link
+                            <div
                               key={doc.slug}
-                              href={`/docs/${doc.slug}`}
-                              className="block rounded-2xl border border-white/8 bg-white/[0.02] p-4 transition hover:border-[#5e6ad2]/60 hover:bg-[#121622]"
+                              className="rounded-2xl border border-white/8 bg-white/[0.02] p-4 transition hover:border-[#5e6ad2]/60 hover:bg-[#121622]"
                             >
                               <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                                 <div>
@@ -122,10 +121,19 @@ export default function DocsPage() {
                                 <span className="text-xs text-[#7f8797]">Updated {doc.updated}</span>
                               </div>
                               <p className="mt-3 text-sm leading-6 text-[#98a2b3]">{doc.summary}</p>
-                              <div className="mt-4 text-xs font-medium uppercase tracking-[0.18em] text-[#aab4ff]">
-                                Open document
+                              <div className="mt-4 flex flex-wrap gap-3 text-xs font-medium uppercase tracking-[0.18em]">
+                                <Link href={`/docs/${doc.slug}`} className="text-[#aab4ff] transition hover:text-white">
+                                  Open document
+                                </Link>
+                                <a
+                                  href={getDocDownloadHref(doc)}
+                                  download
+                                  className="text-[#8f98a8] transition hover:text-white"
+                                >
+                                  Download file
+                                </a>
                               </div>
-                            </Link>
+                            </div>
                           ))}
                         </div>
                       </section>
