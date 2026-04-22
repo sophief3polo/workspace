@@ -87,21 +87,23 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#f6fbff] text-[#0f172a]">
-      <section className="relative overflow-hidden border-b border-[#d7e7f4] bg-[linear-gradient(180deg,#f7fcff_0%,#eef8ff_50%,#e7f7f3_100%)]">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,197,94,0.14),transparent_24%),radial-gradient(circle_at_top_right,rgba(59,130,246,0.16),transparent_28%),radial-gradient(circle_at_center_right,rgba(20,184,166,0.12),transparent_24%)]" />
+      <section className="relative overflow-hidden border-b border-[#0f2f46] bg-[linear-gradient(180deg,#07141f_0%,#0b2233_58%,#10324a_100%)]">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(51,221,255,0.18),transparent_24%),radial-gradient(circle_at_top_right,rgba(10,132,255,0.18),transparent_28%),radial-gradient(circle_at_center_right,rgba(16,185,129,0.10),transparent_24%)]" />
         <div className="relative mx-auto max-w-[1240px] px-5 py-6 sm:px-6 lg:px-8">
           <header className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-4">
-              <Image
-                src="/justpay-logo.png"
-                alt="Just Pay"
-                width={220}
-                height={72}
-                className="h-auto w-[180px] sm:w-[230px]"
-                priority
-              />
-              <div className="hidden h-8 w-px bg-[#cfe1ec] sm:block" />
-              <p className="hidden text-sm text-[#5b7083] sm:block">Payment referral partner for growing merchants</p>
+              <div className="rounded-[24px] border border-white/10 bg-[#081723]/90 px-4 py-3 shadow-[0_18px_50px_rgba(0,0,0,0.24)] backdrop-blur-sm">
+                <Image
+                  src="/justpay-logo.png"
+                  alt="Just Pay"
+                  width={220}
+                  height={72}
+                  className="h-auto w-[180px] sm:w-[230px]"
+                  priority
+                />
+              </div>
+              <div className="hidden h-8 w-px bg-white/12 sm:block" />
+              <p className="hidden text-sm text-[#b7c9d8] sm:block">Payment referral partner for growing merchants</p>
             </div>
 
             <div className="hidden flex-wrap gap-3 md:flex">
@@ -112,7 +114,7 @@ export default function Home() {
                   className={`rounded-full px-5 py-3 text-sm transition ${
                     link.href === "#contact"
                       ? "bg-[#33ddff] font-semibold text-[#082032] hover:bg-[#1ec8ef]"
-                      : "border border-[#c7dceb] bg-white/80 font-medium text-[#163247] hover:border-[#9ac4dd] hover:bg-white"
+                      : "border border-white/14 bg-white/8 font-medium text-[#e6f6ff] hover:border-[#59dfff] hover:bg-white/12"
                   }`}
                 >
                   {link.label}
@@ -124,7 +126,7 @@ export default function Home() {
               type="button"
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMenuOpen}
-              className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-[#c7dceb] bg-white/85 text-[#163247] shadow-sm transition hover:border-[#9ac4dd] hover:bg-white md:hidden"
+              className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/14 bg-white/10 text-white shadow-sm transition hover:border-[#59dfff] hover:bg-white/14 md:hidden"
               onClick={() => setIsMenuOpen((open) => !open)}
             >
               <span className="flex flex-col gap-1.5">
@@ -136,7 +138,7 @@ export default function Home() {
           </header>
 
           {isMenuOpen ? (
-            <div className="mt-4 rounded-[28px] border border-[#cfe6f2] bg-white/95 p-4 shadow-[0_24px_80px_rgba(34,84,122,0.12)] backdrop-blur md:hidden">
+            <div className="mt-4 rounded-[28px] border border-white/12 bg-[#0b1d2b]/95 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur md:hidden">
               <nav className="flex flex-col gap-3">
                 {navLinks.map((link) => (
                   <a
@@ -146,7 +148,7 @@ export default function Home() {
                     className={`rounded-2xl px-4 py-3 text-sm transition ${
                       link.href === "#contact"
                         ? "bg-[#33ddff] font-semibold text-[#082032] hover:bg-[#1ec8ef]"
-                        : "border border-[#c7dceb] bg-[#f8fcff] font-medium text-[#163247] hover:border-[#9ac4dd] hover:bg-white"
+                        : "border border-white/12 bg-white/6 font-medium text-[#e6f6ff] hover:border-[#59dfff] hover:bg-white/10"
                     }`}
                   >
                     {link.label}
@@ -158,14 +160,14 @@ export default function Home() {
 
           <div className="grid gap-12 py-14 lg:grid-cols-[1.15fr_0.85fr] lg:py-24">
             <div>
-              <p className="inline-flex items-center gap-2 rounded-full border border-[#b7e7d2] bg-white/75 px-3 py-1 text-[11px] uppercase tracking-[0.24em] text-[#15803d] shadow-sm">
+              <p className="inline-flex items-center gap-2 rounded-full border border-[#1f526d] bg-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.24em] text-[#8fe8ff] shadow-sm">
                 New Zealand and Australia
-                <span className="h-1.5 w-1.5 rounded-full bg-[#22c55e]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#33ddff]" />
               </p>
-              <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-[-0.05em] text-[#082032] sm:text-5xl lg:text-6xl">
+              <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-[-0.05em] text-white sm:text-5xl lg:text-6xl">
                 Smarter payment solutions, with a cleaner path for merchants.
               </h1>
-              <p className="mt-6 max-w-3xl text-base leading-8 text-[#4b6478] sm:text-lg">
+              <p className="mt-6 max-w-3xl text-base leading-8 text-[#b7c9d8] sm:text-lg">
                 Just Pay helps businesses get connected to suitable payment solutions through a Fiserv referral partnership. We cut through the noise, qualify the opportunity, and help merchants get into the right process fast.
               </p>
 
@@ -185,11 +187,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-[36px] border border-[#d4e6f1] bg-white/80 p-6 shadow-[0_24px_80px_rgba(34,84,122,0.12)] backdrop-blur">
-              <p className="text-xs uppercase tracking-[0.24em] text-[#0f7abf]">Why merchants use Just Pay</p>
+            <div className="rounded-[36px] border border-white/10 bg-white/8 p-6 shadow-[0_24px_80px_rgba(0,0,0,0.22)] backdrop-blur">
+              <p className="text-xs uppercase tracking-[0.24em] text-[#8fe8ff]">Why merchants use Just Pay</p>
               <div className="mt-6 space-y-4">
                 {reasons.map((reason) => (
-                  <div key={reason} className="rounded-[24px] border border-[#dceaf3] bg-[linear-gradient(180deg,#ffffff_0%,#f5fbff_100%)] px-4 py-4 text-sm leading-7 text-[#23415a] shadow-sm">
+                  <div key={reason} className="rounded-[24px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.10)_0%,rgba(255,255,255,0.05)_100%)] px-4 py-4 text-sm leading-7 text-[#e6f6ff] shadow-sm">
                     {reason}
                   </div>
                 ))}
