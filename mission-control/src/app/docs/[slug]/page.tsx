@@ -5,13 +5,13 @@ import { bundledDocContent } from "@/lib/docs-content";
 
 const MAX_TABLE_ROWS = 50;
 
-type TableRow = string[];
+type TableRow = readonly string[];
 
 export async function generateStaticParams() {
   return allDocs.map((doc) => ({ slug: doc.slug }));
 }
 
-function renderTable(rows: TableRow[]) {
+function renderTable(rows: readonly TableRow[]) {
   if (!rows.length) {
     return (
       <div className="rounded-2xl border border-white/8 bg-[#0f1218] p-5 text-sm text-[#98a2b3]">
