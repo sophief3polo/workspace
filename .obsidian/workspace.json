@@ -196,6 +196,7 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "mission-control/src/lib/docs-content.ts",
     "mission-control/node_modules/xlsx/types/index.d.ts",
     "mission-control/node_modules/xlsx/legend.png",
     "mission-control/node_modules/xlsx/formats.png",
@@ -209,7 +210,6 @@
     "mission-control/node_modules/codepage/types/index.d.ts",
     "mission-control/node_modules/codepage/types",
     "mission-control/node_modules/codepage/dist/sbcs.full.js",
-    "mission-control/node_modules/xlsx/xlsx.mjs",
     "mission-control/node_modules/xlsx/CHANGELOG.md",
     "mission-control/node_modules/xlsx/README.md",
     "mission-control/node_modules/adler-32/README.md",
