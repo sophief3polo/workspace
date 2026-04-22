@@ -2,22 +2,37 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import * as XLSX from "xlsx";
 import { allDocs, getDocBySlug } from "@/lib/docs";
 
 const workspaceRoot = path.resolve(process.cwd(), "..");
+const MAX_TABLE_ROWS = 50;
+const MAX_SHEET_PREVIEW_COLUMNS = 12;
+
+type SheetPreview = {
+  name: string;
+  rows: string[][];
+};
 
 export async function generateStaticParams() {
   return allDocs.map((doc) => ({ slug: doc.slug }));
 }
 
-function renderCsvTable(content: string) {
-  const rows = content
-    .trim()
-    .split(/\r?\n/)
-    .map((line) => line.split(","));
+function normalizeCell(value: unknown) {
+  if (value === null || value === undefined) {
+    return "";
+  }
 
+  return String(value);
+}
+
+function renderTable(rows: string[][]) {
   if (!rows.length) {
-    return null;
+    return (
+      <div className="rounded-2xl border border-white/8 bg-[#0f1218] p-5 text-sm text-[#98a2b3]">
+        No rows available to preview.
+      </div>
+    );
   }
 
   const [header, ...body] = rows;
@@ -29,13 +44,13 @@ function renderCsvTable(content: string) {
           <tr>
             {header.map((cell, index) => (
               <th key={`${cell}-${index}`} className="px-4 py-3 font-medium">
-                {cell}
+                {cell || `Column ${index + 1}`}
               </th>
             ))}
           </tr>
         </thead>
         <tbody className="divide-y divide-white/6">
-          {body.slice(0, 50).map((row, rowIndex) => (
+          {body.slice(0, MAX_TABLE_ROWS).map((row, rowIndex) => (
             <tr key={`${rowIndex}-${row.join("-")}`}>
               {header.map((_, cellIndex) => (
                 <td key={cellIndex} className="px-4 py-3 align-top text-[#cfd6e4]">
@@ -58,6 +73,29 @@ function renderMarkdown(content: string) {
   );
 }
 
+function buildSheetPreview(buffer: Buffer) {
+  const workbook = XLSX.read(buffer, { type: "buffer" });
+
+  return workbook.SheetNames.map((sheetName) => {
+    const sheet = workbook.Sheets[sheetName];
+    const rawRows = XLSX.utils.sheet_to_json<(string | number | boolean | null)[]>(sheet, {
+      header: 1,
+      defval: "",
+      raw: false,
+      blankrows: false,
+    });
+
+    const rows = rawRows
+      .slice(0, MAX_TABLE_ROWS + 1)
+      .map((row) => row.slice(0, MAX_SHEET_PREVIEW_COLUMNS).map(normalizeCell));
+
+    return {
+      name: sheetName,
+      rows,
+    };
+  });
+}
+
 export default async function DocViewerPage({
   params,
 }: {
@@ -72,18 +110,24 @@ export default async function DocViewerPage({
 
   const absolutePath = path.join(workspaceRoot, doc.path);
   let content = "";
+  let workbookPreview: SheetPreview[] = [];
   let loadError = "";
-
-  try {
-    content = await fs.readFile(absolutePath, "utf8");
-  } catch (error) {
-    loadError = error instanceof Error ? error.message : "Unable to read document.";
-  }
 
   const extension = path.extname(doc.path).toLowerCase();
   const isMarkdown = extension === ".md";
   const isCsv = extension === ".csv";
-  const isPreviewable = isMarkdown || isCsv;
+  const isXlsx = extension === ".xlsx";
+
+  try {
+    if (isXlsx) {
+      const buffer = await fs.readFile(absolutePath);
+      workbookPreview = buildSheetPreview(buffer);
+    } else {
+      content = await fs.readFile(absolutePath, "utf8");
+    }
+  } catch (error) {
+    loadError = error instanceof Error ? error.message : "Unable to read document.";
+  }
 
   return (
     <main className="min-h-screen bg-[#08090d] text-[#f5f7fb]">
@@ -144,16 +188,33 @@ export default async function DocViewerPage({
                   <div className="rounded-2xl border border-red-400/20 bg-red-400/10 p-5 text-sm text-red-200">
                     Could not load this document: {loadError}
                   </div>
-                ) : isPreviewable ? (
-                  isMarkdown ? renderMarkdown(content) : renderCsvTable(content)
+                ) : isMarkdown ? (
+                  renderMarkdown(content)
+                ) : isCsv ? (
+                  renderTable(
+                    content
+                      .trim()
+                      .split(/\r?\n/)
+                      .map((line) => line.split(","))
+                      .map((row) => row.map(normalizeCell)),
+                  )
+                ) : isXlsx ? (
+                  <div className="space-y-5">
+                    {workbookPreview.map((sheet) => (
+                      <div key={sheet.name} className="space-y-3 rounded-2xl border border-white/8 bg-[#0f1218] p-5">
+                        <div>
+                          <p className="text-xs uppercase tracking-[0.18em] text-[#7f8797]">Worksheet</p>
+                          <h2 className="mt-2 text-lg font-semibold text-white">{sheet.name}</h2>
+                        </div>
+                        {renderTable(sheet.rows)}
+                      </div>
+                    ))}
+                  </div>
                 ) : (
                   <div className="rounded-2xl border border-white/8 bg-[#0f1218] p-5 text-sm leading-7 text-[#d6dbea]">
                     This file type is tracked but not yet previewed inline.
                     <div className="mt-4 rounded-2xl border border-white/8 bg-white/[0.02] p-4 text-[#98a2b3]">
                       File path: {doc.path}
-                    </div>
-                    <div className="mt-4 text-[#98a2b3]">
-                      Next upgrade: native spreadsheet rendering for XLSX files.
                     </div>
                   </div>
                 )}
@@ -186,10 +247,10 @@ export default async function DocViewerPage({
                   <p className="text-xs uppercase tracking-[0.24em] text-[#99a1b3]">Viewer notes</p>
                   <div className="mt-5 space-y-3 text-sm leading-7 text-[#98a2b3]">
                     <p>
-                      Markdown files render as readable text blocks, and CSV files render as inline tables.
+                      Markdown files render as readable text blocks, CSV files render as inline tables, and XLSX files now preview worksheet data.
                     </p>
                     <p>
-                      Spreadsheet files are catalogued here but still need a richer renderer.
+                      Spreadsheet previews are intentionally capped so the page stays fast and usable.
                     </p>
                     <p>
                       This viewer is backed by the actual workspace files, not placeholder copy.
