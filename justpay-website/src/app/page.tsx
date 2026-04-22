@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const products = [
@@ -82,6 +82,14 @@ const navLinks = [
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setIsScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const closeMenu = () => setIsMenuOpen(false);
 
@@ -98,31 +106,41 @@ export default function Home() {
         <div className="absolute inset-x-0 bottom-16 hidden lg:block" style={{ transform: "translateY(28px)" }}>
           <div className="mx-auto h-24 max-w-[1120px] rounded-full border border-white/8 bg-white/[0.03] blur-2xl" />
         </div>
-        <div className="sticky top-0 z-40 border-b border-white/10 bg-[#07141f]/78 backdrop-blur-xl">
-          <header className="mx-auto flex max-w-[1240px] items-start justify-between gap-4 px-5 py-4 sm:px-6 lg:px-8">
+        <div className={`sticky top-0 z-40 border-b border-white/10 bg-[#07141f]/78 backdrop-blur-xl transition-all duration-300 ${
+          isScrolled ? "shadow-[0_18px_44px_rgba(0,0,0,0.26)]" : ""
+        }`}>
+          <header className={`mx-auto flex max-w-[1240px] items-start justify-between gap-4 px-5 transition-all duration-300 sm:px-6 lg:px-8 ${
+            isScrolled ? "py-2.5" : "py-4"
+          }`}>
             <div className="flex min-w-0 flex-1 items-start gap-3 sm:gap-4">
-              <div className="rounded-[20px] border border-white/10 bg-[#081723]/90 px-3 py-2.5 shadow-[0_18px_50px_rgba(0,0,0,0.24)] backdrop-blur-sm sm:px-4 sm:py-3">
+              <div className={`rounded-[20px] border border-white/10 bg-[#081723]/90 shadow-[0_18px_50px_rgba(0,0,0,0.24)] backdrop-blur-sm transition-all duration-300 ${
+                isScrolled ? "px-2.5 py-2 sm:px-3 sm:py-2.5" : "px-3 py-2.5 sm:px-4 sm:py-3"
+              }`}>
                 <Image
                   src="/justpay-logo.png"
                   alt="Just Pay"
                   width={220}
                   height={72}
-                  className="h-auto w-[132px] sm:w-[230px]"
+                  className={`h-auto transition-all duration-300 ${isScrolled ? "w-[112px] sm:w-[190px]" : "w-[132px] sm:w-[230px]"}`}
                   priority
                 />
               </div>
               <div className="min-w-0 flex-1">
                 <div className="hidden h-8 w-px bg-white/12 sm:block" />
-                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
-                  <p className="text-xs leading-5 text-[#b7c9d8] sm:text-sm">Payment referral partner for growing merchants</p>
-                  <div className="inline-flex w-fit items-center gap-1.5 rounded-full border border-[#f97316]/20 bg-white px-2.5 py-1 shadow-sm">
-                    <span className="text-[9px] font-semibold uppercase tracking-[0.16em] text-[#9a5a28]">Powered by</span>
+                <div className={`flex flex-col gap-2 transition-all duration-300 sm:flex-row sm:items-center sm:gap-3 ${
+                  isScrolled ? "sm:gap-2" : ""
+                }`}>
+                  <p className={`text-[#b7c9d8] transition-all duration-300 ${isScrolled ? "text-[11px] leading-4 sm:text-xs" : "text-xs leading-5 sm:text-sm"}`}>Payment referral partner for growing merchants</p>
+                  <div className={`inline-flex w-fit items-center rounded-full border border-[#f97316]/20 bg-white shadow-sm transition-all duration-300 ${
+                    isScrolled ? "gap-1 px-2 py-0.5" : "gap-1.5 px-2.5 py-1"
+                  }`}>
+                    <span className={`font-semibold uppercase text-[#9a5a28] transition-all duration-300 ${isScrolled ? "text-[8px] tracking-[0.12em]" : "text-[9px] tracking-[0.16em]"}`}>Powered by</span>
                     <Image
                       src="/fiserv-logo-orange-ff6600.svg"
                       alt="Fiserv"
                       width={48}
                       height={24}
-                      className="h-auto w-[48px]"
+                      className={`h-auto transition-all duration-300 ${isScrolled ? "w-[40px]" : "w-[48px]"}`}
                     />
                   </div>
                 </div>
@@ -149,7 +167,9 @@ export default function Home() {
               type="button"
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMenuOpen}
-              className="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/14 bg-white/10 text-white shadow-sm transition hover:border-[#59dfff] hover:bg-white/14 md:hidden"
+              className={`mt-1 inline-flex shrink-0 items-center justify-center rounded-2xl border border-white/14 bg-white/10 text-white shadow-sm transition-all hover:border-[#59dfff] hover:bg-white/14 md:hidden ${
+                isScrolled ? "h-10 w-10" : "h-11 w-11"
+              }`}
               onClick={() => setIsMenuOpen((open) => !open)}
             >
               <span className="flex flex-col gap-1.5">
