@@ -130,7 +130,7 @@ export default function Home() {
                 <div className={`flex flex-col gap-2 transition-all duration-300 sm:flex-row sm:items-center sm:gap-3 ${
                   isScrolled ? "sm:gap-2" : ""
                 }`}>
-                  <p className={`text-[#b7c9d8] transition-all duration-300 ${isScrolled ? "text-[11px] leading-4 sm:text-xs" : "text-xs leading-5 sm:text-sm"}`}>Payment referral partner for growing merchants</p>
+                  <p className={`hidden text-[#b7c9d8] transition-all duration-300 sm:block ${isScrolled ? "text-[11px] leading-4 sm:text-xs" : "text-xs leading-5 sm:text-sm"}`}>Payment referral partner for growing merchants</p>
                   <div className={`inline-flex w-fit items-center rounded-full border border-[#f97316]/20 bg-white shadow-sm transition-all duration-300 ${
                     isScrolled ? "gap-1 px-2 py-0.5" : "gap-1.5 px-2.5 py-1"
                   }`}>
