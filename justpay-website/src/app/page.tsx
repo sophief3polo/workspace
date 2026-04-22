@@ -117,10 +117,10 @@ export default function Home() {
         <div className={`sticky top-0 z-40 border-b border-white/10 bg-[#07141f]/78 backdrop-blur-xl transition-all duration-300 ${
           isScrolled ? "shadow-[0_18px_44px_rgba(0,0,0,0.26)]" : ""
         }`}>
-          <header className={`mx-auto flex max-w-[1240px] items-start justify-between gap-4 px-5 transition-all duration-300 sm:px-6 lg:px-8 ${
+          <header className={`mx-auto flex max-w-[1240px] items-end justify-between gap-4 px-5 transition-all duration-300 sm:px-6 lg:px-8 ${
             isScrolled ? "py-2.5" : "py-4"
           }`}>
-            <div className="flex min-w-0 flex-1 items-start gap-3 sm:gap-4">
+            <div className="flex min-w-0 flex-1 items-end gap-3 sm:gap-4">
               <div className={`rounded-[20px] border border-white/10 bg-[#081723]/90 shadow-[0_18px_50px_rgba(0,0,0,0.24)] backdrop-blur-sm transition-all duration-300 ${
                 isScrolled ? "px-2.5 py-2 sm:px-3 sm:py-2.5" : "px-3 py-2.5 sm:px-4 sm:py-3"
               }`}>
@@ -133,9 +133,9 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div className="min-w-0 flex-1">
+              <div className="min-w-0 flex flex-1 flex-col justify-end self-stretch">
                 <div className="hidden h-8 w-px bg-white/12 sm:block" />
-                <div className={`flex flex-col gap-2 transition-all duration-300 sm:flex-row sm:items-center sm:gap-3 ${
+                <div className={`mt-auto flex flex-col gap-2 transition-all duration-300 sm:flex-row sm:items-end sm:gap-3 ${
                   isScrolled ? "sm:gap-2" : ""
                 }`}>
                   {!isMobile ? (
