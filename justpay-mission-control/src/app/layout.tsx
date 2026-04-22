@@ -13,32 +13,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sophie.justpay.co.nz"),
-  title: "Just Pay Mission Control",
+  metadataBase: new URL("https://justpay.co.nz"),
+  title: "Just Pay | Payment solutions for merchants",
   description:
-    "Private mission control for Just Pay, built to run merchant referrals, partner operations, and lead conversion systems.",
-  applicationName: "Just Pay Mission Control",
+    "Just Pay helps merchants access payment solutions through a Fiserv referral partnership across New Zealand and Australia.",
+  applicationName: "Just Pay",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Just Pay Mission Control",
+    title: "Just Pay | Payment solutions for merchants",
     description:
-      "A private operating layer for merchant referrals, Fiserv partner operations, and lead conversion.",
-    url: "https://sophie.justpay.co.nz",
-    siteName: "Just Pay Mission Control",
+      "A commercial website for merchants looking for payment solutions through the Just Pay and Fiserv referral pathway.",
+    url: "https://justpay.co.nz",
+    siteName: "Just Pay",
     locale: "en_NZ",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Just Pay Mission Control",
+    title: "Just Pay | Payment solutions for merchants",
     description:
-      "Private mission control for Just Pay, built in Next.js for referral flow and conversion operations.",
+      "Payment solutions for merchants across New Zealand and Australia through the Just Pay referral pathway.",
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 

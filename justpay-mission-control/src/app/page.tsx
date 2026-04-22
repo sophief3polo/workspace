@@ -1,302 +1,267 @@
-import Link from "next/link";
+import Image from "next/image";
 
-const workstreams = [
+const products = [
   {
-    name: "Merchant referral pipeline",
-    owner: "Simon",
-    status: "Live",
-    value: "28 target accounts",
-    detail: "Track referred merchants, stage progression, and commercial next actions.",
-    href: "/projects?slice=referrals",
+    title: "EFTPOS and in-store payments",
+    detail:
+      "Help merchants get matched to suitable in-store payment solutions through Fiserv's sales and onboarding process.",
   },
   {
-    name: "Fiserv partner operations",
-    owner: "Sophie",
-    status: "Active",
-    value: "2-day SLA",
-    detail: "Keep submissions, first-contact timing, and follow-up visibility tight.",
-    href: "/calendar?slice=sla",
+    title: "Business payment acceptance",
+    detail:
+      "Support merchants looking to accept customer payments more efficiently, with product fit handled through the Fiserv process.",
   },
   {
-    name: "Lead conversion engine",
-    owner: "Team",
-    status: "Building",
-    value: "Higher close rate",
-    detail: "Improve referral quality, handoff clarity, and conversion tracking.",
-    href: "/office?slice=conversion",
+    title: "Merchant payment solutions",
+    detail:
+      "Give businesses a clearer path to payment tools and services without the usual confusion around where to start.",
+  },
+  {
+    title: "Referral-led merchant setup",
+    detail:
+      "Just Pay identifies the merchant opportunity, then Fiserv handles solutioning, paperwork, onboarding, and support.",
   },
 ];
 
-const toolCards = [
+const reasons = [
+  "Simple referral pathway for merchants who want payments sorted properly",
+  "Backed by Fiserv's downstream sales, onboarding, and support process",
+  "Fast first-contact SLA with Fiserv targeting outreach within two business days",
+  "Built for business owners who want clarity, not payments jargon",
+];
+
+const steps = [
   {
-    title: "Referrals",
-    eyebrow: "Pipeline",
-    description: "Run merchant lead flow from prospect identification through Fiserv handoff.",
-    bullets: ["Merchant pipeline", "Referral status", "Next action prompts"],
-    href: "/projects?slice=referrals",
+    number: "01",
+    title: "Tell us about your business",
+    detail: "Share a few basic details so we can understand your payment needs and whether you're a fit for referral.",
   },
   {
-    title: "Partner ops",
-    eyebrow: "Execution",
-    description: "See SLA windows, submission state, and where partner momentum is slowing.",
-    bullets: ["Submission tracking", "Response timing", "Escalation points"],
-    href: "/calendar?slice=partner-ops",
+    number: "02",
+    title: "We refer you through the right path",
+    detail: "Just Pay submits the referral into the Fiserv partner process with the right merchant context.",
   },
   {
-    title: "Growth tools",
-    eyebrow: "Build layer",
-    description: "A home for the systems we build to generate and convert more merchant referrals.",
-    bullets: ["Lead scoring", "Outreach tools", "Performance dashboards"],
-    href: "/docs?slice=growth-tools",
+    number: "03",
+    title: "Fiserv takes it from there",
+    detail: "Fiserv handles solution matching, paperwork, onboarding, and the next stage of the sales process.",
   },
 ];
 
-const activity = [
+const faqs = [
   {
-    time: "Now",
-    title: "Just Pay mission control created",
-    detail: "New dedicated workspace for merchant referrals, partner ops, and conversion.",
+    question: "What does Just Pay actually do?",
+    answer:
+      "Just Pay helps identify and refer merchants into the Fiserv process. Fiserv then handles product fit, paperwork, onboarding, and support.",
   },
   {
-    time: "Queue",
-    title: "Referral pipeline structure defined",
-    detail: "The next layer is merchant tracking, referral status, and live commercial follow-up.",
+    question: "Do you provide the payment product directly?",
+    answer:
+      "The downstream product and onboarding process is handled by Fiserv. Just Pay's role is getting the right merchants into that process cleanly.",
   },
   {
-    time: "Next",
-    title: "Partner SLA monitoring ready",
-    detail: "We can track Fiserv first-contact timing and identify stalled referrals quickly.",
-  },
-];
-
-const launchQueue = [
-  {
-    label: "Merchant referral CRM",
-    href: "/projects?slice=crm",
+    question: "How quickly will someone contact me?",
+    answer:
+      "The partnership model includes a two-business-day SLA for first contact from Fiserv after referral submission.",
   },
   {
-    label: "Lead qualification workspace",
-    href: "/projects?slice=qualification",
+    question: "Can this work for businesses in New Zealand and Australia?",
+    answer:
+      "Yes, the site is being positioned for both justpay.co.nz and justpay.au, with the same lead-generation and referral intent.",
   },
-  {
-    label: "Partner SLA tracker",
-    href: "/calendar?slice=sla-tracker",
-  },
-  {
-    label: "Referral performance dashboard",
-    href: "/docs?slice=performance",
-  },
-];
-
-const navItems = [
-  { label: "Overview", href: "/", active: true },
-  { label: "Calendar", href: "/calendar", active: false },
-  { label: "Projects", href: "/projects", active: false },
-  { label: "Memory", href: "/memory", active: false },
-  { label: "Docs", href: "/docs", active: false },
-  { label: "Team", href: "/team", active: false },
-  { label: "Office", href: "/office", active: false },
-  { label: "Pipeline", href: "/projects?slice=pipeline", active: false },
-  { label: "Partner Ops", href: "/calendar?slice=ops", active: false },
-  { label: "Tools", href: "/docs?slice=tools", active: false },
 ];
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#08110f] text-[#f5f7fb]">
-      <div className="mx-auto flex min-h-screen w-full max-w-[1480px] gap-6 px-4 py-4 lg:px-6 lg:py-6">
-        <aside className="hidden w-[248px] shrink-0 flex-col rounded-[28px] border border-white/8 bg-[#0b1512] p-4 lg:flex">
-          <div className="flex items-center gap-3 rounded-2xl border border-white/6 bg-white/[0.03] px-3 py-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#1db38b] text-sm font-semibold text-white">
-              JP
+    <main className="min-h-screen bg-[#050709] text-white">
+      <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(56,189,248,0.18),transparent_28%),radial-gradient(circle_at_top_left,rgba(34,197,94,0.08),transparent_24%),#050709]">
+        <div className="mx-auto max-w-[1240px] px-5 py-6 sm:px-6 lg:px-8">
+          <header className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div className="flex items-center gap-4">
+              <Image
+                src="/justpay-logo.png"
+                alt="Just Pay"
+                width={210}
+                height={68}
+                className="h-auto w-[180px] sm:w-[220px]"
+                priority
+              />
+              <div className="hidden h-8 w-px bg-white/10 sm:block" />
+              <p className="hidden text-sm text-[#9fb0bf] sm:block">Payment referral partner for growing merchants</p>
             </div>
-            <div>
-              <p className="text-sm font-semibold text-white">Just Pay Mission Control</p>
-              <p className="text-xs text-[#98a2b3]">Merchant growth internal</p>
-            </div>
-          </div>
 
-          <nav className="mt-6 space-y-1 text-sm text-[#98a2b3]">
-            {navItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className={`flex items-center justify-between rounded-xl px-3 py-2.5 transition ${
-                  item.active
-                    ? "bg-white/[0.06] text-white"
-                    : "hover:bg-white/[0.04] hover:text-white"
-                }`}
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="#contact"
+                className="rounded-2xl bg-[#33c6e8] px-5 py-3 text-sm font-semibold text-[#041014] transition hover:bg-[#57d1ed]"
               >
-                <span>{item.label}</span>
-                {item.active ? <span className="h-2 w-2 rounded-full bg-[#1db38b]" /> : null}
-              </Link>
-            ))}
-          </nav>
-
-          <div className="mt-auto rounded-[22px] border border-white/8 bg-[linear-gradient(180deg,rgba(29,179,139,0.18),rgba(29,179,139,0.04))] p-4">
-            <p className="text-xs uppercase tracking-[0.24em] text-[#baf3e5]">Build queue</p>
-            <p className="mt-2 text-sm font-medium text-white">Merchant systems go here.</p>
-            <p className="mt-2 text-sm leading-6 text-[#b8c0cc]">
-              This is the front door for Just Pay lead generation, partner execution, and conversion infrastructure.
-            </p>
-          </div>
-        </aside>
-
-        <section className="flex min-h-[calc(100vh-2rem)] flex-1 flex-col rounded-[32px] border border-white/8 bg-[#0a1210] shadow-[0_0_0_1px_rgba(255,255,255,0.02),0_40px_120px_rgba(0,0,0,0.45)]">
-          <header className="border-b border-white/8 px-5 py-4 sm:px-6">
-            <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
-              <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/8 bg-white/[0.03] px-3 py-1 text-[11px] uppercase tracking-[0.24em] text-[#99a1b3]">
-                  Private workspace
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                </div>
-                <h1 className="mt-3 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
-                  Just Pay Mission Control
-                </h1>
-                <p className="mt-3 max-w-3xl text-sm leading-7 text-[#98a2b3] sm:text-base">
-                  A clean operating layer for merchant referrals, Fiserv partner flow, and the systems that turn leads into revenue.
-                </p>
-              </div>
-
-              <div className="flex flex-wrap items-center gap-3">
-                <div className="rounded-2xl border border-white/8 bg-white/[0.03] px-4 py-3 text-sm text-[#c7cedb]">
-                  <span className="text-[#98a2b3]">Environment</span>
-                  <span className="ml-2 font-medium text-white">Just Pay shell</span>
-                </div>
-                <a
-                  href="#tools"
-                  className="rounded-2xl bg-[#1db38b] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#22c79b]"
-                >
-                  Open tool layer
-                </a>
-              </div>
+                Speak to us
+              </a>
+              <a
+                href="#products"
+                className="rounded-2xl border border-white/10 px-5 py-3 text-sm font-medium text-white transition hover:border-white/20 hover:bg-white/[0.03]"
+              >
+                Explore solutions
+              </a>
             </div>
           </header>
 
-          <div className="flex-1 p-5 sm:p-6">
-            <div className="grid gap-5 xl:grid-cols-[1.55fr_0.95fr]">
-              <section className="rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(29,179,139,0.18),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
-                <div className="flex flex-col gap-8">
-                  <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.24em] text-[#9cf0d7]">Overview</p>
-                      <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-white sm:text-[2rem]">
-                        Built to move merchant referrals faster, not just store data.
-                      </h2>
-                    </div>
-                    <div className="grid grid-cols-2 gap-3 sm:flex">
-                      <Metric label="Open streams" value="6" />
-                      <Metric label="Priority tools" value="4" />
-                    </div>
-                  </div>
+          <div className="grid gap-12 py-14 lg:grid-cols-[1.2fr_0.8fr] lg:py-20">
+            <div>
+              <p className="inline-flex items-center gap-2 rounded-full border border-[#33c6e8]/25 bg-[#33c6e8]/10 px-3 py-1 text-[11px] uppercase tracking-[0.24em] text-[#8de7fa]">
+                New Zealand and Australia
+                <span className="h-1.5 w-1.5 rounded-full bg-[#33c6e8]" />
+              </p>
+              <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-[-0.05em] text-white sm:text-5xl lg:text-6xl">
+                Smarter payment solutions, with a cleaner path for merchants.
+              </h1>
+              <p className="mt-6 max-w-3xl text-base leading-8 text-[#9fb0bf] sm:text-lg">
+                Just Pay helps businesses get connected to suitable payment solutions through a Fiserv referral partnership. We cut through the noise, qualify the opportunity, and help merchants get into the right process fast.
+              </p>
 
-                  <div className="grid gap-4 lg:grid-cols-3">
-                    {workstreams.map((stream) => (
-                      <Link
-                        key={stream.name}
-                        href={stream.href}
-                        className="rounded-[24px] border border-white/8 bg-[#0f1715]/90 p-4 transition hover:border-[#1db38b]/60 hover:bg-[#121d1a]"
-                      >
-                        <div className="flex items-start justify-between gap-3">
-                          <div>
-                            <p className="text-sm font-medium text-white">{stream.name}</p>
-                            <p className="mt-1 text-xs uppercase tracking-[0.18em] text-[#7f8797]">
-                              {stream.owner}
-                            </p>
-                          </div>
-                          <span className="rounded-full border border-white/8 bg-white/[0.03] px-2.5 py-1 text-[11px] text-[#d6dbea]">
-                            {stream.status}
-                          </span>
-                        </div>
-                        <p className="mt-6 text-2xl font-semibold tracking-[-0.04em] text-white">{stream.value}</p>
-                        <p className="mt-3 text-sm leading-6 text-[#98a2b3]">{stream.detail}</p>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </section>
-
-              <section className="rounded-[28px] border border-white/8 bg-[#0f1715] p-6">
-                <div className="flex items-center justify-between gap-3">
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.24em] text-[#99a1b3]">Activity</p>
-                    <h2 className="mt-2 text-xl font-semibold text-white">Live pulse</h2>
-                  </div>
-                  <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-2.5 py-1 text-[11px] font-medium text-emerald-300">
-                    Synced
-                  </span>
-                </div>
-                <div className="mt-6 space-y-3">
-                  {activity.map((item) => (
-                    <article key={item.title} className="rounded-2xl border border-white/8 bg-white/[0.02] p-4">
-                      <div className="flex items-center justify-between gap-3">
-                        <p className="text-sm font-medium text-white">{item.title}</p>
-                        <span className="text-xs text-[#7f8797]">{item.time}</span>
-                      </div>
-                      <p className="mt-2 text-sm leading-6 text-[#98a2b3]">{item.detail}</p>
-                    </article>
-                  ))}
-                </div>
-              </section>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="#contact"
+                  className="rounded-2xl bg-[#33c6e8] px-6 py-3.5 text-sm font-semibold text-[#041014] transition hover:bg-[#57d1ed]"
+                >
+                  Get started
+                </a>
+                <a
+                  href="#how-it-works"
+                  className="rounded-2xl border border-white/10 px-6 py-3.5 text-sm font-medium text-white transition hover:border-white/20 hover:bg-white/[0.03]"
+                >
+                  How it works
+                </a>
+              </div>
             </div>
 
-            <div id="tools" className="mt-5 grid gap-5 xl:grid-cols-[1.15fr_1.35fr]">
-              <section className="rounded-[28px] border border-white/8 bg-[#0f1715] p-6">
-                <p className="text-xs uppercase tracking-[0.24em] text-[#99a1b3]">Launchpad</p>
-                <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-white">What we can build into this next</h2>
-                <div className="mt-6 space-y-3">
-                  {launchQueue.map((item, index) => (
-                    <Link
-                      key={item.label}
-                      href={item.href}
-                      className="flex items-center justify-between rounded-2xl border border-white/8 bg-white/[0.02] px-4 py-4 transition hover:border-[#1db38b]/60 hover:bg-[#121d1a]"
-                    >
-                      <div className="flex items-center gap-3">
-                        <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-white/[0.05] text-sm text-[#c9d1e1]">
-                          0{index + 1}
-                        </span>
-                        <p className="text-sm font-medium text-white">{item.label}</p>
-                      </div>
-                      <span className="text-xs uppercase tracking-[0.18em] text-[#7f8797]">Queued</span>
-                    </Link>
-                  ))}
-                </div>
-              </section>
-
-              <section className="grid gap-5 md:grid-cols-3">
-                {toolCards.map((card) => (
-                  <Link
-                    key={card.title}
-                    href={card.href}
-                    className="rounded-[28px] border border-white/8 bg-[#0f1715] p-6 transition hover:border-[#1db38b]/60 hover:bg-[#121d1a]"
-                  >
-                    <p className="text-xs uppercase tracking-[0.24em] text-[#99a1b3]">{card.eyebrow}</p>
-                    <h3 className="mt-3 text-xl font-semibold text-white">{card.title}</h3>
-                    <p className="mt-3 text-sm leading-6 text-[#98a2b3]">{card.description}</p>
-                    <ul className="mt-6 space-y-2 text-sm text-[#d4dae6]">
-                      {card.bullets.map((bullet) => (
-                        <li key={bullet} className="flex items-center gap-2">
-                          <span className="h-1.5 w-1.5 rounded-full bg-[#1db38b]" />
-                          {bullet}
-                        </li>
-                      ))}
-                    </ul>
-                  </Link>
+            <div className="rounded-[32px] border border-white/8 bg-white/[0.03] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
+              <p className="text-xs uppercase tracking-[0.24em] text-[#8de7fa]">Why merchants use Just Pay</p>
+              <div className="mt-6 space-y-4">
+                {reasons.map((reason) => (
+                  <div key={reason} className="rounded-2xl border border-white/8 bg-[#0b1116] px-4 py-4 text-sm leading-7 text-[#dce7ef]">
+                    {reason}
+                  </div>
                 ))}
-              </section>
+              </div>
             </div>
           </div>
-        </section>
-      </div>
-    </main>
-  );
-}
+        </div>
+      </section>
 
-function Metric({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="rounded-2xl border border-white/8 bg-white/[0.04] px-4 py-3">
-      <p className="text-[11px] uppercase tracking-[0.2em] text-[#7f8797]">{label}</p>
-      <p className="mt-2 text-xl font-semibold tracking-[-0.04em] text-white">{value}</p>
-    </div>
+      <section id="products" className="border-b border-white/8 bg-[#06090d]">
+        <div className="mx-auto max-w-[1240px] px-5 py-16 sm:px-6 lg:px-8 lg:py-20">
+          <div className="max-w-3xl">
+            <p className="text-xs uppercase tracking-[0.24em] text-[#8de7fa]">Products and solutions</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
+              What Just Pay can help merchants access
+            </h2>
+            <p className="mt-4 text-base leading-8 text-[#9fb0bf]">
+              Based on the current referral-partnership structure, Just Pay is positioned to help merchants get connected to business payment solutions through Fiserv.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {products.map((product) => (
+              <article key={product.title} className="rounded-[28px] border border-white/8 bg-[#0b1116] p-6">
+                <h3 className="text-xl font-semibold text-white">{product.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-[#9fb0bf]">{product.detail}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" className="border-b border-white/8 bg-[#050709]">
+        <div className="mx-auto max-w-[1240px] px-5 py-16 sm:px-6 lg:px-8 lg:py-20">
+          <div className="max-w-3xl">
+            <p className="text-xs uppercase tracking-[0.24em] text-[#8de7fa]">How it works</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
+              Simple, commercial, and built to move quickly.
+            </h2>
+          </div>
+
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+            {steps.map((step) => (
+              <article key={step.number} className="rounded-[28px] border border-white/8 bg-[#0b1116] p-6">
+                <p className="text-sm font-semibold text-[#33c6e8]">{step.number}</p>
+                <h3 className="mt-4 text-xl font-semibold text-white">{step.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-[#9fb0bf]">{step.detail}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/8 bg-[#06090d]">
+        <div className="mx-auto grid max-w-[1240px] gap-10 px-5 py-16 sm:px-6 lg:grid-cols-[1fr_0.9fr] lg:px-8 lg:py-20">
+          <div>
+            <p className="text-xs uppercase tracking-[0.24em] text-[#8de7fa]">For merchants</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
+              Better for business owners who want clarity, not hassle.
+            </h2>
+            <p className="mt-4 max-w-2xl text-base leading-8 text-[#9fb0bf]">
+              If you are reviewing payment acceptance, EFTPOS, or broader merchant payment needs, Just Pay gives you a cleaner starting point and helps get the process moving properly.
+            </p>
+          </div>
+
+          <div className="rounded-[32px] border border-white/8 bg-[#0b1116] p-6">
+            <p className="text-sm font-medium text-white">What happens after referral?</p>
+            <ul className="mt-5 space-y-3 text-sm leading-7 text-[#dce7ef]">
+              <li>• Fiserv makes first merchant contact, targeted within two business days</li>
+              <li>• Product fit and paperwork are handled inside the Fiserv sales process</li>
+              <li>• Onboarding, assessment, training, and ongoing support sit with Fiserv</li>
+              <li>• Just Pay stays focused on clean lead flow and commercial opportunity creation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/8 bg-[#050709]">
+        <div className="mx-auto max-w-[1240px] px-5 py-16 sm:px-6 lg:px-8 lg:py-20">
+          <div className="max-w-3xl">
+            <p className="text-xs uppercase tracking-[0.24em] text-[#8de7fa]">FAQs</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
+              Questions merchants will ask
+            </h2>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {faqs.map((faq) => (
+              <article key={faq.question} className="rounded-[28px] border border-white/8 bg-[#0b1116] p-6">
+                <h3 className="text-lg font-semibold text-white">{faq.question}</h3>
+                <p className="mt-4 text-sm leading-7 text-[#9fb0bf]">{faq.answer}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="bg-[radial-gradient(circle_at_top_right,rgba(51,198,232,0.14),transparent_28%),#050709]">
+        <div className="mx-auto max-w-[1240px] px-5 py-16 sm:px-6 lg:px-8 lg:py-20">
+          <div className="rounded-[36px] border border-white/8 bg-[#0b1116] p-8 sm:p-10 lg:flex lg:items-end lg:justify-between">
+            <div className="max-w-2xl">
+              <p className="text-xs uppercase tracking-[0.24em] text-[#8de7fa]">Contact</p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
+                Ready to explore the right payment setup for your business?
+              </h2>
+              <p className="mt-4 text-base leading-8 text-[#9fb0bf]">
+                Talk to Just Pay and we will help direct you into the right referral pathway.
+              </p>
+            </div>
+
+            <div className="mt-8 lg:mt-0 lg:text-right">
+              <a
+                href="mailto:hello@justpay.co.nz"
+                className="inline-flex rounded-2xl bg-[#33c6e8] px-6 py-3.5 text-sm font-semibold text-[#041014] transition hover:bg-[#57d1ed]"
+              >
+                hello@justpay.co.nz
+              </a>
+              <p className="mt-4 text-sm text-[#7f93a5]">Also intended for justpay.au</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
