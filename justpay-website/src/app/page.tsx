@@ -87,8 +87,17 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#f6fbff] text-[#0f172a]">
-      <section className="relative overflow-hidden border-b border-[#0f2f46] bg-[linear-gradient(180deg,#07141f_0%,#0b2233_58%,#10324a_100%)]">
+      <section className="relative overflow-hidden border-b border-[#0f2f46] bg-[linear-gradient(180deg,#06111a_0%,#0a2030_52%,#10324a_100%)]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(51,221,255,0.18),transparent_24%),radial-gradient(circle_at_top_right,rgba(10,132,255,0.18),transparent_28%),radial-gradient(circle_at_center_right,rgba(16,185,129,0.10),transparent_24%)]" />
+        <div className="absolute inset-0 opacity-70" style={{ transform: "translateY(-8%) scale(1.08)", willChange: "transform" }}>
+          <div className="absolute -left-20 top-12 h-56 w-56 rounded-full bg-[#33ddff]/12 blur-3xl" />
+          <div className="absolute right-[-4rem] top-28 h-72 w-72 rounded-full bg-[#0ea5e9]/14 blur-3xl" />
+          <div className="absolute left-[28%] top-[34%] h-40 w-40 rounded-full bg-white/8 blur-3xl" />
+        </div>
+        <div className="absolute inset-x-0 top-[22%] hidden h-px bg-gradient-to-r from-transparent via-white/20 to-transparent lg:block" style={{ transform: "translateY(-18px)" }} />
+        <div className="absolute inset-x-0 bottom-16 hidden lg:block" style={{ transform: "translateY(28px)" }}>
+          <div className="mx-auto h-24 max-w-[1120px] rounded-full border border-white/8 bg-white/[0.03] blur-2xl" />
+        </div>
         <div className="relative mx-auto max-w-[1240px] px-5 py-6 sm:px-6 lg:px-8">
           <header className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-4">
@@ -103,7 +112,19 @@ export default function Home() {
                 />
               </div>
               <div className="hidden h-8 w-px bg-white/12 sm:block" />
-              <p className="hidden text-sm text-[#b7c9d8] sm:block">Payment referral partner for growing merchants</p>
+              <div className="hidden items-center gap-3 sm:flex">
+                <p className="text-sm text-[#b7c9d8]">Payment referral partner for growing merchants</p>
+                <div className="inline-flex items-center gap-2 rounded-full border border-[#f97316]/25 bg-white px-3 py-1.5 shadow-sm">
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#9a5a28]">Powered by</span>
+                  <Image
+                    src="/fiserv-logo-orange-ff6600.svg"
+                    alt="Fiserv"
+                    width={58}
+                    height={29}
+                    className="h-auto w-[58px]"
+                  />
+                </div>
+              </div>
             </div>
 
             <div className="hidden flex-wrap gap-3 md:flex">
@@ -330,14 +351,14 @@ export default function Home() {
               >
                 info@justpay.co.nz
               </a>
-              <div className="mt-5 inline-flex items-center gap-3 rounded-full border border-[#ffd7bf] bg-white px-4 py-2 shadow-sm">
-                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#9a5a28]">Powered by</span>
+              <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-[#f97316]/25 bg-white px-3 py-1.5 shadow-sm sm:hidden">
+                <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#9a5a28]">Powered by</span>
                 <Image
                   src="/fiserv-logo-orange-ff6600.svg"
                   alt="Fiserv"
-                  width={72}
-                  height={36}
-                  className="h-auto w-[72px]"
+                  width={58}
+                  height={29}
+                  className="h-auto w-[58px]"
                 />
               </div>
               <p className="mt-4 text-sm text-[#678198]">Also intended for justpay.au</p>
