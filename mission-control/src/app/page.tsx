@@ -43,6 +43,13 @@ const toolCards = [
     href: "/office?slice=operations",
   },
   {
+    title: "Instagram performance",
+    eyebrow: "Marketing",
+    description: "Visualise @f3polo account momentum, content mix, and attention patterns across the past year.",
+    bullets: ["Follower trend", "Content cadence", "Format performance"],
+    href: "/instagram",
+  },
+  {
     title: "Custom tools",
     eyebrow: "Build layer",
     description: "A clean home for the internal apps we create for pricing, outreach, reporting, and admin.",
@@ -92,6 +99,7 @@ const navItems = [
   { label: "Overview", href: "/", active: true },
   { label: "Calendar", href: "/calendar", active: false },
   { label: "Projects", href: "/projects", active: false },
+  { label: "Instagram", href: "/instagram", active: false },
   { label: "Memory", href: "/memory", active: false },
   { label: "Docs", href: "/docs", active: false },
   { label: "Team", href: "/team", active: false },
