@@ -1,5 +1,5 @@
 const projectSummary = [
-  { label: "Major projects", value: "6" },
+  { label: "Major projects", value: "5" },
   { label: "In execution", value: "4" },
   { label: "At risk", value: "2" },
 ];
@@ -60,17 +60,7 @@ const projects = [
       "This replaces scattered workflows with a cleaner command centre Simon can actually use.",
     next: ["Add projects board", "Add live data hooks", "Launch first working internal tools"],
   },
-  {
-    name: "Just Pay x Fiserv referral engine",
-    owner: "Simon",
-    progress: 31,
-    phase: "Commercial setup",
-    health: "Emerging",
-    target: "Build a repeatable merchant referral flow that produces qualified leads for Fiserv.",
-    detail:
-      "The structure exists, but it needs clearer lead flow, tracking, and commercial rhythm.",
-    next: ["Define lead capture path", "Track referral volume", "Measure conversion to opportunity"],
-  },
+
 ];
 
 function healthTone(health: string) {

@@ -23,14 +23,7 @@ const longTermSections = [
       "She values brand protection, premium positioning, and review of drafted emails and reports before use.",
     ],
   },
-  {
-    title: "Just Pay and Fiserv",
-    points: [
-      "Just Pay operates as a Fiserv Referral Partnership reseller.",
-      "Revenue only lands when referred merchants buy a Fiserv product or service.",
-      "The model needs repeatable lead flow and tracking, not just one-off submissions.",
-    ],
-  },
+
 ];
 
 const dailyMemories = [
@@ -51,7 +44,7 @@ const dailyMemories = [
 
 const memoryStats = [
   { label: "Daily memory files", value: "1" },
-  { label: "Long-term sections", value: "4" },
+  { label: "Long-term sections", value: "3" },
   { label: "Stored focus", value: "Business-heavy" },
 ];
 
