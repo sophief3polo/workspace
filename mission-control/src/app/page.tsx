@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const workstreams = [
   {
     name: "Australia sponsor pipeline",
@@ -5,6 +7,7 @@ const workstreams = [
     status: "In motion",
     value: "$420k target",
     detail: "Major sponsor outreach, category map, live follow-up rhythm.",
+    href: "/projects?slice=sponsors",
   },
   {
     name: "Private marquee sales",
@@ -12,6 +15,7 @@ const workstreams = [
     status: "Ready",
     value: "34 high-intent leads",
     detail: "Fast access to prospects, quote status, and conversion blockers.",
+    href: "/projects?slice=marquees",
   },
   {
     name: "Supplier ops",
@@ -19,6 +23,7 @@ const workstreams = [
     status: "Monitoring",
     value: "12 active requests",
     detail: "Compare vendors, budgets, timing, and delivery risk in one place.",
+    href: "/office?slice=suppliers",
   },
 ];
 
@@ -28,18 +33,21 @@ const toolCards = [
     eyebrow: "Revenue",
     description: "Track sponsors, marquees, and premium buyers with clear next actions.",
     bullets: ["Major sponsor board", "Deal health", "Next touch prompts"],
+    href: "/projects?slice=pipeline",
   },
   {
     title: "Operations",
     eyebrow: "Execution",
     description: "Keep suppliers, deadlines, approvals, and dependencies visible before they bite.",
     bullets: ["Supplier comparison", "Critical dates", "Risk flags"],
+    href: "/office?slice=operations",
   },
   {
     title: "Custom tools",
     eyebrow: "Build layer",
     description: "A clean home for the internal apps we create for pricing, outreach, reporting, and admin.",
     bullets: ["Tool launcher", "Usage logs", "Fast iteration"],
+    href: "/docs?slice=tools",
   },
 ];
 
@@ -62,10 +70,22 @@ const activity = [
 ];
 
 const launchQueue = [
-  "Sponsor CRM with outreach memory",
-  "Marquee quoting workspace",
-  "Supplier comparison engine",
-  "Event readiness command centre",
+  {
+    label: "Sponsor CRM with outreach memory",
+    href: "/projects?slice=crm",
+  },
+  {
+    label: "Marquee quoting workspace",
+    href: "/projects?slice=quotes",
+  },
+  {
+    label: "Supplier comparison engine",
+    href: "/office?slice=comparison",
+  },
+  {
+    label: "Event readiness command centre",
+    href: "/calendar?slice=readiness",
+  },
 ];
 
 const navItems = [
@@ -76,11 +96,11 @@ const navItems = [
   { label: "Docs", href: "/docs", active: false },
   { label: "Team", href: "/team", active: false },
   { label: "Office", href: "/office", active: false },
-  { label: "Revenue", href: "#", active: false },
-  { label: "Operations", href: "#", active: false },
-  { label: "Tools", href: "#", active: false },
-  { label: "Activity", href: "#", active: false },
-  { label: "Settings", href: "#", active: false },
+  { label: "Revenue", href: "/projects?slice=revenue", active: false },
+  { label: "Operations", href: "/office?slice=operations", active: false },
+  { label: "Tools", href: "/docs?slice=tools", active: false },
+  { label: "Activity", href: "/memory?slice=activity", active: false },
+  { label: "Settings", href: "/team?slice=settings", active: false },
 ];
 
 export default function Home() {
@@ -100,7 +120,7 @@ export default function Home() {
 
           <nav className="mt-6 space-y-1 text-sm text-[#98a2b3]">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 className={`flex items-center justify-between rounded-xl px-3 py-2.5 transition ${
@@ -111,7 +131,7 @@ export default function Home() {
               >
                 <span>{item.label}</span>
                 {item.active ? <span className="h-2 w-2 rounded-full bg-[#5e6ad2]" /> : null}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -174,9 +194,10 @@ export default function Home() {
 
                   <div className="grid gap-4 lg:grid-cols-3">
                     {workstreams.map((stream) => (
-                      <article
+                      <Link
                         key={stream.name}
-                        className="rounded-[24px] border border-white/8 bg-[#0f1218]/90 p-4"
+                        href={stream.href}
+                        className="rounded-[24px] border border-white/8 bg-[#0f1218]/90 p-4 transition hover:border-[#5e6ad2]/60 hover:bg-[#121622]"
                       >
                         <div className="flex items-start justify-between gap-3">
                           <div>
@@ -191,7 +212,7 @@ export default function Home() {
                         </div>
                         <p className="mt-6 text-2xl font-semibold tracking-[-0.04em] text-white">{stream.value}</p>
                         <p className="mt-3 text-sm leading-6 text-[#98a2b3]">{stream.detail}</p>
-                      </article>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -227,27 +248,29 @@ export default function Home() {
                 <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-white">What we can build into this next</h2>
                 <div className="mt-6 space-y-3">
                   {launchQueue.map((item, index) => (
-                    <div
-                      key={item}
-                      className="flex items-center justify-between rounded-2xl border border-white/8 bg-white/[0.02] px-4 py-4"
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      className="flex items-center justify-between rounded-2xl border border-white/8 bg-white/[0.02] px-4 py-4 transition hover:border-[#5e6ad2]/60 hover:bg-[#121622]"
                     >
                       <div className="flex items-center gap-3">
                         <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-white/[0.05] text-sm text-[#c9d1e1]">
                           0{index + 1}
                         </span>
-                        <p className="text-sm font-medium text-white">{item}</p>
+                        <p className="text-sm font-medium text-white">{item.label}</p>
                       </div>
-                      <span className="text-xs uppercase tracking-[0.18em] text-[#7f8797]">Queued</span>
-                    </div>
+                      <span className="text-xs uppercase tracking-[0.18em] text-[#7f8797]">Open</span>
+                    </Link>
                   ))}
                 </div>
               </section>
 
               <section className="grid gap-5 md:grid-cols-3">
                 {toolCards.map((card) => (
-                  <article
+                  <Link
                     key={card.title}
-                    className="rounded-[28px] border border-white/8 bg-[#0f1218] p-6"
+                    href={card.href}
+                    className="rounded-[28px] border border-white/8 bg-[#0f1218] p-6 transition hover:border-[#5e6ad2]/60 hover:bg-[#121622]"
                   >
                     <p className="text-xs uppercase tracking-[0.24em] text-[#99a1b3]">{card.eyebrow}</p>
                     <h3 className="mt-3 text-xl font-semibold text-white">{card.title}</h3>
@@ -260,7 +283,7 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
-                  </article>
+                  </Link>
                 ))}
               </section>
             </div>
