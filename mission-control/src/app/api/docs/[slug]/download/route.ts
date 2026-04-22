@@ -22,7 +22,7 @@ function getContentType(path: string) {
   if (path.endsWith(".md")) return "text/markdown; charset=utf-8";
   if (path.endsWith(".csv")) return "text/csv; charset=utf-8";
   if (path.endsWith(".xlsx")) {
-    return "text/plain; charset=utf-8";
+    return "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
   }
   return "application/octet-stream";
 }
@@ -33,18 +33,11 @@ function getDownloadBody(slug: string) {
 
   if (content.kind === "markdown") return content.content;
   if (content.kind === "csv") return toCsv(content.rows);
-  if (content.kind === "xlsx") {
-    return content.sheets
-      .map((sheet) => [`# ${sheet.name}`, toCsv(sheet.rows)].join("\n\n"))
-      .join("\n\n");
-  }
+  if (content.kind === "xlsx") return Buffer.from(content.fileBase64, "base64");
   return null;
 }
 
 function getDownloadFilename(path: string) {
-  if (path.endsWith(".xlsx")) {
-    return path.split("/").pop()?.replace(/\.xlsx$/i, ".txt") ?? "document.txt";
-  }
   return path.split("/").pop() ?? "document";
 }
 
@@ -68,7 +61,7 @@ export async function GET(
   return new NextResponse(body, {
     status: 200,
     headers: {
-      "Content-Type": getContentType(doc.path.endsWith(".xlsx") ? `${doc.path}.txt` : doc.path),
+      "Content-Type": getContentType(doc.path),
       "Content-Disposition": `attachment; filename="${getDownloadFilename(doc.path)}"`,
       "Cache-Control": "no-store",
     },

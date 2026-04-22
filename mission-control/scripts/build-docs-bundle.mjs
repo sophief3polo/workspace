@@ -75,7 +75,12 @@ for (const doc of docs) {
   } else if (ext === ".csv") {
     bundle[doc.slug] = { kind: "csv", rows: parseCsv(fs.readFileSync(absolutePath, "utf8")) };
   } else if (ext === ".xlsx") {
-    bundle[doc.slug] = { kind: "xlsx", sheets: parseXlsx(fs.readFileSync(absolutePath)) };
+    const fileBuffer = fs.readFileSync(absolutePath);
+    bundle[doc.slug] = {
+      kind: "xlsx",
+      sheets: parseXlsx(fileBuffer),
+      fileBase64: fileBuffer.toString("base64"),
+    };
   } else {
     bundle[doc.slug] = { kind: "unsupported" };
   }
