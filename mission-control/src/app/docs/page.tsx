@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const categories = [
   {
     name: "Profiles and retained context",
@@ -9,6 +11,7 @@ const categories = [
         type: "Profile",
         updated: "2026-04-21",
         summary: "Working profile for future strategy, drafting, and operational support.",
+        href: "/memory?slice=profile",
       },
       {
         title: "Retained Context, Debbie",
@@ -16,6 +19,7 @@ const categories = [
         type: "Retained context",
         updated: "2026-04-21",
         summary: "Captured context intended to preserve important business and operator detail.",
+        href: "/memory?slice=retained-context",
       },
       {
         title: "Interview Gap List",
@@ -23,6 +27,7 @@ const categories = [
         type: "Research",
         updated: "2026-04-21",
         summary: "Identifies missing source material and context gaps from the Debbie interview process.",
+        href: "/docs?slice=research",
       },
     ],
   },
@@ -36,6 +41,7 @@ const categories = [
         type: "Legal dossier",
         updated: "2026-04-21",
         summary: "Public-source starter dossier for litigation and related dispute monitoring.",
+        href: "/docs?slice=legal",
       },
       {
         title: "Litigation Brief, F3 v Polo",
@@ -43,6 +49,7 @@ const categories = [
         type: "Legal brief",
         updated: "2026-04-20",
         summary: "Working brief tied to the F3 Polo legal matter.",
+        href: "/docs?slice=legal",
       },
     ],
   },
@@ -56,6 +63,7 @@ const categories = [
         type: "Supplier list",
         updated: "2026-04-20",
         summary: "Supplier comparison source list for marquee infrastructure in Brisbane.",
+        href: "/office?slice=suppliers",
       },
       {
         title: "Brisbane fencing companies",
@@ -63,6 +71,7 @@ const categories = [
         type: "Supplier list",
         updated: "2026-04-20",
         summary: "Fencing supplier market scan for Brisbane event planning.",
+        href: "/office?slice=suppliers",
       },
       {
         title: "Brisbane luxury toilets",
@@ -70,6 +79,7 @@ const categories = [
         type: "Supplier list",
         updated: "2026-04-20",
         summary: "Premium amenities supplier list for Brisbane event infrastructure.",
+        href: "/office?slice=suppliers",
       },
       {
         title: "Brisbane traffic management companies",
@@ -77,6 +87,7 @@ const categories = [
         type: "Supplier list",
         updated: "2026-04-20",
         summary: "Traffic management options for Brisbane event delivery.",
+        href: "/office?slice=operations",
       },
       {
         title: "Brisbane waste management companies",
@@ -84,6 +95,7 @@ const categories = [
         type: "Supplier list",
         updated: "2026-04-20",
         summary: "Waste management supplier scan for Brisbane operations.",
+        href: "/office?slice=operations",
       },
       {
         title: "Portsea contacts merged",
@@ -91,6 +103,7 @@ const categories = [
         type: "Spreadsheet",
         updated: "2026-04-20",
         summary: "Merged contact workbook for Portsea-related supplier and contact data.",
+        href: "/office?slice=contacts",
       },
       {
         title: "Key Contacts + Suppliers All Markets, merged",
@@ -98,6 +111,7 @@ const categories = [
         type: "Spreadsheet",
         updated: "2026-04-20",
         summary: "Expanded operations workbook with merged city tabs, filters, and structured table view.",
+        href: "/office?slice=comparison",
       },
       {
         title: "Paid invoices register",
@@ -105,6 +119,7 @@ const categories = [
         type: "Finance data",
         updated: "2026-04-20",
         summary: "Register view of paid invoice data for tracking and reconciliation.",
+        href: "/office?slice=finance",
       },
     ],
   },
@@ -118,6 +133,7 @@ const categories = [
         type: "Memory",
         updated: "2026-04-20",
         summary: "Curated long-term memory for business context, preferences, and retained strategic guidance.",
+        href: "/memory",
       },
       {
         title: "Daily memory, 2026-04-20",
@@ -125,6 +141,7 @@ const categories = [
         type: "Daily memory",
         updated: "2026-04-20",
         summary: "Day-based memory log including the canonical Debbie business context interview.",
+        href: "/memory?slice=daily",
       },
       {
         title: "USER.md",
@@ -132,6 +149,7 @@ const categories = [
         type: "System doc",
         updated: "2026-04-20",
         summary: "User and stakeholder context for Debbie, Simon, and Sam.",
+        href: "/team",
       },
       {
         title: "IDENTITY.md",
@@ -139,6 +157,7 @@ const categories = [
         type: "System doc",
         updated: "2026-04-21",
         summary: "Assistant identity, role, and commercial positioning.",
+        href: "/team?slice=identity",
       },
       {
         title: "SOUL.md",
@@ -146,6 +165,7 @@ const categories = [
         type: "System doc",
         updated: "2026-04-20",
         summary: "Core behavioural guidance shaping how the assistant works.",
+        href: "/team?slice=soul",
       },
     ],
   },
@@ -178,22 +198,22 @@ export default function DocsPage() {
           </div>
 
           <nav className="mt-6 space-y-1 text-sm text-[#98a2b3]">
-            <a href="/" className="flex items-center justify-between rounded-xl px-3 py-2.5 transition hover:bg-white/[0.04] hover:text-white">
+            <Link href="/" className="flex items-center justify-between rounded-xl px-3 py-2.5 transition hover:bg-white/[0.04] hover:text-white">
               <span>Overview</span>
-            </a>
-            <a href="/calendar" className="flex items-center justify-between rounded-xl px-3 py-2.5 transition hover:bg-white/[0.04] hover:text-white">
+            </Link>
+            <Link href="/calendar" className="flex items-center justify-between rounded-xl px-3 py-2.5 transition hover:bg-white/[0.04] hover:text-white">
               <span>Calendar</span>
-            </a>
-            <a href="/projects" className="flex items-center justify-between rounded-xl px-3 py-2.5 transition hover:bg-white/[0.04] hover:text-white">
+            </Link>
+            <Link href="/projects" className="flex items-center justify-between rounded-xl px-3 py-2.5 transition hover:bg-white/[0.04] hover:text-white">
               <span>Projects</span>
-            </a>
-            <a href="/memory" className="flex items-center justify-between rounded-xl px-3 py-2.5 transition hover:bg-white/[0.04] hover:text-white">
+            </Link>
+            <Link href="/memory" className="flex items-center justify-between rounded-xl px-3 py-2.5 transition hover:bg-white/[0.04] hover:text-white">
               <span>Memory</span>
-            </a>
-            <a href="/docs" className="flex items-center justify-between rounded-xl bg-white/[0.06] px-3 py-2.5 text-white transition">
+            </Link>
+            <Link href="/docs" className="flex items-center justify-between rounded-xl bg-white/[0.06] px-3 py-2.5 text-white transition">
               <span>Docs</span>
               <span className="h-2 w-2 rounded-full bg-[#5e6ad2]" />
-            </a>
+            </Link>
           </nav>
         </aside>
 
@@ -252,7 +272,11 @@ export default function DocsPage() {
 
                         <div className="mt-5 grid gap-3">
                           {category.docs.map((doc) => (
-                            <article key={doc.path} className="rounded-2xl border border-white/8 bg-white/[0.02] p-4">
+                            <Link
+                              key={doc.path}
+                              href={doc.href}
+                              className="block rounded-2xl border border-white/8 bg-white/[0.02] p-4 transition hover:border-[#5e6ad2]/60 hover:bg-[#121622]"
+                            >
                               <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                                 <div>
                                   <div className="flex flex-wrap items-center gap-2">
@@ -266,7 +290,10 @@ export default function DocsPage() {
                                 <span className="text-xs text-[#7f8797]">Updated {doc.updated}</span>
                               </div>
                               <p className="mt-3 text-sm leading-6 text-[#98a2b3]">{doc.summary}</p>
-                            </article>
+                              <div className="mt-4 text-xs font-medium uppercase tracking-[0.18em] text-[#aab4ff]">
+                                Open
+                              </div>
+                            </Link>
                           ))}
                         </div>
                       </section>
