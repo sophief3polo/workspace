@@ -1,32 +1,17 @@
-import fs from "node:fs/promises";
-import path from "node:path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import * as XLSX from "xlsx";
 import { allDocs, getDocBySlug } from "@/lib/docs";
+import { bundledDocContent } from "@/lib/docs-content";
 
-const workspaceRoot = path.resolve(process.cwd(), "..");
 const MAX_TABLE_ROWS = 50;
-const MAX_SHEET_PREVIEW_COLUMNS = 12;
 
-type SheetPreview = {
-  name: string;
-  rows: string[][];
-};
+type TableRow = string[];
 
 export async function generateStaticParams() {
   return allDocs.map((doc) => ({ slug: doc.slug }));
 }
 
-function normalizeCell(value: unknown) {
-  if (value === null || value === undefined) {
-    return "";
-  }
-
-  return String(value);
-}
-
-function renderTable(rows: string[][]) {
+function renderTable(rows: TableRow[]) {
   if (!rows.length) {
     return (
       <div className="rounded-2xl border border-white/8 bg-[#0f1218] p-5 text-sm text-[#98a2b3]">
@@ -73,29 +58,6 @@ function renderMarkdown(content: string) {
   );
 }
 
-function buildSheetPreview(buffer: Buffer) {
-  const workbook = XLSX.read(buffer, { type: "buffer" });
-
-  return workbook.SheetNames.map((sheetName) => {
-    const sheet = workbook.Sheets[sheetName];
-    const rawRows = XLSX.utils.sheet_to_json<(string | number | boolean | null)[]>(sheet, {
-      header: 1,
-      defval: "",
-      raw: false,
-      blankrows: false,
-    });
-
-    const rows = rawRows
-      .slice(0, MAX_TABLE_ROWS + 1)
-      .map((row) => row.slice(0, MAX_SHEET_PREVIEW_COLUMNS).map(normalizeCell));
-
-    return {
-      name: sheetName,
-      rows,
-    };
-  });
-}
-
 export default async function DocViewerPage({
   params,
 }: {
@@ -108,26 +70,7 @@ export default async function DocViewerPage({
     notFound();
   }
 
-  const absolutePath = path.join(workspaceRoot, doc.path);
-  let content = "";
-  let workbookPreview: SheetPreview[] = [];
-  let loadError = "";
-
-  const extension = path.extname(doc.path).toLowerCase();
-  const isMarkdown = extension === ".md";
-  const isCsv = extension === ".csv";
-  const isXlsx = extension === ".xlsx";
-
-  try {
-    if (isXlsx) {
-      const buffer = await fs.readFile(absolutePath);
-      workbookPreview = buildSheetPreview(buffer);
-    } else {
-      content = await fs.readFile(absolutePath, "utf8");
-    }
-  } catch (error) {
-    loadError = error instanceof Error ? error.message : "Unable to read document.";
-  }
+  const docContent = bundledDocContent[slug];
 
   return (
     <main className="min-h-screen bg-[#08090d] text-[#f5f7fb]">
@@ -184,23 +127,17 @@ export default async function DocViewerPage({
           <div className="flex-1 p-5 sm:p-6">
             <div className="grid gap-5 xl:grid-cols-[1.2fr_0.8fr]">
               <section className="space-y-5 rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(94,106,210,0.2),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
-                {loadError ? (
+                {!docContent ? (
                   <div className="rounded-2xl border border-red-400/20 bg-red-400/10 p-5 text-sm text-red-200">
-                    Could not load this document: {loadError}
+                    This document could not be bundled into the deployed viewer.
                   </div>
-                ) : isMarkdown ? (
-                  renderMarkdown(content)
-                ) : isCsv ? (
-                  renderTable(
-                    content
-                      .trim()
-                      .split(/\r?\n/)
-                      .map((line) => line.split(","))
-                      .map((row) => row.map(normalizeCell)),
-                  )
-                ) : isXlsx ? (
+                ) : docContent.kind === "markdown" ? (
+                  renderMarkdown(docContent.content)
+                ) : docContent.kind === "csv" ? (
+                  renderTable(docContent.rows)
+                ) : docContent.kind === "xlsx" ? (
                   <div className="space-y-5">
-                    {workbookPreview.map((sheet) => (
+                    {docContent.sheets.map((sheet) => (
                       <div key={sheet.name} className="space-y-3 rounded-2xl border border-white/8 bg-[#0f1218] p-5">
                         <div>
                           <p className="text-xs uppercase tracking-[0.18em] text-[#7f8797]">Worksheet</p>
@@ -253,7 +190,7 @@ export default async function DocViewerPage({
                       Spreadsheet previews are intentionally capped so the page stays fast and usable.
                     </p>
                     <p>
-                      This viewer is backed by the actual workspace files, not placeholder copy.
+                      This deployed viewer now uses bundled document content, so it works on Vercel without relying on parent workspace files.
                     </p>
                   </div>
                 </div>
