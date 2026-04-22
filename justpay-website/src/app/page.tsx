@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { ChangeEvent, FormEvent, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 
 const products = [
@@ -77,13 +77,63 @@ const faqs = [
 const navLinks = [
   { href: "#products", label: "Solutions" },
   { href: "#how-it-works", label: "How it works" },
-  { href: "#contact", label: "Contact us" },
+  { href: "#contact", label: "Get a quote" },
 ];
+
+type FormState = {
+  legalBusinessName: string;
+  tradingName: string;
+  contactName: string;
+  jobTitle: string;
+  email: string;
+  phone: string;
+  country: string;
+  businessAddress: string;
+  website: string;
+  abnOrNzbn: string;
+  industryType: string;
+  monthlyCardTurnover: string;
+  averageTransactionValue: string;
+  settlementBank: string;
+  paymentNeeds: string[];
+  notes: string;
+  consent: boolean;
+};
+
+const paymentNeedOptions = [
+  "EFTPOS or countertop terminals",
+  "Portable or mobile payments",
+  "Online payments or eCommerce",
+  "Integrated point of sale",
+  "Multi-location merchant setup",
+];
+
+const initialFormState: FormState = {
+  legalBusinessName: "",
+  tradingName: "",
+  contactName: "",
+  jobTitle: "",
+  email: "",
+  phone: "",
+  country: "New Zealand",
+  businessAddress: "",
+  website: "",
+  abnOrNzbn: "",
+  industryType: "",
+  monthlyCardTurnover: "",
+  averageTransactionValue: "",
+  settlementBank: "",
+  paymentNeeds: [],
+  notes: "",
+  consent: false,
+};
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [formState, setFormState] = useState<FormState>(initialFormState);
+  const [submitState, setSubmitState] = useState<"idle" | "submitting" | "success">("idle");
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 24);
@@ -100,6 +150,55 @@ export default function Home() {
   }, []);
 
   const closeMenu = () => setIsMenuOpen(false);
+
+  const requiredFieldsComplete = useMemo(() => {
+    return [
+      formState.legalBusinessName,
+      formState.contactName,
+      formState.email,
+      formState.phone,
+      formState.country,
+      formState.businessAddress,
+      formState.abnOrNzbn,
+      formState.industryType,
+      formState.monthlyCardTurnover,
+    ].every((value) => value.trim().length > 0) && formState.consent;
+  }, [formState]);
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value, type } = event.target;
+
+    if (type === "checkbox" && name === "consent") {
+      const target = event.target as HTMLInputElement;
+      setFormState((current) => ({ ...current, consent: target.checked }));
+      return;
+    }
+
+    setFormState((current) => ({ ...current, [name]: value }));
+  };
+
+  const handlePaymentNeedChange = (option: string) => {
+    setFormState((current) => {
+      const exists = current.paymentNeeds.includes(option);
+      return {
+        ...current,
+        paymentNeeds: exists
+          ? current.paymentNeeds.filter((item) => item !== option)
+          : [...current.paymentNeeds, option],
+      };
+    });
+  };
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!requiredFieldsComplete) return;
+
+    setSubmitState("submitting");
+
+    window.setTimeout(() => {
+      setSubmitState("success");
+    }, 500);
+  };
 
   return (
     <main className="min-h-screen bg-[#f6fbff] text-[#0f172a]">
@@ -235,7 +334,7 @@ export default function Home() {
                   href="#contact"
                   className="rounded-full bg-[#33ddff] px-6 py-3.5 text-sm font-semibold text-[#082032] transition hover:bg-[#1ec8ef]"
                 >
-                  Get started
+                  Get a quote
                 </a>
                 <a
                   href="#how-it-works"
@@ -371,26 +470,154 @@ export default function Home() {
 
       <section id="contact" className="bg-[linear-gradient(180deg,#e9f7ff_0%,#dff7ee_100%)]">
         <div className="mx-auto max-w-[1240px] px-5 py-16 sm:px-6 lg:px-8 lg:py-20">
-          <div className="rounded-[40px] border border-[#cfe6f2] bg-white/85 p-8 shadow-[0_24px_80px_rgba(34,84,122,0.12)] backdrop-blur sm:p-10 lg:flex lg:items-end lg:justify-between">
-            <div className="max-w-2xl">
-              <p className="text-xs uppercase tracking-[0.24em] text-[#0f7abf]">Contact</p>
+          <div className="grid gap-8 rounded-[40px] border border-[#cfe6f2] bg-white/90 p-8 shadow-[0_24px_80px_rgba(34,84,122,0.12)] backdrop-blur lg:grid-cols-[0.8fr_1.2fr] lg:p-10">
+            <div>
+              <p className="text-xs uppercase tracking-[0.24em] text-[#0f7abf]">Get a quote</p>
               <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-[#082032] sm:text-4xl">
-                Ready to explore the right payment setup for your business?
+                Start your merchant application with the right details upfront.
               </h2>
               <p className="mt-4 text-base leading-8 text-[#5a7183]">
-                Talk to Just Pay and we will help direct you into the right referral pathway.
+                This form is built around the key merchant agreement application details Fiserv typically needs to assess a business properly. The stronger the detail, the cleaner the referral.
               </p>
+
+              <div className="mt-8 rounded-[28px] border border-[#d9ecf6] bg-[linear-gradient(180deg,#ffffff_0%,#f5fbff_100%)] p-6 shadow-sm">
+                <p className="text-sm font-semibold text-[#082032]">Required merchant details</p>
+                <ul className="mt-4 space-y-3 text-sm leading-7 text-[#29475c]">
+                  <li>• Legal business name and trading name</li>
+                  <li>• Primary contact details</li>
+                  <li>• Business address and country</li>
+                  <li>• ABN, NZBN, or company registration number</li>
+                  <li>• Industry type and estimated card turnover</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="mt-8 lg:mt-0 lg:text-right">
-              <a
-                href="mailto:info@justpay.co.nz"
-                className="inline-flex rounded-full bg-[#33ddff] px-6 py-3.5 text-sm font-semibold text-[#082032] transition hover:bg-[#1ec8ef]"
-              >
-                info@justpay.co.nz
-              </a>
-              <p className="mt-4 text-sm text-[#678198]">Also intended for justpay.au</p>
-            </div>
+            <form onSubmit={handleSubmit} className="rounded-[32px] border border-[#d9ecf6] bg-white p-6 shadow-sm sm:p-7">
+              <div className="grid gap-5 sm:grid-cols-2">
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247] sm:col-span-2">
+                  Legal business name *
+                  <input name="legalBusinessName" value={formState.legalBusinessName} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247] sm:col-span-2">
+                  Trading name
+                  <input name="tradingName" value={formState.tradingName} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247]">
+                  Contact name *
+                  <input name="contactName" value={formState.contactName} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247]">
+                  Job title
+                  <input name="jobTitle" value={formState.jobTitle} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247]">
+                  Email address *
+                  <input type="email" name="email" value={formState.email} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247]">
+                  Phone number *
+                  <input name="phone" value={formState.phone} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247]">
+                  Country *
+                  <select name="country" value={formState.country} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]">
+                    <option>New Zealand</option>
+                    <option>Australia</option>
+                  </select>
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247]">
+                  ABN / NZBN / Company number *
+                  <input name="abnOrNzbn" value={formState.abnOrNzbn} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247] sm:col-span-2">
+                  Business address *
+                  <input name="businessAddress" value={formState.businessAddress} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247]">
+                  Website
+                  <input name="website" value={formState.website} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247]">
+                  Industry type *
+                  <input name="industryType" value={formState.industryType} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247]">
+                  Estimated monthly card turnover *
+                  <input name="monthlyCardTurnover" value={formState.monthlyCardTurnover} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247]">
+                  Average transaction value
+                  <input name="averageTransactionValue" value={formState.averageTransactionValue} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247] sm:col-span-2">
+                  Settlement bank
+                  <input name="settlementBank" value={formState.settlementBank} onChange={handleChange} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+
+                <fieldset className="sm:col-span-2">
+                  <legend className="text-sm font-medium text-[#163247]">Payment needs</legend>
+                  <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                    {paymentNeedOptions.map((option) => (
+                      <label key={option} className="flex items-start gap-3 rounded-2xl border border-[#d9ecf6] bg-[#f9fcff] px-4 py-3 text-sm text-[#29475c]">
+                        <input
+                          type="checkbox"
+                          checked={formState.paymentNeeds.includes(option)}
+                          onChange={() => handlePaymentNeedChange(option)}
+                          className="mt-1 h-4 w-4 rounded border-[#9ec7dc] text-[#0f7abf]"
+                        />
+                        <span>{option}</span>
+                      </label>
+                    ))}
+                  </div>
+                </fieldset>
+
+                <label className="flex flex-col gap-2 text-sm font-medium text-[#163247] sm:col-span-2">
+                  Notes about your business
+                  <textarea name="notes" value={formState.notes} onChange={handleChange} rows={5} className="rounded-2xl border border-[#cfe0ec] bg-[#fbfdff] px-4 py-3 text-sm text-[#082032] outline-none transition focus:border-[#33ddff]" />
+                </label>
+              </div>
+
+              <label className="mt-6 flex items-start gap-3 rounded-2xl border border-[#d9ecf6] bg-[#f9fcff] px-4 py-4 text-sm leading-6 text-[#29475c]">
+                <input type="checkbox" name="consent" checked={formState.consent} onChange={handleChange} className="mt-1 h-4 w-4 rounded border-[#9ec7dc] text-[#0f7abf]" />
+                <span>
+                  I confirm these business details are accurate and I consent to Just Pay using them to prepare and submit a referral into the Fiserv process. *
+                </span>
+              </label>
+
+              <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="text-sm font-medium text-[#082032]">Button label: Get a quote</p>
+                  <p className="mt-1 text-sm text-[#678198]">Required fields are aligned to merchant application qualification, not just a generic contact form.</p>
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={!requiredFieldsComplete || submitState === "submitting"}
+                  className="inline-flex items-center justify-center rounded-full bg-[#33ddff] px-6 py-3.5 text-sm font-semibold text-[#082032] transition hover:bg-[#1ec8ef] disabled:cursor-not-allowed disabled:bg-[#a9edf8]"
+                >
+                  {submitState === "submitting" ? "Submitting..." : submitState === "success" ? "Quote request received" : "Get a quote"}
+                </button>
+              </div>
+
+              {submitState === "success" ? (
+                <p className="mt-4 text-sm text-[#0f7a45]">
+                  Thanks, your merchant details are ready for the next referral step. The next move is wiring this form to a live submission endpoint or CRM.
+                </p>
+              ) : null}
+            </form>
           </div>
         </div>
       </section>
