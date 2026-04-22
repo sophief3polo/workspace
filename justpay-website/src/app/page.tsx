@@ -330,6 +330,16 @@ export default function Home() {
               >
                 info@justpay.co.nz
               </a>
+              <div className="mt-5 inline-flex items-center gap-3 rounded-full border border-[#ffd7bf] bg-white px-4 py-2 shadow-sm">
+                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#9a5a28]">Powered by</span>
+                <Image
+                  src="/fiserv-logo-orange-ff6600.svg"
+                  alt="Fiserv"
+                  width={72}
+                  height={36}
+                  className="h-auto w-[72px]"
+                />
+              </div>
               <p className="mt-4 text-sm text-[#678198]">Also intended for justpay.au</p>
             </div>
           </div>
