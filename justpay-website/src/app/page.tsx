@@ -114,14 +114,14 @@ export default function Home() {
               <div className="hidden h-8 w-px bg-white/12 sm:block" />
               <div className="hidden items-center gap-3 sm:flex">
                 <p className="text-sm text-[#b7c9d8]">Payment referral partner for growing merchants</p>
-                <div className="inline-flex items-center gap-2 rounded-full border border-[#f97316]/25 bg-white px-3 py-1.5 shadow-sm">
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#9a5a28]">Powered by</span>
+                <div className="inline-flex items-center gap-1.5 rounded-full border border-[#f97316]/20 bg-white px-2.5 py-1 shadow-sm">
+                  <span className="text-[9px] font-semibold uppercase tracking-[0.16em] text-[#9a5a28]">Powered by</span>
                   <Image
                     src="/fiserv-logo-orange-ff6600.svg"
                     alt="Fiserv"
-                    width={58}
-                    height={29}
-                    className="h-auto w-[58px]"
+                    width={48}
+                    height={24}
+                    className="h-auto w-[48px]"
                   />
                 </div>
               </div>
@@ -351,14 +351,14 @@ export default function Home() {
               >
                 info@justpay.co.nz
               </a>
-              <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-[#f97316]/25 bg-white px-3 py-1.5 shadow-sm sm:hidden">
-                <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#9a5a28]">Powered by</span>
+              <div className="mt-5 inline-flex items-center gap-1.5 rounded-full border border-[#f97316]/20 bg-white px-2.5 py-1 shadow-sm sm:hidden">
+                <span className="text-[9px] font-semibold uppercase tracking-[0.16em] text-[#9a5a28]">Powered by</span>
                 <Image
                   src="/fiserv-logo-orange-ff6600.svg"
                   alt="Fiserv"
-                  width={58}
-                  height={29}
-                  className="h-auto w-[58px]"
+                  width={48}
+                  height={24}
+                  className="h-auto w-[48px]"
                 />
               </div>
               <p className="mt-4 text-sm text-[#678198]">Also intended for justpay.au</p>
