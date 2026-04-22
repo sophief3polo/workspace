@@ -46,13 +46,13 @@ export default async function LoginPage({
               type="password"
               autoFocus
               required
-              className="mt-2 w-full rounded-2xl border border-white/10 bg-[#08090d] px-4 py-3 text-white outline-none transition placeholder:text-[#667085] focus:border-[#5e6ad2]"
+              className="mt-2 w-full rounded-2xl border border-white/10 bg-[#08090d] px-4 py-3 text-white outline-none transition placeholder:text-[#667085] focus:border-[#33ddff]"
               placeholder="Enter password"
             />
           </label>
           <button
             type="submit"
-            className="w-full rounded-2xl bg-[#1db38b] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#22c79b]"
+            className="w-full rounded-2xl bg-[#33ddff] px-4 py-3 text-sm font-medium text-[#082032] transition hover:bg-[#1ec8ef]"
           >
             Unlock Mission Control
           </button>

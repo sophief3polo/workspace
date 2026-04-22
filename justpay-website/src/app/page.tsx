@@ -94,7 +94,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-3">
               <a
                 href="#contact"
-                className="rounded-full bg-[#16a34a] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#15803d]"
+                className="rounded-full bg-[#33ddff] px-5 py-3 text-sm font-semibold text-[#082032] transition hover:bg-[#1ec8ef]"
               >
                 Speak to us
               </a>
@@ -123,7 +123,7 @@ export default function Home() {
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href="#contact"
-                  className="rounded-full bg-[#16a34a] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#15803d]"
+                  className="rounded-full bg-[#33ddff] px-6 py-3.5 text-sm font-semibold text-[#082032] transition hover:bg-[#1ec8ef]"
                 >
                   Get started
                 </a>
@@ -275,7 +275,7 @@ export default function Home() {
             <div className="mt-8 lg:mt-0 lg:text-right">
               <a
                 href="mailto:info@justpay.co.nz"
-                className="inline-flex rounded-full bg-[#16a34a] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#15803d]"
+                className="inline-flex rounded-full bg-[#33ddff] px-6 py-3.5 text-sm font-semibold text-[#082032] transition hover:bg-[#1ec8ef]"
               >
                 info@justpay.co.nz
               </a>

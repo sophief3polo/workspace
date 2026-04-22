@@ -165,7 +165,7 @@ export default function Home() {
                 </div>
                 <a
                   href="#tools"
-                  className="rounded-2xl bg-[#1db38b] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#22c79b]"
+                  className="rounded-2xl bg-[#33ddff] px-4 py-3 text-sm font-medium text-[#082032] transition hover:bg-[#1ec8ef]"
                 >
                   Open tool layer
                 </a>
@@ -175,7 +175,7 @@ export default function Home() {
 
           <div className="flex-1 p-5 sm:p-6">
             <div className="grid gap-5 xl:grid-cols-[1.55fr_0.95fr]">
-              <section className="rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(29,179,139,0.18),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
+              <section className="rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(51,221,255,0.18),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
                 <div className="flex flex-col gap-8">
                   <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
                     <div>
