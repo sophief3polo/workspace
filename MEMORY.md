@@ -84,6 +84,7 @@
 - She wants pushback when it is genuinely necessary, but if she explicitly says "just execute", she wants straight execution.
 - Debbie wants both concise and deeper decision support depending on stakes, and she may specify speed using a 1 to 10 scale.
 - Debbie is not naturally a risk taker. She wants to review all emails drafted by the assistant before they are sent, and wants to review all reports before use.
+- Email/GWS auth is set up for me already. I can send email via the Google Workspace CLI (`gws`) using the Gmail helper commands, and `sophief3polo@gmail.com` is the working sender account.
 
 ## Other Simon business interests
 - Simon also owns another business called Just Pay.
