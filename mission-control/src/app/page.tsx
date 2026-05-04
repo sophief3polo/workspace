@@ -43,18 +43,18 @@ const toolCards = [
     href: "/office?slice=operations",
   },
   {
+    title: "Ticketing dashboard",
+    eyebrow: "Reporting",
+    description: "See Sydney, Brisbane, Christchurch, and Auckland ticket sales in a cleaner premium board.",
+    bullets: ["Multi-city view", "Revenue snapshot", "Category breakdown"],
+    href: "/ticketing",
+  },
+  {
     title: "Instagram performance",
     eyebrow: "Marketing",
     description: "Visualise @f3polo account momentum, content mix, and attention patterns across the past year.",
     bullets: ["Follower trend", "Content cadence", "Format performance"],
     href: "/instagram",
-  },
-  {
-    title: "Custom tools",
-    eyebrow: "Build layer",
-    description: "A clean home for the internal apps we create for pricing, outreach, reporting, and admin.",
-    bullets: ["Tool launcher", "Usage logs", "Fast iteration"],
-    href: "/docs?slice=tools",
   },
 ];
 
@@ -97,6 +97,7 @@ const launchQueue = [
 
 const navItems = [
   { label: "Overview", href: "/", active: true },
+  { label: "Ticketing", href: "/ticketing", active: false },
   { label: "Calendar", href: "/calendar", active: false },
   { label: "Projects", href: "/projects", active: false },
   { label: "Instagram", href: "/instagram", active: false },
