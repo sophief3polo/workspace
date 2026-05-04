@@ -1,0 +1,38 @@
+{"requests":[
+  {
+    "updateSpreadsheetProperties": {
+      "properties": {
+        "title": "F3 & Urban Polo 2026-27 Season Summary"
+      },
+      "fields": "title"
+    }
+  },
+  {
+    "repeatCell": {
+      "range": {"sheetId": 1842987567, "startRowIndex": 0, "endRowIndex": 1, "startColumnIndex": 0, "endColumnIndex": 6},
+      "cell": {"userEnteredFormat": {"textFormat": {"bold": true}}},
+      "fields": "userEnteredFormat.textFormat.bold"
+    }
+  },
+  {
+    "repeatCell": {
+      "range": {"sheetId": 1842987567, "startRowIndex": 8, "endRowIndex": 9, "startColumnIndex": 0, "endColumnIndex": 6},
+      "cell": {"userEnteredFormat": {"textFormat": {"bold": true}}},
+      "fields": "userEnteredFormat.textFormat.bold"
+    }
+  },
+  {
+    "repeatCell": {
+      "range": {"sheetId": 1842987567, "startRowIndex": 16, "endRowIndex": 17, "startColumnIndex": 0, "endColumnIndex": 6},
+      "cell": {"userEnteredFormat": {"textFormat": {"bold": true}}},
+      "fields": "userEnteredFormat.textFormat.bold"
+    }
+  },
+  {
+    "repeatCell": {
+      "range": {"sheetId": 1842987567, "startRowIndex": 24, "endRowIndex": 25, "startColumnIndex": 0, "endColumnIndex": 6},
+      "cell": {"userEnteredFormat": {"textFormat": {"bold": true}}},
+      "fields": "userEnteredFormat.textFormat.bold"
+    }
+  }
+]}
