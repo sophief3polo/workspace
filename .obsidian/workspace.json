@@ -196,6 +196,7 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "delete_individual_tabs.json",
     "format_and_rename_sheet.json",
     "currency_summary_update.json",
     "clear_gl.json",
@@ -206,7 +207,6 @@
     "tabs_batch_update.json",
     "add_tabs.json",
     "mission-control/src/app/ticketing/page.tsx",
-    "mission-control/src/app/ticketing",
     "f3polo-listing-copy.md",
     "f3polo-city-submission-checklist.md",
     "memory/2026-05-04.md",
