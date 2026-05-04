@@ -1,0 +1,202 @@
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "FC26F46796BC7FBAD373DEF6748F061C",
+  "url": "https://admin.f3polo.flicket.io/events/80fac8ef-8b2d-4333-803c-244c693faa61",
+  "snapshot": "- generic [active] [ref=e1]:\n  - generic [ref=e3]:\n    - navigation [ref=e4]:\n      - link \"flicket\" [ref=e6] [cursor=pointer]:\n        - /url: /\n        - img \"flicket\" [ref=e7]\n      - generic [ref=e8]:\n        - link \"Home\" [ref=e9] [cursor=pointer]:\n          - /url: /\n          - generic [ref=e10]:\n            - generic [ref=e11]:\n              - img [ref=e13]\n              - img [ref=e16]\n            - generic [ref=e18]: Home\n        - link \"Reporting\" [ref=e19] [cursor=pointer]:\n          - /url: /reporting\n          - generic [ref=e20]:\n            - generic [ref=e21]:\n              - img [ref=e23]\n              - img [ref=e26]\n            - generic [ref=e28]: Reporting\n        - link \"Orders\" [ref=e29] [cursor=pointer]:\n          - /url: /orders?status=Completed&status=Paid\n          - generic [ref=e30]:\n            - generic [ref=e31]:\n              - img [ref=e33]\n              - img [ref=e36]\n            - generic [ref=e38]: Orders\n        - link \"Customers\" [ref=e39] [cursor=pointer]:\n          - /url: /customers\n          - generic [ref=e40]:\n            - generic [ref=e41]:\n              - img [ref=e43]\n              - img [ref=e46]\n            - generic [ref=e48]: Customers\n        - link \"Scout\" [ref=e49] [cursor=pointer]:\n          - /url: /scout\n          - generic [ref=e50]:\n            - generic [ref=e51]:\n              - img [ref=e53]\n              - img [ref=e56]\n            - generic [ref=e58]: Scout\n    - generic [ref=e62]:\n      - heading \"F3 Polo Sydney 2026 - Private Marquees\" [level=1] [ref=e63]\n      - button \"ST\" [ref=e66] [cursor=pointer]:\n        - generic [ref=e68]: ST\n    - link \"Events\" [ref=e71] [cursor=pointer]:\n      - /url: /events\n      - img [ref=e73]\n      - text: Events\n    - generic [ref=e75]:\n      - generic [ref=e76]:\n        - generic [ref=e78] [cursor=pointer]: Event details\n        - generic [ref=e80] [cursor=pointer]: Tickets\n        - generic [ref=e82] [cursor=pointer]: Presale\n        - generic [ref=e84] [cursor=pointer]: Access codes\n        - generic [ref=e86] [cursor=pointer]: Gates\n        - generic [ref=e88] [cursor=pointer]: Customer details\n        - generic [ref=e90] [cursor=pointer]: Dependencies\n        - generic [ref=e92] [cursor=pointer]: Promotions\n        - generic [ref=e94] [cursor=pointer]: Tracking\n        - generic [ref=e96] [cursor=pointer]: POS\n        - generic [ref=e98] [cursor=pointer]: Reseller\n        - generic [ref=e100] [cursor=pointer]: Emails\n      - generic [ref=e102]:\n        - generic [ref=e103]: Error\n        - generic [ref=e104]: Forbidden resource\n  - alert [ref=e105]\n  - img [ref=e109] [cursor=pointer]",
+  "refs": {
+    "e1": {
+      "role": "generic"
+    },
+    "e3": {
+      "role": "generic"
+    },
+    "e4": {
+      "role": "navigation"
+    },
+    "e6": {
+      "role": "link",
+      "name": "flicket"
+    },
+    "e7": {
+      "role": "img",
+      "name": "flicket"
+    },
+    "e8": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "link",
+      "name": "Home"
+    },
+    "e10": {
+      "role": "generic"
+    },
+    "e11": {
+      "role": "generic"
+    },
+    "e13": {
+      "role": "img"
+    },
+    "e16": {
+      "role": "img"
+    },
+    "e18": {
+      "role": "generic"
+    },
+    "e19": {
+      "role": "link",
+      "name": "Reporting"
+    },
+    "e20": {
+      "role": "generic"
+    },
+    "e21": {
+      "role": "generic"
+    },
+    "e23": {
+      "role": "img"
+    },
+    "e26": {
+      "role": "img"
+    },
+    "e28": {
+      "role": "generic"
+    },
+    "e29": {
+      "role": "link",
+      "name": "Orders"
+    },
+    "e30": {
+      "role": "generic"
+    },
+    "e31": {
+      "role": "generic"
+    },
+    "e33": {
+      "role": "img"
+    },
+    "e36": {
+      "role": "img"
+    },
+    "e38": {
+      "role": "generic"
+    },
+    "e39": {
+      "role": "link",
+      "name": "Customers"
+    },
+    "e40": {
+      "role": "generic"
+    },
+    "e41": {
+      "role": "generic"
+    },
+    "e43": {
+      "role": "img"
+    },
+    "e46": {
+      "role": "img"
+    },
+    "e48": {
+      "role": "generic"
+    },
+    "e49": {
+      "role": "link",
+      "name": "Scout"
+    },
+    "e50": {
+      "role": "generic"
+    },
+    "e51": {
+      "role": "generic"
+    },
+    "e53": {
+      "role": "img"
+    },
+    "e56": {
+      "role": "img"
+    },
+    "e58": {
+      "role": "generic"
+    },
+    "e62": {
+      "role": "generic"
+    },
+    "e63": {
+      "role": "heading",
+      "name": "F3 Polo Sydney 2026 - Private Marquees"
+    },
+    "e66": {
+      "role": "button",
+      "name": "ST"
+    },
+    "e68": {
+      "role": "generic"
+    },
+    "e71": {
+      "role": "link",
+      "name": "Events"
+    },
+    "e73": {
+      "role": "img"
+    },
+    "e75": {
+      "role": "generic"
+    },
+    "e76": {
+      "role": "generic"
+    },
+    "e78": {
+      "role": "generic"
+    },
+    "e80": {
+      "role": "generic"
+    },
+    "e82": {
+      "role": "generic"
+    },
+    "e84": {
+      "role": "generic"
+    },
+    "e86": {
+      "role": "generic"
+    },
+    "e88": {
+      "role": "generic"
+    },
+    "e90": {
+      "role": "generic"
+    },
+    "e92": {
+      "role": "generic"
+    },
+    "e94": {
+      "role": "generic"
+    },
+    "e96": {
+      "role": "generic"
+    },
+    "e98": {
+      "role": "generic"
+    },
+    "e100": {
+      "role": "generic"
+    },
+    "e102": {
+      "role": "generic"
+    },
+    "e103": {
+      "role": "generic"
+    },
+    "e104": {
+      "role": "generic"
+    },
+    "e105": {
+      "role": "alert"
+    },
+    "e109": {
+      "role": "img"
+    }
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "FC26F46796BC7FBAD373DEF6748F061C",
+  "url": "https://admin.f3polo.flicket.io/orders?status=Hold",
+  "snapshot": "- generic [active] [ref=e1]:\n  - generic [ref=e3]:\n    - navigation [ref=e4]:\n      - link \"flicket\" [ref=e6] [cursor=pointer]:\n        - /url: /\n        - img \"flicket\" [ref=e7]\n      - generic [ref=e8]:\n        - link \"Home\" [ref=e9] [cursor=pointer]:\n          - /url: /\n          - generic [ref=e10]:\n            - generic [ref=e11]:\n              - img [ref=e13]\n              - img [ref=e16]\n            - generic [ref=e18]: Home\n        - link \"Reporting\" [ref=e19] [cursor=pointer]:\n          - /url: /reporting\n          - generic [ref=e20]:\n            - generic [ref=e21]:\n              - img [ref=e23]\n              - img [ref=e26]\n            - generic [ref=e28]: Reporting\n        - link \"Orders\" [ref=e29] [cursor=pointer]:\n          - /url: /orders?status=Completed&status=Paid\n          - generic [ref=e30]:\n            - generic [ref=e31]:\n              - img [ref=e33]\n              - img [ref=e36]\n            - generic [ref=e38]: Orders\n        - link \"Customers\" [ref=e39] [cursor=pointer]:\n          - /url: /customers\n          - generic [ref=e40]:\n            - generic [ref=e41]:\n              - img [ref=e43]\n              - img [ref=e46]\n            - generic [ref=e48]: Customers\n        - link \"Scout\" [ref=e49] [cursor=pointer]:\n          - /url: /scout\n          - generic [ref=e50]:\n            - generic [ref=e51]:\n              - img [ref=e53]\n              - img [ref=e56]\n            - generic [ref=e58]: Scout\n    - generic [ref=e62]:\n      - heading \"Orders\" [level=1] [ref=e63]\n      - button \"ST\" [ref=e66] [cursor=pointer]:\n        - generic [ref=e68]: ST\n    - generic [ref=e70]:\n      - generic [ref=e71]: 5 Orders\n      - generic [ref=e73]:\n        - button \"Export\" [ref=e74] [cursor=pointer]:\n          - generic [ref=e76]: Export\n        - button \"Create order\" [ref=e78] [cursor=pointer]:\n          - generic [ref=e80]:\n            - text: Create order\n            - generic [ref=e81]:\n              - img\n    - generic [ref=e82]:\n      - generic [ref=e84]: Filters\n      - generic [ref=e86]:\n        - generic [ref=e88]:\n          - generic [ref=e90]:\n            - log [ref=e92]\n            - generic [ref=e95] [cursor=pointer]:\n              - generic [ref=e98]: Overall\n              - combobox [ref=e100]\n          - generic:\n            - img\n        - generic [ref=e102]:\n          - generic [ref=e104]:\n            - log [ref=e106]\n            - generic [ref=e109] [cursor=pointer]:\n              - generic [ref=e112]: All channels\n              - combobox [ref=e114]\n          - generic:\n            - img\n        - generic [ref=e116]:\n          - generic [ref=e118]:\n            - log [ref=e120]\n            - generic [ref=e123] [cursor=pointer]:\n              - generic [ref=e124]: Gateway\n              - combobox [ref=e126]\n          - generic:\n            - img\n        - generic [ref=e128]:\n          - generic [ref=e130]:\n            - log [ref=e132]\n            - generic [ref=e135] [cursor=pointer]:\n              - generic [ref=e136]: Sellers\n              - combobox [ref=e138]\n          - generic:\n            - img\n        - generic [ref=e142]:\n          - textbox \"Select a date range\" [ref=e145] [cursor=pointer]\n          - generic:\n            - generic:\n              - generic:\n                - img\n      - generic [ref=e146]:\n        - navigation [ref=e148]:\n          - list [ref=e150]:\n            - listitem [ref=e151] [cursor=pointer]: All orders\n            - listitem [ref=e152] [cursor=pointer]: In cart\n            - listitem [ref=e153] [cursor=pointer]: Hold\n            - listitem [ref=e154] [cursor=pointer]: Part paid\n            - listitem [ref=e155] [cursor=pointer]: Completed\n            - listitem [ref=e156] [cursor=pointer]: Canceled\n            - listitem [ref=e157] [cursor=pointer]: Expired\n            - listitem [ref=e158] [cursor=pointer]: Refunds\n        - generic [ref=e159]:\n          - generic [ref=e161]:\n            - searchbox \"Search\" [ref=e162]\n            - generic:\n              - generic:\n                - generic:\n                  - img\n          - generic [ref=e163]:\n            - generic [ref=e165]: Type\n            - generic [ref=e167]: Order\n            - generic [ref=e169]: Event\n            - generic [ref=e171]: Created date\n            - generic [ref=e173]: Order total\n            - generic [ref=e175]: Order status\n          - generic [ref=e178]:\n            - generic [ref=e179]:\n              - link \"Standard\" [ref=e181] [cursor=pointer]:\n                - /url: /orders/febc9f22-8600-405f-a814-841d102bab41?status=Hold\n                - generic [ref=e183]: Standard\n              - link \"#F3P-2026-24644221 - Rob Little\" [ref=e185] [cursor=pointer]:\n                - /url: /orders/febc9f22-8600-405f-a814-841d102bab41?status=Hold\n                - generic [ref=e187]: \"#F3P-2026-24644221 - Rob Little\"\n              - link \"F3 Polo Sydney 2026 - VIP Terrace\" [ref=e189] [cursor=pointer]:\n                - /url: /orders/febc9f22-8600-405f-a814-841d102bab41?status=Hold\n                - generic [ref=e191]: F3 Polo Sydney 2026 - VIP Terrace\n              - link \"Apr 17, 2026, 12:37pm\" [ref=e193] [cursor=pointer]:\n                - /url: /orders/febc9f22-8600-405f-a814-841d102bab41?status=Hold\n                - generic [ref=e195]: Apr 17, 2026, 12:37pm\n              - link \"$7,800.00\" [ref=e197] [cursor=pointer]:\n                - /url: /orders/febc9f22-8600-405f-a814-841d102bab41?status=Hold\n                - generic [ref=e199]: $7,800.00\n              - link \"Hold\" [ref=e201] [cursor=pointer]:\n                - /url: /orders/febc9f22-8600-405f-a814-841d102bab41?status=Hold\n                - generic [ref=e205]: Hold\n            - generic [ref=e206]:\n              - link \"Standard\" [ref=e208] [cursor=pointer]:\n                - /url: /orders/9cd4ba60-8b31-4609-b9df-a471dcd48910?status=Hold\n                - generic [ref=e210]: Standard\n              - link \"#F3P-2026-81475855 - Keith Miranda\" [ref=e212] [cursor=pointer]:\n                - /url: /orders/9cd4ba60-8b31-4609-b9df-a471dcd48910?status=Hold\n                - generic [ref=e214]: \"#F3P-2026-81475855 - Keith Miranda\"\n              - link \"F3 Polo Sydney 2026 - Private Marquees\" [ref=e216] [cursor=pointer]:\n                - /url: /orders/9cd4ba60-8b31-4609-b9df-a471dcd48910?status=Hold\n                - generic [ref=e218]: F3 Polo Sydney 2026 - Private Marquees\n              - link \"Apr 14, 2026, 7:06am\" [ref=e220] [cursor=pointer]:\n                - /url: /orders/9cd4ba60-8b31-4609-b9df-a471dcd48910?status=Hold\n                - generic [ref=e222]: Apr 14, 2026, 7:06am\n              - link \"$7,549.09\" [ref=e224] [cursor=pointer]:\n                - /url: /orders/9cd4ba60-8b31-4609-b9df-a471dcd48910?status=Hold\n                - generic [ref=e226]: $7,549.09\n              - link \"Hold\" [ref=e228] [cursor=pointer]:\n                - /url: /orders/9cd4ba60-8b31-4609-b9df-a471dcd48910?status=Hold\n                - generic [ref=e232]: Hold\n            - generic [ref=e233]:\n              - link \"Standard\" [ref=e235] [cursor=pointer]:\n                - /url: /orders/7f1b56c8-3da9-49f0-b951-3b4429ebbd90?status=Hold\n                - generic [ref=e237]: Standard\n              - link \"#F3P-2026-65821445 - Patrick William\" [ref=e239] [cursor=pointer]:\n                - /url: /orders/7f1b56c8-3da9-49f0-b951-3b4429ebbd90?status=Hold\n                - generic [ref=e241]: \"#F3P-2026-65821445 - Patrick William\"\n              - link \"F3 Polo Sydney 2026 - Private Marquees\" [ref=e243] [cursor=pointer]:\n                - /url: /orders/7f1b56c8-3da9-49f0-b951-3b4429ebbd90?status=Hold\n                - generic [ref=e245]: F3 Polo Sydney 2026 - Private Marquees\n              - link \"Mar 26, 2026, 3:46pm\" [ref=e247] [cursor=pointer]:\n                - /url: /orders/7f1b56c8-3da9-49f0-b951-3b4429ebbd90?status=Hold\n                - generic [ref=e249]: Mar 26, 2026, 3:46pm\n              - link \"$22,603.92\" [ref=e251] [cursor=pointer]:\n                - /url: /orders/7f1b56c8-3da9-49f0-b951-3b4429ebbd90?status=Hold\n                - generic [ref=e253]: $22,603.92\n              - link \"Hold\" [ref=e255] [cursor=pointer]:\n                - /url: /orders/7f1b56c8-3da9-49f0-b951-3b4429ebbd90?status=Hold\n                - generic [ref=e259]: Hold\n            - generic [ref=e260]:\n              - link \"Standard\" [ref=e262] [cursor=pointer]:\n                - /url: /orders/4bbe17eb-f996-4811-8548-953d33188a57?status=Hold\n                - generic [ref=e264]: Standard\n              - link \"#F3P-2026-17423472 - Centuria Private Marquee\" [ref=e266] [cursor=pointer]:\n                - /url: /orders/4bbe17eb-f996-4811-8548-953d33188a57?status=Hold\n                - generic [ref=e268]: \"#F3P-2026-17423472 - Centuria Private Marquee\"\n              - link \"F3 Polo Sydney 2026 - Private Marquees\" [ref=e270] [cursor=pointer]:\n                - /url: /orders/4bbe17eb-f996-4811-8548-953d33188a57?status=Hold\n                - generic [ref=e272]: F3 Polo Sydney 2026 - Private Marquees\n              - link \"Feb 26, 2026, 4:10pm\" [ref=e274] [cursor=pointer]:\n                - /url: /orders/4bbe17eb-f996-4811-8548-953d33188a57?status=Hold\n                - generic [ref=e276]: Feb 26, 2026, 4:10pm\n              - link \"$45,185.17\" [ref=e278] [cursor=pointer]:\n                - /url: /orders/4bbe17eb-f996-4811-8548-953d33188a57?status=Hold\n                - generic [ref=e280]: $45,185.17\n              - link \"Hold\" [ref=e282] [cursor=pointer]:\n                - /url: /orders/4bbe17eb-f996-4811-8548-953d33188a57?status=Hold\n                - generic [ref=e286]: Hold\n            - generic [ref=e287]:\n              - link \"Standard\" [ref=e289] [cursor=pointer]:\n                - /url: /orders/d821cb81-d2ec-4251-b9f6-466c99de17c1?status=Hold\n                - generic [ref=e291]: Standard\n              - link \"#F3P-2026-17680839 - DIANA WALLEN\" [ref=e293] [cursor=pointer]:\n                - /url: /orders/d821cb81-d2ec-4251-b9f6-466c99de17c1?status=Hold\n                - generic [ref=e295]: \"#F3P-2026-17680839 - DIANA WALLEN\"\n              - link \"F3 Polo Sydney 2026 - Private Marquees\" [ref=e297] [cursor=pointer]:\n                - /url: /orders/d821cb81-d2ec-4251-b9f6-466c99de17c1?status=Hold\n                - generic [ref=e299]: F3 Polo Sydney 2026 - Private Marquees\n              - link \"Jan 28, 2026, 11:49am\" [ref=e301] [cursor=pointer]:\n                - /url: /orders/d821cb81-d2ec-4251-b9f6-466c99de17c1?status=Hold\n                - generic [ref=e303]: Jan 28, 2026, 11:49am\n              - link \"$75,293.51\" [ref=e305] [cursor=pointer]:\n                - /url: /orders/d821cb81-d2ec-4251-b9f6-466c99de17c1?status=Hold\n                - generic [ref=e307]: $75,293.51\n              - link \"Hold\" [ref=e309] [cursor=pointer]:\n                - /url: /orders/d821cb81-d2ec-4251-b9f6-466c99de17c1?status=Hold\n                - generic [ref=e313]: Hold\n  - alert [ref=e315]\n  - img [ref=e319] [cursor=pointer]",
+  "refs": {
+    "e1": {
+      "role": "generic"
+    },
+    "e3": {
+      "role": "generic"
+    },
+    "e4": {
+      "role": "navigation"
+    },
+    "e6": {
+      "role": "link",
+      "name": "flicket"
+    },
+    "e7": {
+      "role": "img",
+      "name": "flicket"
+    },
+    "e8": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "link",
+      "name": "Home"
+    },
+    "e10": {
+      "role": "generic"
+    },
+    "e11": {
+      "role": "generic"
+    },
+    "e13": {
+      "role": "img"
+    },
+    "e16": {
+      "role": "img"
+    },
+    "e18": {
+      "role": "generic"
+    },
+    "e19": {
+      "role": "link",
+      "name": "Reporting"
+    },
+    "e20": {
+      "role": "generic"
+    },
+    "e21": {
+      "role": "generic"
+    },
+    "e23": {
+      "role": "img"
+    },
+    "e26": {
+      "role": "img"
+    },
+    "e28": {
+      "role": "generic"
+    },
+    "e29": {
+      "role": "link",
+      "name": "Orders"
+    },
+    "e30": {
+      "role": "generic"
+    },
+    "e31": {
+      "role": "generic"
+    },
+    "e33": {
+      "role": "img"
+    },
+    "e36": {
+      "role": "img"
+    },
+    "e38": {
+      "role": "generic"
+    },
+    "e39": {
+      "role": "link",
+      "name": "Customers"
+    },
+    "e40": {
+      "role": "generic"
+    },
+    "e41": {
+      "role": "generic"
+    },
+    "e43": {
+      "role": "img"
+    },
+    "e46": {
+      "role": "img"
+    },
+    "e48": {
+      "role": "generic"
+    },
+    "e49": {
+      "role": "link",
+      "name": "Scout"
+    },
+    "e50": {
+      "role": "generic"
+    },
+    "e51": {
+      "role": "generic"
+    },
+    "e53": {
+      "role": "img"
+    },
+    "e56": {
+      "role": "img"
+    },
+    "e58": {
+      "role": "generic"
+    },
+    "e62": {
+      "role": "generic"
+    },
+    "e63": {
+      "role": "heading",
+      "name": "Orders"
+    },
+    "e66": {
+      "role": "button",
+      "name": "ST"
+    },
+    "e68": {
+      "role": "generic"
+    },
+    "e70": {
+      "role": "generic"
+    },
+    "e71": {
+      "role": "generic"
+    },
+    "e73": {
+      "role": "generic"
+    },
+    "e74": {
+      "role": "button",
+      "name": "Export"
+    },
+    "e76": {
+      "role": "generic"
+    },
+    "e78": {
+      "role": "button",
+      "name": "Create order"
+    },
+    "e80": {
+      "role": "generic"
+    },
+    "e81": {
+      "role": "generic"
+    },
+    "e82": {
+      "role": "generic"
+    },
+    "e84": {
+      "role": "generic"
+    },
+    "e86": {
+      "role": "generic"
+    },
+    "e88": {
+      "role": "generic"
+    },
+    "e90": {
+      "role": "generic"
+    },
+    "e92": {
+      "role": "log"
+    },
+    "e95": {
+      "role": "generic"
+    },
+    "e98": {
+      "role": "generic"
+    },
+    "e100": {
+      "role": "combobox"
+    },
+    "e102": {
+      "role": "generic"
+    },
+    "e104": {
+      "role": "generic"
+    },
+    "e106": {
+      "role": "log"
+    },
+    "e109": {
+      "role": "generic"
+    },
+    "e112": {
+      "role": "generic"
+    },
+    "e114": {
+      "role": "combobox"
+    },
+    "e116": {
+      "role": "generic"
+    },
+    "e118": {
+      "role": "generic"
+    },
+    "e120": {
+      "role": "log"
+    },
+    "e123": {
+      "role": "generic"
+    },
+    "e124": {
+      "role": "generic"
+    },
+    "e126": {
+      "role": "combobox"
+    },
+    "e128": {
+      "role": "generic"
+    },
+    "e130": {
+      "role": "generic"
+    },
+    "e132": {
+      "role": "log"
+    },
+    "e135": {
+      "role": "generic"
+    },
+    "e136": {
+      "role": "generic"
+    },
+    "e138": {
+      "role": "combobox"
+    },
+    "e142": {
+      "role": "generic"
+    },
+    "e145": {
+      "role": "textbox",
+      "name": "Select a date range"
+    },
+    "e146": {
+      "role": "generic"
+    },
+    "e148": {
+      "role": "navigation"
+    },
+    "e150": {
+      "role": "list"
+    },
+    "e151": {
+      "role": "listitem"
+    },
+    "e152": {
+      "role": "listitem"
+    },
+    "e153": {
+      "role": "listitem"
+    },
+    "e154": {
+      "role": "listitem"
+    },
+    "e155": {
+      "role": "listitem"
+    },
+    "e156": {
+      "role": "listitem"
+    },
+    "e157": {
+      "role": "listitem"
+    },
+    "e158": {
+      "role": "listitem"
+    },
+    "e159": {
+      "role": "generic"
+    },
+    "e161": {
+      "role": "generic"
+    },
+    "e162": {
+      "role": "searchbox",
+      "name": "Search"
+    },
+    "e163": {
+      "role": "generic"
+    },
+    "e165": {
+      "role": "generic"
+    },
+    "e167": {
+      "role": "generic"
+    },
+    "e169": {
+      "role": "generic"
+    },
+    "e171": {
+      "role": "generic"
+    },
+    "e173": {
+      "role": "generic"
+    },
+    "e175": {
+      "role": "generic"
+    },
+    "e178": {
+      "role": "generic"
+    },
+    "e179": {
+      "role": "generic"
+    },
+    "e181": {
+      "role": "link",
+      "name": "Standard"
+    },
+    "e183": {
+      "role": "generic"
+    },
+    "e185": {
+      "role": "link",
+      "name": "#F3P-2026-24644221 - Rob Little"
+    },
+    "e187": {
+      "role": "generic"
+    },
+    "e189": {
+      "role": "link",
+      "name": "F3 Polo Sydney 2026 - VIP Terrace"
+    },
+    "e191": {
+      "role": "generic"
+    },
+    "e193": {
+      "role": "link",
+      "name": "Apr 17, 2026, 12:37pm"
+    },
+    "e195": {
+      "role": "generic"
+    },
+    "e197": {
+      "role": "link",
+      "name": "$7,800.00"
+    },
+    "e199": {
+      "role": "generic"
+    },
+    "e201": {
+      "role": "link",
+      "name": "Hold"
+    },
+    "e205": {
+      "role": "generic"
+    },
+    "e206": {
+      "role": "generic"
+    },
+    "e208": {
+      "role": "link",
+      "name": "Standard"
+    },
+    "e210": {
+      "role": "generic"
+    },
+    "e212": {
+      "role": "link",
+      "name": "#F3P-2026-81475855 - Keith Miranda"
+    },
+    "e214": {
+      "role": "generic"
+    },
+    "e216": {
+      "role": "link",
+      "name": "F3 Polo Sydney 2026 - Private Marquees"
+    },
+    "e218": {
+      "role": "generic"
+    },
+    "e220": {
+      "role": "link",
+      "name": "Apr 14, 2026, 7:06am"
+    },
+    "e222": {
+      "role": "generic"
+    },
+    "e224": {
+      "role": "link",
+      "name": "$7,549.09"
+    },
+    "e226": {
+      "role": "generic"
+    },
+    "e228": {
+      "role": "link",
+      "name": "Hold"
+    },
+    "e232": {
+      "role": "generic"
+    },
+    "e233": {
+      "role": "generic"
+    },
+    "e235": {
+      "role": "link",
+      "name": "Standard"
+    },
+    "e237": {
+      "role": "generic"
+    },
+    "e239": {
+      "role": "link",
+      "name": "#F3P-2026-65821445 - Patrick William"
+    },
+    "e241": {
+      "role": "generic"
+    },
+    "e243": {
+      "role": "link",
+      "name": "F3 Polo Sydney 2026 - Private Marquees"
+    },
+    "e245": {
+      "role": "generic"
+    },
+    "e247": {
+      "role": "link",
+      "name": "Mar 26, 2026, 3:46pm"
+    },
+    "e249": {
+      "role": "generic"
+    },
+    "e251": {
+      "role": "link",
+      "name": "$22,603.92"
+    },
+    "e253": {
+      "role": "generic"
+    },
+    "e255": {
+      "role": "link",
+      "name": "Hold"
+    },
+    "e259": {
+      "role": "generic"
+    },
+    "e260": {
+      "role": "generic"
+    },
+    "e262": {
+      "role": "link",
+      "name": "Standard"
+    },
+    "e264": {
+      "role": "generic"
+    },
+    "e266": {
+      "role": "link",
+      "name": "#F3P-2026-17423472 - Centuria Private Marquee"
+    },
+    "e268": {
+      "role": "generic"
+    },
+    "e270": {
+      "role": "link",
+      "name": "F3 Polo Sydney 2026 - Private Marquees"
+    },
+    "e272": {
+      "role": "generic"
+    },
+    "e274": {
+      "role": "link",
+      "name": "Feb 26, 2026, 4:10pm"
+    },
+    "e276": {
+      "role": "generic"
+    },
+    "e278": {
+      "role": "link",
+      "name": "$45,185.17"
+    },
+    "e280": {
+      "role": "generic"
+    },
+    "e282": {
+      "role": "link",
+      "name": "Hold"
+    },
+    "e286": {
+      "role": "generic"
+    },
+    "e287": {
+      "role": "generic"
+    },
+    "e289": {
+      "role": "link",
+      "name": "Standard"
+    },
+    "e291": {
+      "role": "generic"
+    },
+    "e293": {
+      "role": "link",
+      "name": "#F3P-2026-17680839 - DIANA WALLEN"
+    },
+    "e295": {
+      "role": "generic"
+    },
+    "e297": {
+      "role": "link",
+      "name": "F3 Polo Sydney 2026 - Private Marquees"
+    },
+    "e299": {
+      "role": "generic"
+    },
+    "e301": {
+      "role": "link",
+      "name": "Jan 28, 2026, 11:49am"
+    },
+    "e303": {
+      "role": "generic"
+    },
+    "e305": {
+      "role": "link",
+      "name": "$75,293.51"
+    },
+    "e307": {
+      "role": "generic"
+    },
+    "e309": {
+      "role": "link",
+      "name": "Hold"
+    },
+    "e313": {
+      "role": "generic"
+    },
+    "e315": {
+      "role": "alert"
+    },
+    "e319": {
+      "role": "img"
+    }
+  }
+}
