@@ -196,6 +196,9 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "tmp_flicket_snapshot.json",
+    "sydney-ga-ticketing-report-2026-05-04.txt",
+    "downloads",
     "f3polo-listing-copy.md",
     "f3polo-free-listing-tracker.csv",
     "f3polo-city-submission-checklist.md",
@@ -208,12 +211,10 @@
     "tmp-premium-f3polo-simon.eml",
     "gmail_draft_3.eml",
     "gmail_draft_2.eml",
-    "gmail_draft_1.eml",
     "4225645464*A88410BA-26DF-4314-841A-722B4FB58AC4.jpeg",
     "screen.png",
     "6912b044dd5bc2596cf2c8fe_Stanton and Stanton_F3 Polo_November 2025_13732_by Daniel Sommer Photography_.jpeg",
     "27c56d5605f71a65f0ee0eec00e88479.jpeg",
-    "National Series Title Sponsorship Opportunity.pdf",
     "tmp_4225645464*A88410BA-26DF-4314-841A-722B4FB58AC4.jpeg",
     "tmp_screen.png",
     "tmp_6912b044dd5bc2596cf2c8fe_Stanton and Stanton_F3 Polo_November 2025_13732_by Daniel Sommer Photography_.jpeg",
@@ -240,7 +241,6 @@
     "justpay-website/node_modules/fsevents/README.md",
     "justpay-website/node_modules/graceful-fs/README.md",
     "justpay-website/node_modules/object.assign/README.md",
-    "justpay-website/node_modules/object.assign/CHANGELOG.md",
-    "justpay-website/node_modules/locate-path/readme.md"
+    "justpay-website/node_modules/object.assign/CHANGELOG.md"
   ]
 }
