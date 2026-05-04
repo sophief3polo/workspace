@@ -83,10 +83,10 @@ const scoreboard = [
 
 export default function TicketingPage() {
   return (
-    <main className="min-h-screen bg-[#08090d] text-[#f5f7fb]">
+    <main className="min-h-screen bg-[#11141b] text-[#f5f7fb]">
       <div className="mx-auto flex min-h-screen w-full max-w-[1480px] gap-6 px-4 py-4 lg:px-6 lg:py-6">
-        <aside className="hidden w-[248px] shrink-0 flex-col rounded-[28px] border border-white/8 bg-[#0d0f14] p-4 lg:flex">
-          <div className="flex items-center gap-3 rounded-2xl border border-white/6 bg-white/[0.03] px-3 py-3">
+        <aside className="hidden w-[248px] shrink-0 flex-col rounded-[28px] border border-white/8 bg-[#1c2230] p-4 lg:flex">
+          <div className="flex items-center gap-3 rounded-2xl border border-white/6 bg-white/[0.05] px-3 py-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#5e6ad2] text-sm font-semibold text-white">
               MC
             </div>
@@ -102,7 +102,7 @@ export default function TicketingPage() {
                 key={item.label}
                 href={item.href}
                 className={`flex items-center justify-between rounded-xl px-3 py-2.5 transition ${
-                  item.active ? "bg-white/[0.06] text-white" : "hover:bg-white/[0.04] hover:text-white"
+                  item.active ? "bg-white/[0.09] text-white" : "hover:bg-white/[0.09] hover:text-white"
                 }`}
               >
                 <span>{item.label}</span>
@@ -120,11 +120,11 @@ export default function TicketingPage() {
           </div>
         </aside>
 
-        <section className="flex min-h-[calc(100vh-2rem)] flex-1 flex-col rounded-[32px] border border-white/8 bg-[#0b0d12] shadow-[0_0_0_1px_rgba(255,255,255,0.02),0_40px_120px_rgba(0,0,0,0.45)]">
+        <section className="flex min-h-[calc(100vh-2rem)] flex-1 flex-col rounded-[32px] border border-white/8 bg-[#171c25] shadow-[0_0_0_1px_rgba(255,255,255,0.02),0_40px_120px_rgba(0,0,0,0.45)]">
           <header className="border-b border-white/8 px-5 py-4 sm:px-6">
             <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/8 bg-white/[0.03] px-3 py-1 text-[11px] uppercase tracking-[0.24em] text-[#99a1b3]">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/8 bg-white/[0.05] px-3 py-1 text-[11px] uppercase tracking-[0.24em] text-[#99a1b3]">
                   Ticketing dashboard
                   <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
                 </div>
@@ -141,7 +141,7 @@ export default function TicketingPage() {
                   href="https://docs.google.com/spreadsheets/d/14ejB2pZZPs8gDt4qR9PZkG2prQg2DprfqdxiAkkpeF8/edit"
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm font-medium text-white transition hover:bg-white/[0.06]"
+                  className="rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 text-sm font-medium text-white transition hover:bg-white/[0.09]"
                 >
                   Open raw sheet
                 </a>
@@ -179,7 +179,7 @@ export default function TicketingPage() {
               {cityCards.map((card) => (
                 <article
                   key={card.city}
-                  className="rounded-[28px] border border-white/8 bg-[#0f1218] p-6 shadow-[0_12px_40px_rgba(0,0,0,0.2)]"
+                  className="rounded-[28px] border border-white/8 bg-[#232b3a] p-6 shadow-[0_12px_40px_rgba(0,0,0,0.2)]"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
@@ -188,7 +188,7 @@ export default function TicketingPage() {
                       </p>
                       <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-white">{card.headline}</h3>
                     </div>
-                    <span className="rounded-full border border-white/8 bg-white/[0.03] px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#d6dbea]">
+                    <span className="rounded-full border border-white/8 bg-white/[0.05] px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#d6dbea]">
                       Live
                     </span>
                   </div>
@@ -199,7 +199,7 @@ export default function TicketingPage() {
                   </div>
 
                   <p className="mt-5 text-sm leading-7 text-[#c6cede]">{card.detail}</p>
-                  <div className="mt-5 rounded-2xl border border-white/8 bg-white/[0.02] px-4 py-4 text-sm text-[#98a2b3]">
+                  <div className="mt-5 rounded-2xl border border-white/8 bg-white/[0.09] px-4 py-4 text-sm text-[#98a2b3]">
                     <span className="text-white">{card.date}</span>
                     <span className="mx-2 text-[#5e6ad2]">•</span>
                     {card.venue}
@@ -208,7 +208,7 @@ export default function TicketingPage() {
               ))}
             </section>
 
-            <section className="mt-5 rounded-[28px] border border-white/8 bg-[#0f1218] p-6">
+            <section className="mt-5 rounded-[28px] border border-white/8 bg-[#232b3a] p-6">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
                 <div>
                   <p className="text-xs uppercase tracking-[0.24em] text-[#99a1b3]">Event lines</p>
@@ -232,7 +232,7 @@ export default function TicketingPage() {
                   </thead>
                   <tbody>
                     {eventRows.map((row) => (
-                      <tr key={`${row[0]}-${row[1]}-${row[2]}`} className="rounded-2xl bg-white/[0.02] text-[#d7deea]">
+                      <tr key={`${row[0]}-${row[1]}-${row[2]}`} className="rounded-2xl bg-white/[0.09] text-[#d7deea]">
                         <td className="rounded-l-2xl px-4 py-4 text-white">{row[0]}</td>
                         <td className="px-4 py-4">{row[1]}</td>
                         <td className="px-4 py-4">{row[2]}</td>
@@ -259,7 +259,7 @@ export default function TicketingPage() {
 
 function Metric({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-2xl border border-white/8 bg-white/[0.04] px-4 py-3">
+    <div className="rounded-2xl border border-white/8 bg-white/[0.09] px-4 py-3">
       <p className="text-[11px] uppercase tracking-[0.2em] text-[#7f8797]">{label}</p>
       <p className="mt-2 text-xl font-semibold tracking-[-0.04em] text-white">{value}</p>
     </div>
@@ -268,7 +268,7 @@ function Metric({ label, value }: { label: string; value: string }) {
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-2xl border border-white/8 bg-white/[0.03] px-4 py-4">
+    <div className="rounded-2xl border border-white/8 bg-white/[0.05] px-4 py-4">
       <p className="text-[11px] uppercase tracking-[0.18em] text-[#7f8797]">{label}</p>
       <p className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-white">{value}</p>
     </div>

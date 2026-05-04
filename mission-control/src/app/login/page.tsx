@@ -20,8 +20,8 @@ export default async function LoginPage({
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#08090d] px-4 text-[#f5f7fb]">
-      <div className="w-full max-w-md rounded-[28px] border border-white/8 bg-[#0f1218] p-8 shadow-[0_24px_80px_rgba(0,0,0,0.45)]">
+    <main className="flex min-h-screen items-center justify-center bg-[#11141b] px-4 text-[#f5f7fb]">
+      <div className="w-full max-w-md rounded-[28px] border border-white/8 bg-[#232b3a] p-8 shadow-[0_24px_80px_rgba(0,0,0,0.45)]">
         <div className="mb-8">
           <p className="text-xs uppercase tracking-[0.24em] text-[#aab4ff]">Protected access</p>
           <h1 className="mt-3 text-3xl font-semibold tracking-[-0.04em] text-white">
@@ -46,7 +46,7 @@ export default async function LoginPage({
               type="password"
               autoFocus
               required
-              className="mt-2 w-full rounded-2xl border border-white/10 bg-[#08090d] px-4 py-3 text-white outline-none transition placeholder:text-[#667085] focus:border-[#5e6ad2]"
+              className="mt-2 w-full rounded-2xl border border-white/10 bg-[#11141b] px-4 py-3 text-white outline-none transition placeholder:text-[#667085] focus:border-[#5e6ad2]"
               placeholder="Enter password"
             />
           </label>
