@@ -1,0 +1,23 @@
+{"values":[
+["Season","City","Event / Category","Source Label in Flicket","Event Date","Venue","Tickets Sold","Face Value Sales","Available","Hold Orders","Hold Tickets","Status"],
+["2026","Sydney","Heineken Polo Lawn","Heineken Polo Lawn","2026-11-14","Mission Field, Centennial Parklands",13,1320,4987,"","","Live"],
+["2026","Sydney","VIP Champagne Terrace","VIP Terrace","2026-11-14","Mission Field, Centennial Parklands",12,3228,140,"","","Live"],
+["2026","Sydney","Private Marquees","Private Marquees","2026-11-14","Mission Field, Centennial Parklands",0,0,"",4,200,"Live"],
+["2026","Sydney","Sportscraft Polo Lounge","Sportscraft F3 Polo Lounge","2026-11-14","Mission Field, Centennial Parklands",6,4522.2,144,"","","Live"],
+["2026","Sydney","TOTAL","","2026-11-14","Mission Field, Centennial Parklands",31,9070.2,"",4,200,"Live"],
+["2026","Brisbane","Heineken Polo Lawn","Heineken Polo Lawn","2026-10-31","Dorrington Park (Kallindarbin), Ashgrove",0,0,5000,0,0,"Live"],
+["2026","Brisbane","VIP Champagne Terrace","VIP Champagne Terrace","2026-10-31","Dorrington Park (Kallindarbin), Ashgrove",0,0,140,0,0,"Live"],
+["2026","Brisbane","Private Marquees","Private Marquees","2026-10-31","Dorrington Park (Kallindarbin), Ashgrove",0,0,2000,0,0,"Live"],
+["2026","Brisbane","Sportscraft Polo Lounge","Sportscraft F3 Polo Lounge","2026-10-31","Dorrington Park (Kallindarbin), Ashgrove",0,0,150,0,0,"Live"],
+["2026","Brisbane","TOTAL","","2026-10-31","Dorrington Park (Kallindarbin), Ashgrove",0,0,"",0,0,"Live"],
+["2027","Christchurch","Peroni Polo Lawn General Admission","Peroni Polo Lawn General Admission","2027-02-20","Hagley Park, Christchurch, Canterbury",3,207,3997,0,0,"Live"],
+["2027","Christchurch","VIP Champagne Terrace","VIP Champagne Terrace","2027-02-20","Hagley Park, Christchurch, Canterbury",20,5460,2080,0,0,"Live"],
+["2027","Christchurch","Private Marquees","Private Marquees","2027-02-20","Hagley Park, Christchurch, Canterbury",100,51007,4600,0,0,"Live"],
+["2027","Christchurch","Urban Polo Lounge","\"Urban Polo Lounge\" Private Marquee Area","2027-02-20","Hagley Park, Christchurch, Canterbury",0,0,200,0,0,"Live"],
+["2027","Christchurch","TOTAL","","2027-02-20","Hagley Park, Christchurch, Canterbury",123,56674,"",0,0,"Live"],
+["2027","Auckland","Peroni Polo Lawn General Admission","Peroni Polo Lawn General Admission","2027-03-06","Lexus Urban Polo - Auckland, Auckland",5,276,3995,0,0,"Live"],
+["2027","Auckland","VIP Champagne Terrace","VIP Champagne Terrace","2027-03-06","Lexus Urban Polo - Auckland, Auckland",10,3360,1090,0,0,"Live"],
+["2027","Auckland","Private Marquees","Private Marquees","2027-03-06","Lexus Urban Polo - Auckland, Auckland",250,122565,200,0,0,"Live"],
+["2027","Auckland","Urban Polo Lounge","\"Urban Polo Lounge\" Private Marquee Area","2027-03-06","Lexus Urban Polo - Auckland, Auckland",0,0,200,0,0,"Live"],
+["2027","Auckland","TOTAL","","2027-03-06","Lexus Urban Polo - Auckland, Auckland",265,126201,"",0,0,"Live"]
+]}

@@ -1,0 +1,867 @@
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "FC26F46796BC7FBAD373DEF6748F061C",
+  "url": "https://admin.urbanpolo.flicket.co.nz/reporting/events/ticket-sales?sourceSelection=%7B%22eventId%22%3A%228e19853f-97a6-49e8-af16-2b99b0844ac2%22%7D",
+  "snapshot": "- generic [active] [ref=e1]:\n  - generic [ref=e3]:\n    - navigation [ref=e4]:\n      - link \"flicket\" [ref=e6] [cursor=pointer]:\n        - /url: /\n        - img \"flicket\" [ref=e7]\n      - generic [ref=e8]:\n        - link \"Home\" [ref=e9] [cursor=pointer]:\n          - /url: /\n          - generic [ref=e10]:\n            - generic [ref=e11]:\n              - img [ref=e13]\n              - img [ref=e16]\n            - generic [ref=e18]: Home\n        - link \"Reporting\" [ref=e19] [cursor=pointer]:\n          - /url: /reporting\n          - generic [ref=e20]:\n            - generic [ref=e21]:\n              - img [ref=e23]\n              - img [ref=e26]\n            - generic [ref=e28]: Reporting\n        - link \"Orders\" [ref=e29] [cursor=pointer]:\n          - /url: /orders?status=Completed&status=Paid\n          - generic [ref=e30]:\n            - generic [ref=e31]:\n              - img [ref=e33]\n              - img [ref=e36]\n            - generic [ref=e38]: Orders\n        - link \"Customers\" [ref=e39] [cursor=pointer]:\n          - /url: /customers\n          - generic [ref=e40]:\n            - generic [ref=e41]:\n              - img [ref=e43]\n              - img [ref=e46]\n            - generic [ref=e48]: Customers\n        - link \"Scout\" [ref=e49] [cursor=pointer]:\n          - /url: /scout\n          - generic [ref=e50]:\n            - generic [ref=e51]:\n              - img [ref=e53]\n              - img [ref=e56]\n            - generic [ref=e58]: Scout\n    - generic [ref=e62]:\n      - heading \"Reporting\" [level=1] [ref=e63]\n      - button \"SB\" [ref=e66] [cursor=pointer]:\n        - generic [ref=e68]: SB\n    - generic [ref=e70]:\n      - button \"Events VIP Champagne Terrace - Christchurch 2027 20 Feb 2027, 12:00 pm – 7:00 pm Hagley Park, Christchurch, Canterbury Compare sales Beta\" [ref=e72] [cursor=pointer]:\n        - generic [ref=e73]:\n          - generic [ref=e74]:\n            - img [ref=e78]\n            - generic [ref=e79]:\n              - generic [ref=e80]:\n                - generic [ref=e81]: Events\n                - generic [ref=e82]: VIP Champagne Terrace - Christchurch 2027\n                - generic [ref=e83]:\n                  - generic [ref=e84]: 20 Feb 2027, 12:00 pm – 7:00 pm\n                  - text: Hagley Park, Christchurch, Canterbury\n              - img [ref=e85]\n          - button \"Compare sales Beta\" [ref=e88]:\n            - generic [ref=e90]:\n              - img\n              - text: Compare sales\n              - generic [ref=e92]: Beta\n      - generic [ref=e94]:\n        - generic [ref=e95]:\n          - generic [ref=e96]: Dashboards\n          - tablist [ref=e98]:\n            - tab \"Event overview\" [ref=e99] [cursor=pointer]:\n              - generic [ref=e100]: Event overview\n            - tab \"Reports\" [ref=e101] [cursor=pointer]:\n              - generic [ref=e102]: Reports\n            - tab \"Ticket sales\" [selected] [ref=e103] [cursor=pointer]:\n              - generic [ref=e104]: Ticket sales\n            - tab \"Financial\" [ref=e105] [cursor=pointer]:\n              - generic [ref=e106]: Financial\n            - tab \"Scans\" [ref=e107] [cursor=pointer]:\n              - generic [ref=e108]: Scans\n            - tab \"Audience\" [ref=e109] [cursor=pointer]:\n              - generic [ref=e110]: Audience\n            - tab \"Marketing\" [ref=e111] [cursor=pointer]:\n              - generic [ref=e112]: Marketing\n            - tab \"Codes\" [ref=e113] [cursor=pointer]:\n              - generic [ref=e114]: Codes\n            - tab \"POS\" [ref=e115] [cursor=pointer]:\n              - generic [ref=e116]: POS\n        - tabpanel \"Ticket sales\" [ref=e118]:\n          - generic [ref=e119]:\n            - generic [ref=e120]:\n              - generic [ref=e122]:\n                - textbox \"Select a date range\" [ref=e125] [cursor=pointer]: On sale – 22 Apr 2026 to 24 Apr 2026\n                - generic:\n                  - generic:\n                    - generic:\n                      - img\n                - generic:\n                  - img\n              - button \"Add filter\" [ref=e127] [cursor=pointer]:\n                - generic [ref=e129]:\n                  - img\n                  - text: Add filter\n            - generic [ref=e130]:\n              - generic [ref=e132]:\n                - generic [ref=e133]: Sales report\n                - generic [ref=e136] [cursor=pointer]: Download sales report\n              - generic [ref=e140]:\n                - generic [ref=e141]:\n                  - generic [ref=e142]:\n                    - generic [ref=e143]: $5,460.00\n                    - generic [ref=e144]:\n                      - generic [ref=e145]:\n                        - generic [ref=e146]: Face value of ticket sales only\n                        - text: – excluding fees • GST inclusive\n                      - generic [ref=e147]:\n                        - generic [ref=e148]:\n                          - checkbox\n                          - img [ref=e152] [cursor=pointer]\n                        - generic [ref=e154]: Show total sales\n                  - generic [ref=e158]: 20 tickets issued\n                  - generic [ref=e161]:\n                    - generic [ref=e164]: 20 Sold\n                    - generic [ref=e167]: 2,080 Available\n                    - generic [ref=e169]: Total capacity 2,100\n                - generic [ref=e173]:\n                  - generic [ref=e174]: \"On sale period: 22 Apr 2026 – 24 Apr 2026, 2 days on sale.\"\n                  - generic [ref=e176]:\n                    - button [ref=e177] [cursor=pointer]:\n                      - generic [ref=e180]:\n                        - img\n                    - generic [ref=e182]:\n                      - generic [ref=e183]:\n                        - generic [ref=e184]: VEUVE CLICQUOT SOLAIRE VIP CHAMPAGNE TERRACE\n                        - generic [ref=e185]: 20 sold • 1,980 available\n                      - generic \"20 / 2000\" [ref=e186]\n                      - generic [ref=e189]:\n                        - generic [ref=e190]: $5,460.00\n                        - generic [ref=e191]: + $80.00 fees\n                  - generic [ref=e193]:\n                    - button [ref=e194] [cursor=pointer]:\n                      - generic [ref=e197]:\n                        - img\n                    - generic [ref=e199]:\n                      - generic [ref=e200]:\n                        - generic [ref=e201]: VEUVE CLICQUOT SOLAIRE VIP CHAMPAGNE LAWN (SPONSORS TICKETS)\n                        - generic [ref=e202]: 100 available\n                      - generic [ref=e204]: $0.00\n            - generic [ref=e205]:\n              - generic [ref=e208]: Sales overview\n              - generic [ref=e213]:\n                - generic [ref=e214]:\n                  - generic [ref=e215]:\n                    - generic [ref=e216]: \"7\"\n                    - img [ref=e220] [cursor=pointer]\n                  - generic [ref=e222]: Total orders\n                - generic [ref=e223]:\n                  - generic [ref=e224]:\n                    - generic [ref=e225]: \"0\"\n                    - img [ref=e229] [cursor=pointer]\n                  - generic [ref=e231]: Tickets resold\n                - generic [ref=e232]:\n                  - generic [ref=e233]:\n                    - generic [ref=e234]: $0.00\n                    - img [ref=e238] [cursor=pointer]\n                  - generic [ref=e240]: Resale fee revenue\n                - generic [ref=e241]:\n                  - generic [ref=e242]:\n                    - generic [ref=e243]: $0.00\n                    - img [ref=e247] [cursor=pointer]\n                  - generic [ref=e249]: Resale margin\n                - generic [ref=e250]:\n                  - generic [ref=e251]:\n                    - generic [ref=e252]: 0 / $0.00\n                    - img [ref=e256] [cursor=pointer]\n                  - generic [ref=e258]: Tickets refunded\n                - generic [ref=e259]:\n                  - generic [ref=e260]:\n                    - generic [ref=e261]: \"0\"\n                    - img [ref=e265] [cursor=pointer]\n                  - generic [ref=e267]: Abandoned cart\n                - generic [ref=e268]:\n                  - generic [ref=e269]:\n                    - generic [ref=e270]: 0 / $0.00\n                    - img [ref=e274] [cursor=pointer]\n                  - generic [ref=e276]: Abandoned carts recovered\n                - generic [ref=e277]:\n                  - generic [ref=e278]:\n                    - generic [ref=e279]: \"0\"\n                    - img [ref=e283] [cursor=pointer]\n                  - generic [ref=e285]: Add-ons\n                - generic [ref=e286]:\n                  - generic [ref=e287]:\n                    - generic [ref=e288]: $0.00\n                    - img [ref=e292] [cursor=pointer]\n                  - generic [ref=e294]: Total add-on revenue\n                - generic [ref=e295]:\n                  - generic [ref=e296]:\n                    - generic [ref=e297]: \"0\"\n                    - img [ref=e301] [cursor=pointer]\n                  - generic [ref=e303]: Total tickets part paid\n                - generic [ref=e304]:\n                  - generic [ref=e305]:\n                    - generic [ref=e306]: \"0\"\n                    - img [ref=e310] [cursor=pointer]\n                  - generic [ref=e312]: Orders part paid\n            - generic [ref=e313]:\n              - generic [ref=e315]:\n                - generic [ref=e316]: Sales over time\n                - generic [ref=e318]:\n                  - generic [ref=e320] [cursor=pointer]:\n                    - generic [ref=e321]: Tickets\n                    - img [ref=e323]\n                  - generic [ref=e325] [cursor=pointer]: Download\n                  - button \"Compare Beta\" [ref=e326] [cursor=pointer]:\n                    - generic [ref=e328]:\n                      - img\n                      - text: Compare\n                      - generic [ref=e330]: Beta\n              - generic [ref=e334]:\n                - application [ref=e338]:\n                  - generic [ref=e342]:\n                    - generic [ref=e344]: 22 Apr 2026\n                    - generic [ref=e346]: 23 Apr 2026\n                    - generic [ref=e348]: 24 Apr 2026\n                  - generic [ref=e350]:\n                    - generic [ref=e352]: \"0\"\n                    - generic [ref=e354]: \"4\"\n                    - generic [ref=e356]: \"8\"\n                    - generic [ref=e358]: \"12\"\n                    - generic [ref=e360]: \"16\"\n                - list [ref=e370]:\n                  - listitem [ref=e371]:\n                    - button [ref=e372] [cursor=pointer]:\n                      - generic [ref=e375]:\n                        - img\n                    - generic [ref=e377]: standard\n            - generic [ref=e378]:\n              - generic [ref=e379]:\n                - generic [ref=e382]: Sales channel\n                - generic [ref=e387]:\n                  - generic [ref=e388]:\n                    - application [ref=e390]\n                    - generic [ref=e399]:\n                      - generic [ref=e400]: \"7\"\n                      - generic [ref=e401]: Transactions\n                  - generic [ref=e402]:\n                    - generic [ref=e405]: 100% Online\n                    - generic [ref=e408]: 0% Back office\n                    - generic [ref=e411]: 0% POS\n              - generic [ref=e412]:\n                - generic [ref=e415]: Payment gateways\n                - generic [ref=e420]:\n                  - generic [ref=e421]:\n                    - application [ref=e423]\n                    - generic [ref=e434]:\n                      - generic [ref=e435]: \"7\"\n                      - generic [ref=e436]: Transactions\n                  - generic [ref=e437]:\n                    - generic [ref=e440]: 71% Stripe - Connect\n                    - generic [ref=e443]: 29% Stripe - Connect (Apple Pay)\n            - generic [ref=e444]:\n              - generic [ref=e446]:\n                - generic [ref=e447]: Ticket sales reports\n                - generic [ref=e449] [cursor=pointer]: All reports\n              - generic [ref=e454]:\n                - generic [ref=e455]:\n                  - generic [ref=e456] [cursor=pointer]:\n                    - img \"Order export\" [ref=e462]\n                    - generic [ref=e463]:\n                      - generic [ref=e464]: Order export\n                      - generic [ref=e465]: Export of all order details.\n                  - button \"Download\" [ref=e467] [cursor=pointer]:\n                    - generic [ref=e469]: Download\n                - generic [ref=e470]:\n                  - generic [ref=e471] [cursor=pointer]:\n                    - img \"Ticket detail report\" [ref=e477]\n                    - generic [ref=e478]:\n                      - generic [ref=e479]: Ticket detail report\n                      - generic [ref=e480]: Breakdown of all issued tickets.\n                  - button \"Download\" [ref=e482] [cursor=pointer]:\n                    - generic [ref=e484]: Download\n                - generic [ref=e485]:\n                  - generic [ref=e486] [cursor=pointer]:\n                    - img \"Sales report\" [ref=e492]\n                    - generic [ref=e493]:\n                      - generic [ref=e494]: Sales report\n                      - generic [ref=e495]: Analysis of event ticket sales and revenue by zones and ticket types.\n                  - button \"Download\" [ref=e497] [cursor=pointer]:\n                    - generic [ref=e499]: Download\n                - generic [ref=e500]:\n                  - generic [ref=e501] [cursor=pointer]:\n                    - img \"Ticket type report\" [ref=e507]\n                    - generic [ref=e508]:\n                      - generic [ref=e509]: Ticket type report\n                      - generic [ref=e510]: Sales summary by ticket type.\n                  - button \"Download\" [ref=e512] [cursor=pointer]:\n                    - generic [ref=e514]: Download\n  - alert [ref=e515]\n  - generic [ref=e516]: \"0\"\n  - img [ref=e520] [cursor=pointer]",
+  "refs": {
+    "e1": {
+      "role": "generic"
+    },
+    "e3": {
+      "role": "generic"
+    },
+    "e4": {
+      "role": "navigation"
+    },
+    "e6": {
+      "role": "link",
+      "name": "flicket"
+    },
+    "e7": {
+      "role": "img",
+      "name": "flicket"
+    },
+    "e8": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "link",
+      "name": "Home"
+    },
+    "e10": {
+      "role": "generic"
+    },
+    "e11": {
+      "role": "generic"
+    },
+    "e13": {
+      "role": "img"
+    },
+    "e16": {
+      "role": "img"
+    },
+    "e18": {
+      "role": "generic"
+    },
+    "e19": {
+      "role": "link",
+      "name": "Reporting"
+    },
+    "e20": {
+      "role": "generic"
+    },
+    "e21": {
+      "role": "generic"
+    },
+    "e23": {
+      "role": "img"
+    },
+    "e26": {
+      "role": "img"
+    },
+    "e28": {
+      "role": "generic"
+    },
+    "e29": {
+      "role": "link",
+      "name": "Orders"
+    },
+    "e30": {
+      "role": "generic"
+    },
+    "e31": {
+      "role": "generic"
+    },
+    "e33": {
+      "role": "img"
+    },
+    "e36": {
+      "role": "img"
+    },
+    "e38": {
+      "role": "generic"
+    },
+    "e39": {
+      "role": "link",
+      "name": "Customers"
+    },
+    "e40": {
+      "role": "generic"
+    },
+    "e41": {
+      "role": "generic"
+    },
+    "e43": {
+      "role": "img"
+    },
+    "e46": {
+      "role": "img"
+    },
+    "e48": {
+      "role": "generic"
+    },
+    "e49": {
+      "role": "link",
+      "name": "Scout"
+    },
+    "e50": {
+      "role": "generic"
+    },
+    "e51": {
+      "role": "generic"
+    },
+    "e53": {
+      "role": "img"
+    },
+    "e56": {
+      "role": "img"
+    },
+    "e58": {
+      "role": "generic"
+    },
+    "e62": {
+      "role": "generic"
+    },
+    "e63": {
+      "role": "heading",
+      "name": "Reporting"
+    },
+    "e66": {
+      "role": "button",
+      "name": "SB"
+    },
+    "e68": {
+      "role": "generic"
+    },
+    "e70": {
+      "role": "generic"
+    },
+    "e72": {
+      "role": "button",
+      "name": "Events VIP Champagne Terrace - Christchurch 2027 20 Feb 2027, 12:00 pm – 7:00 pm Hagley Park, Christchurch, Canterbury Compare sales Beta"
+    },
+    "e73": {
+      "role": "generic"
+    },
+    "e74": {
+      "role": "generic"
+    },
+    "e78": {
+      "role": "img"
+    },
+    "e79": {
+      "role": "generic"
+    },
+    "e80": {
+      "role": "generic"
+    },
+    "e81": {
+      "role": "generic"
+    },
+    "e82": {
+      "role": "generic"
+    },
+    "e83": {
+      "role": "generic"
+    },
+    "e84": {
+      "role": "generic"
+    },
+    "e85": {
+      "role": "img"
+    },
+    "e88": {
+      "role": "button",
+      "name": "Compare sales Beta"
+    },
+    "e90": {
+      "role": "generic"
+    },
+    "e92": {
+      "role": "generic"
+    },
+    "e94": {
+      "role": "generic"
+    },
+    "e95": {
+      "role": "generic"
+    },
+    "e96": {
+      "role": "generic"
+    },
+    "e98": {
+      "role": "tablist"
+    },
+    "e99": {
+      "role": "tab",
+      "name": "Event overview"
+    },
+    "e100": {
+      "role": "generic"
+    },
+    "e101": {
+      "role": "tab",
+      "name": "Reports"
+    },
+    "e102": {
+      "role": "generic"
+    },
+    "e103": {
+      "role": "tab",
+      "name": "Ticket sales"
+    },
+    "e104": {
+      "role": "generic"
+    },
+    "e105": {
+      "role": "tab",
+      "name": "Financial"
+    },
+    "e106": {
+      "role": "generic"
+    },
+    "e107": {
+      "role": "tab",
+      "name": "Scans"
+    },
+    "e108": {
+      "role": "generic"
+    },
+    "e109": {
+      "role": "tab",
+      "name": "Audience"
+    },
+    "e110": {
+      "role": "generic"
+    },
+    "e111": {
+      "role": "tab",
+      "name": "Marketing"
+    },
+    "e112": {
+      "role": "generic"
+    },
+    "e113": {
+      "role": "tab",
+      "name": "Codes"
+    },
+    "e114": {
+      "role": "generic"
+    },
+    "e115": {
+      "role": "tab",
+      "name": "POS"
+    },
+    "e116": {
+      "role": "generic"
+    },
+    "e118": {
+      "role": "tabpanel",
+      "name": "Ticket sales"
+    },
+    "e119": {
+      "role": "generic"
+    },
+    "e120": {
+      "role": "generic"
+    },
+    "e122": {
+      "role": "generic"
+    },
+    "e125": {
+      "role": "textbox",
+      "name": "Select a date range"
+    },
+    "e127": {
+      "role": "button",
+      "name": "Add filter"
+    },
+    "e129": {
+      "role": "generic"
+    },
+    "e130": {
+      "role": "generic"
+    },
+    "e132": {
+      "role": "generic"
+    },
+    "e133": {
+      "role": "generic"
+    },
+    "e136": {
+      "role": "generic"
+    },
+    "e140": {
+      "role": "generic"
+    },
+    "e141": {
+      "role": "generic"
+    },
+    "e142": {
+      "role": "generic"
+    },
+    "e143": {
+      "role": "generic"
+    },
+    "e144": {
+      "role": "generic"
+    },
+    "e145": {
+      "role": "generic"
+    },
+    "e146": {
+      "role": "generic"
+    },
+    "e147": {
+      "role": "generic"
+    },
+    "e148": {
+      "role": "generic"
+    },
+    "e152": {
+      "role": "img"
+    },
+    "e154": {
+      "role": "generic"
+    },
+    "e158": {
+      "role": "generic"
+    },
+    "e161": {
+      "role": "generic"
+    },
+    "e164": {
+      "role": "generic"
+    },
+    "e167": {
+      "role": "generic"
+    },
+    "e169": {
+      "role": "generic"
+    },
+    "e173": {
+      "role": "generic"
+    },
+    "e174": {
+      "role": "generic"
+    },
+    "e176": {
+      "role": "generic"
+    },
+    "e177": {
+      "role": "button"
+    },
+    "e180": {
+      "role": "generic"
+    },
+    "e182": {
+      "role": "generic"
+    },
+    "e183": {
+      "role": "generic"
+    },
+    "e184": {
+      "role": "generic"
+    },
+    "e185": {
+      "role": "generic"
+    },
+    "e186": {
+      "role": "generic",
+      "name": "20 / 2000"
+    },
+    "e189": {
+      "role": "generic"
+    },
+    "e190": {
+      "role": "generic"
+    },
+    "e191": {
+      "role": "generic"
+    },
+    "e193": {
+      "role": "generic"
+    },
+    "e194": {
+      "role": "button"
+    },
+    "e197": {
+      "role": "generic"
+    },
+    "e199": {
+      "role": "generic"
+    },
+    "e200": {
+      "role": "generic"
+    },
+    "e201": {
+      "role": "generic"
+    },
+    "e202": {
+      "role": "generic"
+    },
+    "e204": {
+      "role": "generic"
+    },
+    "e205": {
+      "role": "generic"
+    },
+    "e208": {
+      "role": "generic"
+    },
+    "e213": {
+      "role": "generic"
+    },
+    "e214": {
+      "role": "generic"
+    },
+    "e215": {
+      "role": "generic"
+    },
+    "e216": {
+      "role": "generic"
+    },
+    "e220": {
+      "role": "img"
+    },
+    "e222": {
+      "role": "generic"
+    },
+    "e223": {
+      "role": "generic"
+    },
+    "e224": {
+      "role": "generic"
+    },
+    "e225": {
+      "role": "generic"
+    },
+    "e229": {
+      "role": "img"
+    },
+    "e231": {
+      "role": "generic"
+    },
+    "e232": {
+      "role": "generic"
+    },
+    "e233": {
+      "role": "generic"
+    },
+    "e234": {
+      "role": "generic"
+    },
+    "e238": {
+      "role": "img"
+    },
+    "e240": {
+      "role": "generic"
+    },
+    "e241": {
+      "role": "generic"
+    },
+    "e242": {
+      "role": "generic"
+    },
+    "e243": {
+      "role": "generic"
+    },
+    "e247": {
+      "role": "img"
+    },
+    "e249": {
+      "role": "generic"
+    },
+    "e250": {
+      "role": "generic"
+    },
+    "e251": {
+      "role": "generic"
+    },
+    "e252": {
+      "role": "generic"
+    },
+    "e256": {
+      "role": "img"
+    },
+    "e258": {
+      "role": "generic"
+    },
+    "e259": {
+      "role": "generic"
+    },
+    "e260": {
+      "role": "generic"
+    },
+    "e261": {
+      "role": "generic"
+    },
+    "e265": {
+      "role": "img"
+    },
+    "e267": {
+      "role": "generic"
+    },
+    "e268": {
+      "role": "generic"
+    },
+    "e269": {
+      "role": "generic"
+    },
+    "e270": {
+      "role": "generic"
+    },
+    "e274": {
+      "role": "img"
+    },
+    "e276": {
+      "role": "generic"
+    },
+    "e277": {
+      "role": "generic"
+    },
+    "e278": {
+      "role": "generic"
+    },
+    "e279": {
+      "role": "generic"
+    },
+    "e283": {
+      "role": "img"
+    },
+    "e285": {
+      "role": "generic"
+    },
+    "e286": {
+      "role": "generic"
+    },
+    "e287": {
+      "role": "generic"
+    },
+    "e288": {
+      "role": "generic"
+    },
+    "e292": {
+      "role": "img"
+    },
+    "e294": {
+      "role": "generic"
+    },
+    "e295": {
+      "role": "generic"
+    },
+    "e296": {
+      "role": "generic"
+    },
+    "e297": {
+      "role": "generic"
+    },
+    "e301": {
+      "role": "img"
+    },
+    "e303": {
+      "role": "generic"
+    },
+    "e304": {
+      "role": "generic"
+    },
+    "e305": {
+      "role": "generic"
+    },
+    "e306": {
+      "role": "generic"
+    },
+    "e310": {
+      "role": "img"
+    },
+    "e312": {
+      "role": "generic"
+    },
+    "e313": {
+      "role": "generic"
+    },
+    "e315": {
+      "role": "generic"
+    },
+    "e316": {
+      "role": "generic"
+    },
+    "e318": {
+      "role": "generic"
+    },
+    "e320": {
+      "role": "generic"
+    },
+    "e321": {
+      "role": "generic"
+    },
+    "e323": {
+      "role": "img"
+    },
+    "e325": {
+      "role": "generic"
+    },
+    "e326": {
+      "role": "button",
+      "name": "Compare Beta"
+    },
+    "e328": {
+      "role": "generic"
+    },
+    "e330": {
+      "role": "generic"
+    },
+    "e334": {
+      "role": "generic"
+    },
+    "e338": {
+      "role": "application"
+    },
+    "e342": {
+      "role": "generic"
+    },
+    "e344": {
+      "role": "generic"
+    },
+    "e346": {
+      "role": "generic"
+    },
+    "e348": {
+      "role": "generic"
+    },
+    "e350": {
+      "role": "generic"
+    },
+    "e352": {
+      "role": "generic"
+    },
+    "e354": {
+      "role": "generic"
+    },
+    "e356": {
+      "role": "generic"
+    },
+    "e358": {
+      "role": "generic"
+    },
+    "e360": {
+      "role": "generic"
+    },
+    "e370": {
+      "role": "list"
+    },
+    "e371": {
+      "role": "listitem"
+    },
+    "e372": {
+      "role": "button"
+    },
+    "e375": {
+      "role": "generic"
+    },
+    "e377": {
+      "role": "generic"
+    },
+    "e378": {
+      "role": "generic"
+    },
+    "e379": {
+      "role": "generic"
+    },
+    "e382": {
+      "role": "generic"
+    },
+    "e387": {
+      "role": "generic"
+    },
+    "e388": {
+      "role": "generic"
+    },
+    "e390": {
+      "role": "application"
+    },
+    "e399": {
+      "role": "generic"
+    },
+    "e400": {
+      "role": "generic"
+    },
+    "e401": {
+      "role": "generic"
+    },
+    "e402": {
+      "role": "generic"
+    },
+    "e405": {
+      "role": "generic"
+    },
+    "e408": {
+      "role": "generic"
+    },
+    "e411": {
+      "role": "generic"
+    },
+    "e412": {
+      "role": "generic"
+    },
+    "e415": {
+      "role": "generic"
+    },
+    "e420": {
+      "role": "generic"
+    },
+    "e421": {
+      "role": "generic"
+    },
+    "e423": {
+      "role": "application"
+    },
+    "e434": {
+      "role": "generic"
+    },
+    "e435": {
+      "role": "generic"
+    },
+    "e436": {
+      "role": "generic"
+    },
+    "e437": {
+      "role": "generic"
+    },
+    "e440": {
+      "role": "generic"
+    },
+    "e443": {
+      "role": "generic"
+    },
+    "e444": {
+      "role": "generic"
+    },
+    "e446": {
+      "role": "generic"
+    },
+    "e447": {
+      "role": "generic"
+    },
+    "e449": {
+      "role": "generic"
+    },
+    "e454": {
+      "role": "generic"
+    },
+    "e455": {
+      "role": "generic"
+    },
+    "e456": {
+      "role": "generic"
+    },
+    "e462": {
+      "role": "img",
+      "name": "Order export"
+    },
+    "e463": {
+      "role": "generic"
+    },
+    "e464": {
+      "role": "generic"
+    },
+    "e465": {
+      "role": "generic"
+    },
+    "e467": {
+      "role": "button",
+      "name": "Download"
+    },
+    "e469": {
+      "role": "generic"
+    },
+    "e470": {
+      "role": "generic"
+    },
+    "e471": {
+      "role": "generic"
+    },
+    "e477": {
+      "role": "img",
+      "name": "Ticket detail report"
+    },
+    "e478": {
+      "role": "generic"
+    },
+    "e479": {
+      "role": "generic"
+    },
+    "e480": {
+      "role": "generic"
+    },
+    "e482": {
+      "role": "button",
+      "name": "Download"
+    },
+    "e484": {
+      "role": "generic"
+    },
+    "e485": {
+      "role": "generic"
+    },
+    "e486": {
+      "role": "generic"
+    },
+    "e492": {
+      "role": "img",
+      "name": "Sales report"
+    },
+    "e493": {
+      "role": "generic"
+    },
+    "e494": {
+      "role": "generic"
+    },
+    "e495": {
+      "role": "generic"
+    },
+    "e497": {
+      "role": "button",
+      "name": "Download"
+    },
+    "e499": {
+      "role": "generic"
+    },
+    "e500": {
+      "role": "generic"
+    },
+    "e501": {
+      "role": "generic"
+    },
+    "e507": {
+      "role": "img",
+      "name": "Ticket type report"
+    },
+    "e508": {
+      "role": "generic"
+    },
+    "e509": {
+      "role": "generic"
+    },
+    "e510": {
+      "role": "generic"
+    },
+    "e512": {
+      "role": "button",
+      "name": "Download"
+    },
+    "e514": {
+      "role": "generic"
+    },
+    "e515": {
+      "role": "alert"
+    },
+    "e516": {
+      "role": "generic"
+    },
+    "e520": {
+      "role": "img"
+    }
+  }
+}
