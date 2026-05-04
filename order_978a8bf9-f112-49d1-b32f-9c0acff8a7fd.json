@@ -1,0 +1,653 @@
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "FC26F46796BC7FBAD373DEF6748F061C",
+  "url": "https://admin.f3polo.flicket.io/orders/978a8bf9-f112-49d1-b32f-9c0acff8a7fd?status=Completed&status=Paid",
+  "snapshot": "- generic [active] [ref=e1]:\n  - generic [ref=e3]:\n    - navigation [ref=e4]:\n      - link \"flicket\" [ref=e6] [cursor=pointer]:\n        - /url: /\n        - img \"flicket\" [ref=e7]\n      - generic [ref=e8]:\n        - link \"Home\" [ref=e9] [cursor=pointer]:\n          - /url: /\n          - generic [ref=e10]:\n            - generic [ref=e11]:\n              - img [ref=e13]\n              - img [ref=e16]\n            - generic [ref=e18]: Home\n        - link \"Reporting\" [ref=e19] [cursor=pointer]:\n          - /url: /reporting\n          - generic [ref=e20]:\n            - generic [ref=e21]:\n              - img [ref=e23]\n              - img [ref=e26]\n            - generic [ref=e28]: Reporting\n        - link \"Orders\" [ref=e29] [cursor=pointer]:\n          - /url: /orders?status=Completed&status=Paid\n          - generic [ref=e30]:\n            - generic [ref=e31]:\n              - img [ref=e33]\n              - img [ref=e36]\n            - generic [ref=e38]: Orders\n        - link \"Customers\" [ref=e39] [cursor=pointer]:\n          - /url: /customers\n          - generic [ref=e40]:\n            - generic [ref=e41]:\n              - img [ref=e43]\n              - img [ref=e46]\n            - generic [ref=e48]: Customers\n        - link \"Scout\" [ref=e49] [cursor=pointer]:\n          - /url: /scout\n          - generic [ref=e50]:\n            - generic [ref=e51]:\n              - img [ref=e53]\n              - img [ref=e56]\n            - generic [ref=e58]: Scout\n    - generic [ref=e62]:\n      - 'heading \"Order #F3P-2026-22299275\" [level=1] [ref=e63]'\n      - generic [ref=e64]:\n        - generic [ref=e65]: \"Created: Apr 26, 2026, 6:01am\"\n        - generic [ref=e69]: Completed\n        - button \"ST\" [ref=e71] [cursor=pointer]:\n          - generic [ref=e73]: ST\n    - generic [ref=e75]:\n      - link \"Back to Orders\" [ref=e76] [cursor=pointer]:\n        - /url: /orders?status=Completed&status=Paid\n        - img [ref=e78]\n        - text: Back to Orders\n      - button \"More options\" [ref=e83] [cursor=pointer]:\n        - generic [ref=e85]:\n          - text: More options\n          - generic [ref=e86]:\n            - img\n    - generic [ref=e88]:\n      - generic [ref=e89]:\n        - generic [ref=e90]:\n          - generic [ref=e91]: Order details - F3 Polo Sydney 2026 - VIP Terrace - Nov 14, 2026\n          - generic [ref=e96]:\n            - generic [ref=e98]:\n              - generic [ref=e99]: Order channel\n              - generic [ref=e100]:\n                - textbox \"Order channel\": Online\n            - generic [ref=e104]:\n              - generic [ref=e105]:\n                - generic [ref=e106]: Payment method\n                - generic [ref=e107]:\n                  - textbox \"Payment method\": Stripe\n              - generic [ref=e108]:\n                - generic [ref=e109]: Transaction status\n                - generic [ref=e110]:\n                  - textbox \"Transaction status\": Success\n              - generic [ref=e111]:\n                - generic [ref=e112]: Order number\n                - generic [ref=e113]:\n                  - textbox \"Order number\": F3P-2026-22299275\n              - generic [ref=e115]:\n                - generic [ref=e116]: Order status\n                - generic [ref=e117]:\n                  - textbox \"Order status\": Completed\n            - generic [ref=e121]:\n              - generic [ref=e122]: Product\n              - generic [ref=e123]: Qty\n              - generic [ref=e124]: Tax\n              - generic [ref=e125]: Total\n              - generic [ref=e128]: \"Ticket: VIP - EARLY BIRD (VIP CHAMPAGNE TERRACE) - VIP CHAMPAGNE TERRACE\"\n              - generic [ref=e129]: \"1\"\n              - generic [ref=e130]: 10%\n              - generic [ref=e132]: $269.00\n            - generic [ref=e136]:\n              - generic [ref=e137]: Total number of tickets\n              - generic [ref=e139]: \"1\"\n            - generic [ref=e143]:\n              - generic [ref=e144]: Delivery costs (E-ticket)\n              - generic [ref=e147]: Free shipping\n            - generic [ref=e151]:\n              - generic [ref=e152]:\n                - generic [ref=e153]: Ticket fees\n                - button \"Show details\" [ref=e154] [cursor=pointer]:\n                  - generic [ref=e156]: Show details\n              - generic [ref=e158]: $5.00\n            - generic [ref=e159]:\n              - generic [ref=e160]: Order Handling Fee\n              - generic [ref=e163]: $0.00\n              - generic [ref=e164]: Transaction fee (1.75% + $0.30)\n              - generic [ref=e167]: $5.09\n            - generic [ref=e171]:\n              - link \"Exchange tickets\" [ref=e174] [cursor=pointer]:\n                - /url: https://f3polo.flicket.io/orders/978a8bf9-f112-49d1-b32f-9c0acff8a7fd/tickets\n                - generic [ref=e177]: Exchange tickets\n              - generic [ref=e178]:\n                - generic [ref=e179]: Sub-total (excl 10% GST)\n                - generic [ref=e180]: Order total\n              - generic [ref=e181]:\n                - generic [ref=e182]: $253.72\n                - generic [ref=e183]: $279.09\n        - generic [ref=e187]:\n          - generic [ref=e188]: Person details\n          - generic [ref=e193]:\n            - generic [ref=e195]:\n              - generic [ref=e196]: Ordering as\n              - generic [ref=e197]:\n                - generic [ref=e199]:\n                  - log [ref=e201]\n                  - generic [ref=e204] [cursor=pointer]:\n                    - generic [ref=e207]: Consumer\n                    - combobox [ref=e208]\n                - generic:\n                  - img\n            - generic [ref=e209]:\n              - generic [ref=e210]:\n                - generic [ref=e211]: First name\n                - textbox \"First name\" [ref=e213]: Christine\n              - generic [ref=e214]:\n                - generic [ref=e215]: Last name\n                - textbox \"Last name\" [ref=e217]: Novakovic\n              - generic [ref=e218]:\n                - generic [ref=e219]: Email\n                - textbox \"Email\" [ref=e221]: Christine.novakovic@web.de\n              - generic [ref=e222]:\n                - generic [ref=e223]: Telephone\n                - textbox \"Telephone\" [ref=e225]: \"004916096888579\"\n              - generic [ref=e226]:\n                - generic [ref=e227]: Postal code\n                - textbox \"Postal code\" [ref=e229]: \"80333\"\n              - generic [ref=e230]:\n                - generic [ref=e231]: Country\n                - generic [ref=e232]:\n                  - generic [ref=e234]:\n                    - log [ref=e236]\n                    - generic [ref=e239] [cursor=pointer]:\n                      - generic [ref=e242]: Germany\n                      - combobox [ref=e244]\n                  - generic:\n                    - img\n              - generic [ref=e248] [cursor=pointer]:\n                - checkbox \"Update customer details on save\" [checked] [ref=e249]\n                - generic \"Update customer details on save\" [ref=e251]\n        - generic [ref=e252]:\n          - generic [ref=e253]: Billing address\n          - generic [ref=e259]:\n            - generic [ref=e260]:\n              - generic [ref=e261]: Address line 1\n              - textbox \"Address line 1\" [ref=e263]\n            - generic [ref=e264]:\n              - generic [ref=e265]: Address line 2\n              - textbox \"Address line 2\" [ref=e267]\n            - generic [ref=e268]:\n              - generic [ref=e269]: Suburb\n              - textbox \"Suburb\" [ref=e271]\n            - generic [ref=e272]:\n              - generic [ref=e273]: Postal Code\n              - textbox \"Postal Code\" [ref=e275]\n            - generic [ref=e276]:\n              - generic [ref=e277]: City\n              - textbox \"City\" [ref=e279]\n            - generic [ref=e280]:\n              - generic [ref=e281]: Country\n              - generic [ref=e282]:\n                - generic [ref=e284]:\n                  - log [ref=e286]\n                  - generic [ref=e289] [cursor=pointer]:\n                    - generic [ref=e290]: Select\n                    - combobox [ref=e292]\n                - generic:\n                  - img\n        - generic [ref=e293]:\n          - generic [ref=e294]: Shipping address\n          - generic [ref=e299]:\n            - generic [ref=e302] [cursor=pointer]:\n              - checkbox \"Same as billing address\" [ref=e303]\n              - generic \"Same as billing address\" [ref=e305]\n            - generic [ref=e306]:\n              - generic [ref=e307]:\n                - generic [ref=e308]: Address line 1\n                - textbox \"Address line 1\" [ref=e310]\n              - generic [ref=e311]:\n                - generic [ref=e312]: Address line 2\n                - textbox \"Address line 2\" [ref=e314]\n              - generic [ref=e315]:\n                - generic [ref=e316]: Suburb\n                - textbox \"Suburb\" [ref=e318]\n              - generic [ref=e319]:\n                - generic [ref=e320]: Postal Code\n                - textbox \"Postal Code\" [ref=e322]\n              - generic [ref=e323]:\n                - generic [ref=e324]: City\n                - textbox \"City\" [ref=e326]\n              - generic [ref=e327]:\n                - generic [ref=e328]: Country\n                - generic [ref=e329]:\n                  - generic [ref=e331]:\n                    - log [ref=e333]\n                    - generic [ref=e336] [cursor=pointer]:\n                      - generic [ref=e337]: Select\n                      - combobox [ref=e339]\n                  - generic:\n                    - img\n      - generic [ref=e340]:\n        - generic [ref=e341]: History & notes\n        - button \"Show History\" [ref=e347] [cursor=pointer]:\n          - generic [ref=e349]: Show History\n  - alert [ref=e353]\n  - img [ref=e357] [cursor=pointer]",
+  "refs": {
+    "e1": {
+      "role": "generic"
+    },
+    "e3": {
+      "role": "generic"
+    },
+    "e4": {
+      "role": "navigation"
+    },
+    "e6": {
+      "role": "link",
+      "name": "flicket"
+    },
+    "e7": {
+      "role": "img",
+      "name": "flicket"
+    },
+    "e8": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "link",
+      "name": "Home"
+    },
+    "e10": {
+      "role": "generic"
+    },
+    "e11": {
+      "role": "generic"
+    },
+    "e13": {
+      "role": "img"
+    },
+    "e16": {
+      "role": "img"
+    },
+    "e18": {
+      "role": "generic"
+    },
+    "e19": {
+      "role": "link",
+      "name": "Reporting"
+    },
+    "e20": {
+      "role": "generic"
+    },
+    "e21": {
+      "role": "generic"
+    },
+    "e23": {
+      "role": "img"
+    },
+    "e26": {
+      "role": "img"
+    },
+    "e28": {
+      "role": "generic"
+    },
+    "e29": {
+      "role": "link",
+      "name": "Orders"
+    },
+    "e30": {
+      "role": "generic"
+    },
+    "e31": {
+      "role": "generic"
+    },
+    "e33": {
+      "role": "img"
+    },
+    "e36": {
+      "role": "img"
+    },
+    "e38": {
+      "role": "generic"
+    },
+    "e39": {
+      "role": "link",
+      "name": "Customers"
+    },
+    "e40": {
+      "role": "generic"
+    },
+    "e41": {
+      "role": "generic"
+    },
+    "e43": {
+      "role": "img"
+    },
+    "e46": {
+      "role": "img"
+    },
+    "e48": {
+      "role": "generic"
+    },
+    "e49": {
+      "role": "link",
+      "name": "Scout"
+    },
+    "e50": {
+      "role": "generic"
+    },
+    "e51": {
+      "role": "generic"
+    },
+    "e53": {
+      "role": "img"
+    },
+    "e56": {
+      "role": "img"
+    },
+    "e58": {
+      "role": "generic"
+    },
+    "e62": {
+      "role": "generic"
+    },
+    "e64": {
+      "role": "generic"
+    },
+    "e65": {
+      "role": "generic"
+    },
+    "e69": {
+      "role": "generic"
+    },
+    "e71": {
+      "role": "button",
+      "name": "ST"
+    },
+    "e73": {
+      "role": "generic"
+    },
+    "e75": {
+      "role": "generic"
+    },
+    "e76": {
+      "role": "link",
+      "name": "Back to Orders"
+    },
+    "e78": {
+      "role": "img"
+    },
+    "e83": {
+      "role": "button",
+      "name": "More options"
+    },
+    "e85": {
+      "role": "generic"
+    },
+    "e86": {
+      "role": "generic"
+    },
+    "e88": {
+      "role": "generic"
+    },
+    "e89": {
+      "role": "generic"
+    },
+    "e90": {
+      "role": "generic"
+    },
+    "e91": {
+      "role": "generic"
+    },
+    "e96": {
+      "role": "generic"
+    },
+    "e98": {
+      "role": "generic"
+    },
+    "e99": {
+      "role": "generic"
+    },
+    "e100": {
+      "role": "generic"
+    },
+    "e104": {
+      "role": "generic"
+    },
+    "e105": {
+      "role": "generic"
+    },
+    "e106": {
+      "role": "generic"
+    },
+    "e107": {
+      "role": "generic"
+    },
+    "e108": {
+      "role": "generic"
+    },
+    "e109": {
+      "role": "generic"
+    },
+    "e110": {
+      "role": "generic"
+    },
+    "e111": {
+      "role": "generic"
+    },
+    "e112": {
+      "role": "generic"
+    },
+    "e113": {
+      "role": "generic"
+    },
+    "e115": {
+      "role": "generic"
+    },
+    "e116": {
+      "role": "generic"
+    },
+    "e117": {
+      "role": "generic"
+    },
+    "e121": {
+      "role": "generic"
+    },
+    "e122": {
+      "role": "generic"
+    },
+    "e123": {
+      "role": "generic"
+    },
+    "e124": {
+      "role": "generic"
+    },
+    "e125": {
+      "role": "generic"
+    },
+    "e128": {
+      "role": "generic"
+    },
+    "e129": {
+      "role": "generic"
+    },
+    "e130": {
+      "role": "generic"
+    },
+    "e132": {
+      "role": "generic"
+    },
+    "e136": {
+      "role": "generic"
+    },
+    "e137": {
+      "role": "generic"
+    },
+    "e139": {
+      "role": "generic"
+    },
+    "e143": {
+      "role": "generic"
+    },
+    "e144": {
+      "role": "generic"
+    },
+    "e147": {
+      "role": "generic"
+    },
+    "e151": {
+      "role": "generic"
+    },
+    "e152": {
+      "role": "generic"
+    },
+    "e153": {
+      "role": "generic"
+    },
+    "e154": {
+      "role": "button",
+      "name": "Show details"
+    },
+    "e156": {
+      "role": "generic"
+    },
+    "e158": {
+      "role": "generic"
+    },
+    "e159": {
+      "role": "generic"
+    },
+    "e160": {
+      "role": "generic"
+    },
+    "e163": {
+      "role": "generic"
+    },
+    "e164": {
+      "role": "generic"
+    },
+    "e167": {
+      "role": "generic"
+    },
+    "e171": {
+      "role": "generic"
+    },
+    "e174": {
+      "role": "link",
+      "name": "Exchange tickets"
+    },
+    "e177": {
+      "role": "generic"
+    },
+    "e178": {
+      "role": "generic"
+    },
+    "e179": {
+      "role": "generic"
+    },
+    "e180": {
+      "role": "generic"
+    },
+    "e181": {
+      "role": "generic"
+    },
+    "e182": {
+      "role": "generic"
+    },
+    "e183": {
+      "role": "generic"
+    },
+    "e187": {
+      "role": "generic"
+    },
+    "e188": {
+      "role": "generic"
+    },
+    "e193": {
+      "role": "generic"
+    },
+    "e195": {
+      "role": "generic"
+    },
+    "e196": {
+      "role": "generic"
+    },
+    "e197": {
+      "role": "generic"
+    },
+    "e199": {
+      "role": "generic"
+    },
+    "e201": {
+      "role": "log"
+    },
+    "e204": {
+      "role": "generic"
+    },
+    "e207": {
+      "role": "generic"
+    },
+    "e208": {
+      "role": "combobox"
+    },
+    "e209": {
+      "role": "generic"
+    },
+    "e210": {
+      "role": "generic"
+    },
+    "e211": {
+      "role": "generic"
+    },
+    "e213": {
+      "role": "textbox",
+      "name": "First name"
+    },
+    "e214": {
+      "role": "generic"
+    },
+    "e215": {
+      "role": "generic"
+    },
+    "e217": {
+      "role": "textbox",
+      "name": "Last name"
+    },
+    "e218": {
+      "role": "generic"
+    },
+    "e219": {
+      "role": "generic"
+    },
+    "e221": {
+      "role": "textbox",
+      "name": "Email"
+    },
+    "e222": {
+      "role": "generic"
+    },
+    "e223": {
+      "role": "generic"
+    },
+    "e225": {
+      "role": "textbox",
+      "name": "Telephone"
+    },
+    "e226": {
+      "role": "generic"
+    },
+    "e227": {
+      "role": "generic"
+    },
+    "e229": {
+      "role": "textbox",
+      "name": "Postal code"
+    },
+    "e230": {
+      "role": "generic"
+    },
+    "e231": {
+      "role": "generic"
+    },
+    "e232": {
+      "role": "generic"
+    },
+    "e234": {
+      "role": "generic"
+    },
+    "e236": {
+      "role": "log"
+    },
+    "e239": {
+      "role": "generic"
+    },
+    "e242": {
+      "role": "generic"
+    },
+    "e244": {
+      "role": "combobox"
+    },
+    "e248": {
+      "role": "generic"
+    },
+    "e249": {
+      "role": "checkbox",
+      "name": "Update customer details on save"
+    },
+    "e251": {
+      "role": "generic",
+      "name": "Update customer details on save"
+    },
+    "e252": {
+      "role": "generic"
+    },
+    "e253": {
+      "role": "generic"
+    },
+    "e259": {
+      "role": "generic"
+    },
+    "e260": {
+      "role": "generic"
+    },
+    "e261": {
+      "role": "generic"
+    },
+    "e263": {
+      "role": "textbox",
+      "name": "Address line 1"
+    },
+    "e264": {
+      "role": "generic"
+    },
+    "e265": {
+      "role": "generic"
+    },
+    "e267": {
+      "role": "textbox",
+      "name": "Address line 2"
+    },
+    "e268": {
+      "role": "generic"
+    },
+    "e269": {
+      "role": "generic"
+    },
+    "e271": {
+      "role": "textbox",
+      "name": "Suburb"
+    },
+    "e272": {
+      "role": "generic"
+    },
+    "e273": {
+      "role": "generic"
+    },
+    "e275": {
+      "role": "textbox",
+      "name": "Postal Code"
+    },
+    "e276": {
+      "role": "generic"
+    },
+    "e277": {
+      "role": "generic"
+    },
+    "e279": {
+      "role": "textbox",
+      "name": "City"
+    },
+    "e280": {
+      "role": "generic"
+    },
+    "e281": {
+      "role": "generic"
+    },
+    "e282": {
+      "role": "generic"
+    },
+    "e284": {
+      "role": "generic"
+    },
+    "e286": {
+      "role": "log"
+    },
+    "e289": {
+      "role": "generic"
+    },
+    "e290": {
+      "role": "generic"
+    },
+    "e292": {
+      "role": "combobox"
+    },
+    "e293": {
+      "role": "generic"
+    },
+    "e294": {
+      "role": "generic"
+    },
+    "e299": {
+      "role": "generic"
+    },
+    "e302": {
+      "role": "generic"
+    },
+    "e303": {
+      "role": "checkbox",
+      "name": "Same as billing address"
+    },
+    "e305": {
+      "role": "generic",
+      "name": "Same as billing address"
+    },
+    "e306": {
+      "role": "generic"
+    },
+    "e307": {
+      "role": "generic"
+    },
+    "e308": {
+      "role": "generic"
+    },
+    "e310": {
+      "role": "textbox",
+      "name": "Address line 1"
+    },
+    "e311": {
+      "role": "generic"
+    },
+    "e312": {
+      "role": "generic"
+    },
+    "e314": {
+      "role": "textbox",
+      "name": "Address line 2"
+    },
+    "e315": {
+      "role": "generic"
+    },
+    "e316": {
+      "role": "generic"
+    },
+    "e318": {
+      "role": "textbox",
+      "name": "Suburb"
+    },
+    "e319": {
+      "role": "generic"
+    },
+    "e320": {
+      "role": "generic"
+    },
+    "e322": {
+      "role": "textbox",
+      "name": "Postal Code"
+    },
+    "e323": {
+      "role": "generic"
+    },
+    "e324": {
+      "role": "generic"
+    },
+    "e326": {
+      "role": "textbox",
+      "name": "City"
+    },
+    "e327": {
+      "role": "generic"
+    },
+    "e328": {
+      "role": "generic"
+    },
+    "e329": {
+      "role": "generic"
+    },
+    "e331": {
+      "role": "generic"
+    },
+    "e333": {
+      "role": "log"
+    },
+    "e336": {
+      "role": "generic"
+    },
+    "e337": {
+      "role": "generic"
+    },
+    "e339": {
+      "role": "combobox"
+    },
+    "e340": {
+      "role": "generic"
+    },
+    "e341": {
+      "role": "generic"
+    },
+    "e347": {
+      "role": "button",
+      "name": "Show History"
+    },
+    "e349": {
+      "role": "generic"
+    },
+    "e353": {
+      "role": "alert"
+    },
+    "e357": {
+      "role": "img"
+    }
+  }
+}
