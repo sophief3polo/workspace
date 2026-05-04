@@ -1,0 +1,1106 @@
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "FC26F46796BC7FBAD373DEF6748F061C",
+  "url": "https://admin.f3polo.flicket.io/reporting/events/ticket-sales?sourceSelection={%22eventId%22:%229d995ad4-3132-43b6-85c0-bd4bf3de11a6%22}",
+  "snapshot": "- generic [ref=e1]:\n  - generic [ref=e558]:\n    - navigation [ref=e559]:\n      - link [ref=e1151] [cursor=pointer]:\n        - /url: /\n        - img [ref=e1152]\n      - generic [ref=e563]:\n        - link [ref=e1153] [cursor=pointer]:\n          - /url: /\n          - generic [ref=e565]:\n            - generic [ref=e566]:\n              - img [ref=e568]\n              - img [ref=e571]\n            - generic [ref=e573]: Home\n        - link [ref=e1154] [cursor=pointer]:\n          - /url: /reporting\n          - generic [ref=e575]:\n            - generic [ref=e576]:\n              - img [ref=e578]\n              - img [ref=e581]\n            - generic [ref=e583]: Reporting\n        - link [ref=e1155] [cursor=pointer]:\n          - /url: /orders?status=Completed&status=Paid\n          - generic [ref=e585]:\n            - generic [ref=e586]:\n              - img [ref=e588]\n              - img [ref=e591]\n            - generic [ref=e593]: Orders\n        - link [ref=e1156] [cursor=pointer]:\n          - /url: /customers\n          - generic [ref=e595]:\n            - generic [ref=e596]:\n              - img [ref=e598]\n              - img [ref=e601]\n            - generic [ref=e603]: Customers\n        - link [ref=e1157] [cursor=pointer]:\n          - /url: /scout\n          - generic [ref=e605]:\n            - generic [ref=e606]:\n              - img [ref=e608]\n              - img [ref=e611]\n            - generic [ref=e613]: Scout\n    - generic [ref=e617]:\n      - heading [level=1] [ref=e1158]: Reporting\n      - button [ref=e1159] [cursor=pointer]:\n        - generic [ref=e1161]: ST\n    - generic [ref=e625]:\n      - button [ref=e1162] [cursor=pointer]:\n        - generic [ref=e628]:\n          - generic [ref=e629]:\n            - img [ref=e633]\n            - generic [ref=e634]:\n              - generic [ref=e635]:\n                - generic [ref=e636]: Events\n                - generic [ref=e637]: F3 Polo Sydney 2026 - Heineken Polo Lawn\n                - generic [ref=e638]:\n                  - generic [ref=e639]: 14 Nov 2026, 12:00 pm – 7:00 pm\n                  - text: Mission Field, Centennial Parklands, Centennial Park\n              - img [ref=e640]\n          - button [ref=e1163]:\n            - generic [ref=e645]:\n              - img\n              - text: Compare sales\n              - generic [ref=e647]: Beta\n      - generic [ref=e649]:\n        - generic [ref=e650]:\n          - generic [ref=e651]: Dashboards\n          - tablist [ref=e653]:\n            - tab [ref=e1164] [cursor=pointer]:\n              - generic [ref=e655]: Event overview\n            - tab [ref=e1165] [cursor=pointer]:\n              - generic [ref=e657]: Reports\n            - tab [selected] [ref=e1166] [cursor=pointer]:\n              - generic [ref=e659]: Ticket sales\n            - tab [ref=e1167] [cursor=pointer]:\n              - generic [ref=e661]: Financial\n            - tab [ref=e1168] [cursor=pointer]:\n              - generic [ref=e663]: Scans\n            - tab [ref=e1169] [cursor=pointer]:\n              - generic [ref=e665]: Audience\n            - tab [ref=e1170] [cursor=pointer]:\n              - generic [ref=e667]: Marketing\n            - tab [ref=e1171] [cursor=pointer]:\n              - generic [ref=e669]: Codes\n            - tab [ref=e1172] [cursor=pointer]:\n              - generic [ref=e671]: POS\n        - tabpanel [ref=e1173]:\n          - generic [ref=e674]:\n            - generic [ref=e675]:\n              - generic [ref=e677]:\n                - textbox [ref=e1174] [cursor=pointer]:\n                  - /placeholder: Select a date range\n                  - text: On sale – Apr 18, 2026 to Apr 27, 2026\n                - generic:\n                  - generic:\n                    - generic:\n                      - img\n                - generic:\n                  - img\n              - button [ref=e1175] [cursor=pointer]:\n                - generic [ref=e684]:\n                  - img\n                  - text: Add filter\n            - generic [ref=e685]:\n              - generic [ref=e687]:\n                - generic [ref=e688]: Sales report\n                - generic [ref=e691] [cursor=pointer]: Download sales report\n              - generic [ref=e695]:\n                - generic [ref=e696]:\n                  - generic [ref=e697]:\n                    - generic [ref=e698]: $1,320.00\n                    - generic [ref=e699]:\n                      - generic [ref=e700]:\n                        - generic [ref=e701]: Face value of ticket sales only\n                        - text: – excluding fees • GST inclusive\n                      - generic [ref=e702]:\n                        - img [ref=e707] [cursor=pointer]\n                        - generic [ref=e709]: Show total sales\n                  - generic [ref=e713]: 13 tickets issued\n                  - generic [ref=e716]:\n                    - generic [ref=e719]: 13 Sold\n                    - generic [ref=e722]: 4,987 Available\n                    - generic [ref=e724]: Total capacity 5,000\n                - generic [ref=e728]:\n                  - generic [ref=e729]: \"On sale period: Apr 18, 2026 – Apr 27, 2026, 10 days on sale.\"\n                  - generic [ref=e730]:\n                    - generic [ref=e731]:\n                      - generic [ref=e732]:\n                        - generic [ref=e733]: Heineken Polo Lawn General Admission\n                        - generic [ref=e734]: 13 sold • 4,987 available\n                      - generic [ref=e738]:\n                        - generic [ref=e739]: $1,320.00\n                        - generic [ref=e740]: + $55.00 fees\n                    - list [ref=e741]:\n                      - listitem [ref=e742]:\n                        - button [ref=e1177] [cursor=pointer]:\n                          - generic [ref=e746]:\n                            - img [ref=e748]\n                            - generic [ref=e750]:\n                              - generic [ref=e751]: Heineken Polo Lawn General Admission Ticket Bundle (Buy 4 Get 1 Free) - Early Bird\n                              - generic [ref=e752]: 10 sold • 482 available\n                            - generic [ref=e753]: $480.00 + $20.00 fee\n                            - generic [ref=e754]:\n                              - generic [ref=e755]: $960.00\n                              - generic [ref=e756]: + $40.00 fees\n                      - listitem [ref=e757]:\n                        - button [ref=e1178] [cursor=pointer]:\n                          - generic [ref=e761]:\n                            - img [ref=e763]\n                            - generic [ref=e765]:\n                              - generic [ref=e766]: Heineken Polo Lawn General Admission - Early Bird\n                              - generic [ref=e767]: 3 sold • 297 available\n                            - generic [ref=e768]: $120.00 + $5.00 fee\n                            - generic [ref=e769]:\n                              - generic [ref=e770]: $360.00\n                              - generic [ref=e771]: + $15.00 fees\n                      - listitem [ref=e772]:\n                        - button [ref=e1179] [cursor=pointer]:\n                          - generic [ref=e776]:\n                            - img [ref=e778]\n                            - generic [ref=e780]:\n                              - generic [ref=e781]: Heineken Polo Lawn General Admission - 2nd Release\n                              - generic [ref=e782]: 400 available\n                            - generic [ref=e783]: $140.00 + $5.00 fee\n                            - generic [ref=e785]: $0.00\n                      - listitem [ref=e786]:\n                        - button [ref=e1180] [cursor=pointer]:\n                          - generic [ref=e790]:\n                            - img [ref=e792]\n                            - generic [ref=e795]:\n                              - generic [ref=e796]: Heineken Polo Lawn General Admission - Comp\n                              - generic [ref=e797]: 1,000 available\n                            - generic [ref=e798]: Comp\n                            - generic [ref=e800]: $0.00\n                      - listitem [ref=e801]:\n                        - button [ref=e1181] [cursor=pointer]:\n                          - generic [ref=e805]:\n                            - img [ref=e807]\n                            - generic [ref=e809]:\n                              - generic [ref=e810]: Heineken Polo Lawn General Admission - Final Release\n                              - generic [ref=e811]: 400 available\n                            - generic [ref=e812]: $160.00 + $5.00 fee\n                            - generic [ref=e814]: $0.00\n                      - listitem [ref=e815]:\n                        - button [ref=e1182] [cursor=pointer]:\n                          - generic [ref=e819]:\n                            - img [ref=e821]\n                            - generic [ref=e823]:\n                              - generic [ref=e824]: Heineken Polo Lawn General Admission Ticket Bundle (Buy 4 Get 1 Free) - 2nd Release\n                              - generic [ref=e825]: 492 available\n                            - generic [ref=e826]: $560.00 + $20.00 fee\n                            - generic [ref=e828]: $0.00\n                      - listitem [ref=e829]:\n                        - button [ref=e1183] [cursor=pointer]:\n                          - generic [ref=e833]:\n                            - img [ref=e835]\n                            - generic [ref=e837]:\n                              - generic [ref=e838]: Heineken Polo Lawn General Admission Ticket Bundle (Buy 4 Get 1 Free) - Final Release\n                              - generic [ref=e839]: 492 available\n                            - generic [ref=e840]: $640.00 + $20.00 fee\n                            - generic [ref=e842]: $0.00\n            - generic [ref=e843]:\n              - generic [ref=e846]: Sales overview\n              - generic [ref=e851]:\n                - generic [ref=e852]:\n                  - generic [ref=e853]:\n                    - generic [ref=e854]: \"3\"\n                    - img [ref=e858] [cursor=pointer]\n                  - generic [ref=e860]: Total orders\n                - generic [ref=e861]:\n                  - generic [ref=e862]:\n                    - generic [ref=e863]: \"0\"\n                    - img [ref=e867] [cursor=pointer]\n                  - generic [ref=e869]: Tickets resold\n                - generic [ref=e870]:\n                  - generic [ref=e871]:\n                    - generic [ref=e872]: $0.00\n                    - img [ref=e876] [cursor=pointer]\n                  - generic [ref=e878]: Resale fee revenue\n                - generic [ref=e879]:\n                  - generic [ref=e880]:\n                    - generic [ref=e881]: $0.00\n                    - img [ref=e885] [cursor=pointer]\n                  - generic [ref=e887]: Resale margin\n                - generic [ref=e888]:\n                  - generic [ref=e889]:\n                    - generic [ref=e890]: 0 / $0.00\n                    - img [ref=e894] [cursor=pointer]\n                  - generic [ref=e896]: Tickets refunded\n                - generic [ref=e897]:\n                  - generic [ref=e898]:\n                    - generic [ref=e899]: \"0\"\n                    - img [ref=e903] [cursor=pointer]\n                  - generic [ref=e905]: Abandoned cart\n                - generic [ref=e906]:\n                  - generic [ref=e907]:\n                    - generic [ref=e908]: 0 / $0.00\n                    - img [ref=e912] [cursor=pointer]\n                  - generic [ref=e914]: Abandoned carts recovered\n                - generic [ref=e915]:\n                  - generic [ref=e916]:\n                    - generic [ref=e917]: \"0\"\n                    - img [ref=e921] [cursor=pointer]\n                  - generic [ref=e923]: Add-ons\n                - generic [ref=e924]:\n                  - generic [ref=e925]:\n                    - generic [ref=e926]: $0.00\n                    - img [ref=e930] [cursor=pointer]\n                  - generic [ref=e932]: Total add-on revenue\n                - generic [ref=e933]:\n                  - generic [ref=e934]:\n                    - generic [ref=e935]: \"0\"\n                    - img [ref=e939] [cursor=pointer]\n                  - generic [ref=e941]: Total tickets part paid\n                - generic [ref=e942]:\n                  - generic [ref=e943]:\n                    - generic [ref=e944]: \"0\"\n                    - img [ref=e948] [cursor=pointer]\n                  - generic [ref=e950]: Orders part paid\n            - generic [ref=e951]:\n              - generic [ref=e953]:\n                - generic [ref=e954]: Sales over time\n                - generic [ref=e956]:\n                  - generic [ref=e958] [cursor=pointer]:\n                    - generic [ref=e959]: Tickets\n                    - img [ref=e961]\n                  - generic [ref=e963] [cursor=pointer]: Download\n                  - button [ref=e1184] [cursor=pointer]:\n                    - generic [ref=e966]:\n                      - img\n                      - text: Compare\n                      - generic [ref=e968]: Beta\n              - generic [ref=e972]:\n                - application [ref=e976]:\n                  - generic [ref=e980]:\n                    - generic [ref=e982]: 18 Apr 2026\n                    - generic [ref=e984]: 20 Apr 2026\n                    - generic [ref=e986]: 22 Apr 2026\n                    - generic [ref=e988]: 24 Apr 2026\n                    - generic [ref=e990]: 27 Apr 2026\n                  - generic [ref=e992]:\n                    - generic [ref=e994]: \"0\"\n                    - generic [ref=e996]: \"2\"\n                    - generic [ref=e998]: \"4\"\n                    - generic [ref=e1000]: \"6\"\n                    - generic [ref=e1002]: \"8\"\n                - list [ref=e1010]:\n                  - listitem [ref=e1011]:\n                    - button [ref=e1012] [cursor=pointer]:\n                      - generic [ref=e1015]:\n                        - img\n                    - generic [ref=e1017]: standard\n            - generic [ref=e1018]:\n              - generic [ref=e1019]:\n                - generic [ref=e1022]: Sales channel\n                - generic [ref=e1027]:\n                  - generic [ref=e1028]:\n                    - application [ref=e1030]\n                    - generic [ref=e1039]:\n                      - generic [ref=e1040]: \"3\"\n                      - generic [ref=e1041]: Transactions\n                  - generic [ref=e1042]:\n                    - generic [ref=e1045]: 100% Online\n                    - generic [ref=e1048]: 0% Back office\n                    - generic [ref=e1051]: 0% POS\n              - generic [ref=e1052]:\n                - generic [ref=e1055]: Payment gateways\n                - generic [ref=e1060]:\n                  - generic [ref=e1061]:\n                    - application [ref=e1063]\n                    - generic [ref=e1072]:\n                      - generic [ref=e1073]: \"3\"\n                      - generic [ref=e1074]: Transactions\n                  - generic [ref=e1078]: 100% Credit/Debit Card\n            - generic [ref=e1079]:\n              - generic [ref=e1081]:\n                - generic [ref=e1082]: Ticket sales reports\n                - generic [ref=e1084] [cursor=pointer]: All reports\n              - generic [ref=e1089]:\n                - generic [ref=e1090]:\n                  - generic [ref=e1091] [cursor=pointer]:\n                    - img [ref=e1185]\n                    - generic [ref=e1098]:\n                      - generic [ref=e1099]: Order export\n                      - generic [ref=e1100]: Export of all order details.\n                  - button [ref=e1186] [cursor=pointer]:\n                    - generic [ref=e1104]: Download\n                - generic [ref=e1105]:\n                  - generic [ref=e1106] [cursor=pointer]:\n                    - img [ref=e1187]\n                    - generic [ref=e1113]:\n                      - generic [ref=e1114]: Ticket detail report\n                      - generic [ref=e1115]: Breakdown of all issued tickets.\n                  - button [ref=e1188] [cursor=pointer]:\n                    - generic [ref=e1119]: Download\n                - generic [ref=e1120]:\n                  - generic [ref=e1121] [cursor=pointer]:\n                    - img [ref=e1189]\n                    - generic [ref=e1128]:\n                      - generic [ref=e1129]: Sales report\n                      - generic [ref=e1130]: Analysis of event ticket sales and revenue by zones and ticket types.\n                  - button [ref=e1190] [cursor=pointer]:\n                    - generic [ref=e1192]: Download\n                - generic [ref=e1135]:\n                  - generic [ref=e1136] [cursor=pointer]:\n                    - img [ref=e1193]\n                    - generic [ref=e1143]:\n                      - generic [ref=e1144]: Ticket type report\n                      - generic [ref=e1145]: Sales summary by ticket type.\n                  - button [ref=e1194] [cursor=pointer]:\n                    - generic [ref=e1149]: Download\n  - alert [ref=e28]: Reporting\n  - img [ref=e556] [cursor=pointer]\n  - generic [ref=e1150]: \"0\"\n  - dialog \"modal\" [ref=e1196]:\n    - generic [active] [ref=e1197]:\n      - generic [ref=e1198]:\n        - heading \"Download sales report\" [level=5] [ref=e1199]:\n          - generic [ref=e1200]: Download sales report\n        - button [ref=e1201] [cursor=pointer]:\n          - generic [ref=e1203]:\n            - img\n      - generic [ref=e1206]:\n        - generic [ref=e1207]:\n          - generic [ref=e1208]: Date\n          - generic [ref=e1209]:\n            - textbox \"Select a date range\" [ref=e1211] [cursor=pointer]: On sale – Apr 18, 2026 to Apr 27, 2026\n            - generic:\n              - generic:\n                - generic:\n                  - img\n        - generic [ref=e1212]:\n          - generic [ref=e1213]: Releases\n          - generic [ref=e1214]:\n            - generic [ref=e1216]:\n              - log [ref=e1218]\n              - generic [ref=e1221] [cursor=pointer]:\n                - generic [ref=e1224]: All releases\n                - combobox [ref=e1225]\n            - generic:\n              - img\n        - generic [ref=e1226]:\n          - generic [ref=e1227]: Channels\n          - generic [ref=e1228]:\n            - generic [ref=e1230]:\n              - log [ref=e1232]\n              - generic [ref=e1235] [cursor=pointer]:\n                - generic [ref=e1238]: All channels\n                - combobox [ref=e1239]\n            - generic:\n              - img\n      - generic [ref=e1242]:\n        - button \"Cancel\" [ref=e1243] [cursor=pointer]:\n          - generic [ref=e1245]: Cancel\n        - button \"Download\" [ref=e1246] [cursor=pointer]:\n          - generic [ref=e1248]: Download",
+  "refs": {
+    "e1": {
+      "role": "generic"
+    },
+    "e558": {
+      "role": "generic"
+    },
+    "e559": {
+      "role": "navigation"
+    },
+    "e1151": {
+      "role": "link"
+    },
+    "e1152": {
+      "role": "img"
+    },
+    "e563": {
+      "role": "generic"
+    },
+    "e1153": {
+      "role": "link"
+    },
+    "e565": {
+      "role": "generic"
+    },
+    "e566": {
+      "role": "generic"
+    },
+    "e568": {
+      "role": "img"
+    },
+    "e571": {
+      "role": "img"
+    },
+    "e573": {
+      "role": "generic"
+    },
+    "e1154": {
+      "role": "link"
+    },
+    "e575": {
+      "role": "generic"
+    },
+    "e576": {
+      "role": "generic"
+    },
+    "e578": {
+      "role": "img"
+    },
+    "e581": {
+      "role": "img"
+    },
+    "e583": {
+      "role": "generic"
+    },
+    "e1155": {
+      "role": "link"
+    },
+    "e585": {
+      "role": "generic"
+    },
+    "e586": {
+      "role": "generic"
+    },
+    "e588": {
+      "role": "img"
+    },
+    "e591": {
+      "role": "img"
+    },
+    "e593": {
+      "role": "generic"
+    },
+    "e1156": {
+      "role": "link"
+    },
+    "e595": {
+      "role": "generic"
+    },
+    "e596": {
+      "role": "generic"
+    },
+    "e598": {
+      "role": "img"
+    },
+    "e601": {
+      "role": "img"
+    },
+    "e603": {
+      "role": "generic"
+    },
+    "e1157": {
+      "role": "link"
+    },
+    "e605": {
+      "role": "generic"
+    },
+    "e606": {
+      "role": "generic"
+    },
+    "e608": {
+      "role": "img"
+    },
+    "e611": {
+      "role": "img"
+    },
+    "e613": {
+      "role": "generic"
+    },
+    "e617": {
+      "role": "generic"
+    },
+    "e1158": {
+      "role": "heading"
+    },
+    "e1159": {
+      "role": "button"
+    },
+    "e1161": {
+      "role": "generic"
+    },
+    "e625": {
+      "role": "generic"
+    },
+    "e1162": {
+      "role": "button"
+    },
+    "e628": {
+      "role": "generic"
+    },
+    "e629": {
+      "role": "generic"
+    },
+    "e633": {
+      "role": "img"
+    },
+    "e634": {
+      "role": "generic"
+    },
+    "e635": {
+      "role": "generic"
+    },
+    "e636": {
+      "role": "generic"
+    },
+    "e637": {
+      "role": "generic"
+    },
+    "e638": {
+      "role": "generic"
+    },
+    "e639": {
+      "role": "generic"
+    },
+    "e640": {
+      "role": "img"
+    },
+    "e1163": {
+      "role": "button"
+    },
+    "e645": {
+      "role": "generic"
+    },
+    "e647": {
+      "role": "generic"
+    },
+    "e649": {
+      "role": "generic"
+    },
+    "e650": {
+      "role": "generic"
+    },
+    "e651": {
+      "role": "generic"
+    },
+    "e653": {
+      "role": "tablist"
+    },
+    "e1164": {
+      "role": "tab"
+    },
+    "e655": {
+      "role": "generic"
+    },
+    "e1165": {
+      "role": "tab"
+    },
+    "e657": {
+      "role": "generic"
+    },
+    "e1166": {
+      "role": "tab"
+    },
+    "e659": {
+      "role": "generic"
+    },
+    "e1167": {
+      "role": "tab"
+    },
+    "e661": {
+      "role": "generic"
+    },
+    "e1168": {
+      "role": "tab"
+    },
+    "e663": {
+      "role": "generic"
+    },
+    "e1169": {
+      "role": "tab"
+    },
+    "e665": {
+      "role": "generic"
+    },
+    "e1170": {
+      "role": "tab"
+    },
+    "e667": {
+      "role": "generic"
+    },
+    "e1171": {
+      "role": "tab"
+    },
+    "e669": {
+      "role": "generic"
+    },
+    "e1172": {
+      "role": "tab"
+    },
+    "e671": {
+      "role": "generic"
+    },
+    "e1173": {
+      "role": "tabpanel"
+    },
+    "e674": {
+      "role": "generic"
+    },
+    "e675": {
+      "role": "generic"
+    },
+    "e677": {
+      "role": "generic"
+    },
+    "e1174": {
+      "role": "textbox"
+    },
+    "e1175": {
+      "role": "button"
+    },
+    "e684": {
+      "role": "generic"
+    },
+    "e685": {
+      "role": "generic"
+    },
+    "e687": {
+      "role": "generic"
+    },
+    "e688": {
+      "role": "generic"
+    },
+    "e691": {
+      "role": "generic"
+    },
+    "e695": {
+      "role": "generic"
+    },
+    "e696": {
+      "role": "generic"
+    },
+    "e697": {
+      "role": "generic"
+    },
+    "e698": {
+      "role": "generic"
+    },
+    "e699": {
+      "role": "generic"
+    },
+    "e700": {
+      "role": "generic"
+    },
+    "e701": {
+      "role": "generic"
+    },
+    "e702": {
+      "role": "generic"
+    },
+    "e707": {
+      "role": "img"
+    },
+    "e709": {
+      "role": "generic"
+    },
+    "e713": {
+      "role": "generic"
+    },
+    "e716": {
+      "role": "generic"
+    },
+    "e719": {
+      "role": "generic"
+    },
+    "e722": {
+      "role": "generic"
+    },
+    "e724": {
+      "role": "generic"
+    },
+    "e728": {
+      "role": "generic"
+    },
+    "e729": {
+      "role": "generic"
+    },
+    "e730": {
+      "role": "generic"
+    },
+    "e731": {
+      "role": "generic"
+    },
+    "e732": {
+      "role": "generic"
+    },
+    "e733": {
+      "role": "generic"
+    },
+    "e734": {
+      "role": "generic"
+    },
+    "e738": {
+      "role": "generic"
+    },
+    "e739": {
+      "role": "generic"
+    },
+    "e740": {
+      "role": "generic"
+    },
+    "e741": {
+      "role": "list"
+    },
+    "e742": {
+      "role": "listitem"
+    },
+    "e1177": {
+      "role": "button"
+    },
+    "e746": {
+      "role": "generic"
+    },
+    "e748": {
+      "role": "img"
+    },
+    "e750": {
+      "role": "generic"
+    },
+    "e751": {
+      "role": "generic"
+    },
+    "e752": {
+      "role": "generic"
+    },
+    "e753": {
+      "role": "generic"
+    },
+    "e754": {
+      "role": "generic"
+    },
+    "e755": {
+      "role": "generic"
+    },
+    "e756": {
+      "role": "generic"
+    },
+    "e757": {
+      "role": "listitem"
+    },
+    "e1178": {
+      "role": "button"
+    },
+    "e761": {
+      "role": "generic"
+    },
+    "e763": {
+      "role": "img"
+    },
+    "e765": {
+      "role": "generic"
+    },
+    "e766": {
+      "role": "generic"
+    },
+    "e767": {
+      "role": "generic"
+    },
+    "e768": {
+      "role": "generic"
+    },
+    "e769": {
+      "role": "generic"
+    },
+    "e770": {
+      "role": "generic"
+    },
+    "e771": {
+      "role": "generic"
+    },
+    "e772": {
+      "role": "listitem"
+    },
+    "e1179": {
+      "role": "button"
+    },
+    "e776": {
+      "role": "generic"
+    },
+    "e778": {
+      "role": "img"
+    },
+    "e780": {
+      "role": "generic"
+    },
+    "e781": {
+      "role": "generic"
+    },
+    "e782": {
+      "role": "generic"
+    },
+    "e783": {
+      "role": "generic"
+    },
+    "e785": {
+      "role": "generic"
+    },
+    "e786": {
+      "role": "listitem"
+    },
+    "e1180": {
+      "role": "button"
+    },
+    "e790": {
+      "role": "generic"
+    },
+    "e792": {
+      "role": "img"
+    },
+    "e795": {
+      "role": "generic"
+    },
+    "e796": {
+      "role": "generic"
+    },
+    "e797": {
+      "role": "generic"
+    },
+    "e798": {
+      "role": "generic"
+    },
+    "e800": {
+      "role": "generic"
+    },
+    "e801": {
+      "role": "listitem"
+    },
+    "e1181": {
+      "role": "button"
+    },
+    "e805": {
+      "role": "generic"
+    },
+    "e807": {
+      "role": "img"
+    },
+    "e809": {
+      "role": "generic"
+    },
+    "e810": {
+      "role": "generic"
+    },
+    "e811": {
+      "role": "generic"
+    },
+    "e812": {
+      "role": "generic"
+    },
+    "e814": {
+      "role": "generic"
+    },
+    "e815": {
+      "role": "listitem"
+    },
+    "e1182": {
+      "role": "button"
+    },
+    "e819": {
+      "role": "generic"
+    },
+    "e821": {
+      "role": "img"
+    },
+    "e823": {
+      "role": "generic"
+    },
+    "e824": {
+      "role": "generic"
+    },
+    "e825": {
+      "role": "generic"
+    },
+    "e826": {
+      "role": "generic"
+    },
+    "e828": {
+      "role": "generic"
+    },
+    "e829": {
+      "role": "listitem"
+    },
+    "e1183": {
+      "role": "button"
+    },
+    "e833": {
+      "role": "generic"
+    },
+    "e835": {
+      "role": "img"
+    },
+    "e837": {
+      "role": "generic"
+    },
+    "e838": {
+      "role": "generic"
+    },
+    "e839": {
+      "role": "generic"
+    },
+    "e840": {
+      "role": "generic"
+    },
+    "e842": {
+      "role": "generic"
+    },
+    "e843": {
+      "role": "generic"
+    },
+    "e846": {
+      "role": "generic"
+    },
+    "e851": {
+      "role": "generic"
+    },
+    "e852": {
+      "role": "generic"
+    },
+    "e853": {
+      "role": "generic"
+    },
+    "e854": {
+      "role": "generic"
+    },
+    "e858": {
+      "role": "img"
+    },
+    "e860": {
+      "role": "generic"
+    },
+    "e861": {
+      "role": "generic"
+    },
+    "e862": {
+      "role": "generic"
+    },
+    "e863": {
+      "role": "generic"
+    },
+    "e867": {
+      "role": "img"
+    },
+    "e869": {
+      "role": "generic"
+    },
+    "e870": {
+      "role": "generic"
+    },
+    "e871": {
+      "role": "generic"
+    },
+    "e872": {
+      "role": "generic"
+    },
+    "e876": {
+      "role": "img"
+    },
+    "e878": {
+      "role": "generic"
+    },
+    "e879": {
+      "role": "generic"
+    },
+    "e880": {
+      "role": "generic"
+    },
+    "e881": {
+      "role": "generic"
+    },
+    "e885": {
+      "role": "img"
+    },
+    "e887": {
+      "role": "generic"
+    },
+    "e888": {
+      "role": "generic"
+    },
+    "e889": {
+      "role": "generic"
+    },
+    "e890": {
+      "role": "generic"
+    },
+    "e894": {
+      "role": "img"
+    },
+    "e896": {
+      "role": "generic"
+    },
+    "e897": {
+      "role": "generic"
+    },
+    "e898": {
+      "role": "generic"
+    },
+    "e899": {
+      "role": "generic"
+    },
+    "e903": {
+      "role": "img"
+    },
+    "e905": {
+      "role": "generic"
+    },
+    "e906": {
+      "role": "generic"
+    },
+    "e907": {
+      "role": "generic"
+    },
+    "e908": {
+      "role": "generic"
+    },
+    "e912": {
+      "role": "img"
+    },
+    "e914": {
+      "role": "generic"
+    },
+    "e915": {
+      "role": "generic"
+    },
+    "e916": {
+      "role": "generic"
+    },
+    "e917": {
+      "role": "generic"
+    },
+    "e921": {
+      "role": "img"
+    },
+    "e923": {
+      "role": "generic"
+    },
+    "e924": {
+      "role": "generic"
+    },
+    "e925": {
+      "role": "generic"
+    },
+    "e926": {
+      "role": "generic"
+    },
+    "e930": {
+      "role": "img"
+    },
+    "e932": {
+      "role": "generic"
+    },
+    "e933": {
+      "role": "generic"
+    },
+    "e934": {
+      "role": "generic"
+    },
+    "e935": {
+      "role": "generic"
+    },
+    "e939": {
+      "role": "img"
+    },
+    "e941": {
+      "role": "generic"
+    },
+    "e942": {
+      "role": "generic"
+    },
+    "e943": {
+      "role": "generic"
+    },
+    "e944": {
+      "role": "generic"
+    },
+    "e948": {
+      "role": "img"
+    },
+    "e950": {
+      "role": "generic"
+    },
+    "e951": {
+      "role": "generic"
+    },
+    "e953": {
+      "role": "generic"
+    },
+    "e954": {
+      "role": "generic"
+    },
+    "e956": {
+      "role": "generic"
+    },
+    "e958": {
+      "role": "generic"
+    },
+    "e959": {
+      "role": "generic"
+    },
+    "e961": {
+      "role": "img"
+    },
+    "e963": {
+      "role": "generic"
+    },
+    "e1184": {
+      "role": "button"
+    },
+    "e966": {
+      "role": "generic"
+    },
+    "e968": {
+      "role": "generic"
+    },
+    "e972": {
+      "role": "generic"
+    },
+    "e976": {
+      "role": "application"
+    },
+    "e980": {
+      "role": "generic"
+    },
+    "e982": {
+      "role": "generic"
+    },
+    "e984": {
+      "role": "generic"
+    },
+    "e986": {
+      "role": "generic"
+    },
+    "e988": {
+      "role": "generic"
+    },
+    "e990": {
+      "role": "generic"
+    },
+    "e992": {
+      "role": "generic"
+    },
+    "e994": {
+      "role": "generic"
+    },
+    "e996": {
+      "role": "generic"
+    },
+    "e998": {
+      "role": "generic"
+    },
+    "e1000": {
+      "role": "generic"
+    },
+    "e1002": {
+      "role": "generic"
+    },
+    "e1010": {
+      "role": "list"
+    },
+    "e1011": {
+      "role": "listitem"
+    },
+    "e1012": {
+      "role": "button"
+    },
+    "e1015": {
+      "role": "generic"
+    },
+    "e1017": {
+      "role": "generic"
+    },
+    "e1018": {
+      "role": "generic"
+    },
+    "e1019": {
+      "role": "generic"
+    },
+    "e1022": {
+      "role": "generic"
+    },
+    "e1027": {
+      "role": "generic"
+    },
+    "e1028": {
+      "role": "generic"
+    },
+    "e1030": {
+      "role": "application"
+    },
+    "e1039": {
+      "role": "generic"
+    },
+    "e1040": {
+      "role": "generic"
+    },
+    "e1041": {
+      "role": "generic"
+    },
+    "e1042": {
+      "role": "generic"
+    },
+    "e1045": {
+      "role": "generic"
+    },
+    "e1048": {
+      "role": "generic"
+    },
+    "e1051": {
+      "role": "generic"
+    },
+    "e1052": {
+      "role": "generic"
+    },
+    "e1055": {
+      "role": "generic"
+    },
+    "e1060": {
+      "role": "generic"
+    },
+    "e1061": {
+      "role": "generic"
+    },
+    "e1063": {
+      "role": "application"
+    },
+    "e1072": {
+      "role": "generic"
+    },
+    "e1073": {
+      "role": "generic"
+    },
+    "e1074": {
+      "role": "generic"
+    },
+    "e1078": {
+      "role": "generic"
+    },
+    "e1079": {
+      "role": "generic"
+    },
+    "e1081": {
+      "role": "generic"
+    },
+    "e1082": {
+      "role": "generic"
+    },
+    "e1084": {
+      "role": "generic"
+    },
+    "e1089": {
+      "role": "generic"
+    },
+    "e1090": {
+      "role": "generic"
+    },
+    "e1091": {
+      "role": "generic"
+    },
+    "e1185": {
+      "role": "img"
+    },
+    "e1098": {
+      "role": "generic"
+    },
+    "e1099": {
+      "role": "generic"
+    },
+    "e1100": {
+      "role": "generic"
+    },
+    "e1186": {
+      "role": "button"
+    },
+    "e1104": {
+      "role": "generic"
+    },
+    "e1105": {
+      "role": "generic"
+    },
+    "e1106": {
+      "role": "generic"
+    },
+    "e1187": {
+      "role": "img"
+    },
+    "e1113": {
+      "role": "generic"
+    },
+    "e1114": {
+      "role": "generic"
+    },
+    "e1115": {
+      "role": "generic"
+    },
+    "e1188": {
+      "role": "button"
+    },
+    "e1119": {
+      "role": "generic"
+    },
+    "e1120": {
+      "role": "generic"
+    },
+    "e1121": {
+      "role": "generic"
+    },
+    "e1189": {
+      "role": "img"
+    },
+    "e1128": {
+      "role": "generic"
+    },
+    "e1129": {
+      "role": "generic"
+    },
+    "e1130": {
+      "role": "generic"
+    },
+    "e1190": {
+      "role": "button"
+    },
+    "e1192": {
+      "role": "generic"
+    },
+    "e1135": {
+      "role": "generic"
+    },
+    "e1136": {
+      "role": "generic"
+    },
+    "e1193": {
+      "role": "img"
+    },
+    "e1143": {
+      "role": "generic"
+    },
+    "e1144": {
+      "role": "generic"
+    },
+    "e1145": {
+      "role": "generic"
+    },
+    "e1194": {
+      "role": "button"
+    },
+    "e1149": {
+      "role": "generic"
+    },
+    "e28": {
+      "role": "alert"
+    },
+    "e556": {
+      "role": "img"
+    },
+    "e1150": {
+      "role": "generic"
+    },
+    "e1196": {
+      "role": "dialog",
+      "name": "modal"
+    },
+    "e1197": {
+      "role": "generic"
+    },
+    "e1198": {
+      "role": "generic"
+    },
+    "e1199": {
+      "role": "heading",
+      "name": "Download sales report"
+    },
+    "e1200": {
+      "role": "generic"
+    },
+    "e1201": {
+      "role": "button"
+    },
+    "e1203": {
+      "role": "generic"
+    },
+    "e1206": {
+      "role": "generic"
+    },
+    "e1207": {
+      "role": "generic"
+    },
+    "e1208": {
+      "role": "generic"
+    },
+    "e1209": {
+      "role": "generic"
+    },
+    "e1211": {
+      "role": "textbox",
+      "name": "Select a date range"
+    },
+    "e1212": {
+      "role": "generic"
+    },
+    "e1213": {
+      "role": "generic"
+    },
+    "e1214": {
+      "role": "generic"
+    },
+    "e1216": {
+      "role": "generic"
+    },
+    "e1218": {
+      "role": "log"
+    },
+    "e1221": {
+      "role": "generic"
+    },
+    "e1224": {
+      "role": "generic"
+    },
+    "e1225": {
+      "role": "combobox"
+    },
+    "e1226": {
+      "role": "generic"
+    },
+    "e1227": {
+      "role": "generic"
+    },
+    "e1228": {
+      "role": "generic"
+    },
+    "e1230": {
+      "role": "generic"
+    },
+    "e1232": {
+      "role": "log"
+    },
+    "e1235": {
+      "role": "generic"
+    },
+    "e1238": {
+      "role": "generic"
+    },
+    "e1239": {
+      "role": "combobox"
+    },
+    "e1242": {
+      "role": "generic"
+    },
+    "e1243": {
+      "role": "button",
+      "name": "Cancel"
+    },
+    "e1245": {
+      "role": "generic"
+    },
+    "e1246": {
+      "role": "button",
+      "name": "Download"
+    },
+    "e1248": {
+      "role": "generic"
+    }
+  }
+}

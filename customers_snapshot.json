@@ -1,0 +1,525 @@
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "FC26F46796BC7FBAD373DEF6748F061C",
+  "url": "https://admin.f3polo.flicket.io/customers",
+  "snapshot": "- generic [active] [ref=e1]:\n  - generic [ref=e3]:\n    - navigation [ref=e4]:\n      - link \"flicket\" [ref=e6] [cursor=pointer]:\n        - /url: /\n        - img \"flicket\" [ref=e7]\n      - generic [ref=e8]:\n        - link \"Home\" [ref=e9] [cursor=pointer]:\n          - /url: /\n          - generic [ref=e10]:\n            - generic [ref=e11]:\n              - img [ref=e13]\n              - img [ref=e16]\n            - generic [ref=e18]: Home\n        - link \"Reporting\" [ref=e19] [cursor=pointer]:\n          - /url: /reporting\n          - generic [ref=e20]:\n            - generic [ref=e21]:\n              - img [ref=e23]\n              - img [ref=e26]\n            - generic [ref=e28]: Reporting\n        - link \"Orders\" [ref=e29] [cursor=pointer]:\n          - /url: /orders?status=Completed&status=Paid\n          - generic [ref=e30]:\n            - generic [ref=e31]:\n              - img [ref=e33]\n              - img [ref=e36]\n            - generic [ref=e38]: Orders\n        - link \"Customers\" [ref=e39] [cursor=pointer]:\n          - /url: /customers\n          - generic [ref=e40]:\n            - generic [ref=e41]:\n              - img [ref=e43]\n              - img [ref=e46]\n            - generic [ref=e48]: Customers\n        - link \"Scout\" [ref=e49] [cursor=pointer]:\n          - /url: /scout\n          - generic [ref=e50]:\n            - generic [ref=e51]:\n              - img [ref=e53]\n              - img [ref=e56]\n            - generic [ref=e58]: Scout\n    - generic [ref=e62]:\n      - heading \"Customers\" [level=1] [ref=e63]\n      - button \"ST\" [ref=e66] [cursor=pointer]:\n        - generic [ref=e68]: ST\n    - generic [ref=e69]:\n      - navigation [ref=e71]:\n        - list [ref=e73]:\n          - listitem [ref=e74] [cursor=pointer]: Customers\n          - listitem [ref=e75] [cursor=pointer]: Segments\n      - generic [ref=e76]:\n        - generic [ref=e77]: 1433 Customers\n        - generic [ref=e78]:\n          - link \"Add customer\" [ref=e79] [cursor=pointer]:\n            - /url: /customers/new\n            - generic [ref=e82]: Add customer\n          - button \"Export\" [ref=e83] [cursor=pointer]:\n            - generic [ref=e85]: Export\n        - generic [ref=e86]:\n          - generic [ref=e88]:\n            - searchbox \"Search\" [ref=e89]\n            - generic:\n              - generic:\n                - generic:\n                  - img\n          - generic [ref=e90]:\n            - generic [ref=e92]: Customer\n            - generic [ref=e94]: Email\n            - generic [ref=e96]: Phone\n            - generic [ref=e98]: Company\n          - generic [ref=e101]:\n            - generic [ref=e102]:\n              - link \"A Their\" [ref=e104] [cursor=pointer]:\n                - /url: /customers/8b573533-f583-487a-ac5d-5e897310faa6\n                - generic \"A Their\" [ref=e105]\n              - link \"ahsyr@gmail.com\" [ref=e107] [cursor=pointer]:\n                - /url: /customers/8b573533-f583-487a-ac5d-5e897310faa6\n                - generic \"ahsyr@gmail.com\" [ref=e108]\n              - link \"0401509187\" [ref=e110] [cursor=pointer]:\n                - /url: /customers/8b573533-f583-487a-ac5d-5e897310faa6\n                - generic \"0401509187\" [ref=e111]\n              - link \"-\" [ref=e113] [cursor=pointer]:\n                - /url: /customers/8b573533-f583-487a-ac5d-5e897310faa6\n                - generic \"-\" [ref=e114]\n            - generic [ref=e115]:\n              - link \"Aaron Baxter\" [ref=e117] [cursor=pointer]:\n                - /url: /customers/5da65e67-c549-48ec-98e0-aef12b6d8e06\n                - generic \"Aaron Baxter\" [ref=e118]\n              - link \"aaron.baxter@angleauto.com.au\" [ref=e120] [cursor=pointer]:\n                - /url: /customers/5da65e67-c549-48ec-98e0-aef12b6d8e06\n                - generic \"aaron.baxter@angleauto.com.au\" [ref=e121]\n              - link \"0428100946\" [ref=e123] [cursor=pointer]:\n                - /url: /customers/5da65e67-c549-48ec-98e0-aef12b6d8e06\n                - generic \"0428100946\" [ref=e124]\n              - link \"-\" [ref=e126] [cursor=pointer]:\n                - /url: /customers/5da65e67-c549-48ec-98e0-aef12b6d8e06\n                - generic \"-\" [ref=e127]\n            - generic [ref=e128]:\n              - link \"Aaron Pitts\" [ref=e130] [cursor=pointer]:\n                - /url: /customers/334b09c4-abe6-4148-b5a1-a016cdb1e7c8\n                - generic \"Aaron Pitts\" [ref=e131]\n              - link \"pittsyaz@hotmail.com\" [ref=e133] [cursor=pointer]:\n                - /url: /customers/334b09c4-abe6-4148-b5a1-a016cdb1e7c8\n                - generic \"pittsyaz@hotmail.com\" [ref=e134]\n              - link \"0417784888\" [ref=e136] [cursor=pointer]:\n                - /url: /customers/334b09c4-abe6-4148-b5a1-a016cdb1e7c8\n                - generic \"0417784888\" [ref=e137]\n              - link \"-\" [ref=e139] [cursor=pointer]:\n                - /url: /customers/334b09c4-abe6-4148-b5a1-a016cdb1e7c8\n                - generic \"-\" [ref=e140]\n            - generic [ref=e141]:\n              - link \"Abby Hempfling\" [ref=e143] [cursor=pointer]:\n                - /url: /customers/11f12d93-de73-4f8b-958a-a9be49545f04\n                - generic \"Abby Hempfling\" [ref=e144]\n              - link \"abbysue1216@gmail.com\" [ref=e146] [cursor=pointer]:\n                - /url: /customers/11f12d93-de73-4f8b-958a-a9be49545f04\n                - generic \"abbysue1216@gmail.com\" [ref=e147]\n              - link \"45076933\" [ref=e149] [cursor=pointer]:\n                - /url: /customers/11f12d93-de73-4f8b-958a-a9be49545f04\n                - generic \"45076933\" [ref=e150]\n              - link \"-\" [ref=e152] [cursor=pointer]:\n                - /url: /customers/11f12d93-de73-4f8b-958a-a9be49545f04\n                - generic \"-\" [ref=e153]\n            - generic [ref=e154]:\n              - link \"Abby San Jose\" [ref=e156] [cursor=pointer]:\n                - /url: /customers/69a9609d-b0e4-4139-a870-424cbe581e43\n                - generic \"Abby San Jose\" [ref=e157]\n              - link \"aasanjose.22@gmail.com\" [ref=e159] [cursor=pointer]:\n                - /url: /customers/69a9609d-b0e4-4139-a870-424cbe581e43\n                - generic \"aasanjose.22@gmail.com\" [ref=e160]\n              - link \"0432829934\" [ref=e162] [cursor=pointer]:\n                - /url: /customers/69a9609d-b0e4-4139-a870-424cbe581e43\n                - generic \"0432829934\" [ref=e163]\n              - link \"-\" [ref=e165] [cursor=pointer]:\n                - /url: /customers/69a9609d-b0e4-4139-a870-424cbe581e43\n                - generic \"-\" [ref=e166]\n            - generic [ref=e167]:\n              - link \"Adam Beasley\" [ref=e169] [cursor=pointer]:\n                - /url: /customers/2b0084e4-a05d-4913-9add-aa732b361bc1\n                - generic \"Adam Beasley\" [ref=e170]\n              - link \"adam@itc.sydney\" [ref=e172] [cursor=pointer]:\n                - /url: /customers/2b0084e4-a05d-4913-9add-aa732b361bc1\n                - generic \"adam@itc.sydney\" [ref=e173]\n              - link \"0409447659\" [ref=e175] [cursor=pointer]:\n                - /url: /customers/2b0084e4-a05d-4913-9add-aa732b361bc1\n                - generic \"0409447659\" [ref=e176]\n              - link \"-\" [ref=e178] [cursor=pointer]:\n                - /url: /customers/2b0084e4-a05d-4913-9add-aa732b361bc1\n                - generic \"-\" [ref=e179]\n            - generic [ref=e180]:\n              - link \"Adam Leo\" [ref=e182] [cursor=pointer]:\n                - /url: /customers/fdef078d-c0e9-4d06-a889-d06fe6d43099\n                - generic \"Adam Leo\" [ref=e183]\n              - link \"adamleobusiness@gmail.com\" [ref=e185] [cursor=pointer]:\n                - /url: /customers/fdef078d-c0e9-4d06-a889-d06fe6d43099\n                - generic \"adamleobusiness@gmail.com\" [ref=e186]\n              - link \"-\" [ref=e188] [cursor=pointer]:\n                - /url: /customers/fdef078d-c0e9-4d06-a889-d06fe6d43099\n                - generic \"-\" [ref=e189]\n              - link \"-\" [ref=e191] [cursor=pointer]:\n                - /url: /customers/fdef078d-c0e9-4d06-a889-d06fe6d43099\n                - generic \"-\" [ref=e192]\n            - generic [ref=e193]:\n              - link \"Adam Lines\" [ref=e195] [cursor=pointer]:\n                - /url: /customers/6881f100-d220-4312-b57b-2afa7216759d\n                - generic \"Adam Lines\" [ref=e196]\n              - link \"adam.lines@outlook.com\" [ref=e198] [cursor=pointer]:\n                - /url: /customers/6881f100-d220-4312-b57b-2afa7216759d\n                - generic \"adam.lines@outlook.com\" [ref=e199]\n              - link \"0417048069\" [ref=e201] [cursor=pointer]:\n                - /url: /customers/6881f100-d220-4312-b57b-2afa7216759d\n                - generic \"0417048069\" [ref=e202]\n              - link \"-\" [ref=e204] [cursor=pointer]:\n                - /url: /customers/6881f100-d220-4312-b57b-2afa7216759d\n                - generic \"-\" [ref=e205]\n            - generic [ref=e206]:\n              - link \"Adam Mallon\" [ref=e208] [cursor=pointer]:\n                - /url: /customers/837b29fe-7f75-4243-9313-3abbd2535dc2\n                - generic \"Adam Mallon\" [ref=e209]\n              - link \"adammallon92@hotmail.co.uk\" [ref=e211] [cursor=pointer]:\n                - /url: /customers/837b29fe-7f75-4243-9313-3abbd2535dc2\n                - generic \"adammallon92@hotmail.co.uk\" [ref=e212]\n              - link \"0000\" [ref=e214] [cursor=pointer]:\n                - /url: /customers/837b29fe-7f75-4243-9313-3abbd2535dc2\n                - generic \"0000\" [ref=e215]\n              - link \"-\" [ref=e217] [cursor=pointer]:\n                - /url: /customers/837b29fe-7f75-4243-9313-3abbd2535dc2\n                - generic \"-\" [ref=e218]\n  - alert [ref=e220]\n  - img [ref=e224] [cursor=pointer]",
+  "refs": {
+    "e1": {
+      "role": "generic"
+    },
+    "e3": {
+      "role": "generic"
+    },
+    "e4": {
+      "role": "navigation"
+    },
+    "e6": {
+      "role": "link",
+      "name": "flicket"
+    },
+    "e7": {
+      "role": "img",
+      "name": "flicket"
+    },
+    "e8": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "link",
+      "name": "Home"
+    },
+    "e10": {
+      "role": "generic"
+    },
+    "e11": {
+      "role": "generic"
+    },
+    "e13": {
+      "role": "img"
+    },
+    "e16": {
+      "role": "img"
+    },
+    "e18": {
+      "role": "generic"
+    },
+    "e19": {
+      "role": "link",
+      "name": "Reporting"
+    },
+    "e20": {
+      "role": "generic"
+    },
+    "e21": {
+      "role": "generic"
+    },
+    "e23": {
+      "role": "img"
+    },
+    "e26": {
+      "role": "img"
+    },
+    "e28": {
+      "role": "generic"
+    },
+    "e29": {
+      "role": "link",
+      "name": "Orders"
+    },
+    "e30": {
+      "role": "generic"
+    },
+    "e31": {
+      "role": "generic"
+    },
+    "e33": {
+      "role": "img"
+    },
+    "e36": {
+      "role": "img"
+    },
+    "e38": {
+      "role": "generic"
+    },
+    "e39": {
+      "role": "link",
+      "name": "Customers"
+    },
+    "e40": {
+      "role": "generic"
+    },
+    "e41": {
+      "role": "generic"
+    },
+    "e43": {
+      "role": "img"
+    },
+    "e46": {
+      "role": "img"
+    },
+    "e48": {
+      "role": "generic"
+    },
+    "e49": {
+      "role": "link",
+      "name": "Scout"
+    },
+    "e50": {
+      "role": "generic"
+    },
+    "e51": {
+      "role": "generic"
+    },
+    "e53": {
+      "role": "img"
+    },
+    "e56": {
+      "role": "img"
+    },
+    "e58": {
+      "role": "generic"
+    },
+    "e62": {
+      "role": "generic"
+    },
+    "e63": {
+      "role": "heading",
+      "name": "Customers"
+    },
+    "e66": {
+      "role": "button",
+      "name": "ST"
+    },
+    "e68": {
+      "role": "generic"
+    },
+    "e69": {
+      "role": "generic"
+    },
+    "e71": {
+      "role": "navigation"
+    },
+    "e73": {
+      "role": "list"
+    },
+    "e74": {
+      "role": "listitem"
+    },
+    "e75": {
+      "role": "listitem"
+    },
+    "e76": {
+      "role": "generic"
+    },
+    "e77": {
+      "role": "generic"
+    },
+    "e78": {
+      "role": "generic"
+    },
+    "e79": {
+      "role": "link",
+      "name": "Add customer"
+    },
+    "e82": {
+      "role": "generic"
+    },
+    "e83": {
+      "role": "button",
+      "name": "Export"
+    },
+    "e85": {
+      "role": "generic"
+    },
+    "e86": {
+      "role": "generic"
+    },
+    "e88": {
+      "role": "generic"
+    },
+    "e89": {
+      "role": "searchbox",
+      "name": "Search"
+    },
+    "e90": {
+      "role": "generic"
+    },
+    "e92": {
+      "role": "generic"
+    },
+    "e94": {
+      "role": "generic"
+    },
+    "e96": {
+      "role": "generic"
+    },
+    "e98": {
+      "role": "generic"
+    },
+    "e101": {
+      "role": "generic"
+    },
+    "e102": {
+      "role": "generic"
+    },
+    "e104": {
+      "role": "link",
+      "name": "A Their"
+    },
+    "e105": {
+      "role": "generic",
+      "name": "A Their"
+    },
+    "e107": {
+      "role": "link",
+      "name": "ahsyr@gmail.com"
+    },
+    "e108": {
+      "role": "generic",
+      "name": "ahsyr@gmail.com"
+    },
+    "e110": {
+      "role": "link",
+      "name": "0401509187"
+    },
+    "e111": {
+      "role": "generic",
+      "name": "0401509187"
+    },
+    "e113": {
+      "role": "link",
+      "name": "-"
+    },
+    "e114": {
+      "role": "generic",
+      "name": "-"
+    },
+    "e115": {
+      "role": "generic"
+    },
+    "e117": {
+      "role": "link",
+      "name": "Aaron Baxter"
+    },
+    "e118": {
+      "role": "generic",
+      "name": "Aaron Baxter"
+    },
+    "e120": {
+      "role": "link",
+      "name": "aaron.baxter@angleauto.com.au"
+    },
+    "e121": {
+      "role": "generic",
+      "name": "aaron.baxter@angleauto.com.au"
+    },
+    "e123": {
+      "role": "link",
+      "name": "0428100946"
+    },
+    "e124": {
+      "role": "generic",
+      "name": "0428100946"
+    },
+    "e126": {
+      "role": "link",
+      "name": "-"
+    },
+    "e127": {
+      "role": "generic",
+      "name": "-"
+    },
+    "e128": {
+      "role": "generic"
+    },
+    "e130": {
+      "role": "link",
+      "name": "Aaron Pitts"
+    },
+    "e131": {
+      "role": "generic",
+      "name": "Aaron Pitts"
+    },
+    "e133": {
+      "role": "link",
+      "name": "pittsyaz@hotmail.com"
+    },
+    "e134": {
+      "role": "generic",
+      "name": "pittsyaz@hotmail.com"
+    },
+    "e136": {
+      "role": "link",
+      "name": "0417784888"
+    },
+    "e137": {
+      "role": "generic",
+      "name": "0417784888"
+    },
+    "e139": {
+      "role": "link",
+      "name": "-"
+    },
+    "e140": {
+      "role": "generic",
+      "name": "-"
+    },
+    "e141": {
+      "role": "generic"
+    },
+    "e143": {
+      "role": "link",
+      "name": "Abby Hempfling"
+    },
+    "e144": {
+      "role": "generic",
+      "name": "Abby Hempfling"
+    },
+    "e146": {
+      "role": "link",
+      "name": "abbysue1216@gmail.com"
+    },
+    "e147": {
+      "role": "generic",
+      "name": "abbysue1216@gmail.com"
+    },
+    "e149": {
+      "role": "link",
+      "name": "45076933"
+    },
+    "e150": {
+      "role": "generic",
+      "name": "45076933"
+    },
+    "e152": {
+      "role": "link",
+      "name": "-"
+    },
+    "e153": {
+      "role": "generic",
+      "name": "-"
+    },
+    "e154": {
+      "role": "generic"
+    },
+    "e156": {
+      "role": "link",
+      "name": "Abby San Jose"
+    },
+    "e157": {
+      "role": "generic",
+      "name": "Abby San Jose"
+    },
+    "e159": {
+      "role": "link",
+      "name": "aasanjose.22@gmail.com"
+    },
+    "e160": {
+      "role": "generic",
+      "name": "aasanjose.22@gmail.com"
+    },
+    "e162": {
+      "role": "link",
+      "name": "0432829934"
+    },
+    "e163": {
+      "role": "generic",
+      "name": "0432829934"
+    },
+    "e165": {
+      "role": "link",
+      "name": "-"
+    },
+    "e166": {
+      "role": "generic",
+      "name": "-"
+    },
+    "e167": {
+      "role": "generic"
+    },
+    "e169": {
+      "role": "link",
+      "name": "Adam Beasley"
+    },
+    "e170": {
+      "role": "generic",
+      "name": "Adam Beasley"
+    },
+    "e172": {
+      "role": "link",
+      "name": "adam@itc.sydney"
+    },
+    "e173": {
+      "role": "generic",
+      "name": "adam@itc.sydney"
+    },
+    "e175": {
+      "role": "link",
+      "name": "0409447659"
+    },
+    "e176": {
+      "role": "generic",
+      "name": "0409447659"
+    },
+    "e178": {
+      "role": "link",
+      "name": "-"
+    },
+    "e179": {
+      "role": "generic",
+      "name": "-"
+    },
+    "e180": {
+      "role": "generic"
+    },
+    "e182": {
+      "role": "link",
+      "name": "Adam Leo"
+    },
+    "e183": {
+      "role": "generic",
+      "name": "Adam Leo"
+    },
+    "e185": {
+      "role": "link",
+      "name": "adamleobusiness@gmail.com"
+    },
+    "e186": {
+      "role": "generic",
+      "name": "adamleobusiness@gmail.com"
+    },
+    "e188": {
+      "role": "link",
+      "name": "-"
+    },
+    "e189": {
+      "role": "generic",
+      "name": "-"
+    },
+    "e191": {
+      "role": "link",
+      "name": "-"
+    },
+    "e192": {
+      "role": "generic",
+      "name": "-"
+    },
+    "e193": {
+      "role": "generic"
+    },
+    "e195": {
+      "role": "link",
+      "name": "Adam Lines"
+    },
+    "e196": {
+      "role": "generic",
+      "name": "Adam Lines"
+    },
+    "e198": {
+      "role": "link",
+      "name": "adam.lines@outlook.com"
+    },
+    "e199": {
+      "role": "generic",
+      "name": "adam.lines@outlook.com"
+    },
+    "e201": {
+      "role": "link",
+      "name": "0417048069"
+    },
+    "e202": {
+      "role": "generic",
+      "name": "0417048069"
+    },
+    "e204": {
+      "role": "link",
+      "name": "-"
+    },
+    "e205": {
+      "role": "generic",
+      "name": "-"
+    },
+    "e206": {
+      "role": "generic"
+    },
+    "e208": {
+      "role": "link",
+      "name": "Adam Mallon"
+    },
+    "e209": {
+      "role": "generic",
+      "name": "Adam Mallon"
+    },
+    "e211": {
+      "role": "link",
+      "name": "adammallon92@hotmail.co.uk"
+    },
+    "e212": {
+      "role": "generic",
+      "name": "adammallon92@hotmail.co.uk"
+    },
+    "e214": {
+      "role": "link",
+      "name": "0000"
+    },
+    "e215": {
+      "role": "generic",
+      "name": "0000"
+    },
+    "e217": {
+      "role": "link",
+      "name": "-"
+    },
+    "e218": {
+      "role": "generic",
+      "name": "-"
+    },
+    "e220": {
+      "role": "alert"
+    },
+    "e224": {
+      "role": "img"
+    }
+  }
+}
