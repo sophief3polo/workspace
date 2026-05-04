@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "FC26F46796BC7FBAD373DEF6748F061C",
+  "url": "https://sophie.f3polo.com.au/login?next=%2F",
+  "snapshot": "- generic [ref=e1]:\n  - main [ref=e2]:\n    - generic [ref=e3]:\n      - generic [ref=e4]:\n        - paragraph [ref=e5]: Protected access\n        - heading \"Sophie Mission Control\" [level=1] [ref=e6]\n        - paragraph [ref=e7]: Enter the shared password to open Mission Control.\n      - generic [ref=e8]:\n        - generic [ref=e9]:\n          - text: Password\n          - textbox \"Password\" [active] [ref=e10]:\n            - /placeholder: Enter password\n        - button \"Unlock Mission Control\" [ref=e11]\n  - alert [ref=e12]",
+  "refs": {
+    "e1": {
+      "role": "generic"
+    },
+    "e2": {
+      "role": "main"
+    },
+    "e3": {
+      "role": "generic"
+    },
+    "e4": {
+      "role": "generic"
+    },
+    "e5": {
+      "role": "paragraph"
+    },
+    "e6": {
+      "role": "heading",
+      "name": "Sophie Mission Control"
+    },
+    "e7": {
+      "role": "paragraph"
+    },
+    "e8": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "generic"
+    },
+    "e10": {
+      "role": "textbox",
+      "name": "Password"
+    },
+    "e11": {
+      "role": "button",
+      "name": "Unlock Mission Control"
+    },
+    "e12": {
+      "role": "alert"
+    }
+  }
+}
