@@ -1,0 +1,18 @@
+{"requests":[
+{"addSheet":{"properties":{"title":"Sydney Summary"}}},
+{"addSheet":{"properties":{"title":"Brisbane Summary"}}},
+{"addSheet":{"properties":{"title":"Christchurch Summary"}}},
+{"addSheet":{"properties":{"title":"Auckland Summary"}}},
+{"addSheet":{"properties":{"title":"Sydney Polo Lawn"}}},
+{"addSheet":{"properties":{"title":"Brisbane Polo Lawn"}}},
+{"addSheet":{"properties":{"title":"Christchurch Polo Lawn"}}},
+{"addSheet":{"properties":{"title":"Auckland Polo Lawn"}}},
+{"addSheet":{"properties":{"title":"Sydney VIP"}}},
+{"addSheet":{"properties":{"title":"Brisbane VIP"}}},
+{"addSheet":{"properties":{"title":"Christchurch VIP"}}},
+{"addSheet":{"properties":{"title":"Auckland VIP"}}},
+{"addSheet":{"properties":{"title":"Sydney Private"}}},
+{"addSheet":{"properties":{"title":"Brisbane Private"}}},
+{"addSheet":{"properties":{"title":"Christchurch Private"}}},
+{"addSheet":{"properties":{"title":"Auckland Private"}}}
+]}
