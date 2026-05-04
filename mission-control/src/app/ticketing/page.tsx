@@ -81,6 +81,25 @@ const scoreboard = [
   { label: "Face value tracked", value: "$191,945.20" },
 ];
 
+const eventSheetLinks = [
+  {
+    label: "Sydney",
+    href: "https://docs.google.com/spreadsheets/d/1Gkl14hPWw1IXaXk3At-1gzNXeajqI7OBVdobOOwoXBo/edit",
+  },
+  {
+    label: "Brisbane",
+    href: "https://docs.google.com/spreadsheets/d/1HU5TZMOo85phVNvvkvcesYRQ9ogqHKJsL1s-ItXiqRc/edit",
+  },
+  {
+    label: "Christchurch",
+    href: "https://docs.google.com/spreadsheets/d/1LUl31_WAyX0XAoh691AOrZs-g6jCLuKX2cjLCES4eIE/edit",
+  },
+  {
+    label: "Auckland",
+    href: "https://docs.google.com/spreadsheets/d/1CYKjQjuIH8X28w6uNI9xkPMq245rFgkq5IjjcjuiJbs/edit",
+  },
+] as const;
+
 export default function TicketingPage() {
   return (
     <main className="min-h-screen bg-[#11141b] text-[#f5f7fb]">
@@ -136,21 +155,40 @@ export default function TicketingPage() {
                 </p>
               </div>
 
-              <div className="flex flex-wrap items-center gap-3">
-                <a
-                  href="https://docs.google.com/spreadsheets/d/14ejB2pZZPs8gDt4qR9PZkG2prQg2DprfqdxiAkkpeF8/edit"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 text-sm font-medium text-white transition hover:bg-white/[0.09]"
-                >
-                  Open raw sheet
-                </a>
-                <Link
-                  href="/"
-                  className="rounded-2xl bg-[#5e6ad2] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#6a76de]"
-                >
-                  Back to Mission Control
-                </Link>
+              <div className="flex flex-col items-start gap-3">
+                <div className="flex flex-wrap items-center gap-3">
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/14ejB2pZZPs8gDt4qR9PZkG2prQg2DprfqdxiAkkpeF8/edit"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 text-sm font-medium text-white transition hover:bg-white/[0.09]"
+                  >
+                    Open raw sheet
+                  </a>
+                  <Link
+                    href="/"
+                    className="rounded-2xl bg-[#5e6ad2] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#6a76de]"
+                  >
+                    Back to Mission Control
+                  </Link>
+                </div>
+
+                <div>
+                  <p className="mb-2 text-[11px] uppercase tracking-[0.22em] text-[#7f8797]">Event Ticketing Summaries</p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    {eventSheetLinks.map((sheet) => (
+                      <a
+                        key={sheet.label}
+                        href={sheet.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="rounded-2xl border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-[#d6dbea] transition hover:bg-white/[0.09] hover:text-white"
+                      >
+                        {sheet.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </header>
