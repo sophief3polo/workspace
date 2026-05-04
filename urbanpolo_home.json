@@ -1,0 +1,1027 @@
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "FC26F46796BC7FBAD373DEF6748F061C",
+  "url": "https://admin.urbanpolo.flicket.co.nz/",
+  "snapshot": "- generic [active] [ref=e1]:\n  - generic [ref=e3]:\n    - navigation [ref=e4]:\n      - link \"flicket\" [ref=e6] [cursor=pointer]:\n        - /url: /\n        - img \"flicket\" [ref=e7]\n      - generic [ref=e8]:\n        - link \"Home\" [ref=e9] [cursor=pointer]:\n          - /url: /\n          - generic [ref=e10]:\n            - generic [ref=e11]:\n              - img [ref=e13]\n              - img [ref=e16]\n            - generic [ref=e18]: Home\n        - link \"Reporting\" [ref=e19] [cursor=pointer]:\n          - /url: /reporting\n          - generic [ref=e20]:\n            - generic [ref=e21]:\n              - img [ref=e23]\n              - img [ref=e26]\n            - generic [ref=e28]: Reporting\n        - link \"Orders\" [ref=e29] [cursor=pointer]:\n          - /url: /orders?status=Completed&status=Paid\n          - generic [ref=e30]:\n            - generic [ref=e31]:\n              - img [ref=e33]\n              - img [ref=e36]\n            - generic [ref=e38]: Orders\n        - link \"Customers\" [ref=e39] [cursor=pointer]:\n          - /url: /customers\n          - generic [ref=e40]:\n            - generic [ref=e41]:\n              - img [ref=e43]\n              - img [ref=e46]\n            - generic [ref=e48]: Customers\n        - link \"Scout\" [ref=e49] [cursor=pointer]:\n          - /url: /scout\n          - generic [ref=e50]:\n            - generic [ref=e51]:\n              - img [ref=e53]\n              - img [ref=e56]\n            - generic [ref=e58]: Scout\n    - generic [ref=e62]:\n      - heading \"Home\" [level=1] [ref=e63]\n      - button \"SB\" [ref=e66] [cursor=pointer]:\n        - generic [ref=e68]: SB\n    - generic [ref=e70]:\n      - generic [ref=e71]:\n        - generic [ref=e73]: Overall summary\n        - generic [ref=e78]:\n          - generic [ref=e79]:\n            - generic [ref=e80]:\n              - img [ref=e83]\n              - generic [ref=e85]: Tickets sold yesterday\n            - generic [ref=e86]: \"1\"\n          - generic [ref=e87]:\n            - generic [ref=e88]:\n              - img [ref=e91]\n              - generic [ref=e93]: Total tickets sold\n            - generic [ref=e94]: \"388\"\n          - generic [ref=e95]:\n            - generic [ref=e96]:\n              - img [ref=e99]\n              - generic [ref=e101]: Face Value Total\n            - generic [ref=e102]: $182,875.00\n          - generic [ref=e103]:\n            - generic [ref=e104]:\n              - img [ref=e107]\n              - generic [ref=e109]: Face Value Yesterday\n            - generic [ref=e110]: $69.00\n          - generic [ref=e111]:\n            - generic [ref=e112]:\n              - img [ref=e115]\n              - generic [ref=e117]: Orders\n            - generic [ref=e118]: \"19\"\n          - generic [ref=e119]:\n            - generic [ref=e120]:\n              - img [ref=e123]\n              - generic [ref=e125]: Total tickets issued\n            - generic [ref=e126]: \"388\"\n          - generic [ref=e127]:\n            - generic [ref=e128]:\n              - img [ref=e131]\n              - generic [ref=e133]: Cart abandonment\n            - generic [ref=e134]: \"3\"\n          - generic [ref=e135]:\n            - generic [ref=e136]:\n              - img [ref=e139]\n              - generic [ref=e141]: Returning customers\n            - generic [ref=e142]: \"15\"\n      - generic [ref=e143]:\n        - generic [ref=e145]: Upcoming events\n        - generic [ref=e149]:\n          - generic [ref=e154]:\n            - generic [ref=e155]: \"\\\"Urban Polo Lounge\\\" Private Marquee Area - Christchurch 2027\"\n            - generic [ref=e156]:\n              - generic [ref=e157]:\n                - generic [ref=e158]:\n                  - generic [ref=e160]:\n                    - img [ref=e162]\n                    - generic [ref=e164]: 20 Feb 2027, 12:00pm\n                  - generic [ref=e166]:\n                    - img [ref=e168]\n                    - generic [ref=e170]: Hagley Park, Christchurch, Canterbury\n                - generic [ref=e171]:\n                  - link \"Edit event\" [ref=e172] [cursor=pointer]:\n                    - /url: /events/b783f10a-e454-4b62-aac0-f126084a9e30\n                    - generic [ref=e175]: Edit event\n                  - link \"View report\" [ref=e176] [cursor=pointer]:\n                    - /url: \"/reporting/events/ticket-sales?sourceSelection={%22eventId%22:%22b783f10a-e454-4b62-aac0-f126084a9e30%22}\"\n                    - generic [ref=e179]: View report\n              - generic [ref=e180]:\n                - generic [ref=e182]: Ticket Sales\n                - generic [ref=e184]:\n                  - generic [ref=e185]:\n                    - generic [ref=e186]: Today\n                    - generic [ref=e187]: \"0\"\n                  - generic [ref=e188]:\n                    - generic [ref=e189]: Yesterday\n                    - generic [ref=e190]: \"0\"\n                  - generic [ref=e191]:\n                    - generic [ref=e192]: Total\n                    - generic [ref=e193]: \"0\"\n          - generic [ref=e198]:\n            - generic [ref=e199]: Private Marquees - Christchurch 2027\n            - generic [ref=e200]:\n              - generic [ref=e201]:\n                - generic [ref=e202]:\n                  - generic [ref=e204]:\n                    - img [ref=e206]\n                    - generic [ref=e208]: 20 Feb 2027, 12:00pm\n                  - generic [ref=e210]:\n                    - img [ref=e212]\n                    - generic [ref=e214]: Hagley Park, Christchurch, Canterbury\n                - generic [ref=e215]:\n                  - link \"Edit event\" [ref=e216] [cursor=pointer]:\n                    - /url: /events/58fcf839-7b30-4b40-9462-578319e9ed04\n                    - generic [ref=e219]: Edit event\n                  - link \"View report\" [ref=e220] [cursor=pointer]:\n                    - /url: \"/reporting/events/ticket-sales?sourceSelection={%22eventId%22:%2258fcf839-7b30-4b40-9462-578319e9ed04%22}\"\n                    - generic [ref=e223]: View report\n              - generic [ref=e224]:\n                - generic [ref=e226]: Ticket Sales\n                - generic [ref=e228]:\n                  - generic [ref=e229]:\n                    - generic [ref=e230]: Today\n                    - generic [ref=e231]: \"0\"\n                  - generic [ref=e232]:\n                    - generic [ref=e233]: Yesterday\n                    - generic [ref=e234]: \"0\"\n                  - generic [ref=e235]:\n                    - generic [ref=e236]: Total\n                    - generic [ref=e237]: \"100\"\n                - generic [ref=e240]:\n                  - generic [ref=e242]: Face value total\n                  - generic [ref=e244]: \"-\"\n          - generic [ref=e249]:\n            - generic [ref=e250]: VIP Champagne Terrace - Christchurch 2027\n            - generic [ref=e251]:\n              - generic [ref=e252]:\n                - generic [ref=e253]:\n                  - generic [ref=e255]:\n                    - img [ref=e257]\n                    - generic [ref=e259]: 20 Feb 2027, 12:00pm\n                  - generic [ref=e261]:\n                    - img [ref=e263]\n                    - generic [ref=e265]: Hagley Park, Christchurch, Canterbury\n                - generic [ref=e266]:\n                  - link \"Edit event\" [ref=e267] [cursor=pointer]:\n                    - /url: /events/8e19853f-97a6-49e8-af16-2b99b0844ac2\n                    - generic [ref=e270]: Edit event\n                  - link \"View report\" [ref=e271] [cursor=pointer]:\n                    - /url: \"/reporting/events/ticket-sales?sourceSelection={%22eventId%22:%228e19853f-97a6-49e8-af16-2b99b0844ac2%22}\"\n                    - generic [ref=e274]: View report\n              - generic [ref=e275]:\n                - generic [ref=e277]: Ticket Sales\n                - generic [ref=e279]:\n                  - generic [ref=e280]:\n                    - generic [ref=e281]: Today\n                    - generic [ref=e282]: \"0\"\n                  - generic [ref=e283]:\n                    - generic [ref=e284]: Yesterday\n                    - generic [ref=e285]: \"0\"\n                  - generic [ref=e286]:\n                    - generic [ref=e287]: Total\n                    - generic [ref=e288]: \"20\"\n                - generic [ref=e291]:\n                  - generic [ref=e293]: Face value total\n                  - generic [ref=e295]: \"-\"\n          - generic [ref=e300]:\n            - generic [ref=e301]: Peroni Polo Lawn General Admission - Christchurch 2027\n            - generic [ref=e302]:\n              - generic [ref=e303]:\n                - generic [ref=e304]:\n                  - generic [ref=e306]:\n                    - img [ref=e308]\n                    - generic [ref=e310]: 20 Feb 2027, 12:00pm\n                  - generic [ref=e312]:\n                    - img [ref=e314]\n                    - generic [ref=e316]: Hagley Park, Christchurch, Canterbury\n                - generic [ref=e317]:\n                  - link \"Edit event\" [ref=e318] [cursor=pointer]:\n                    - /url: /events/9bd13a3d-fe7c-4f91-a283-0965a470d4ed\n                    - generic [ref=e321]: Edit event\n                  - link \"View report\" [ref=e322] [cursor=pointer]:\n                    - /url: \"/reporting/events/ticket-sales?sourceSelection={%22eventId%22:%229bd13a3d-fe7c-4f91-a283-0965a470d4ed%22}\"\n                    - generic [ref=e325]: View report\n              - generic [ref=e326]:\n                - generic [ref=e328]: Ticket Sales\n                - generic [ref=e330]:\n                  - generic [ref=e331]:\n                    - generic [ref=e332]: Today\n                    - generic [ref=e333]: \"0\"\n                  - generic [ref=e334]:\n                    - generic [ref=e335]: Yesterday\n                    - generic [ref=e336]: \"1\"\n                  - generic [ref=e337]:\n                    - generic [ref=e338]: Total\n                    - generic [ref=e339]: \"3\"\n                - generic [ref=e342]:\n                  - generic [ref=e344]: Face value total\n                  - generic [ref=e346]: \"-\"\n          - generic [ref=e351]:\n            - generic [ref=e352]: Peroni Polo Lawn General Admission - Auckland 2027\n            - generic [ref=e353]:\n              - generic [ref=e354]:\n                - generic [ref=e355]:\n                  - generic [ref=e357]:\n                    - img [ref=e359]\n                    - generic [ref=e361]: 6 Mar 2027, 12:00pm\n                  - generic [ref=e363]:\n                    - img [ref=e365]\n                    - generic [ref=e367]: Lexus Urban Polo - Auckland, Auckland\n                - generic [ref=e368]:\n                  - link \"Edit event\" [ref=e369] [cursor=pointer]:\n                    - /url: /events/fbbd40a4-bdaa-41ed-b502-07d7521ae5e4\n                    - generic [ref=e372]: Edit event\n                  - link \"View report\" [ref=e373] [cursor=pointer]:\n                    - /url: \"/reporting/events/ticket-sales?sourceSelection={%22eventId%22:%22fbbd40a4-bdaa-41ed-b502-07d7521ae5e4%22}\"\n                    - generic [ref=e376]: View report\n              - generic [ref=e377]:\n                - generic [ref=e379]: Ticket Sales\n                - generic [ref=e381]:\n                  - generic [ref=e382]:\n                    - generic [ref=e383]: Today\n                    - generic [ref=e384]: \"0\"\n                  - generic [ref=e385]:\n                    - generic [ref=e386]: Yesterday\n                    - generic [ref=e387]: \"0\"\n                  - generic [ref=e388]:\n                    - generic [ref=e389]: Total\n                    - generic [ref=e390]: \"5\"\n                - generic [ref=e393]:\n                  - generic [ref=e395]: Face value total\n                  - generic [ref=e397]: \"-\"\n          - generic [ref=e402]:\n            - generic [ref=e403]: \"\\\"Urban Polo Lounge\\\" Private Marquee Area - Auckland 2027\"\n            - generic [ref=e404]:\n              - generic [ref=e405]:\n                - generic [ref=e406]:\n                  - generic [ref=e408]:\n                    - img [ref=e410]\n                    - generic [ref=e412]: 6 Mar 2027, 12:00pm\n                  - generic [ref=e414]:\n                    - img [ref=e416]\n                    - generic [ref=e418]: Lexus Urban Polo - Auckland, Auckland\n                - generic [ref=e419]:\n                  - link \"Edit event\" [ref=e420] [cursor=pointer]:\n                    - /url: /events/dd8b2119-b7e0-44ef-8ea4-31978caae1d1\n                    - generic [ref=e423]: Edit event\n                  - link \"View report\" [ref=e424] [cursor=pointer]:\n                    - /url: \"/reporting/events/ticket-sales?sourceSelection={%22eventId%22:%22dd8b2119-b7e0-44ef-8ea4-31978caae1d1%22}\"\n                    - generic [ref=e427]: View report\n              - generic [ref=e428]:\n                - generic [ref=e430]: Ticket Sales\n                - generic [ref=e432]:\n                  - generic [ref=e433]:\n                    - generic [ref=e434]: Today\n                    - generic [ref=e435]: \"0\"\n                  - generic [ref=e436]:\n                    - generic [ref=e437]: Yesterday\n                    - generic [ref=e438]: \"0\"\n                  - generic [ref=e439]:\n                    - generic [ref=e440]: Total\n                    - generic [ref=e441]: \"0\"\n          - generic [ref=e446]:\n            - generic [ref=e447]: Private Marquees - Auckland 2027\n            - generic [ref=e448]:\n              - generic [ref=e449]:\n                - generic [ref=e450]:\n                  - generic [ref=e452]:\n                    - img [ref=e454]\n                    - generic [ref=e456]: 6 Mar 2027, 12:00pm\n                  - generic [ref=e458]:\n                    - img [ref=e460]\n                    - generic [ref=e462]: Lexus Urban Polo - Auckland, Auckland\n                - generic [ref=e463]:\n                  - link \"Edit event\" [ref=e464] [cursor=pointer]:\n                    - /url: /events/b9a6073a-e387-42bf-8f9c-e7ae9c39ab9b\n                    - generic [ref=e467]: Edit event\n                  - link \"View report\" [ref=e468] [cursor=pointer]:\n                    - /url: \"/reporting/events/ticket-sales?sourceSelection={%22eventId%22:%22b9a6073a-e387-42bf-8f9c-e7ae9c39ab9b%22}\"\n                    - generic [ref=e471]: View report\n              - generic [ref=e472]:\n                - generic [ref=e474]: Ticket Sales\n                - generic [ref=e476]:\n                  - generic [ref=e477]:\n                    - generic [ref=e478]: Today\n                    - generic [ref=e479]: \"0\"\n                  - generic [ref=e480]:\n                    - generic [ref=e481]: Yesterday\n                    - generic [ref=e482]: \"0\"\n                  - generic [ref=e483]:\n                    - generic [ref=e484]: Total\n                    - generic [ref=e485]: \"250\"\n                - generic [ref=e488]:\n                  - generic [ref=e490]: Face value total\n                  - generic [ref=e492]: \"-\"\n          - generic [ref=e497]:\n            - generic [ref=e498]: VIP Champagne Terrace - Auckland 2027\n            - generic [ref=e499]:\n              - generic [ref=e500]:\n                - generic [ref=e501]:\n                  - generic [ref=e503]:\n                    - img [ref=e505]\n                    - generic [ref=e507]: 6 Mar 2027, 12:00pm\n                  - generic [ref=e509]:\n                    - img [ref=e511]\n                    - generic [ref=e513]: Lexus Urban Polo - Auckland, Auckland\n                - generic [ref=e514]:\n                  - link \"Edit event\" [ref=e515] [cursor=pointer]:\n                    - /url: /events/ff6b2d8d-6cc2-42a7-a405-35d24a8486ab\n                    - generic [ref=e518]: Edit event\n                  - link \"View report\" [ref=e519] [cursor=pointer]:\n                    - /url: \"/reporting/events/ticket-sales?sourceSelection={%22eventId%22:%22ff6b2d8d-6cc2-42a7-a405-35d24a8486ab%22}\"\n                    - generic [ref=e522]: View report\n              - generic [ref=e523]:\n                - generic [ref=e525]: Ticket Sales\n                - generic [ref=e527]:\n                  - generic [ref=e528]:\n                    - generic [ref=e529]: Today\n                    - generic [ref=e530]: \"0\"\n                  - generic [ref=e531]:\n                    - generic [ref=e532]: Yesterday\n                    - generic [ref=e533]: \"0\"\n                  - generic [ref=e534]:\n                    - generic [ref=e535]: Total\n                    - generic [ref=e536]: \"10\"\n                - generic [ref=e539]:\n                  - generic [ref=e541]: Face value total\n                  - generic [ref=e543]: \"-\"\n  - alert [ref=e544]\n  - img [ref=e548] [cursor=pointer]",
+  "refs": {
+    "e1": {
+      "role": "generic"
+    },
+    "e3": {
+      "role": "generic"
+    },
+    "e4": {
+      "role": "navigation"
+    },
+    "e6": {
+      "role": "link",
+      "name": "flicket"
+    },
+    "e7": {
+      "role": "img",
+      "name": "flicket"
+    },
+    "e8": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "link",
+      "name": "Home"
+    },
+    "e10": {
+      "role": "generic"
+    },
+    "e11": {
+      "role": "generic"
+    },
+    "e13": {
+      "role": "img"
+    },
+    "e16": {
+      "role": "img"
+    },
+    "e18": {
+      "role": "generic"
+    },
+    "e19": {
+      "role": "link",
+      "name": "Reporting"
+    },
+    "e20": {
+      "role": "generic"
+    },
+    "e21": {
+      "role": "generic"
+    },
+    "e23": {
+      "role": "img"
+    },
+    "e26": {
+      "role": "img"
+    },
+    "e28": {
+      "role": "generic"
+    },
+    "e29": {
+      "role": "link",
+      "name": "Orders"
+    },
+    "e30": {
+      "role": "generic"
+    },
+    "e31": {
+      "role": "generic"
+    },
+    "e33": {
+      "role": "img"
+    },
+    "e36": {
+      "role": "img"
+    },
+    "e38": {
+      "role": "generic"
+    },
+    "e39": {
+      "role": "link",
+      "name": "Customers"
+    },
+    "e40": {
+      "role": "generic"
+    },
+    "e41": {
+      "role": "generic"
+    },
+    "e43": {
+      "role": "img"
+    },
+    "e46": {
+      "role": "img"
+    },
+    "e48": {
+      "role": "generic"
+    },
+    "e49": {
+      "role": "link",
+      "name": "Scout"
+    },
+    "e50": {
+      "role": "generic"
+    },
+    "e51": {
+      "role": "generic"
+    },
+    "e53": {
+      "role": "img"
+    },
+    "e56": {
+      "role": "img"
+    },
+    "e58": {
+      "role": "generic"
+    },
+    "e62": {
+      "role": "generic"
+    },
+    "e63": {
+      "role": "heading",
+      "name": "Home"
+    },
+    "e66": {
+      "role": "button",
+      "name": "SB"
+    },
+    "e68": {
+      "role": "generic"
+    },
+    "e70": {
+      "role": "generic"
+    },
+    "e71": {
+      "role": "generic"
+    },
+    "e73": {
+      "role": "generic"
+    },
+    "e78": {
+      "role": "generic"
+    },
+    "e79": {
+      "role": "generic"
+    },
+    "e80": {
+      "role": "generic"
+    },
+    "e83": {
+      "role": "img"
+    },
+    "e85": {
+      "role": "generic"
+    },
+    "e86": {
+      "role": "generic"
+    },
+    "e87": {
+      "role": "generic"
+    },
+    "e88": {
+      "role": "generic"
+    },
+    "e91": {
+      "role": "img"
+    },
+    "e93": {
+      "role": "generic"
+    },
+    "e94": {
+      "role": "generic"
+    },
+    "e95": {
+      "role": "generic"
+    },
+    "e96": {
+      "role": "generic"
+    },
+    "e99": {
+      "role": "img"
+    },
+    "e101": {
+      "role": "generic"
+    },
+    "e102": {
+      "role": "generic"
+    },
+    "e103": {
+      "role": "generic"
+    },
+    "e104": {
+      "role": "generic"
+    },
+    "e107": {
+      "role": "img"
+    },
+    "e109": {
+      "role": "generic"
+    },
+    "e110": {
+      "role": "generic"
+    },
+    "e111": {
+      "role": "generic"
+    },
+    "e112": {
+      "role": "generic"
+    },
+    "e115": {
+      "role": "img"
+    },
+    "e117": {
+      "role": "generic"
+    },
+    "e118": {
+      "role": "generic"
+    },
+    "e119": {
+      "role": "generic"
+    },
+    "e120": {
+      "role": "generic"
+    },
+    "e123": {
+      "role": "img"
+    },
+    "e125": {
+      "role": "generic"
+    },
+    "e126": {
+      "role": "generic"
+    },
+    "e127": {
+      "role": "generic"
+    },
+    "e128": {
+      "role": "generic"
+    },
+    "e131": {
+      "role": "img"
+    },
+    "e133": {
+      "role": "generic"
+    },
+    "e134": {
+      "role": "generic"
+    },
+    "e135": {
+      "role": "generic"
+    },
+    "e136": {
+      "role": "generic"
+    },
+    "e139": {
+      "role": "img"
+    },
+    "e141": {
+      "role": "generic"
+    },
+    "e142": {
+      "role": "generic"
+    },
+    "e143": {
+      "role": "generic"
+    },
+    "e145": {
+      "role": "generic"
+    },
+    "e149": {
+      "role": "generic"
+    },
+    "e154": {
+      "role": "generic"
+    },
+    "e155": {
+      "role": "generic"
+    },
+    "e156": {
+      "role": "generic"
+    },
+    "e157": {
+      "role": "generic"
+    },
+    "e158": {
+      "role": "generic"
+    },
+    "e160": {
+      "role": "generic"
+    },
+    "e162": {
+      "role": "img"
+    },
+    "e164": {
+      "role": "generic"
+    },
+    "e166": {
+      "role": "generic"
+    },
+    "e168": {
+      "role": "img"
+    },
+    "e170": {
+      "role": "generic"
+    },
+    "e171": {
+      "role": "generic"
+    },
+    "e172": {
+      "role": "link",
+      "name": "Edit event"
+    },
+    "e175": {
+      "role": "generic"
+    },
+    "e176": {
+      "role": "link",
+      "name": "View report"
+    },
+    "e179": {
+      "role": "generic"
+    },
+    "e180": {
+      "role": "generic"
+    },
+    "e182": {
+      "role": "generic"
+    },
+    "e184": {
+      "role": "generic"
+    },
+    "e185": {
+      "role": "generic"
+    },
+    "e186": {
+      "role": "generic"
+    },
+    "e187": {
+      "role": "generic"
+    },
+    "e188": {
+      "role": "generic"
+    },
+    "e189": {
+      "role": "generic"
+    },
+    "e190": {
+      "role": "generic"
+    },
+    "e191": {
+      "role": "generic"
+    },
+    "e192": {
+      "role": "generic"
+    },
+    "e193": {
+      "role": "generic"
+    },
+    "e198": {
+      "role": "generic"
+    },
+    "e199": {
+      "role": "generic"
+    },
+    "e200": {
+      "role": "generic"
+    },
+    "e201": {
+      "role": "generic"
+    },
+    "e202": {
+      "role": "generic"
+    },
+    "e204": {
+      "role": "generic"
+    },
+    "e206": {
+      "role": "img"
+    },
+    "e208": {
+      "role": "generic"
+    },
+    "e210": {
+      "role": "generic"
+    },
+    "e212": {
+      "role": "img"
+    },
+    "e214": {
+      "role": "generic"
+    },
+    "e215": {
+      "role": "generic"
+    },
+    "e216": {
+      "role": "link",
+      "name": "Edit event"
+    },
+    "e219": {
+      "role": "generic"
+    },
+    "e220": {
+      "role": "link",
+      "name": "View report"
+    },
+    "e223": {
+      "role": "generic"
+    },
+    "e224": {
+      "role": "generic"
+    },
+    "e226": {
+      "role": "generic"
+    },
+    "e228": {
+      "role": "generic"
+    },
+    "e229": {
+      "role": "generic"
+    },
+    "e230": {
+      "role": "generic"
+    },
+    "e231": {
+      "role": "generic"
+    },
+    "e232": {
+      "role": "generic"
+    },
+    "e233": {
+      "role": "generic"
+    },
+    "e234": {
+      "role": "generic"
+    },
+    "e235": {
+      "role": "generic"
+    },
+    "e236": {
+      "role": "generic"
+    },
+    "e237": {
+      "role": "generic"
+    },
+    "e240": {
+      "role": "generic"
+    },
+    "e242": {
+      "role": "generic"
+    },
+    "e244": {
+      "role": "generic"
+    },
+    "e249": {
+      "role": "generic"
+    },
+    "e250": {
+      "role": "generic"
+    },
+    "e251": {
+      "role": "generic"
+    },
+    "e252": {
+      "role": "generic"
+    },
+    "e253": {
+      "role": "generic"
+    },
+    "e255": {
+      "role": "generic"
+    },
+    "e257": {
+      "role": "img"
+    },
+    "e259": {
+      "role": "generic"
+    },
+    "e261": {
+      "role": "generic"
+    },
+    "e263": {
+      "role": "img"
+    },
+    "e265": {
+      "role": "generic"
+    },
+    "e266": {
+      "role": "generic"
+    },
+    "e267": {
+      "role": "link",
+      "name": "Edit event"
+    },
+    "e270": {
+      "role": "generic"
+    },
+    "e271": {
+      "role": "link",
+      "name": "View report"
+    },
+    "e274": {
+      "role": "generic"
+    },
+    "e275": {
+      "role": "generic"
+    },
+    "e277": {
+      "role": "generic"
+    },
+    "e279": {
+      "role": "generic"
+    },
+    "e280": {
+      "role": "generic"
+    },
+    "e281": {
+      "role": "generic"
+    },
+    "e282": {
+      "role": "generic"
+    },
+    "e283": {
+      "role": "generic"
+    },
+    "e284": {
+      "role": "generic"
+    },
+    "e285": {
+      "role": "generic"
+    },
+    "e286": {
+      "role": "generic"
+    },
+    "e287": {
+      "role": "generic"
+    },
+    "e288": {
+      "role": "generic"
+    },
+    "e291": {
+      "role": "generic"
+    },
+    "e293": {
+      "role": "generic"
+    },
+    "e295": {
+      "role": "generic"
+    },
+    "e300": {
+      "role": "generic"
+    },
+    "e301": {
+      "role": "generic"
+    },
+    "e302": {
+      "role": "generic"
+    },
+    "e303": {
+      "role": "generic"
+    },
+    "e304": {
+      "role": "generic"
+    },
+    "e306": {
+      "role": "generic"
+    },
+    "e308": {
+      "role": "img"
+    },
+    "e310": {
+      "role": "generic"
+    },
+    "e312": {
+      "role": "generic"
+    },
+    "e314": {
+      "role": "img"
+    },
+    "e316": {
+      "role": "generic"
+    },
+    "e317": {
+      "role": "generic"
+    },
+    "e318": {
+      "role": "link",
+      "name": "Edit event"
+    },
+    "e321": {
+      "role": "generic"
+    },
+    "e322": {
+      "role": "link",
+      "name": "View report"
+    },
+    "e325": {
+      "role": "generic"
+    },
+    "e326": {
+      "role": "generic"
+    },
+    "e328": {
+      "role": "generic"
+    },
+    "e330": {
+      "role": "generic"
+    },
+    "e331": {
+      "role": "generic"
+    },
+    "e332": {
+      "role": "generic"
+    },
+    "e333": {
+      "role": "generic"
+    },
+    "e334": {
+      "role": "generic"
+    },
+    "e335": {
+      "role": "generic"
+    },
+    "e336": {
+      "role": "generic"
+    },
+    "e337": {
+      "role": "generic"
+    },
+    "e338": {
+      "role": "generic"
+    },
+    "e339": {
+      "role": "generic"
+    },
+    "e342": {
+      "role": "generic"
+    },
+    "e344": {
+      "role": "generic"
+    },
+    "e346": {
+      "role": "generic"
+    },
+    "e351": {
+      "role": "generic"
+    },
+    "e352": {
+      "role": "generic"
+    },
+    "e353": {
+      "role": "generic"
+    },
+    "e354": {
+      "role": "generic"
+    },
+    "e355": {
+      "role": "generic"
+    },
+    "e357": {
+      "role": "generic"
+    },
+    "e359": {
+      "role": "img"
+    },
+    "e361": {
+      "role": "generic"
+    },
+    "e363": {
+      "role": "generic"
+    },
+    "e365": {
+      "role": "img"
+    },
+    "e367": {
+      "role": "generic"
+    },
+    "e368": {
+      "role": "generic"
+    },
+    "e369": {
+      "role": "link",
+      "name": "Edit event"
+    },
+    "e372": {
+      "role": "generic"
+    },
+    "e373": {
+      "role": "link",
+      "name": "View report"
+    },
+    "e376": {
+      "role": "generic"
+    },
+    "e377": {
+      "role": "generic"
+    },
+    "e379": {
+      "role": "generic"
+    },
+    "e381": {
+      "role": "generic"
+    },
+    "e382": {
+      "role": "generic"
+    },
+    "e383": {
+      "role": "generic"
+    },
+    "e384": {
+      "role": "generic"
+    },
+    "e385": {
+      "role": "generic"
+    },
+    "e386": {
+      "role": "generic"
+    },
+    "e387": {
+      "role": "generic"
+    },
+    "e388": {
+      "role": "generic"
+    },
+    "e389": {
+      "role": "generic"
+    },
+    "e390": {
+      "role": "generic"
+    },
+    "e393": {
+      "role": "generic"
+    },
+    "e395": {
+      "role": "generic"
+    },
+    "e397": {
+      "role": "generic"
+    },
+    "e402": {
+      "role": "generic"
+    },
+    "e403": {
+      "role": "generic"
+    },
+    "e404": {
+      "role": "generic"
+    },
+    "e405": {
+      "role": "generic"
+    },
+    "e406": {
+      "role": "generic"
+    },
+    "e408": {
+      "role": "generic"
+    },
+    "e410": {
+      "role": "img"
+    },
+    "e412": {
+      "role": "generic"
+    },
+    "e414": {
+      "role": "generic"
+    },
+    "e416": {
+      "role": "img"
+    },
+    "e418": {
+      "role": "generic"
+    },
+    "e419": {
+      "role": "generic"
+    },
+    "e420": {
+      "role": "link",
+      "name": "Edit event"
+    },
+    "e423": {
+      "role": "generic"
+    },
+    "e424": {
+      "role": "link",
+      "name": "View report"
+    },
+    "e427": {
+      "role": "generic"
+    },
+    "e428": {
+      "role": "generic"
+    },
+    "e430": {
+      "role": "generic"
+    },
+    "e432": {
+      "role": "generic"
+    },
+    "e433": {
+      "role": "generic"
+    },
+    "e434": {
+      "role": "generic"
+    },
+    "e435": {
+      "role": "generic"
+    },
+    "e436": {
+      "role": "generic"
+    },
+    "e437": {
+      "role": "generic"
+    },
+    "e438": {
+      "role": "generic"
+    },
+    "e439": {
+      "role": "generic"
+    },
+    "e440": {
+      "role": "generic"
+    },
+    "e441": {
+      "role": "generic"
+    },
+    "e446": {
+      "role": "generic"
+    },
+    "e447": {
+      "role": "generic"
+    },
+    "e448": {
+      "role": "generic"
+    },
+    "e449": {
+      "role": "generic"
+    },
+    "e450": {
+      "role": "generic"
+    },
+    "e452": {
+      "role": "generic"
+    },
+    "e454": {
+      "role": "img"
+    },
+    "e456": {
+      "role": "generic"
+    },
+    "e458": {
+      "role": "generic"
+    },
+    "e460": {
+      "role": "img"
+    },
+    "e462": {
+      "role": "generic"
+    },
+    "e463": {
+      "role": "generic"
+    },
+    "e464": {
+      "role": "link",
+      "name": "Edit event"
+    },
+    "e467": {
+      "role": "generic"
+    },
+    "e468": {
+      "role": "link",
+      "name": "View report"
+    },
+    "e471": {
+      "role": "generic"
+    },
+    "e472": {
+      "role": "generic"
+    },
+    "e474": {
+      "role": "generic"
+    },
+    "e476": {
+      "role": "generic"
+    },
+    "e477": {
+      "role": "generic"
+    },
+    "e478": {
+      "role": "generic"
+    },
+    "e479": {
+      "role": "generic"
+    },
+    "e480": {
+      "role": "generic"
+    },
+    "e481": {
+      "role": "generic"
+    },
+    "e482": {
+      "role": "generic"
+    },
+    "e483": {
+      "role": "generic"
+    },
+    "e484": {
+      "role": "generic"
+    },
+    "e485": {
+      "role": "generic"
+    },
+    "e488": {
+      "role": "generic"
+    },
+    "e490": {
+      "role": "generic"
+    },
+    "e492": {
+      "role": "generic"
+    },
+    "e497": {
+      "role": "generic"
+    },
+    "e498": {
+      "role": "generic"
+    },
+    "e499": {
+      "role": "generic"
+    },
+    "e500": {
+      "role": "generic"
+    },
+    "e501": {
+      "role": "generic"
+    },
+    "e503": {
+      "role": "generic"
+    },
+    "e505": {
+      "role": "img"
+    },
+    "e507": {
+      "role": "generic"
+    },
+    "e509": {
+      "role": "generic"
+    },
+    "e511": {
+      "role": "img"
+    },
+    "e513": {
+      "role": "generic"
+    },
+    "e514": {
+      "role": "generic"
+    },
+    "e515": {
+      "role": "link",
+      "name": "Edit event"
+    },
+    "e518": {
+      "role": "generic"
+    },
+    "e519": {
+      "role": "link",
+      "name": "View report"
+    },
+    "e522": {
+      "role": "generic"
+    },
+    "e523": {
+      "role": "generic"
+    },
+    "e525": {
+      "role": "generic"
+    },
+    "e527": {
+      "role": "generic"
+    },
+    "e528": {
+      "role": "generic"
+    },
+    "e529": {
+      "role": "generic"
+    },
+    "e530": {
+      "role": "generic"
+    },
+    "e531": {
+      "role": "generic"
+    },
+    "e532": {
+      "role": "generic"
+    },
+    "e533": {
+      "role": "generic"
+    },
+    "e534": {
+      "role": "generic"
+    },
+    "e535": {
+      "role": "generic"
+    },
+    "e536": {
+      "role": "generic"
+    },
+    "e539": {
+      "role": "generic"
+    },
+    "e541": {
+      "role": "generic"
+    },
+    "e543": {
+      "role": "generic"
+    },
+    "e544": {
+      "role": "alert"
+    },
+    "e548": {
+      "role": "img"
+    }
+  }
+}
