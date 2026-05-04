@@ -1,0 +1,11 @@
+{"requests":[
+  {"repeatCell":{"range":{"sheetId":1842987567,"startRowIndex":0,"endRowIndex":1,"startColumnIndex":0,"endColumnIndex":6},"cell":{"userEnteredFormat":{"textFormat":{"bold":true}}},"fields":"userEnteredFormat.textFormat.bold"}},
+  {"repeatCell":{"range":{"sheetId":1842987567,"startRowIndex":9,"endRowIndex":10,"startColumnIndex":0,"endColumnIndex":6},"cell":{"userEnteredFormat":{"textFormat":{"bold":true}}},"fields":"userEnteredFormat.textFormat.bold"}},
+  {"repeatCell":{"range":{"sheetId":1842987567,"startRowIndex":18,"endRowIndex":19,"startColumnIndex":0,"endColumnIndex":6},"cell":{"userEnteredFormat":{"textFormat":{"bold":true}}},"fields":"userEnteredFormat.textFormat.bold"}},
+  {"repeatCell":{"range":{"sheetId":1842987567,"startRowIndex":27,"endRowIndex":28,"startColumnIndex":0,"endColumnIndex":6},"cell":{"userEnteredFormat":{"textFormat":{"bold":true}}},"fields":"userEnteredFormat.textFormat.bold"}},
+  {"autoResizeDimensions":{"dimensions":{"sheetId":1842987567,"dimension":"COLUMNS","startIndex":0,"endIndex":6}}},
+  {"autoResizeDimensions":{"dimensions":{"sheetId":1015894462,"dimension":"COLUMNS","startIndex":0,"endIndex":6}}},
+  {"autoResizeDimensions":{"dimensions":{"sheetId":505551930,"dimension":"COLUMNS","startIndex":0,"endIndex":6}}},
+  {"autoResizeDimensions":{"dimensions":{"sheetId":561580650,"dimension":"COLUMNS","startIndex":0,"endIndex":6}}},
+  {"autoResizeDimensions":{"dimensions":{"sheetId":280049198,"dimension":"COLUMNS","startIndex":0,"endIndex":6}}}
+]}
