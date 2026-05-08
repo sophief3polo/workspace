@@ -49,13 +49,22 @@ const sourceLink =
 const exportLink =
   "https://docs.google.com/spreadsheets/d/1RTDc3MLN4JuM1ODeL696T3Yp15irW81x/export?format=xlsx";
 
-const sectionSpecs: SectionSpec[] = [
-  { headerRow: 7, rowStart: 8, rowEnd: 24, colStart: 1 },
-  { headerRow: 7, rowStart: 8, rowEnd: 24, colStart: 7 },
-  { headerRow: 26, rowStart: 27, rowEnd: 43, colStart: 1 },
-  { headerRow: 26, rowStart: 27, rowEnd: 43, colStart: 7 },
-  { headerRow: 45, rowStart: 46, rowEnd: 62, colStart: 1 },
-];
+function buildSectionSpecs(maxHeaderRow = 160) {
+  const specs: SectionSpec[] = [];
+
+  for (let headerRow = 7; headerRow <= maxHeaderRow; headerRow += 19) {
+    for (const colStart of [1, 7]) {
+      specs.push({
+        headerRow,
+        rowStart: headerRow + 1,
+        rowEnd: headerRow + 17,
+        colStart,
+      });
+    }
+  }
+
+  return specs;
+}
 
 const fallbackEvents = [
   "Brisbane 2026",
@@ -156,11 +165,15 @@ export async function loadSponsorshipSections(sheetNameCandidates: string[], fal
 
     const sheet = workbook.Sheets[sheetName];
     const rows = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: "" }) as unknown[][];
-    const parsedSections = sectionSpecs
+    const parsedSections = buildSectionSpecs(rows.length + 5)
       .map((spec) => parseSection(rows, spec))
       .filter((section): section is EventSection => Boolean(section));
 
-    return parsedSections.length ? parsedSections : fallbackSections;
+    const dedupedSections = parsedSections.filter(
+      (section, index, allSections) => allSections.findIndex((candidate) => candidate.event === section.event) === index,
+    );
+
+    return dedupedSections.length ? dedupedSections : fallbackSections;
   } catch {
     return fallbackSections;
   }

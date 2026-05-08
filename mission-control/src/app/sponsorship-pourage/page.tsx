@@ -7,6 +7,6 @@ export default async function SponsorshipPouragePage() {
     title: "Sponsorship - Pourage",
     description: "Pulled from Debbie's shared sheet. Same board structure as Teams & Umpire, focused on pourage sponsor slots and their current status.",
     activeNav: "pourage",
-    sourceSheetNameCandidates: ["POURAGE", "Pourage"],
+    sourceSheetNameCandidates: ["POURAGE", "Pourage", "BEVERAGE", "Beverage"],
   });
 }
