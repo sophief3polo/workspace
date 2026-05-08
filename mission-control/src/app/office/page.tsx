@@ -58,7 +58,7 @@ export default function OfficePage() {
       <div className="mx-auto flex min-h-screen w-full max-w-[1480px] gap-6 px-4 py-4 lg:px-6 lg:py-6">
         <aside className="hidden w-[248px] shrink-0 flex-col rounded-[28px] border border-white/8 bg-[#1c2230] p-4 lg:flex">
           <div className="flex items-center gap-3 rounded-2xl border border-white/6 bg-white/[0.05] px-3 py-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#5e6ad2] text-sm font-semibold text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#B38E37] text-sm font-semibold text-white">
               MC
             </div>
             <div>
@@ -74,7 +74,7 @@ export default function OfficePage() {
             <a href="/memory" className="flex items-center justify-between rounded-xl px-3 py-2.5 transition hover:bg-white/[0.09] hover:text-white"><span>Memory</span></a>
             <a href="/docs" className="flex items-center justify-between rounded-xl px-3 py-2.5 transition hover:bg-white/[0.09] hover:text-white"><span>Docs</span></a>
             <a href="/team" className="flex items-center justify-between rounded-xl px-3 py-2.5 transition hover:bg-white/[0.09] hover:text-white"><span>Team</span></a>
-            <a href="/office" className="flex items-center justify-between rounded-xl bg-white/[0.09] px-3 py-2.5 text-white transition"><span>Office</span><span className="h-2 w-2 rounded-full bg-[#5e6ad2]" /></a>
+            <a href="/office" className="flex items-center justify-between rounded-xl bg-white/[0.09] px-3 py-2.5 text-white transition"><span>Office</span><span className="h-2 w-2 rounded-full bg-[#B38E37]" /></a>
           </nav>
         </aside>
 
@@ -118,7 +118,7 @@ export default function OfficePage() {
                             <div className="absolute left-10 top-20">
                               <div className="relative h-16 w-12">
                                 <div className="absolute left-2 top-0 h-6 w-6 border-4 border-[#11151d] bg-[#f2caa0]" />
-                                <div className="absolute left-0 top-5 h-7 w-10 border-4 border-[#11151d] bg-[#5e6ad2]" />
+                                <div className="absolute left-0 top-5 h-7 w-10 border-4 border-[#11151d] bg-[#B38E37]" />
                                 <div className="absolute left-0 top-10 h-5 w-4 border-4 border-[#11151d] bg-[#0f172a]" />
                                 <div className="absolute left-6 top-10 h-5 w-4 border-4 border-[#11151d] bg-[#0f172a]" />
                               </div>
@@ -168,7 +168,7 @@ export default function OfficePage() {
                   <ul className="mt-5 space-y-2 text-sm text-[#d6dbea]">
                     {workItems.map((item) => (
                       <li key={item} className="flex items-start gap-2">
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#5e6ad2]" />
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#B38E37]" />
                         <span>{item}</span>
                       </li>
                     ))}

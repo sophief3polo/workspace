@@ -50,6 +50,27 @@ const toolCards = [
     href: "/ticketing",
   },
   {
+    title: "Teams & umpire sponsorship",
+    eyebrow: "Reporting",
+    description: "See which team, apparel, and umpire positions are confirmed versus still needing a push.",
+    bullets: ["Status colour coding", "Owner visibility", "Live lead board"],
+    href: "/sponsorship-teams-umpire",
+  },
+  {
+    title: "Pourage sponsorship",
+    eyebrow: "Reporting",
+    description: "Track the pourage sponsor tab in the same Mission Control structure as the teams board.",
+    bullets: ["Same board layout", "Owner visibility", "Live status view"],
+    href: "/sponsorship-pourage",
+  },
+  {
+    title: "Title & others sponsorship",
+    eyebrow: "Reporting",
+    description: "Track title and other sponsor slots in the same premium board layout.",
+    bullets: ["Same board layout", "Status colour coding", "Live status view"],
+    href: "/sponsorship-others",
+  },
+  {
     title: "Instagram performance",
     eyebrow: "Marketing",
     description: "Visualise @f3polo account momentum, content mix, and attention patterns across the past year.",
@@ -98,6 +119,9 @@ const launchQueue = [
 const navItems = [
   { label: "Overview", href: "/", active: true },
   { label: "Ticketing", href: "/ticketing", active: false },
+  { label: "Teams & Umpire", href: "/sponsorship-teams-umpire", active: false },
+  { label: "Pourage", href: "/sponsorship-pourage", active: false },
+  { label: "Title & Others", href: "/sponsorship-others", active: false },
   { label: "Calendar", href: "/calendar", active: false },
   { label: "Projects", href: "/projects", active: false },
   { label: "Instagram", href: "/instagram", active: false },
@@ -118,7 +142,7 @@ export default function Home() {
       <div className="mx-auto flex min-h-screen w-full max-w-[1480px] gap-6 px-4 py-4 lg:px-6 lg:py-6">
         <aside className="hidden w-[248px] shrink-0 flex-col rounded-[28px] border border-white/8 bg-[#1c2230] p-4 lg:flex">
           <div className="flex items-center gap-3 rounded-2xl border border-white/6 bg-white/[0.05] px-3 py-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#5e6ad2] text-sm font-semibold text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#B38E37] text-sm font-semibold text-white">
               MC
             </div>
             <div>
@@ -139,13 +163,13 @@ export default function Home() {
                 }`}
               >
                 <span>{item.label}</span>
-                {item.active ? <span className="h-2 w-2 rounded-full bg-[#5e6ad2]" /> : null}
+                {item.active ? <span className="h-2 w-2 rounded-full bg-[#B38E37]" /> : null}
               </Link>
             ))}
           </nav>
 
-          <div className="mt-auto rounded-[22px] border border-white/8 bg-[linear-gradient(180deg,rgba(94,106,210,0.18),rgba(94,106,210,0.04))] p-4">
-            <p className="text-xs uppercase tracking-[0.24em] text-[#c7d2fe]">Build queue</p>
+          <div className="mt-auto rounded-[22px] border border-white/8 bg-[linear-gradient(180deg,rgba(179,142,55,0.18),rgba(179,142,55,0.04))] p-4">
+            <p className="text-xs uppercase tracking-[0.24em] text-[#E3C774]">Build queue</p>
             <p className="mt-2 text-sm font-medium text-white">Custom tools go here.</p>
             <p className="mt-2 text-sm leading-6 text-[#b8c0cc]">
               This interface is the front door for the systems we build next.
@@ -176,7 +200,7 @@ export default function Home() {
                 </div>
                 <a
                   href="#tools"
-                  className="rounded-2xl bg-[#5e6ad2] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#6a76de]"
+                  className="rounded-2xl bg-[#B38E37] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#C7A24B]"
                 >
                   Open tool layer
                 </a>
@@ -186,11 +210,11 @@ export default function Home() {
 
           <div className="flex-1 p-5 sm:p-6">
             <div className="grid gap-5 xl:grid-cols-[1.55fr_0.95fr]">
-              <section className="rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(94,106,210,0.2),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
+              <section className="rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(179,142,55,0.2),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
                 <div className="flex flex-col gap-8">
                   <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
                     <div>
-                      <p className="text-xs uppercase tracking-[0.24em] text-[#aab4ff]">Overview</p>
+                      <p className="text-xs uppercase tracking-[0.24em] text-[#D6B35C]">Overview</p>
                       <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-white sm:text-[2rem]">
                         Built to run the commercial engine, not just look pretty.
                       </h2>
@@ -206,7 +230,7 @@ export default function Home() {
                       <Link
                         key={stream.name}
                         href={stream.href}
-                        className="rounded-[24px] border border-white/8 bg-[#232b3a]/90 p-4 transition hover:border-[#5e6ad2]/60 hover:bg-[#2a3446]"
+                        className="rounded-[24px] border border-white/8 bg-[#232b3a]/90 p-4 transition hover:border-[#B38E37]/60 hover:bg-[#2a3446]"
                       >
                         <div className="flex items-start justify-between gap-3">
                           <div>
@@ -260,7 +284,7 @@ export default function Home() {
                     <Link
                       key={item.label}
                       href={item.href}
-                      className="flex items-center justify-between rounded-2xl border border-white/8 bg-white/[0.09] px-4 py-4 transition hover:border-[#5e6ad2]/60 hover:bg-[#2a3446]"
+                      className="flex items-center justify-between rounded-2xl border border-white/8 bg-white/[0.09] px-4 py-4 transition hover:border-[#B38E37]/60 hover:bg-[#2a3446]"
                     >
                       <div className="flex items-center gap-3">
                         <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-white/[0.05] text-sm text-[#c9d1e1]">
@@ -279,7 +303,7 @@ export default function Home() {
                   <Link
                     key={card.title}
                     href={card.href}
-                    className="rounded-[28px] border border-white/8 bg-[#232b3a] p-6 transition hover:border-[#5e6ad2]/60 hover:bg-[#2a3446]"
+                    className="rounded-[28px] border border-white/8 bg-[#232b3a] p-6 transition hover:border-[#B38E37]/60 hover:bg-[#2a3446]"
                   >
                     <p className="text-xs uppercase tracking-[0.24em] text-[#99a1b3]">{card.eyebrow}</p>
                     <h3 className="mt-3 text-xl font-semibold text-white">{card.title}</h3>
@@ -287,7 +311,7 @@ export default function Home() {
                     <ul className="mt-6 space-y-2 text-sm text-[#d4dae6]">
                       {card.bullets.map((bullet) => (
                         <li key={bullet} className="flex items-center gap-2">
-                          <span className="h-1.5 w-1.5 rounded-full bg-[#5e6ad2]" />
+                          <span className="h-1.5 w-1.5 rounded-full bg-[#B38E37]" />
                           {bullet}
                         </li>
                       ))}

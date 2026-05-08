@@ -77,7 +77,7 @@ export default async function DocViewerPage({
       <div className="mx-auto flex min-h-screen w-full max-w-[1480px] gap-6 px-4 py-4 lg:px-6 lg:py-6">
         <aside className="hidden w-[248px] shrink-0 flex-col rounded-[28px] border border-white/8 bg-[#1c2230] p-4 lg:flex">
           <div className="flex items-center gap-3 rounded-2xl border border-white/6 bg-white/[0.05] px-3 py-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#5e6ad2] text-sm font-semibold text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#B38E37] text-sm font-semibold text-white">
               MC
             </div>
             <div>
@@ -92,7 +92,7 @@ export default async function DocViewerPage({
             </Link>
             <Link href="/docs" className="flex items-center justify-between rounded-xl bg-white/[0.09] px-3 py-2.5 text-white transition">
               <span>Docs</span>
-              <span className="h-2 w-2 rounded-full bg-[#5e6ad2]" />
+              <span className="h-2 w-2 rounded-full bg-[#B38E37]" />
             </Link>
           </nav>
         </aside>
@@ -123,7 +123,7 @@ export default async function DocViewerPage({
                 <a
                   href={getDocDownloadHref(doc)}
                   download
-                  className="rounded-2xl border border-[#5e6ad2]/40 bg-[#5e6ad2]/12 px-4 py-3 text-sm text-white transition hover:bg-[#5e6ad2]/20"
+                  className="rounded-2xl border border-[#B38E37]/40 bg-[#B38E37]/12 px-4 py-3 text-sm text-white transition hover:bg-[#B38E37]/20"
                 >
                   Download file
                 </a>
@@ -133,7 +133,7 @@ export default async function DocViewerPage({
 
           <div className="flex-1 p-5 sm:p-6">
             <div className="grid gap-5 xl:grid-cols-[1.2fr_0.8fr]">
-              <section className="space-y-5 rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(94,106,210,0.2),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
+              <section className="space-y-5 rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(179,142,55,0.2),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
                 {!docContent ? (
                   <div className="rounded-2xl border border-red-400/20 bg-red-400/10 p-5 text-sm text-red-200">
                     This document could not be bundled into the deployed viewer.

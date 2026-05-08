@@ -79,7 +79,7 @@ export default function InstagramPage() {
       <div className="mx-auto flex min-h-screen w-full max-w-[1480px] gap-6 px-4 py-4 lg:px-6 lg:py-6">
         <aside className="hidden w-[248px] shrink-0 flex-col rounded-[28px] border border-white/8 bg-[#1c2230] p-4 lg:flex">
           <div className="flex items-center gap-3 rounded-2xl border border-white/6 bg-white/[0.05] px-3 py-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#5e6ad2] text-sm font-semibold text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#B38E37] text-sm font-semibold text-white">
               MC
             </div>
             <div>
@@ -98,7 +98,7 @@ export default function InstagramPage() {
                 }`}
               >
                 <span>{item.label}</span>
-                {item.active ? <span className="h-2 w-2 rounded-full bg-[#5e6ad2]" /> : null}
+                {item.active ? <span className="h-2 w-2 rounded-full bg-[#B38E37]" /> : null}
               </Link>
             ))}
           </nav>
@@ -137,7 +137,7 @@ export default function InstagramPage() {
               <section className="rounded-[28px] border border-white/8 bg-[#232b3a] p-6">
                 <div className="flex items-center justify-between gap-3">
                   <div>
-                    <p className="text-xs uppercase tracking-[0.24em] text-[#aab4ff]">Follower trend</p>
+                    <p className="text-xs uppercase tracking-[0.24em] text-[#D6B35C]">Follower trend</p>
                     <h2 className="mt-2 text-2xl font-semibold tracking-[-0.04em] text-white">Past 12 months</h2>
                   </div>
                   <div className="rounded-2xl border border-white/8 bg-white/[0.05] px-4 py-3 text-sm text-[#c7cedb]">
@@ -149,7 +149,7 @@ export default function InstagramPage() {
                     <div key={point.month} className="flex flex-1 flex-col items-center gap-3">
                       <div className="flex h-[220px] w-full items-end">
                         <div
-                          className="w-full rounded-t-[18px] bg-[linear-gradient(180deg,rgba(142,160,255,0.95),rgba(94,106,210,0.4))]"
+                          className="w-full rounded-t-[18px] bg-[linear-gradient(180deg,rgba(179,142,55,0.95),rgba(94,106,210,0.4))]"
                           style={{ height: `${point.value}%` }}
                         />
                       </div>
@@ -162,8 +162,8 @@ export default function InstagramPage() {
                 </div>
               </section>
 
-              <section className="rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(94,106,210,0.2),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6">
-                <p className="text-xs uppercase tracking-[0.24em] text-[#aab4ff]">Commercial read</p>
+              <section className="rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(179,142,55,0.2),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6">
+                <p className="text-xs uppercase tracking-[0.24em] text-[#D6B35C]">Commercial read</p>
                 <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-white">What the account is really doing</h2>
                 <div className="mt-6 space-y-4">
                   {engagementMoments.map((item) => (
@@ -199,7 +199,7 @@ export default function InstagramPage() {
                           <span className="text-[#98a2b3]">{total} content units</span>
                         </div>
                         <div className="flex h-3 overflow-hidden rounded-full bg-white/[0.05]">
-                          <div className="bg-[#5e6ad2]" style={{ width: `${feed}%` }} />
+                          <div className="bg-[#B38E37]" style={{ width: `${feed}%` }} />
                           <div className="bg-[#8b5cf6]" style={{ width: `${reels}%` }} />
                           <div className="bg-[#ec4899]" style={{ width: `${stories}%` }} />
                         </div>
@@ -208,7 +208,7 @@ export default function InstagramPage() {
                   })}
                 </div>
                 <div className="mt-5 flex flex-wrap gap-4 text-xs text-[#a5adbd]">
-                  <span className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full bg-[#5e6ad2]" />Feed</span>
+                  <span className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full bg-[#B38E37]" />Feed</span>
                   <span className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full bg-[#8b5cf6]" />Reels</span>
                   <span className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full bg-[#ec4899]" />Stories</span>
                 </div>
@@ -231,7 +231,7 @@ export default function InstagramPage() {
                       </div>
                       <div className="mt-4 h-2 overflow-hidden rounded-full bg-white/[0.09]">
                         <div
-                          className="h-full rounded-full bg-[linear-gradient(90deg,#5e6ad2_0%,#ec4899_100%)]"
+                          className="h-full rounded-full bg-[linear-gradient(90deg,#B38E37_0%,#ec4899_100%)]"
                           style={{ width: `${item.score}%` }}
                         />
                       </div>

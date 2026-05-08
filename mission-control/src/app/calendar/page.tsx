@@ -77,7 +77,7 @@ export default function CalendarPage() {
       <div className="mx-auto flex min-h-screen w-full max-w-[1480px] gap-6 px-4 py-4 lg:px-6 lg:py-6">
         <aside className="hidden w-[248px] shrink-0 flex-col rounded-[28px] border border-white/8 bg-[#1c2230] p-4 lg:flex">
           <div className="flex items-center gap-3 rounded-2xl border border-white/6 bg-white/[0.05] px-3 py-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#5e6ad2] text-sm font-semibold text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#B38E37] text-sm font-semibold text-white">
               MC
             </div>
             <div>
@@ -92,7 +92,7 @@ export default function CalendarPage() {
             </a>
             <a href="/calendar" className="flex items-center justify-between rounded-xl bg-white/[0.09] px-3 py-2.5 text-white transition">
               <span>Calendar</span>
-              <span className="h-2 w-2 rounded-full bg-[#5e6ad2]" />
+              <span className="h-2 w-2 rounded-full bg-[#B38E37]" />
             </a>
             <a href="#" className="flex items-center justify-between rounded-xl px-3 py-2.5 transition hover:bg-white/[0.09] hover:text-white">
               <span>Revenue</span>

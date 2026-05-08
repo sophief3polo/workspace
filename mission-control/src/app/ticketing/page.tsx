@@ -1,8 +1,14 @@
 import Link from "next/link";
+import { loadTicketingPageData } from "@/lib/ticketing-data";
+
+export const dynamic = "force-dynamic";
 
 const navItems = [
   { label: "Overview", href: "/", active: false },
   { label: "Ticketing", href: "/ticketing", active: true },
+  { label: "Teams & Umpire", href: "/sponsorship-teams-umpire", active: false },
+  { label: "Pourage", href: "/sponsorship-pourage", active: false },
+  { label: "Title & Others", href: "/sponsorship-others", active: false },
   { label: "Calendar", href: "/calendar", active: false },
   { label: "Projects", href: "/projects", active: false },
   { label: "Instagram", href: "/instagram", active: false },
@@ -12,101 +18,16 @@ const navItems = [
   { label: "Office", href: "/office", active: false },
 ];
 
-const cityCards = [
-  {
-    season: "2026",
-    city: "Sydney",
-    date: "14 Nov 2026",
-    venue: "Mission Field, Centennial Parklands",
-    ticketsSold: 31,
-    faceValue: "$9,070.20",
-    headline: "Early Sydney momentum is real.",
-    detail: "Sportscraft Polo Lounge and VIP are already moving. Private marquees currently sit in holds rather than sold revenue.",
-  },
-  {
-    season: "2026",
-    city: "Brisbane",
-    date: "31 Oct 2026",
-    venue: "Dorrington Park (Kallindarbin), Ashgrove",
-    ticketsSold: 0,
-    faceValue: "$0",
-    headline: "Set up and ready to track.",
-    detail: "Brisbane is wired in with all four product lines so the board is ready as soon as sales start landing.",
-  },
-  {
-    season: "2027",
-    city: "Christchurch",
-    date: "20 Feb 2027",
-    venue: "Hagley Park, Christchurch",
-    ticketsSold: 123,
-    faceValue: "$56,674.00",
-    headline: "Christchurch is already carrying weight.",
-    detail: "Private marquees are doing the heavy lifting, with VIP also showing strong early traction.",
-  },
-  {
-    season: "2027",
-    city: "Auckland",
-    date: "6 Mar 2027",
-    venue: "Lexus Urban Polo - Auckland",
-    ticketsSold: 265,
-    faceValue: "$126,201.00",
-    headline: "Auckland is the strongest board right now.",
-    detail: "Private marquees are dominating revenue, with VIP and lawn sales adding early proof of demand.",
-  },
-];
+export default async function TicketingPage() {
+  const { scoreboard, eventSheetLinks, cityCards, sourceMode, sourceNote } = await loadTicketingPageData();
+  const isLive = sourceMode === "live";
 
-const eventRows = [
-  ["2026", "Sydney", "Heineken Polo Lawn", 13, "$1,320.00", "4,987", "Live"],
-  ["2026", "Sydney", "VIP Champagne Terrace", 12, "$3,228.00", "140", "Live"],
-  ["2026", "Sydney", "Private Marquees", 0, "$0.00", "Holds: 4 orders / 200 tickets", "Live"],
-  ["2026", "Sydney", "Sportscraft Polo Lounge", 6, "$4,522.20", "144", "Live"],
-  ["2026", "Brisbane", "Heineken Polo Lawn", 0, "$0.00", "5,000", "Live"],
-  ["2026", "Brisbane", "VIP Champagne Terrace", 0, "$0.00", "140", "Live"],
-  ["2026", "Brisbane", "Private Marquees", 0, "$0.00", "2,000", "Live"],
-  ["2026", "Brisbane", "Sportscraft Polo Lounge", 0, "$0.00", "150", "Live"],
-  ["2027", "Christchurch", "Peroni Polo Lawn GA", 3, "$207.00", "3,997", "Live"],
-  ["2027", "Christchurch", "VIP Champagne Terrace", 20, "$5,460.00", "2,080", "Live"],
-  ["2027", "Christchurch", "Private Marquees", 100, "$51,007.00", "4,600", "Live"],
-  ["2027", "Christchurch", "Urban Polo Lounge", 0, "$0.00", "200", "Live"],
-  ["2027", "Auckland", "Peroni Polo Lawn GA", 5, "$276.00", "3,995", "Live"],
-  ["2027", "Auckland", "VIP Champagne Terrace", 10, "$3,360.00", "1,090", "Live"],
-  ["2027", "Auckland", "Private Marquees", 250, "$122,565.00", "200", "Live"],
-  ["2027", "Auckland", "Urban Polo Lounge", 0, "$0.00", "200", "Live"],
-] as const;
-
-const scoreboard = [
-  { label: "Cities live", value: "4" },
-  { label: "Event lines", value: "16" },
-  { label: "Tickets sold", value: "419" },
-  { label: "Face value tracked", value: "$191,945.20" },
-];
-
-const eventSheetLinks = [
-  {
-    label: "Sydney",
-    href: "https://docs.google.com/spreadsheets/d/1Gkl14hPWw1IXaXk3At-1gzNXeajqI7OBVdobOOwoXBo/edit",
-  },
-  {
-    label: "Brisbane",
-    href: "https://docs.google.com/spreadsheets/d/1HU5TZMOo85phVNvvkvcesYRQ9ogqHKJsL1s-ItXiqRc/edit",
-  },
-  {
-    label: "Christchurch",
-    href: "https://docs.google.com/spreadsheets/d/1LUl31_WAyX0XAoh691AOrZs-g6jCLuKX2cjLCES4eIE/edit",
-  },
-  {
-    label: "Auckland",
-    href: "https://docs.google.com/spreadsheets/d/1CYKjQjuIH8X28w6uNI9xkPMq245rFgkq5IjjcjuiJbs/edit",
-  },
-] as const;
-
-export default function TicketingPage() {
   return (
     <main className="min-h-screen bg-[#11141b] text-[#f5f7fb]">
       <div className="mx-auto flex min-h-screen w-full max-w-[1480px] gap-6 px-4 py-4 lg:px-6 lg:py-6">
         <aside className="hidden w-[248px] shrink-0 flex-col rounded-[28px] border border-white/8 bg-[#1c2230] p-4 lg:flex">
           <div className="flex items-center gap-3 rounded-2xl border border-white/6 bg-white/[0.05] px-3 py-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#5e6ad2] text-sm font-semibold text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#B38E37] text-sm font-semibold text-white">
               MC
             </div>
             <div>
@@ -125,13 +46,13 @@ export default function TicketingPage() {
                 }`}
               >
                 <span>{item.label}</span>
-                {item.active ? <span className="h-2 w-2 rounded-full bg-[#5e6ad2]" /> : null}
+                {item.active ? <span className="h-2 w-2 rounded-full bg-[#B38E37]" /> : null}
               </Link>
             ))}
           </nav>
 
-          <div className="mt-auto rounded-[22px] border border-white/8 bg-[linear-gradient(180deg,rgba(94,106,210,0.18),rgba(94,106,210,0.04))] p-4">
-            <p className="text-xs uppercase tracking-[0.24em] text-[#c7d2fe]">Reporting layer</p>
+          <div className="mt-auto rounded-[22px] border border-white/8 bg-[linear-gradient(180deg,rgba(179,142,55,0.18),rgba(179,142,55,0.04))] p-4">
+            <p className="text-xs uppercase tracking-[0.24em] text-[#E3C774]">Reporting layer</p>
             <p className="mt-2 text-sm font-medium text-white">Premium ticketing view</p>
             <p className="mt-2 text-sm leading-6 text-[#b8c0cc]">
               Built for fast commercial readouts without sending people into raw spreadsheets.
@@ -145,36 +66,34 @@ export default function TicketingPage() {
               <div>
                 <div className="inline-flex items-center gap-2 rounded-full border border-white/8 bg-white/[0.05] px-3 py-1 text-[11px] uppercase tracking-[0.24em] text-[#99a1b3]">
                   Ticketing dashboard
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                  <span className={`h-1.5 w-1.5 rounded-full ${isLive ? "bg-emerald-400" : "bg-amber-400"}`} />
                 </div>
-                <h1 className="mt-3 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
-                  Premium event sales, cleaned up.
+                <h1 className="mt-3 max-w-4xl text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
+                  2026-27 February Polo & Urban Polo Season Live Ticket Updates
                 </h1>
-                <p className="mt-3 max-w-3xl text-sm leading-7 text-[#98a2b3] sm:text-base">
-                  A polished operating view across Sydney, Brisbane, Christchurch, and Auckland, built from the live ticketing tracker.
-                </p>
+                {sourceNote ? <p className="mt-3 max-w-4xl text-sm text-[#b8c0cc]">{sourceNote}</p> : null}
               </div>
 
               <div className="flex flex-col items-start gap-3">
                 <div className="flex flex-wrap items-center gap-3">
                   <a
-                    href="https://docs.google.com/spreadsheets/d/14ejB2pZZPs8gDt4qR9PZkG2prQg2DprfqdxiAkkpeF8/edit"
+                    href="https://docs.google.com/spreadsheets/d/14ejB2pZZPs8gDt4qR9PZkG2prQg2DprfqdxiAkkpeF8/edit?gid=1842987567#gid=1842987567"
                     target="_blank"
                     rel="noreferrer"
                     className="rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 text-sm font-medium text-white transition hover:bg-white/[0.09]"
                   >
-                    Open raw sheet
+                    RAW Data : Ticket Updates 2026-7 Season
                   </a>
                   <Link
                     href="/"
-                    className="rounded-2xl bg-[#5e6ad2] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#6a76de]"
+                    className="rounded-2xl bg-[#B38E37] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#C7A24B]"
                   >
                     Back to Mission Control
                   </Link>
                 </div>
 
                 <div>
-                  <p className="mb-2 text-[11px] uppercase tracking-[0.22em] text-[#7f8797]">Event Ticketing Summaries</p>
+                  <p className="mb-2 text-[11px] uppercase tracking-[0.22em] text-[#7f8797]">Ticketing & Scans Sheets</p>
                   <div className="flex flex-wrap items-center gap-2">
                     {eventSheetLinks.map((sheet) => (
                       <a
@@ -194,23 +113,10 @@ export default function TicketingPage() {
           </header>
 
           <div className="flex-1 p-5 sm:p-6">
-            <section className="rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(94,106,210,0.2),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
-              <div className="flex flex-col gap-6 xl:flex-row xl:items-end xl:justify-between">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.24em] text-[#aab4ff]">Snapshot</p>
-                  <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-white sm:text-[2rem]">
-                    The cities are no longer buried in tabs.
-                  </h2>
-                  <p className="mt-3 max-w-2xl text-sm leading-7 text-[#c6cede]">
-                    This view turns the Google Sheet into something board-ready: cleaner signal, faster readout, and much better optics.
-                  </p>
-                </div>
-                <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">
-                  {scoreboard.map((item) => (
-                    <Metric key={item.label} label={item.label} value={item.value} />
-                  ))}
-                </div>
-              </div>
+            <section className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+              {scoreboard.map((item) => (
+                <Metric key={item.label} label={item.label} value={item.value} />
+              ))}
             </section>
 
             <section className="mt-5 grid gap-5 xl:grid-cols-2">
@@ -224,69 +130,66 @@ export default function TicketingPage() {
                       <p className="text-xs uppercase tracking-[0.24em] text-[#99a1b3]">
                         {card.season} • {card.city}
                       </p>
-                      <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-white">{card.headline}</h3>
+                      <div className="mt-3 rounded-2xl border border-white/8 bg-white/[0.09] px-4 py-4 text-xs text-[#98a2b3]">
+                        <span className="text-white">{card.date}</span>
+                        <span className="mx-2 text-[#B38E37]">•</span>
+                        {card.venue}
+                      </div>
                     </div>
                     <span className="rounded-full border border-white/8 bg-white/[0.05] px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#d6dbea]">
-                      Live
+                      {isLive ? "Live" : "Snapshot"}
                     </span>
                   </div>
 
-                  <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                    <Stat label="Tickets sold" value={String(card.ticketsSold)} />
+                  <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+                    <Stat label="Tickets sold" value={card.ticketsSold} />
                     <Stat label="Face value" value={card.faceValue} />
+                    <Stat label="On hold" value={card.holdQty} />
+                    <Stat label="Hold value" value={card.holdValue} />
                   </div>
 
-                  <p className="mt-5 text-sm leading-7 text-[#c6cede]">{card.detail}</p>
-                  <div className="mt-5 rounded-2xl border border-white/8 bg-white/[0.09] px-4 py-4 text-sm text-[#98a2b3]">
-                    <span className="text-white">{card.date}</span>
-                    <span className="mx-2 text-[#5e6ad2]">•</span>
-                    {card.venue}
+                  <div className="mt-5 rounded-2xl border border-white/8 bg-white/[0.06] p-4">
+                    <div className="grid gap-3">
+                      {card.lines.map((line) => (
+                        <div key={`${card.city}-${line.label}`} className="rounded-2xl border border-white/8 bg-white/[0.06] px-4 py-4">
+                          <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
+                            <div>
+                              <p className="text-xs font-semibold text-white">{line.label}</p>
+                              <p className="mt-1 text-[10px] uppercase tracking-[0.16em] text-[#7f8797]">{line.note}</p>
+                            </div>
+                            <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+                              <MiniStat label="Sold" value={line.sold} />
+                              <MiniStat label="Face value" value={line.faceValue} />
+                              <MiniStat label="On hold" value={line.holdQty} />
+                              <MiniStat label="Hold value" value={line.holdValue} />
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
+
+                  {card.previousEvent ? (
+                    <div className="mt-4 rounded-2xl border border-[#B38E37]/25 bg-[#11141b]/35 p-4">
+                      <p className="text-[11px] uppercase tracking-[0.2em] text-[#D6B35C]">{card.previousEvent.label}</p>
+                      <div className="mt-3 space-y-2 text-sm text-[#d7deea]">
+                        <p>Sold: {card.previousEvent.sold}</p>
+                        <p>Scanned: {card.previousEvent.scanned}</p>
+                        <p>Attendance: {card.previousEvent.showUpRate}</p>
+                        {card.previousEvent.lines.map((line) => (
+                          <p key={`${card.city}-${card.previousEvent?.label}-${line.label}`}>
+                            {line.label}: {line.sold} sold · {line.scanned} scanned · {line.showUpRate}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
+
+                  <p className="mt-4 text-[10px] uppercase tracking-[0.16em] text-[#7f8797]">
+                    Last updated: <span className="text-[#d7deea]">{card.lastUpdated}</span>
+                  </p>
                 </article>
               ))}
-            </section>
-
-            <section className="mt-5 rounded-[28px] border border-white/8 bg-[#232b3a] p-6">
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.24em] text-[#99a1b3]">Event lines</p>
-                  <h2 className="mt-2 text-2xl font-semibold tracking-[-0.04em] text-white">All tracked categories in one board</h2>
-                </div>
-                <p className="text-sm text-[#98a2b3]">Source labels are normalised where needed so Debbie sees clean commercial names.</p>
-              </div>
-
-              <div className="mt-6 overflow-x-auto">
-                <table className="min-w-full border-separate border-spacing-y-3 text-left text-sm">
-                  <thead>
-                    <tr className="text-[11px] uppercase tracking-[0.18em] text-[#7f8797]">
-                      <th className="px-4">Season</th>
-                      <th className="px-4">City</th>
-                      <th className="px-4">Category</th>
-                      <th className="px-4">Sold</th>
-                      <th className="px-4">Face value</th>
-                      <th className="px-4">Available / note</th>
-                      <th className="px-4">Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {eventRows.map((row) => (
-                      <tr key={`${row[0]}-${row[1]}-${row[2]}`} className="rounded-2xl bg-white/[0.09] text-[#d7deea]">
-                        <td className="rounded-l-2xl px-4 py-4 text-white">{row[0]}</td>
-                        <td className="px-4 py-4">{row[1]}</td>
-                        <td className="px-4 py-4">{row[2]}</td>
-                        <td className="px-4 py-4 text-white">{row[3]}</td>
-                        <td className="px-4 py-4">{row[4]}</td>
-                        <td className="px-4 py-4">{row[5]}</td>
-                        <td className="rounded-r-2xl px-4 py-4">
-                          <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-2.5 py-1 text-[11px] font-medium text-emerald-300">
-                            {row[6]}
-                          </span>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
             </section>
           </div>
         </section>
@@ -297,18 +200,27 @@ export default function TicketingPage() {
 
 function Metric({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-2xl border border-white/8 bg-white/[0.09] px-4 py-3">
-      <p className="text-[11px] uppercase tracking-[0.2em] text-[#7f8797]">{label}</p>
-      <p className="mt-2 text-xl font-semibold tracking-[-0.04em] text-white">{value}</p>
+    <div className="rounded-2xl border border-[#B38E37]/30 bg-white/[0.09] px-4 py-3">
+      <p className="text-[11px] uppercase tracking-[0.2em] text-[#D6B35C]">{label}</p>
+      <p className="mt-2 text-xl font-semibold tracking-[-0.04em] text-[#E3C774]">{value}</p>
     </div>
   );
 }
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-2xl border border-white/8 bg-white/[0.05] px-4 py-4">
-      <p className="text-[11px] uppercase tracking-[0.18em] text-[#7f8797]">{label}</p>
-      <p className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-white">{value}</p>
+    <div className="rounded-2xl border border-[#B38E37]/30 bg-white/[0.05] px-4 py-4">
+      <p className="text-[11px] uppercase tracking-[0.18em] text-[#D6B35C]">{label}</p>
+      <p className="mt-2 text-lg font-semibold tracking-[-0.03em] text-[#E3C774]">{value}</p>
+    </div>
+  );
+}
+
+function MiniStat({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="min-w-[120px] rounded-xl border border-white/8 bg-[#11141b]/40 px-3 py-3">
+      <p className="text-[10px] uppercase tracking-[0.18em] text-[#7f8797]">{label}</p>
+      <p className="mt-1.5 text-xs font-semibold text-white">{value}</p>
     </div>
   );
 }

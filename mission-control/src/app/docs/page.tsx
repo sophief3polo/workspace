@@ -20,7 +20,7 @@ export default function DocsPage() {
       <div className="mx-auto flex min-h-screen w-full max-w-[1480px] gap-6 px-4 py-4 lg:px-6 lg:py-6">
         <aside className="hidden w-[248px] shrink-0 flex-col rounded-[28px] border border-white/8 bg-[#1c2230] p-4 lg:flex">
           <div className="flex items-center gap-3 rounded-2xl border border-white/6 bg-white/[0.05] px-3 py-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#5e6ad2] text-sm font-semibold text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#B38E37] text-sm font-semibold text-white">
               MC
             </div>
             <div>
@@ -44,7 +44,7 @@ export default function DocsPage() {
             </Link>
             <Link href="/docs" className="flex items-center justify-between rounded-xl bg-white/[0.09] px-3 py-2.5 text-white transition">
               <span>Docs</span>
-              <span className="h-2 w-2 rounded-full bg-[#5e6ad2]" />
+              <span className="h-2 w-2 rounded-full bg-[#B38E37]" />
             </Link>
           </nav>
         </aside>
@@ -69,7 +69,7 @@ export default function DocsPage() {
 
           <div className="flex-1 p-5 sm:p-6">
             <div className="grid gap-5 xl:grid-cols-[1.2fr_0.8fr]">
-              <section className="rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(94,106,210,0.2),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
+              <section className="rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(179,142,55,0.2),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
                 <div className="flex flex-col gap-6">
                   <div className="rounded-[24px] border border-white/8 bg-[#232b3a]/92 p-4">
                     <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
@@ -106,7 +106,7 @@ export default function DocsPage() {
                           {category.docs.map((doc) => (
                             <div
                               key={doc.slug}
-                              className="rounded-2xl border border-white/8 bg-white/[0.09] p-4 transition hover:border-[#5e6ad2]/60 hover:bg-[#2a3446]"
+                              className="rounded-2xl border border-white/8 bg-white/[0.09] p-4 transition hover:border-[#B38E37]/60 hover:bg-[#2a3446]"
                             >
                               <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                                 <div>
@@ -122,7 +122,7 @@ export default function DocsPage() {
                               </div>
                               <p className="mt-3 text-sm leading-6 text-[#98a2b3]">{doc.summary}</p>
                               <div className="mt-4 flex flex-wrap gap-3 text-xs font-medium uppercase tracking-[0.18em]">
-                                <Link href={`/docs/${doc.slug}`} className="text-[#aab4ff] transition hover:text-white">
+                                <Link href={`/docs/${doc.slug}`} className="text-[#D6B35C] transition hover:text-white">
                                   Open document
                                 </Link>
                                 <a

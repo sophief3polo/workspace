@@ -54,7 +54,7 @@ export default function MemoryPage() {
       <div className="mx-auto flex min-h-screen w-full max-w-[1480px] gap-6 px-4 py-4 lg:px-6 lg:py-6">
         <aside className="hidden w-[248px] shrink-0 flex-col rounded-[28px] border border-white/8 bg-[#1c2230] p-4 lg:flex">
           <div className="flex items-center gap-3 rounded-2xl border border-white/6 bg-white/[0.05] px-3 py-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#5e6ad2] text-sm font-semibold text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#B38E37] text-sm font-semibold text-white">
               MC
             </div>
             <div>
@@ -75,7 +75,7 @@ export default function MemoryPage() {
             </a>
             <a href="/memory" className="flex items-center justify-between rounded-xl bg-white/[0.09] px-3 py-2.5 text-white transition">
               <span>Memory</span>
-              <span className="h-2 w-2 rounded-full bg-[#5e6ad2]" />
+              <span className="h-2 w-2 rounded-full bg-[#B38E37]" />
             </a>
           </nav>
         </aside>
@@ -100,11 +100,11 @@ export default function MemoryPage() {
 
           <div className="flex-1 p-5 sm:p-6">
             <div className="grid gap-5 xl:grid-cols-[1.2fr_0.8fr]">
-              <section className="rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(94,106,210,0.2),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
+              <section className="rounded-[28px] border border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(179,142,55,0.2),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-6 sm:p-7">
                 <div className="flex flex-col gap-8">
                   <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
                     <div>
-                      <p className="text-xs uppercase tracking-[0.24em] text-[#aab4ff]">Daily memory</p>
+                      <p className="text-xs uppercase tracking-[0.24em] text-[#D6B35C]">Daily memory</p>
                       <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-white sm:text-[2rem]">
                         Memory entries organised by day.
                       </h2>
@@ -135,7 +135,7 @@ export default function MemoryPage() {
                         <ul className="mt-5 space-y-2 text-sm text-[#d6dbea]">
                           {memory.entries.map((entry) => (
                             <li key={entry} className="flex items-start gap-2">
-                              <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#5e6ad2]" />
+                              <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#B38E37]" />
                               <span>{entry}</span>
                             </li>
                           ))}
@@ -156,7 +156,7 @@ export default function MemoryPage() {
                         <ul className="mt-3 space-y-2 text-sm text-[#d6dbea]">
                           {section.points.map((point) => (
                             <li key={point} className="flex items-start gap-2">
-                              <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#5e6ad2]" />
+                              <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#B38E37]" />
                               <span>{point}</span>
                             </li>
                           ))}

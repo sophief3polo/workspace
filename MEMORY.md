@@ -71,6 +71,11 @@
 - She believes people underestimate the premium nature of the event, the networking opportunities across marquees, how fun the event is, and the sporting ability of the players and ponies.
 - Trends Debbie sees: customers want stronger value for money, more tailored event experiences, sponsors always want value for money and clear ROI, and sponsors want premium association with high-end events.
 - Debbie says customer data is never shared with other parties.
+- Debbie told me the current standardisation work is tracked in this Google Sheet and should be treated as a remembered working reference: `https://docs.google.com/spreadsheets/d/14ejB2pZZPs8gDt4qR9PZkG2prQg2DprfqdxiAkkpeF8/edit?gid=1842987567#gid=1842987567`.
+- Debbie said I also have access to that sheet via Mission Control.
+- Debbie wants the sponsorship tracking Google Sheet treated as a remembered working reference as well: `https://docs.google.com/spreadsheets/d/1RTDc3MLN4JuM1ODeL696T3Yp15irW81x/edit?usp=sharing&ouid=110701776464595426680&rtpof=true&sd=true`.
+- Debbie wants the sponsorship tracking boards checked and updated every hour, every day, as an ongoing responsibility.
+- Debbie clarified on 2026-05-08 that ticketing updates need to be effectively instant rather than hourly.
 - Protecting the brand is non-negotiable. In her words, the brand is not for sale.
 - She wants the business to be known as a premium lifestyle event, a premium sporting and entertainment spectacle, with exceptional hospitality, prestige, memorable client experiences, and an experience like no other.
 - Debbie chooses quality over speed, and when priorities are unclear she asks Simon for direction.
@@ -85,6 +90,8 @@
 - Debbie wants both concise and deeper decision support depending on stakes, and she may specify speed using a 1 to 10 scale.
 - Debbie is not naturally a risk taker. She wants to review all emails drafted by the assistant before they are sent, and wants to review all reports before use.
 - Email/GWS auth is set up for me already. I can send email via the Google Workspace CLI (`gws`) using the Gmail helper commands, and `sophief3polo@gmail.com` is the working sender account.
+- Debbie clarified the Flicket account split: Urban Flicket covers Christchurch and Auckland; F3 Polo Flicket covers Brisbane and Sydney.
+- Debbie supplied a new shared password for both Flicket accounts on 2026-05-08; it is stored locally in macOS Keychain under service `openclaw.flicket.shared-password` with account `flicket-shared`.
 
 ## Other Simon business interests
 - Simon also owns another business called Just Pay.
