@@ -27,6 +27,7 @@ type SponsorshipBoardProps = {
   activeNav: "teams" | "pourage" | "others";
   sourceSheetNameCandidates: string[];
   fallbackSections?: EventSection[];
+  sectionSpecs?: SectionSpec[];
 };
 
 const navItems = [
@@ -86,17 +87,26 @@ function normalizeText(value: unknown, fallback = "—") {
   return text || fallback;
 }
 
+function toTitleCase(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
 function formatEventName(value: string) {
-  const upper = value.trim().toUpperCase();
+  const trimmed = value.trim();
+  const upper = trimmed.toUpperCase();
   const map: Record<string, string> = {
     "BRISBANE 2026": "Brisbane 2026",
-    "MELB 2027": "Melbourne 2027",
     "SYDNEY 2026": "Sydney 2026",
+    "MELB 2027": "Melbourne 2027",
+    "MELBOURNE 2026": "Melbourne 2026",
+    "PORTSEA 2027": "Portsea 2027",
     "CHRISTCHURCH 2027": "Christchurch 2027",
     "AUCKLAND 2027": "Auckland 2027",
   };
 
-  return map[upper] ?? value;
+  return map[upper] ?? toTitleCase(trimmed);
 }
 
 function formatOwner(value: string) {
@@ -149,7 +159,11 @@ function findSheetName(workbook: XLSX.WorkBook, candidates: string[]) {
   return workbook.SheetNames.find((name) => normalizedCandidates.includes(name.trim().toUpperCase())) ?? null;
 }
 
-export async function loadSponsorshipSections(sheetNameCandidates: string[], fallbackSections = emptyFallbackSections) {
+export async function loadSponsorshipSections(
+  sheetNameCandidates: string[],
+  fallbackSections = emptyFallbackSections,
+  sectionSpecs?: SectionSpec[],
+) {
   try {
     const response = await fetch(exportLink, { cache: "no-store" });
     if (!response.ok) {
@@ -165,7 +179,7 @@ export async function loadSponsorshipSections(sheetNameCandidates: string[], fal
 
     const sheet = workbook.Sheets[sheetName];
     const rows = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: "" }) as unknown[][];
-    const parsedSections = buildSectionSpecs(rows.length + 5)
+    const parsedSections = (sectionSpecs ?? buildSectionSpecs(rows.length + 5))
       .map((spec) => parseSection(rows, spec))
       .filter((section): section is EventSection => Boolean(section));
 
@@ -185,8 +199,9 @@ export async function SponsorshipBoardPage({
   activeNav,
   sourceSheetNameCandidates,
   fallbackSections,
+  sectionSpecs,
 }: SponsorshipBoardProps) {
-  const eventSections = await loadSponsorshipSections(sourceSheetNameCandidates, fallbackSections);
+  const eventSections = await loadSponsorshipSections(sourceSheetNameCandidates, fallbackSections, sectionSpecs);
   const visibleSections = eventSections.map((section) => ({
     ...section,
     rows: getVisibleRows(section.rows),

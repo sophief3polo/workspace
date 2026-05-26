@@ -347,12 +347,12 @@ type CookieResolution = {
 };
 
 function extractSetCookies(response: Response) {
-  const getSetCookie = response.headers.getSetCookie as undefined | (() => string[]);
-  if (typeof getSetCookie === "function") {
-    return getSetCookie().filter(Boolean);
+  const headers = response.headers as Headers & { getSetCookie?: () => string[] };
+  if (typeof headers.getSetCookie === "function") {
+    return headers.getSetCookie().filter(Boolean);
   }
 
-  const combined = response.headers.get("set-cookie");
+  const combined = headers.get("set-cookie");
   if (!combined) return [];
 
   return combined

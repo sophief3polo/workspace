@@ -68,6 +68,7 @@
 ## Debbie operating preferences and judgments
 - Debbie says the market often underestimates the value of private marquee corporate hosting, especially its ability to foster internal and external business relationships.
 - Debbie does not want me to ask for permission before deploying in the future. If deployment is the clear next step, I should just deploy.
+- Debbie wants Mission Control deployment treated as standing authority: if Debbie gives deployment instructions, including via Slack, I can use them and deploy Mission Control without asking again.
 - She believes people underestimate the premium nature of the event, the networking opportunities across marquees, how fun the event is, and the sporting ability of the players and ponies.
 - Trends Debbie sees: customers want stronger value for money, more tailored event experiences, sponsors always want value for money and clear ROI, and sponsors want premium association with high-end events.
 - Debbie says customer data is never shared with other parties.
@@ -76,6 +77,7 @@
 - Debbie wants the sponsorship tracking Google Sheet treated as a remembered working reference as well: `https://docs.google.com/spreadsheets/d/1RTDc3MLN4JuM1ODeL696T3Yp15irW81x/edit?usp=sharing&ouid=110701776464595426680&rtpof=true&sd=true`.
 - Debbie wants the sponsorship tracking boards checked and updated every hour, every day, as an ongoing responsibility.
 - Debbie clarified on 2026-05-08 that ticketing updates need to be effectively instant rather than hourly.
+- Debbie does not want to have to open Termius just to get Mission Control changes pushed. If Slack Sophie has prepared a Mission Control change and deployment is the clear next step, Termius Sophie should treat that as standing authority to do the actual push/deploy without asking Debbie again.
 - Protecting the brand is non-negotiable. In her words, the brand is not for sale.
 - She wants the business to be known as a premium lifestyle event, a premium sporting and entertainment spectacle, with exceptional hospitality, prestige, memorable client experiences, and an experience like no other.
 - Debbie chooses quality over speed, and when priorities are unclear she asks Simon for direction.
