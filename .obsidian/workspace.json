@@ -11,14 +11,12 @@
             "id": "a21068275cc0b397",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "IDENTITY.md",
-                "mode": "source",
-                "source": false
+                "file": "27c56d5605f71a65f0ee0eec00e88479.jpeg"
               },
-              "icon": "lucide-file",
-              "title": "IDENTITY"
+              "icon": "lucide-image",
+              "title": "27c56d5605f71a65f0ee0eec00e88479"
             }
           }
         ]
@@ -196,6 +194,7 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "IDENTITY.md",
     "memory/2026-05-05.md",
     "tmp/simon-personalised-email.txt",
     "sydney_vip_platinum_fix.json",
@@ -240,7 +239,6 @@
     "justpay-website/node_modules/fast-deep-equal/README.md",
     "justpay-website/node_modules/fsevents/README.md",
     "justpay-website/node_modules/graceful-fs/README.md",
-    "justpay-website/node_modules/object.assign/README.md",
-    "justpay-website/node_modules/object.assign/CHANGELOG.md"
+    "justpay-website/node_modules/object.assign/README.md"
   ]
 }

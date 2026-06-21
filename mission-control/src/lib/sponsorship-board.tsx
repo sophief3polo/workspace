@@ -100,6 +100,7 @@ function formatEventName(value: string) {
     "BRISBANE 2026": "Brisbane 2026",
     "SYDNEY 2026": "Sydney 2026",
     "MELB 2027": "Melbourne 2027",
+    "MELB/PORT 2027": "Melbourne / Portsea 2027",
     "MELBOURNE 2026": "Melbourne 2026",
     "PORTSEA 2027": "Portsea 2027",
     "CHRISTCHURCH 2027": "Christchurch 2027",
@@ -109,10 +110,15 @@ function formatEventName(value: string) {
   return map[upper] ?? toTitleCase(trimmed);
 }
 
+function isValidEventName(value: string) {
+  return /\b20\d{2}\b/.test(value);
+}
+
 function formatOwner(value: string) {
   const upper = value.trim().toUpperCase();
   const map: Record<string, string> = {
     DEB: "Deb",
+    DEBBIE: "Deb",
     SAM: "Sam",
     SIMON: "Simon",
     SMON: "Simon",
@@ -133,7 +139,7 @@ function formatStatus(value: string) {
 
 function parseSection(rows: unknown[][], spec: SectionSpec): EventSection | null {
   const event = formatEventName(normalizeText(rows[spec.headerRow - 1]?.[spec.colStart], ""));
-  if (!event) return null;
+  if (!event || !isValidEventName(event)) return null;
 
   const parsedRows: SponsorRow[] = [];
 

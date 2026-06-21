@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/build-docs-bundle.mjs",
+    "prebuild": "node scripts/sync-ticketing-sheet-snapshot.mjs && node scripts/build-docs-bundle.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "browser:smoke": "node playwright-smoke.js"
+    "browser:smoke": "node playwright-smoke.js",
+    "sync:ticketing-sheets": "node scripts/sync-ticketing-sheet-snapshot.mjs",
+    "deploy:prod": "npm run sync:ticketing-sheets && vercel deploy --prod --yes"
   },
   "dependencies": {
     "next": "16.2.4",

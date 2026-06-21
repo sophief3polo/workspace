@@ -11,10 +11,9 @@ export default async function SponsorshipPouragePage() {
     sectionSpecs: [
       { headerRow: 7, rowStart: 8, rowEnd: 19, colStart: 1 },
       { headerRow: 7, rowStart: 8, rowEnd: 19, colStart: 8 },
-      { headerRow: 21, rowStart: 22, rowEnd: 33, colStart: 1 },
-      { headerRow: 21, rowStart: 22, rowEnd: 33, colStart: 8 },
-      { headerRow: 35, rowStart: 36, rowEnd: 45, colStart: 1 },
-      { headerRow: 35, rowStart: 36, rowEnd: 45, colStart: 8 },
+      { headerRow: 20, rowStart: 21, rowEnd: 32, colStart: 1 },
+      { headerRow: 34, rowStart: 35, rowEnd: 44, colStart: 1 },
+      { headerRow: 34, rowStart: 35, rowEnd: 44, colStart: 8 },
     ],
   });
 }

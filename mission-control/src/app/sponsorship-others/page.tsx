@@ -13,8 +13,8 @@ export default async function SponsorshipOthersPage() {
       { headerRow: 7, rowStart: 8, rowEnd: 29, colStart: 7 },
       { headerRow: 31, rowStart: 32, rowEnd: 53, colStart: 1 },
       { headerRow: 31, rowStart: 32, rowEnd: 53, colStart: 7 },
-      { headerRow: 55, rowStart: 56, rowEnd: 77, colStart: 1 },
-      { headerRow: 55, rowStart: 56, rowEnd: 77, colStart: 7 },
+      { headerRow: 57, rowStart: 58, rowEnd: 79, colStart: 1 },
+      { headerRow: 57, rowStart: 58, rowEnd: 79, colStart: 7 },
     ],
   });
 }

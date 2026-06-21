@@ -1,3 +1,5 @@
+import ticketingSheetUpdates from "./ticketing-sheet-updates.json";
+
 type TicketLine = {
   label: string;
   sold: string;
@@ -48,10 +50,12 @@ export type TicketingPageData = {
 
 type CityConfig = Omit<CityCard, "ticketsSold" | "faceValue" | "holdQty" | "holdValue" | "lastUpdated" | "lines"> & {
   brand: "f3" | "urban";
+  sheetId: string;
   lines: Array<{
     label: string;
     eventId: string;
     eventTitle: string;
+    snapshotCategories: string[];
   }>;
 };
 
@@ -91,6 +95,7 @@ const cityConfigs: CityConfig[] = [
     headline: "Sydney has live sales and serious held volume now.",
     detail: "Ticket numbers now come straight from Flicket orders at runtime, so they move without page edits or redeploys.",
     brand: "f3",
+    sheetId: "1Gkl14hPWw1IXaXk3At-1gzNXeajqI7OBVdobOOwoXBo",
     previousEvent: {
       label: "Sydney 2025 history",
       sold: "2,073",
@@ -104,10 +109,10 @@ const cityConfigs: CityConfig[] = [
       ],
     },
     lines: [
-      { label: "GA", eventId: "9d995ad4-3132-43b6-85c0-bd4bf3de11a6", eventTitle: "F3 Polo Sydney 2026 - Heineken Polo Lawn" },
-      { label: "VIP", eventId: "63b67015-54b3-4c64-a61b-495c43d571f5", eventTitle: "F3 Polo Sydney 2026 - VIP Terrace" },
-      { label: "Marquees", eventId: "80fac8ef-8b2d-4333-803c-244c693faa61", eventTitle: "F3 Polo Sydney 2026 - Private Marquees" },
-      { label: "Sportscraft Polo Lounge", eventId: "c6697eb4-4802-49c5-90bf-bbab6d9fb178", eventTitle: "F3 Polo Sydney 2026 : Sportscraft F3 Polo Lounge" },
+      { label: "GA", eventId: "9d995ad4-3132-43b6-85c0-bd4bf3de11a6", eventTitle: "F3 Polo Sydney 2026 - Heineken Polo Lawn", snapshotCategories: ["Polo Lawn"] },
+      { label: "VIP", eventId: "63b67015-54b3-4c64-a61b-495c43d571f5", eventTitle: "F3 Polo Sydney 2026 - VIP Terrace", snapshotCategories: ["VIP", "VIP Platinum tables sold"] },
+      { label: "Marquees", eventId: "80fac8ef-8b2d-4333-803c-244c693faa61", eventTitle: "F3 Polo Sydney 2026 - Private Marquees", snapshotCategories: ["Private Marquees"] },
+      { label: "Sportscraft Polo Lounge", eventId: "c6697eb4-4802-49c5-90bf-bbab6d9fb178", eventTitle: "F3 Polo Sydney 2026 : Sportscraft F3 Polo Lounge", snapshotCategories: ["Sportscraft Polo Lounge"] },
     ],
   },
   {
@@ -118,11 +123,12 @@ const cityConfigs: CityConfig[] = [
     headline: "Set up and ready to track.",
     detail: "This board refreshes from Flicket on every request, even when the event is quiet.",
     brand: "f3",
+    sheetId: "1HU5TZMOo85phVNvvkvcesYRQ9ogqHKJsL1s-ItXiqRc",
     lines: [
-      { label: "GA", eventId: "e0bdf2c3-6a43-40b9-a7d3-a0bb871e09ce", eventTitle: "F3 Polo Brisbane 2026 - Heineken Polo Lawn" },
-      { label: "VIP", eventId: "a1a1bba7-39cb-4768-bf6f-25ca4a0b4967", eventTitle: "F3 Polo Brisbane 2026 - VIP Champagne Terrace" },
-      { label: "Marquees", eventId: "2af0644a-3231-4865-a086-419dcf659aa5", eventTitle: "F3 Polo Brisbane 2026 - Private Marquees" },
-      { label: "Sportscraft Polo Lounge", eventId: "043b7a1f-9756-4e62-9278-6d455374a291", eventTitle: "F3 Polo Brisbane 2026 : Sportscraft F3 Polo Lounge" },
+      { label: "GA", eventId: "e0bdf2c3-6a43-40b9-a7d3-a0bb871e09ce", eventTitle: "F3 Polo Brisbane 2026 - Heineken Polo Lawn", snapshotCategories: ["Polo Lawn"] },
+      { label: "VIP", eventId: "a1a1bba7-39cb-4768-bf6f-25ca4a0b4967", eventTitle: "F3 Polo Brisbane 2026 - VIP Champagne Terrace", snapshotCategories: ["VIP", "VIP Platinum tables sold"] },
+      { label: "Marquees", eventId: "2af0644a-3231-4865-a086-419dcf659aa5", eventTitle: "F3 Polo Brisbane 2026 - Private Marquees", snapshotCategories: ["Private Marquees"] },
+      { label: "Sportscraft Polo Lounge", eventId: "043b7a1f-9756-4e62-9278-6d455374a291", eventTitle: "F3 Polo Brisbane 2026 : Sportscraft F3 Polo Lounge", snapshotCategories: ["Sportscraft Polo Lounge"] },
     ],
   },
   {
@@ -133,11 +139,12 @@ const cityConfigs: CityConfig[] = [
     headline: "Christchurch is already carrying weight.",
     detail: "Christchurch is wired for live Flicket reads instead of static numbers.",
     brand: "urban",
+    sheetId: "1LUl31_WAyX0XAoh691AOrZs-g6jCLuKX2cjLCES4eIE",
     lines: [
-      { label: "GA", eventId: "9bd13a3d-fe7c-4f91-a283-0965a470d4ed", eventTitle: "Peroni Polo Lawn General Admission - Christchurch 2027" },
-      { label: "VIP", eventId: "8e19853f-97a6-49e8-af16-2b99b0844ac2", eventTitle: "VIP Champagne Terrace - Christchurch 2027" },
-      { label: "Marquees", eventId: "58fcf839-7b30-4b40-9462-578319e9ed04", eventTitle: "Private Marquees - Christchurch 2027" },
-      { label: "Urban Polo Lounge", eventId: "b783f10a-e454-4b62-aac0-f126084a9e30", eventTitle: '"Urban Polo Lounge" Private Marquee Area - Christchurch 2027' },
+      { label: "GA", eventId: "9bd13a3d-fe7c-4f91-a283-0965a470d4ed", eventTitle: "Peroni Polo Lawn General Admission - Christchurch 2027", snapshotCategories: ["Polo Lawn"] },
+      { label: "VIP", eventId: "8e19853f-97a6-49e8-af16-2b99b0844ac2", eventTitle: "VIP Champagne Terrace - Christchurch 2027", snapshotCategories: ["VIP", "VIP Platinum tables sold"] },
+      { label: "Marquees", eventId: "58fcf839-7b30-4b40-9462-578319e9ed04", eventTitle: "Private Marquees - Christchurch 2027", snapshotCategories: ["Private Marquees"] },
+      { label: "Urban Polo Lounge", eventId: "b783f10a-e454-4b62-aac0-f126084a9e30", eventTitle: '"Urban Polo Lounge" Private Marquee Area - Christchurch 2027', snapshotCategories: ["Urban Polo Lounge"] },
     ],
   },
   {
@@ -148,11 +155,12 @@ const cityConfigs: CityConfig[] = [
     headline: "Auckland is the strongest board right now.",
     detail: "Auckland is set to read straight from Flicket at runtime too.",
     brand: "urban",
+    sheetId: "1CYKjQjuIH8X28w6uNI9xkPMq245rFgkq5IjjcjuiJbs",
     lines: [
-      { label: "GA", eventId: "fbbd40a4-bdaa-41ed-b502-07d7521ae5e4", eventTitle: "Peroni Polo Lawn  General Admission - Auckland 2027" },
-      { label: "VIP", eventId: "ff6b2d8d-6cc2-42a7-a405-35d24a8486ab", eventTitle: "VIP Champagne Terrace - Auckland 2027" },
-      { label: "Marquees", eventId: "b9a6073a-e387-42bf-8f9c-e7ae9c39ab9b", eventTitle: "Private Marquees - Auckland 2027" },
-      { label: "Urban Polo Lounge", eventId: "dd8b2119-b7e0-44ef-8ea4-31978caae1d1", eventTitle: '"Urban Polo Lounge" Private Marquee Area - Auckland 2027' },
+      { label: "GA", eventId: "fbbd40a4-bdaa-41ed-b502-07d7521ae5e4", eventTitle: "Peroni Polo Lawn  General Admission - Auckland 2027", snapshotCategories: ["Polo Lawn"] },
+      { label: "VIP", eventId: "ff6b2d8d-6cc2-42a7-a405-35d24a8486ab", eventTitle: "VIP Champagne Terrace - Auckland 2027", snapshotCategories: ["VIP", "VIP Platinum tables sold"] },
+      { label: "Marquees", eventId: "b9a6073a-e387-42bf-8f9c-e7ae9c39ab9b", eventTitle: "Private Marquees - Auckland 2027", snapshotCategories: ["Private Marquees"] },
+      { label: "Urban Polo Lounge", eventId: "dd8b2119-b7e0-44ef-8ea4-31978caae1d1", eventTitle: '"Urban Polo Lounge" Private Marquee Area - Auckland 2027', snapshotCategories: ["Urban Polo Lounge"] },
     ],
   },
 ];
@@ -199,7 +207,7 @@ const brandConfigs: Record<CityConfig["brand"], BrandConfig> = {
   },
 };
 
-const fallbackData: TicketingPageData = {
+const staticFallbackData: TicketingPageData = {
   scoreboard: [
     { label: "Cities live", value: "4" },
     { label: "Event lines", value: "16" },
@@ -289,6 +297,118 @@ const fallbackData: TicketingPageData = {
     },
   ],
 };
+
+type SheetRow = string[];
+type SheetSnapshot = {
+  city_summaries?: Record<string, SheetRow[]>;
+};
+
+function parseNumberString(value: string) {
+  const normalized = value.replace(/[$,]/g, "").trim();
+  const parsed = Number(normalized);
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function mergeSnapshotMetrics(categories: string[], metricsByCategory: Map<string, { soldQty: number; soldValue: number; holdQty: number; holdValue: number }>) {
+  return categories.reduce(
+    (totals, category) => {
+      const metrics = metricsByCategory.get(category);
+      if (!metrics) return totals;
+
+      return {
+        soldQty: totals.soldQty + metrics.soldQty,
+        soldValue: totals.soldValue + metrics.soldValue,
+        holdQty: totals.holdQty + metrics.holdQty,
+        holdValue: totals.holdValue + metrics.holdValue,
+      };
+    },
+    { soldQty: 0, soldValue: 0, holdQty: 0, holdValue: 0 },
+  );
+}
+
+function buildScoreboard(cityCards: CityCard[]) {
+  return [
+    { label: "Cities live", value: String(cityCards.length) },
+    { label: "Event lines", value: String(cityCards.reduce((sum, card) => sum + card.lines.length, 0)) },
+    {
+      label: "Tickets sold",
+      value: formatInteger(cityCards.reduce((sum, card) => sum + parseNumberString(card.ticketsSold), 0)),
+    },
+    {
+      label: "Face value tracked",
+      value: formatCurrency(cityCards.reduce((sum, card) => sum + parseNumberString(card.faceValue), 0)),
+    },
+  ];
+}
+
+function buildFallbackDataFromSheet(snapshot: SheetSnapshot): TicketingPageData | null {
+  const summaries = snapshot.city_summaries;
+  if (!summaries) return null;
+
+  const cityCards = cityConfigs.map((city) => {
+    const rows = summaries[city.sheetId];
+    if (!rows?.length) return null;
+
+    const lastUpdated = rows.find((row) => row[0] === "Last updated")?.[1] ?? "Sheet snapshot";
+    const metricsByCategory = new Map(
+      rows
+        .filter((row) => row.length >= 6 && row[0] && row[0] !== "Category")
+        .map((row) => [
+          row[0],
+          {
+            soldQty: parseNumberString(row[1] ?? "0"),
+            soldValue: parseNumberString(row[2] ?? "0"),
+            holdQty: parseNumberString(row[4] ?? "0"),
+            holdValue: 0,
+          },
+        ]),
+    );
+
+    const total = metricsByCategory.get("All Tickets Total");
+    if (!total) return null;
+
+    return {
+      season: city.season,
+      city: city.city,
+      date: city.date,
+      venue: city.venue,
+      ticketsSold: formatInteger(total.soldQty),
+      faceValue: formatCurrency(total.soldValue),
+      holdQty: formatInteger(total.holdQty),
+      holdValue: formatCurrency(0),
+      lastUpdated,
+      headline: city.headline,
+      detail: city.detail,
+      lines: city.lines.map((line) => {
+        const metrics = mergeSnapshotMetrics(line.snapshotCategories, metricsByCategory);
+
+        return {
+          label: line.label,
+          sold: formatInteger(metrics.soldQty),
+          faceValue: formatCurrency(metrics.soldValue),
+          holdQty: formatInteger(metrics.holdQty),
+          holdValue: formatCurrency(metrics.holdValue),
+          note: buildNote(metrics.soldQty, metrics.holdQty),
+        };
+      }),
+      previousEvent: city.previousEvent,
+    } satisfies CityCard;
+  });
+
+  if (cityCards.some((card) => card === null)) return null;
+
+  const typedCityCards = cityCards as CityCard[];
+
+  return {
+    scoreboard: buildScoreboard(typedCityCards),
+    eventSheetLinks: [...eventSheetLinks],
+    cityCards: typedCityCards,
+    sourceMode: "fallback",
+    sourceNote: "Showing the latest sheet snapshot captured on 18 May 2026 while live Flicket data is unavailable.",
+  };
+}
+
+const fallbackData = buildFallbackDataFromSheet(ticketingSheetUpdates) ?? staticFallbackData;
 
 function formatInteger(value: number) {
   return new Intl.NumberFormat("en-NZ").format(value);

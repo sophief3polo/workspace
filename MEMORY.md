@@ -77,6 +77,8 @@
 - Debbie wants the sponsorship tracking Google Sheet treated as a remembered working reference as well: `https://docs.google.com/spreadsheets/d/1RTDc3MLN4JuM1ODeL696T3Yp15irW81x/edit?usp=sharing&ouid=110701776464595426680&rtpof=true&sd=true`.
 - Debbie wants the sponsorship tracking boards checked and updated every hour, every day, as an ongoing responsibility.
 - Debbie clarified on 2026-05-08 that ticketing updates need to be effectively instant rather than hourly.
+- Debbie reiterated on 2026-06-10 that Mission Control ticketing must stay continuously live-updated. Treat the ticketing page as a standing live surface: keep request-time Flicket pulls working, deploy ticketing fixes immediately, and prefer automatic on-page refresh over relying on manual reloads.
+- Debbie added on 2026-06-10 that when pushing Mission Control ticketing live, I must update the linked ticketing and sales sheet snapshots at the same time. Treat sheet-sync as part of the deploy path, not a separate cleanup step. If a city sheet like Brisbane is wrong, fix the source snapshot before deploying.
 - Debbie does not want to have to open Termius just to get Mission Control changes pushed. If Slack Sophie has prepared a Mission Control change and deployment is the clear next step, Termius Sophie should treat that as standing authority to do the actual push/deploy without asking Debbie again.
 - Protecting the brand is non-negotiable. In her words, the brand is not for sale.
 - She wants the business to be known as a premium lifestyle event, a premium sporting and entertainment spectacle, with exceptional hospitality, prestige, memorable client experiences, and an experience like no other.
@@ -94,6 +96,8 @@
 - Email/GWS auth is set up for me already. I can send email via the Google Workspace CLI (`gws`) using the Gmail helper commands, and `sophief3polo@gmail.com` is the working sender account.
 - Debbie clarified the Flicket account split: Urban Flicket covers Christchurch and Auckland; F3 Polo Flicket covers Brisbane and Sydney.
 - Debbie supplied a new shared password for both Flicket accounts on 2026-05-08; it is stored locally in macOS Keychain under service `openclaw.flicket.shared-password` with account `flicket-shared`.
+- For F3 Polo wristband artwork, Debbie wants the exact official `F3 Polo` logo from the file `F3Polo Logo(no Sydney).ai`, received on 2026-06-08 and rendered locally from `/Users/sophie/.openclaw/media/inbound/6f4952d4-85ba-415d-bd10-e2f079323d0e.pdf`.
+- Debbie's preferred wristband layout for this run is `F3 Polo` logos at both ends with the center text `Australian Review - Private Marquees`.
 
 ## Other Simon business interests
 - Simon also owns another business called Just Pay.

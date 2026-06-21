@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { loadTicketingPageData } from "@/lib/ticketing-data";
+import { TicketingAutoRefresh } from "./auto-refresh";
 
 export const dynamic = "force-dynamic";
 
@@ -72,6 +73,7 @@ export default async function TicketingPage() {
                   2026-27 February Polo & Urban Polo Season Live Ticket Updates
                 </h1>
                 {sourceNote ? <p className="mt-3 max-w-4xl text-sm text-[#b8c0cc]">{sourceNote}</p> : null}
+                <TicketingAutoRefresh />
               </div>
 
               <div className="flex flex-col items-start gap-3">

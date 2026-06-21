@@ -1,8 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1778090884
+    "ticketing": 1782072489,
+    "sponsorship": 1782072489
   },
   "notes": {
-    "ticketing": "Checked local Flicket snapshots and Mission Control ticketing source; no newer sales snapshot than 2026-05-04 was present in workspace."
+    "ticketing": "At 2026-06-22 08:08 AM NZST, sync-ticketing-sheet-snapshot.mjs re-ran cleanly and both ticketing snapshot hashes remained 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a.",
+    "sponsorship": "At 2026-06-22 08:08 AM NZST, the live sponsorship workbook hash remained e3e720590fd3bb6f7ed8204f67e4c2156ed76da87975b817afaae65fb061b170. This wake's local Mission Control replay produced teams 8a50aa046c840757fece3332e36ec8d88b47e29d819941c0a1c1a7595fcbfa25, pourage f8d0eaa6de7e319086a25ca059363047036df7eddcf41dc269e23d3fc400cfdc, and others 356b2805caba44195a5462e82904065e8cb6c716edd24c55756d4cc462005b93. Because the source workbook export itself was unchanged, no new sponsorship status change was treated as needing user attention on this wake."
   }
 }
