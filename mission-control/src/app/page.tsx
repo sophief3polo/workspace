@@ -77,6 +77,13 @@ const toolCards = [
     bullets: ["Follower trend", "Content cadence", "Format performance"],
     href: "/instagram",
   },
+  {
+    title: "DJ Register",
+    eyebrow: "Entertainment",
+    description: "Track DJ names, contacts, booking status, and performance timeslots by city.",
+    bullets: ["City-by-city view", "Booked / pending", "Timeslot tracker"],
+    href: "/djs",
+  },
 ];
 
 const activity = [
@@ -124,6 +131,7 @@ const navItems = [
   { label: "Title & Others", href: "/sponsorship-others", active: false },
   { label: "Calendar", href: "/calendar", active: false },
   { label: "Projects", href: "/projects", active: false },
+  { label: "DJs", href: "/djs", active: false },
   { label: "Instagram", href: "/instagram", active: false },
   { label: "Memory", href: "/memory", active: false },
   { label: "Docs", href: "/docs", active: false },
