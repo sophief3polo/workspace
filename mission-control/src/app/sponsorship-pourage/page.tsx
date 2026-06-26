@@ -9,11 +9,11 @@ export default async function SponsorshipPouragePage() {
     activeNav: "pourage",
     sourceSheetNameCandidates: ["POURAGE", "Pourage", "BEVERAGE", "Beverage"],
     sectionSpecs: [
-      { headerRow: 7, rowStart: 8, rowEnd: 19, colStart: 1 },
-      { headerRow: 7, rowStart: 8, rowEnd: 19, colStart: 8 },
-      { headerRow: 20, rowStart: 21, rowEnd: 32, colStart: 1 },
-      { headerRow: 34, rowStart: 35, rowEnd: 44, colStart: 1 },
-      { headerRow: 34, rowStart: 35, rowEnd: 44, colStart: 8 },
+      { headerRow: 7, rowStart: 8, rowEnd: 18, colStart: 1 },
+      { headerRow: 7, rowStart: 8, rowEnd: 18, colStart: 8 },
+      { headerRow: 20, rowStart: 21, rowEnd: 30, colStart: 1 },
+      { headerRow: 32, rowStart: 33, rowEnd: 39, colStart: 1 },
+      { headerRow: 32, rowStart: 33, rowEnd: 39, colStart: 8 },
     ],
   });
 }

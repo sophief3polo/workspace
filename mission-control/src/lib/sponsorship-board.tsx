@@ -77,7 +77,7 @@ const fallbackEvents = [
 
 const emptyFallbackSections: EventSection[] = fallbackEvents.map((event) => ({ event, rows: [] }));
 
-const isConfirmed = (status: string) => status.trim().toUpperCase() === "CONFIRMED";
+const isSigned = (status: string) => status.trim().toUpperCase() === "SIGNED";
 const isLeadRow = (slot: string) => slot.trim().toUpperCase().startsWith("LEAD");
 const isBlankRow = (row: SponsorRow) => row.sponsor === "—" && row.deal === "—" && row.status === "---";
 const getVisibleRows = (rows: SponsorRow[]) => rows.filter((row) => !(isLeadRow(row.slot) && isBlankRow(row)));
@@ -216,8 +216,8 @@ export async function SponsorshipBoardPage({
   const allRows = eventSections.flatMap((section) => section.rows);
   const sponsorRows = allRows.filter((row) => !isLeadRow(row.slot));
   const leadRows = allRows.filter((row) => isLeadRow(row.slot));
-  const confirmedCount = sponsorRows.filter((row) => isConfirmed(row.status)).length;
-  const openCount = sponsorRows.length - confirmedCount;
+  const signedCount = sponsorRows.filter((row) => isSigned(row.status)).length;
+  const openCount = sponsorRows.length - signedCount;
   const activeLeadCount = leadRows.filter((row) => !isBlankRow(row)).length;
 
   return (
@@ -296,7 +296,7 @@ export async function SponsorshipBoardPage({
             <div className="flex gap-2 overflow-x-auto pb-1">
               <Metric label="Events" value={String(visibleSections.length)} />
               <Metric label="Sponsor slots" value={String(sponsorRows.length)} />
-              <Metric label="Confirmed" value={String(confirmedCount)} />
+              <Metric label="Signed" value={String(signedCount)} />
               <Metric label="Open" value={String(openCount)} />
               <Metric label="Active leads" value={String(activeLeadCount)} />
             </div>
@@ -319,12 +319,12 @@ export async function SponsorshipBoardPage({
                       <h2 className="mt-1 text-xl font-semibold text-white">{section.event}</h2>
                     </div>
                     <span className="rounded-full border border-white/8 bg-white/[0.05] px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[#cdd4e2]">
-                      {section.rows.filter((row) => isConfirmed(row.status)).length} confirmed
+                      {section.rows.filter((row) => isSigned(row.status)).length} signed
                     </span>
                   </div>
 
                   <div className="mt-4 overflow-hidden rounded-[20px] border border-white/8">
-                    <div className="grid grid-cols-[1fr_1.35fr_0.6fr_0.95fr_0.6fr] gap-3 border-b border-white/8 bg-white/[0.05] px-3 py-2 text-[10px] uppercase tracking-[0.18em] text-[#8f98aa]">
+                    <div className="grid grid-cols-[0.85fr_1.2fr_1.1fr_0.95fr_0.55fr] gap-2 border-b border-white/8 bg-white/[0.05] px-3 py-2 text-[9px] uppercase tracking-[0.14em] text-[#8f98aa]">
                       <span>Slot</span>
                       <span>Sponsor</span>
                       <span>Deal</span>
@@ -335,19 +335,20 @@ export async function SponsorshipBoardPage({
                     <div>
                       {section.rows.length ? (
                         section.rows.map((row) => {
-                          const confirmed = isConfirmed(row.status);
-                          const tone = confirmed ? "text-emerald-300" : "text-rose-300";
+                          const signed = isSigned(row.status);
+                          const tone = signed ? "text-emerald-300" : "text-black";
+                          const rowSurface = signed ? "bg-emerald-950/15" : "bg-white/90";
 
                           return (
                             <div
                               key={`${section.event}-${row.slot}`}
-                              className="grid grid-cols-[1fr_1.35fr_0.6fr_0.95fr_0.6fr] gap-3 border-b border-white/8 px-3 py-1.5 text-[13px] last:border-b-0"
+                              className={`grid grid-cols-[0.85fr_1.2fr_1.1fr_0.95fr_0.55fr] gap-2 border-b border-white/8 px-3 py-1 text-[11px] leading-tight last:border-b-0 ${rowSurface}`}
                             >
-                              <span className={`${tone} font-medium`}>{row.slot}</span>
-                              <span className={tone}>{row.sponsor}</span>
-                              <span className={tone}>{row.deal}</span>
-                              <span className={`${tone} font-medium`}>{row.status}</span>
-                              <span className={tone}>{row.owner}</span>
+                              <span className={`${tone} break-words font-medium`}>{row.slot}</span>
+                              <span className={`${tone} break-words`}>{row.sponsor}</span>
+                              <span className={`${tone} break-words`}>{row.deal}</span>
+                              <span className={`${tone} break-words font-medium`}>{row.status}</span>
+                              <span className={`${tone} break-words`}>{row.owner}</span>
                             </div>
                           );
                         })

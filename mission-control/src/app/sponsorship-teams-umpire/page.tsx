@@ -10,12 +10,11 @@ export default async function SponsorshipTeamsUmpirePage() {
     activeNav: "teams",
     sourceSheetNameCandidates: ["TEAMS", "Teams", "TEAMS & UMPIRE", "Teams & Umpire"],
     sectionSpecs: [
-      { headerRow: 7, rowStart: 8, rowEnd: 24, colStart: 1 },
-      { headerRow: 7, rowStart: 8, rowEnd: 24, colStart: 7 },
-      { headerRow: 26, rowStart: 27, rowEnd: 43, colStart: 1 },
-      { headerRow: 26, rowStart: 27, rowEnd: 43, colStart: 7 },
-      { headerRow: 45, rowStart: 46, rowEnd: 62, colStart: 1 },
-      { headerRow: 45, rowStart: 46, rowEnd: 62, colStart: 7 },
+      { headerRow: 7, rowStart: 8, rowEnd: 19, colStart: 1 },
+      { headerRow: 7, rowStart: 8, rowEnd: 19, colStart: 7 },
+      { headerRow: 21, rowStart: 22, rowEnd: 32, colStart: 1 },
+      { headerRow: 34, rowStart: 35, rowEnd: 45, colStart: 1 },
+      { headerRow: 34, rowStart: 35, rowEnd: 45, colStart: 7 },
     ],
   });
 }

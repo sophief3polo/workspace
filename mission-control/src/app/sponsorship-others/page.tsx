@@ -9,12 +9,11 @@ export default async function SponsorshipOthersPage() {
     activeNav: "others",
     sourceSheetNameCandidates: ["TITLE & OTHERS", "Title & Others", "TITLE&OTHERS"],
     sectionSpecs: [
-      { headerRow: 7, rowStart: 8, rowEnd: 29, colStart: 1 },
-      { headerRow: 7, rowStart: 8, rowEnd: 29, colStart: 7 },
-      { headerRow: 31, rowStart: 32, rowEnd: 53, colStart: 1 },
-      { headerRow: 31, rowStart: 32, rowEnd: 53, colStart: 7 },
-      { headerRow: 57, rowStart: 58, rowEnd: 79, colStart: 1 },
-      { headerRow: 57, rowStart: 58, rowEnd: 79, colStart: 7 },
+      { headerRow: 7, rowStart: 8, rowEnd: 30, colStart: 1 },
+      { headerRow: 7, rowStart: 8, rowEnd: 30, colStart: 7 },
+      { headerRow: 32, rowStart: 33, rowEnd: 54, colStart: 1 },
+      { headerRow: 56, rowStart: 57, rowEnd: 79, colStart: 1 },
+      { headerRow: 56, rowStart: 57, rowEnd: 79, colStart: 7 },
     ],
   });
 }
