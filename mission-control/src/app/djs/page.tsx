@@ -2,15 +2,19 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 type DjRow = {
-  city: string;
   dj: string;
   djName: string;
+  timeslot: string;
   contactName: string;
   email: string;
   phone: string;
   booked: boolean;
   pending: boolean;
-  timeslot: string;
+};
+
+type CityGroup = {
+  city: string;
+  rows: DjRow[];
 };
 
 const navItems = [
@@ -29,69 +33,23 @@ const navItems = [
   { label: "Office", href: "/office", active: false },
 ];
 
-const djRows: DjRow[] = [
-  {
-    city: "Brisbane 2026",
-    dj: "DJ1",
-    djName: "",
-    contactName: "",
-    email: "",
-    phone: "",
-    booked: false,
-    pending: true,
-    timeslot: "",
-  },
-  {
-    city: "Sydney 2026",
-    dj: "DJ1",
-    djName: "",
-    contactName: "",
-    email: "",
-    phone: "",
-    booked: false,
-    pending: true,
-    timeslot: "",
-  },
-  {
-    city: "Melbourne 2026",
-    dj: "DJ1",
-    djName: "",
-    contactName: "",
-    email: "",
-    phone: "",
-    booked: false,
-    pending: true,
-    timeslot: "",
-  },
-  {
-    city: "Christchurch 2027",
-    dj: "DJ1",
-    djName: "",
-    contactName: "",
-    email: "",
-    phone: "",
-    booked: false,
-    pending: true,
-    timeslot: "",
-  },
-  {
-    city: "Auckland 2027",
-    dj: "DJ1",
-    djName: "",
-    contactName: "",
-    email: "",
-    phone: "",
-    booked: false,
-    pending: true,
-    timeslot: "",
-  },
-];
+const cities = ["Brisbane 2026", "Sydney 2026", "Melbourne 2026", "Christchurch 2027", "Auckland 2027"];
 
-const cityCards = djRows.map((row) => ({
-  city: row.city,
-  status: row.booked ? "Booked" : row.pending ? "Pending" : "Unconfirmed",
-  tone: row.booked ? "emerald" : row.pending ? "amber" : "slate",
+const djGroups: CityGroup[] = cities.map((city) => ({
+  city,
+  rows: Array.from({ length: 4 }, (_, index) => ({
+    dj: `DJ ${index + 1}`,
+    djName: "",
+    timeslot: "",
+    contactName: "",
+    email: "",
+    phone: "",
+    booked: false,
+    pending: true,
+  })),
 }));
+
+const totalRows = djGroups.reduce((total, group) => total + group.rows.length, 0);
 
 export default function DjsPage() {
   return (
@@ -127,7 +85,7 @@ export default function DjsPage() {
             <p className="text-xs uppercase tracking-[0.24em] text-[#E3C774]">Talent tracker</p>
             <p className="mt-2 text-sm font-medium text-white">Keep DJ booking clean.</p>
             <p className="mt-2 text-sm leading-6 text-[#b8c0cc]">
-              One place for names, contacts, booking status, and set times across each city.
+              One place for names, timeslots, contacts, and booking status across each city.
             </p>
           </div>
         </aside>
@@ -150,100 +108,57 @@ export default function DjsPage() {
 
               <div className="grid grid-cols-2 gap-3 sm:flex">
                 <Metric label="Cities" value="5" />
+                <Metric label="DJ rows" value={String(totalRows)} />
                 <Metric label="Confirmed" value="0" />
-                <Metric label="Pending" value="5" />
               </div>
             </div>
           </header>
 
           <div className="flex-1 p-5 sm:p-6">
-            <div className="grid gap-5 xl:grid-cols-[1fr_0.38fr]">
-              <section className="overflow-hidden rounded-[28px] border border-white/8 bg-[#232b3a]">
-                <div className="flex flex-col gap-3 border-b border-white/8 px-5 py-5 sm:flex-row sm:items-center sm:justify-between">
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.24em] text-[#99a1b3]">Booking board</p>
-                    <h2 className="mt-2 text-2xl font-semibold tracking-[-0.04em] text-white">City DJ list</h2>
+            <div className="space-y-5">
+              {djGroups.map((group) => (
+                <section key={group.city} className="overflow-hidden rounded-[28px] border border-white/8 bg-[#232b3a]">
+                  <div className="border-b border-white/8 bg-[linear-gradient(90deg,rgba(179,142,55,0.18),rgba(255,255,255,0.03))] px-5 py-5">
+                    <p className="text-xs uppercase tracking-[0.24em] text-[#D6B35C]">City</p>
+                    <h2 className="mt-2 text-2xl font-semibold tracking-[-0.04em] text-white">{group.city}</h2>
                   </div>
-                  <span className="rounded-full border border-amber-400/20 bg-amber-400/10 px-3 py-1 text-xs font-medium text-amber-200">
-                    Awaiting names + set times
-                  </span>
-                </div>
 
-                <div className="overflow-x-auto">
-                  <table className="w-full min-w-[980px] border-collapse text-left text-sm">
-                    <thead className="bg-white/[0.06] text-[11px] uppercase tracking-[0.18em] text-[#a9b2c2]">
-                      <tr>
-                        <Th>City</Th>
-                        <Th>DJ</Th>
-                        <Th>DJ name</Th>
-                        <Th>Contact name</Th>
-                        <Th>Email</Th>
-                        <Th>Phone</Th>
-                        <Th>Booked</Th>
-                        <Th>Pending</Th>
-                        <Th>Timeslot</Th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-white/8">
-                      {djRows.map((row) => (
-                        <tr key={row.city} className="transition hover:bg-white/[0.04]">
-                          <Td strong>{row.city}</Td>
-                          <Td>{row.dj}</Td>
-                          <Td muted>{row.djName || "TBC"}</Td>
-                          <Td muted>{row.contactName || "TBC"}</Td>
-                          <Td muted>{row.email || "TBC"}</Td>
-                          <Td muted>{row.phone || "TBC"}</Td>
-                          <Td>
-                            <StatusPill active={row.booked} activeLabel="Booked" inactiveLabel="No" tone="emerald" />
-                          </Td>
-                          <Td>
-                            <StatusPill active={row.pending} activeLabel="Pending" inactiveLabel="No" tone="amber" />
-                          </Td>
-                          <Td muted>{row.timeslot || "TBC"}</Td>
+                  <div className="overflow-x-auto">
+                    <table className="w-full min-w-[980px] border-collapse text-left text-sm">
+                      <thead className="bg-white/[0.06] text-[11px] uppercase tracking-[0.18em] text-[#a9b2c2]">
+                        <tr>
+                          <Th>DJ</Th>
+                          <Th>DJ name</Th>
+                          <Th>Timeslot</Th>
+                          <Th>Contact name</Th>
+                          <Th>Email</Th>
+                          <Th>Phone</Th>
+                          <Th>Booked</Th>
+                          <Th>Pending</Th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-
-              <aside className="space-y-5">
-                <section className="rounded-[28px] border border-white/8 bg-[#232b3a] p-6">
-                  <p className="text-xs uppercase tracking-[0.24em] text-[#99a1b3]">City status</p>
-                  <div className="mt-5 space-y-3">
-                    {cityCards.map((card) => (
-                      <div key={card.city} className="rounded-2xl border border-white/8 bg-white/[0.09] p-4">
-                        <div className="flex items-center justify-between gap-3">
-                          <p className="text-sm font-medium text-white">{card.city}</p>
-                          <span
-                            className={`rounded-full border px-2.5 py-1 text-[11px] font-medium ${
-                              card.tone === "emerald"
-                                ? "border-emerald-400/20 bg-emerald-400/10 text-emerald-300"
-                                : card.tone === "amber"
-                                  ? "border-amber-400/20 bg-amber-400/10 text-amber-200"
-                                  : "border-white/8 bg-white/[0.05] text-[#d6dbea]"
-                            }`}
-                          >
-                            {card.status}
-                          </span>
-                        </div>
-                      </div>
-                    ))}
+                      </thead>
+                      <tbody className="divide-y divide-white/8">
+                        {group.rows.map((row) => (
+                          <tr key={`${group.city}-${row.dj}`} className="transition hover:bg-white/[0.04]">
+                            <Td strong>{row.dj}</Td>
+                            <Td muted>{row.djName || "TBC"}</Td>
+                            <Td muted>{row.timeslot || "TBC"}</Td>
+                            <Td muted>{row.contactName || "TBC"}</Td>
+                            <Td muted>{row.email || "TBC"}</Td>
+                            <Td muted>{row.phone || "TBC"}</Td>
+                            <Td>
+                              <StatusPill active={row.booked} activeLabel="Booked" inactiveLabel="No" tone="emerald" />
+                            </Td>
+                            <Td>
+                              <StatusPill active={row.pending} activeLabel="Pending" inactiveLabel="No" tone="amber" />
+                            </Td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </section>
-
-                <section className="rounded-[28px] border border-white/8 bg-[#232b3a] p-6">
-                  <p className="text-xs uppercase tracking-[0.24em] text-[#99a1b3]">Fields to complete</p>
-                  <ul className="mt-5 space-y-3 text-sm leading-6 text-[#d4dae6]">
-                    <li>DJ name</li>
-                    <li>Contact name</li>
-                    <li>Email</li>
-                    <li>Phone</li>
-                    <li>Booked / pending status</li>
-                    <li>Timeslot</li>
-                  </ul>
-                </section>
-              </aside>
+              ))}
             </div>
           </div>
         </section>
