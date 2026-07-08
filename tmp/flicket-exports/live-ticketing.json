@@ -1,50 +1,90 @@
+
 {
-  "lastUpdated": "08 Jun 2026 05:53 PM NZST",
-  "cities": [
+  "scoreboard": [
+    {
+      "label": "Cities live",
+      "value": "4"
+    },
+    {
+      "label": "Event lines",
+      "value": "16"
+    },
+    {
+      "label": "Tickets sold",
+      "value": "1,072"
+    },
+    {
+      "label": "Face value tracked",
+      "value": "$512,064.74"
+    }
+  ],
+  "eventSheetLinks": [
+    {
+      "label": "History All Sales and Scanned In Data",
+      "href": "https://docs.google.com/spreadsheets/d/1PbBiWBZH9c3tG4cB-M5xBiUwEC6a7o-01E3YyHyD4fc/edit"
+    },
+    {
+      "label": "Sydney 2026",
+      "href": "https://docs.google.com/spreadsheets/d/1Gkl14hPWw1IXaXk3At-1gzNXeajqI7OBVdobOOwoXBo/edit"
+    },
+    {
+      "label": "Brisbane 2026",
+      "href": "https://docs.google.com/spreadsheets/d/1HU5TZMOo85phVNvvkvcesYRQ9ogqHKJsL1s-ItXiqRc/edit"
+    },
+    {
+      "label": "Christchurch 2027",
+      "href": "https://docs.google.com/spreadsheets/d/1LUl31_WAyX0XAoh691AOrZs-g6jCLuKX2cjLCES4eIE/edit"
+    },
+    {
+      "label": "Auckland 2027",
+      "href": "https://docs.google.com/spreadsheets/d/1CYKjQjuIH8X28w6uNI9xkPMq245rFgkq5IjjcjuiJbs/edit"
+    }
+  ],
+  "cityCards": [
     {
       "season": "2026",
       "city": "Sydney",
       "date": "14 Nov 2026",
       "venue": "Mission Field, Centennial Parklands",
-      "ticketsSold": "290",
-      "faceValue": "$106,088.70",
-      "holdQty": "132",
-      "holdValue": "$88,360.00",
-      "lastUpdated": "08 Jun 2026 05:53 PM NZST",
+      "ticketsSold": "348",
+      "faceValue": "$207,206.70",
+      "holdQty": "120",
+      "holdValue": "$69,731.50",
+      "lastUpdated": "08 Jul 2026 09:08 PM NZST",
       "headline": "Sydney has live sales and serious held volume now.",
       "detail": "Ticket numbers now come straight from Flicket orders at runtime, so they move without page edits or redeploys.",
       "lines": [
         {
           "label": "GA",
-          "sold": "126",
-          "faceValue": "$12,056.00",
+          "sold": "0",
+          "faceValue": "$0.00",
           "holdQty": "0",
           "holdValue": "$0.00",
-          "note": "126 sold • no holds"
+          "note": "No activity yet"
         },
         {
           "label": "VIP",
-          "sold": "48",
-          "faceValue": "$16,392.00",
+          "sold": "80",
+          "faceValue": "$26,320.00",
           "holdQty": "0",
           "holdValue": "$0.00",
-          "note": "48 sold • no holds"
+          "note": "80 sold • no holds"
         },
         {
           "label": "Marquees",
-          "sold": "110",
-          "faceValue": "$73,118.50",
-          "holdQty": "132",
-          "holdValue": "$88,360.00",
-          "note": "110 sold • 132 on hold"
+          "sold": "262",
+          "faceValue": "$176,364.50",
+          "holdQty": "90",
+          "holdValue": "$59,831.50",
+          "note": "262 sold • 90 on hold"
         },
         {
           "label": "Sportscraft Polo Lounge",
           "sold": "6",
           "faceValue": "$4,522.20",
-          "holdQty": "0",
-          "holdValue": "$0.00",
-          "note": "6 sold • no holds"
+          "holdQty": "30",
+          "holdValue": "$9,900.00",
+          "note": "6 sold • 30 on hold"
         }
       ],
       "previousEvent": {
@@ -73,12 +113,6 @@
             "showUpRate": "72.4%"
           }
         ]
-      },
-      "holdOrdersByLabel": {
-        "GA": 0,
-        "VIP": 0,
-        "Marquees": 3,
-        "Sportscraft Polo Lounge": 0
       }
     },
     {
@@ -86,90 +120,84 @@
       "city": "Brisbane",
       "date": "31 Oct 2026",
       "venue": "Dorrington Park (Kallindarbin), Ashgrove",
-      "ticketsSold": "3",
-      "faceValue": "$360.00",
-      "holdQty": "0",
-      "holdValue": "$0.00",
-      "lastUpdated": "08 Jun 2026 05:53 PM NZST",
+      "ticketsSold": "23",
+      "faceValue": "$19,696.10",
+      "holdQty": "30",
+      "holdValue": "$9,900.00",
+      "lastUpdated": "08 Jul 2026 09:08 PM NZST",
       "headline": "Set up and ready to track.",
       "detail": "This board refreshes from Flicket on every request, even when the event is quiet.",
       "lines": [
         {
           "label": "GA",
-          "sold": "3",
-          "faceValue": "$360.00",
+          "sold": "0",
+          "faceValue": "$0.00",
           "holdQty": "0",
           "holdValue": "$0.00",
-          "note": "3 sold • no holds"
+          "note": "No activity yet"
         },
         {
           "label": "VIP",
-          "sold": "0",
-          "faceValue": "$0.00",
+          "sold": "10",
+          "faceValue": "$3,850.00",
           "holdQty": "0",
           "holdValue": "$0.00",
-          "note": "No activity yet"
+          "note": "10 sold • no holds"
         },
         {
           "label": "Marquees",
-          "sold": "0",
-          "faceValue": "$0.00",
+          "sold": "10",
+          "faceValue": "$13,585.00",
           "holdQty": "0",
           "holdValue": "$0.00",
-          "note": "No activity yet"
+          "note": "10 sold • no holds"
         },
         {
           "label": "Sportscraft Polo Lounge",
-          "sold": "0",
-          "faceValue": "$0.00",
-          "holdQty": "0",
-          "holdValue": "$0.00",
-          "note": "No activity yet"
+          "sold": "3",
+          "faceValue": "$2,261.10",
+          "holdQty": "30",
+          "holdValue": "$9,900.00",
+          "note": "3 sold • 30 on hold"
         }
-      ],
-      "holdOrdersByLabel": {
-        "GA": 0,
-        "VIP": 0,
-        "Marquees": 0,
-        "Sportscraft Polo Lounge": 0
-      }
+      ]
     },
     {
       "season": "2027",
       "city": "Christchurch",
       "date": "20 Feb 2027",
       "venue": "Hagley Park, Christchurch",
-      "ticketsSold": "272",
-      "faceValue": "$111,020.00",
-      "holdQty": "20",
-      "holdValue": "$10,772.00",
-      "lastUpdated": "08 Jun 2026 05:53 PM NZST",
+      "ticketsSold": "362",
+      "faceValue": "$140,276.94",
+      "holdQty": "60",
+      "holdValue": "$31,261.00",
+      "lastUpdated": "08 Jul 2026 09:08 PM NZST",
       "headline": "Christchurch is already carrying weight.",
       "detail": "Christchurch is wired for live Flicket reads instead of static numbers.",
       "lines": [
         {
           "label": "GA",
-          "sold": "32",
-          "faceValue": "$1,863.00",
+          "sold": "61",
+          "faceValue": "$3,615.00",
           "holdQty": "0",
           "holdValue": "$0.00",
-          "note": "32 sold • no holds"
+          "note": "61 sold • no holds"
         },
         {
           "label": "VIP",
-          "sold": "66",
-          "faceValue": "$18,404.00",
+          "sold": "93",
+          "faceValue": "$26,627.00",
           "holdQty": "0",
           "holdValue": "$0.00",
-          "note": "66 sold • no holds"
+          "note": "93 sold • no holds"
         },
         {
           "label": "Marquees",
-          "sold": "170",
-          "faceValue": "$88,373.00",
-          "holdQty": "20",
-          "holdValue": "$10,772.00",
-          "note": "170 sold • 20 on hold"
+          "sold": "204",
+          "faceValue": "$107,654.94",
+          "holdQty": "60",
+          "holdValue": "$31,261.00",
+          "note": "204 sold • 60 on hold"
         },
         {
           "label": "Urban Polo Lounge",
@@ -179,34 +207,28 @@
           "holdValue": "$0.00",
           "note": "4 sold • no holds"
         }
-      ],
-      "holdOrdersByLabel": {
-        "GA": 0,
-        "VIP": 0,
-        "Marquees": 1,
-        "Urban Polo Lounge": 0
-      }
+      ]
     },
     {
       "season": "2027",
       "city": "Auckland",
       "date": "6 Mar 2027",
       "venue": "Lexus Urban Polo - Auckland",
-      "ticketsSold": "287",
-      "faceValue": "$127,443.00",
+      "ticketsSold": "339",
+      "faceValue": "$144,885.00",
       "holdQty": "30",
       "holdValue": "$16,136.00",
-      "lastUpdated": "08 Jun 2026 05:53 PM NZST",
+      "lastUpdated": "08 Jul 2026 09:08 PM NZST",
       "headline": "Auckland is the strongest board right now.",
       "detail": "Auckland is set to read straight from Flicket at runtime too.",
       "lines": [
         {
           "label": "GA",
-          "sold": "27",
-          "faceValue": "$1,518.00",
+          "sold": "49",
+          "faceValue": "$2,824.00",
           "holdQty": "0",
           "holdValue": "$0.00",
-          "note": "27 sold • no holds"
+          "note": "49 sold • no holds"
         },
         {
           "label": "VIP",
@@ -218,11 +240,11 @@
         },
         {
           "label": "Marquees",
-          "sold": "250",
-          "faceValue": "$122,565.00",
+          "sold": "280",
+          "faceValue": "$138,701.00",
           "holdQty": "30",
           "holdValue": "$16,136.00",
-          "note": "250 sold • 30 on hold"
+          "note": "280 sold • 30 on hold"
         },
         {
           "label": "Urban Polo Lounge",
@@ -232,13 +254,8 @@
           "holdValue": "$0.00",
           "note": "No activity yet"
         }
-      ],
-      "holdOrdersByLabel": {
-        "GA": 0,
-        "VIP": 0,
-        "Marquees": 1,
-        "Urban Polo Lounge": 0
-      }
+      ]
     }
-  ]
+  ],
+  "sourceMode": "live"
 }
