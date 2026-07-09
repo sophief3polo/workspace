@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "27c56d5605f71a65f0ee0eec00e88479.jpeg"
+                "file": "tmp_flock_edits/GPS_7287.JPG"
               },
               "icon": "lucide-image",
-              "title": "27c56d5605f71a65f0ee0eec00e88479"
+              "title": "GPS_7287"
             }
           }
         ]
@@ -194,6 +194,8 @@
   },
   "active": "a21068275cc0b397",
   "lastOpenFiles": [
+    "27c56d5605f71a65f0ee0eec00e88479.jpeg",
+    "6912b044dd5bc2596cf2c8fe_Stanton and Stanton_F3 Polo_November 2025_13732_by Daniel Sommer Photography_.jpeg",
     "IDENTITY.md",
     "memory/2026-05-05.md",
     "tmp/simon-personalised-email.txt",
@@ -212,8 +214,6 @@
     "image001.png",
     "4225645464*A88410BA-26DF-4314-841A-722B4FB58AC4.jpeg",
     "screen.png",
-    "6912b044dd5bc2596cf2c8fe_Stanton and Stanton_F3 Polo_November 2025_13732_by Daniel Sommer Photography_.jpeg",
-    "27c56d5605f71a65f0ee0eec00e88479.jpeg",
     "tmp_4225645464*A88410BA-26DF-4314-841A-722B4FB58AC4.jpeg",
     "tmp_screen.png",
     "tmp_6912b044dd5bc2596cf2c8fe_Stanton and Stanton_F3 Polo_November 2025_13732_by Daniel Sommer Photography_.jpeg",
@@ -238,7 +238,6 @@
     "justpay-website/node_modules/shebang-command/readme.md",
     "justpay-website/node_modules/fast-deep-equal/README.md",
     "justpay-website/node_modules/fsevents/README.md",
-    "justpay-website/node_modules/graceful-fs/README.md",
-    "justpay-website/node_modules/object.assign/README.md"
+    "justpay-website/node_modules/graceful-fs/README.md"
   ]
 }
