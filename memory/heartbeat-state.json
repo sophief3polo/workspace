@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1783557491,
-    "sponsorship": 1783557491
+    "ticketing": 1783559294,
+    "sponsorship": 1783559294
   },
   "notes": {
-    "ticketing": "At 2026-07-09 12:38 PM NZST, the Mission Control ticketing sheet resync completed cleanly again and both snapshot files still remained on hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. The current local Flicket live-ticketing export still sat on hash abc5f8a6397116d7579ff0dd823416725ee8bfa418fa99cd58f5f34f54f76eb2, so no ticketing summary change was detected from the existing live baseline.",
-    "sponsorship": "At 2026-07-09 12:38 PM NZST, a fresh sponsorship workbook export from the live Google Sheet still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3, which continued to match the existing local workbook baseline. The sponsor source workbook itself did not change from the prior logged wake, so no sponsor-status change was treated as needing user attention."
+    "ticketing": "At 2026-07-09 01:08 PM NZST, the Mission Control ticketing sheet sync hit a transient Google Sheets API availability error while fetching the Brisbane summary, so the sync script skipped writing a fresh snapshot and both snapshot files remained on hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. The current local Flicket live-ticketing export still sat on hash abc5f8a6397116d7579ff0dd823416725ee8bfa418fa99cd58f5f34f54f76eb2, so no ticketing summary change was detected from the existing live baseline, but the sheet snapshot was not freshly revalidated on this wake.",
+    "sponsorship": "At 2026-07-09 01:08 PM NZST, a fresh sponsorship workbook export from the live Google Sheet still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3, which continued to match the existing local workbook baseline. The sponsor source workbook itself did not change from the prior logged wake, so no sponsor-status change was treated as needing user attention."
   }
 }
