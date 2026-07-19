@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1784480914,
-    "sponsorship": 1784480914
+    "ticketing": 1784482716,
+    "sponsorship": 1784482716
   },
   "notes": {
-    "ticketing": "At local NZST file time 2026-07-20 05:08 NZST, the Mission Control ticketing sheet sync completed cleanly and both ticketing snapshot files still remained on hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. No ticketing sheet-summary delta was detected.",
-    "sponsorship": "At local NZST file time 2026-07-20 05:08 NZST, a fresh sponsorship workbook export from the live Google Sheet still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3, which continued to match the existing local workbook baseline. No sponsor-status change was detected across the live source workbook."
+    "ticketing": "At local NZST file time 2026-07-20 05:38 NZST, the Mission Control ticketing sheet sync completed cleanly and both ticketing snapshot files still remained on hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. No ticketing sheet-summary delta was detected.",
+    "sponsorship": "At local NZST file time 2026-07-20 05:38 NZST, a fresh sponsorship workbook export from the live Google Sheet still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3, which continued to match the existing local workbook baseline. No sponsor-status change was detected across the live source workbook."
   }
 }
