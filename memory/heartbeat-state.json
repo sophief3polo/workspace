@@ -1,7 +1,7 @@
 {
   "lastChecks": {
-    "ticketing": 1784642916,
-    "sponsorship": 1784642916
+    "ticketing": 1784644718,
+    "sponsorship": 1784644718
   },
   "notes": {
     "ticketing": "At the latest overnight NZST check, the Mission Control ticketing sheet sync completed cleanly and both ticketing snapshot files still remained on hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. No ticketing sheet-summary delta was detected.",
