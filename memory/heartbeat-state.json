@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1784817488,
-    "sponsorship": 1784817488
+    "ticketing": 1784819290,
+    "sponsorship": 1784819290
   },
   "notes": {
-    "ticketing": "At Thursday, July 23, 2026 14:38 UTC, with the machine clock reporting 2026-07-24 02:38 NZST, a bounded live fetch of all four ticketing Summary!A1:F20 ranges returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. No ticketing sheet-summary delta was detected. The supplied local heartbeat time and machine clock were both on Friday, July 24, 2026, which is future-dated relative to the current date instruction of Thursday, July 23, 2026, so the UTC reference time was treated as authoritative for this record.",
-    "sponsorship": "At Thursday, July 23, 2026 14:38 UTC, with the machine clock reporting 2026-07-24 02:38 NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook. The supplied local heartbeat time and machine clock were both on Friday, July 24, 2026, which is future-dated relative to the current date instruction of Thursday, July 23, 2026, so the UTC reference time was treated as authoritative for this record."
+    "ticketing": "At Thursday, July 23, 2026 15:08 UTC, with the machine clock reporting 2026-07-24 03:08 NZST, a bounded live fetch of all four ticketing Summary!A1:F20 ranges returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. No ticketing sheet-summary delta was detected. The supplied local heartbeat time and machine clock were both on Friday, July 24, 2026, which is future-dated relative to the current date instruction of Thursday, July 23, 2026, so the UTC reference time was treated as authoritative for this record.",
+    "sponsorship": "At Thursday, July 23, 2026 15:08 UTC, with the machine clock reporting 2026-07-24 03:08 NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook. The supplied local heartbeat time and machine clock were both on Friday, July 24, 2026, which is future-dated relative to the current date instruction of Thursday, July 23, 2026, so the UTC reference time was treated as authoritative for this record."
   }
 }
