@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1784783295,
-    "sponsorship": 1784783295
+    "ticketing": 1784785097,
+    "sponsorship": 1784785097
   },
   "notes": {
-    "ticketing": "At Thursday, July 23, 2026 05:08 UTC, with the machine clock reporting 2026-07-23 17:08 NZST, the Mission Control ticketing sync completed cleanly. Both ticketing snapshot files still remained on hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a, so no ticketing sheet-summary delta was detected.",
-    "sponsorship": "At Thursday, July 23, 2026 05:08 UTC, with the machine clock reporting 2026-07-23 17:08 NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook."
+    "ticketing": "At Thursday, July 23, 2026 05:38 UTC, with the machine clock reporting 2026-07-23 17:38 NZST, the Mission Control ticketing sync completed cleanly. Both ticketing snapshot files still remained on hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a, so no ticketing sheet-summary delta was detected.",
+    "sponsorship": "At Thursday, July 23, 2026 05:38 UTC, with the machine clock reporting 2026-07-23 17:38 NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook."
   }
 }
