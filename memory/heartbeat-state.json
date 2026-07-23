@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1784833689,
-    "sponsorship": 1784833689
+    "ticketing": 1784835491,
+    "sponsorship": 1784835491
   },
   "notes": {
-    "ticketing": "At Thursday, July 23, 2026 19:08 UTC, with the machine clock reporting 2026-07-24 07:08 NZST, a bounded live fetch of all four ticketing Summary!A1:F20 ranges completed cleanly and returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. No ticketing sheet-summary delta was detected. The supplied local heartbeat time and machine clock were on Friday, July 24, 2026, which is in the future relative to the authoritative current date of Thursday, July 23, 2026, so the UTC reference time was treated as authoritative for this record.",
-    "sponsorship": "At Thursday, July 23, 2026 19:08 UTC, with the machine clock reporting 2026-07-24 07:08 NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook. The supplied local heartbeat time and machine clock were on Friday, July 24, 2026, which is in the future relative to the authoritative current date of Thursday, July 23, 2026, so the UTC reference time was treated as authoritative for this record."
+    "ticketing": "At Thursday, July 23, 2026 19:38 UTC, with the machine clock reporting 2026-07-24 07:38 NZST, the bounded live ticketing fetch could not be fully verified because Google Sheets returned 'The service is currently unavailable' for spreadsheet 1HU5TZMOo85phVNvvkvcesYRQ9ogqHKJsL1s-ItXiqRc. Ticketing is therefore still relying on the last confirmed snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. The supplied local heartbeat time and machine clock were on Friday, July 24, 2026, which is in the future relative to the authoritative current date of Thursday, July 23, 2026, so the UTC reference time was treated as authoritative for this record.",
+    "sponsorship": "At Thursday, July 23, 2026 19:38 UTC, with the machine clock reporting 2026-07-24 07:38 NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook. The supplied local heartbeat time and machine clock were on Friday, July 24, 2026, which is in the future relative to the authoritative current date of Thursday, July 23, 2026, so the UTC reference time was treated as authoritative for this record."
   }
 }
