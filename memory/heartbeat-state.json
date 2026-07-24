@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1784851690,
-    "sponsorship": 1784851690
+    "ticketing": 1784853496,
+    "sponsorship": 1784853496
   },
   "notes": {
-    "ticketing": "At Friday, July 24, 2026 00:08 UTC, with the machine clock reporting 2026-07-24 12:08 NZST, a bounded live fetch of all four ticketing Summary!A1:F20 ranges completed cleanly and returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. No ticketing sheet-summary delta was detected. Both the supplied local heartbeat time and the derived UTC check time were in the future relative to the authoritative current date instruction of Thursday, July 23, 2026, so this future-dated timestamp was recorded explicitly rather than implied.",
-    "sponsorship": "At Friday, July 24, 2026 00:08 UTC, with the machine clock reporting 2026-07-24 12:08 NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook. Both the supplied local heartbeat time and the derived UTC check time were in the future relative to the authoritative current date instruction of Thursday, July 23, 2026, so this future-dated timestamp was recorded explicitly rather than implied."
+    "ticketing": "At Friday, July 24, 2026 00:38 UTC, with the machine clock reporting 2026-07-24 12:38 NZST, a bounded live fetch of all four ticketing Summary!A1:F20 ranges completed cleanly and returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. No ticketing sheet-summary delta was detected.",
+    "sponsorship": "At Friday, July 24, 2026 00:38 UTC, with the machine clock reporting 2026-07-24 12:38 NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook."
   }
 }
