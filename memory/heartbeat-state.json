@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1785020820,
-    "sponsorship": 1785020820
+    "ticketing": 1785022620,
+    "sponsorship": 1785022620
   },
   "notes": {
-    "ticketing": "At Saturday, July 25, 2026 23:07 UTC, with the supplied local time reporting Sunday, July 26, 2026 11:07 AM NZST, a bounded live fetch of all four ticketing Summary!A1:F20 ranges completed cleanly and returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a as the 22:37 UTC wake. The current local Mission Control snapshot files still matched the live hash, so no ticketing file rewrite was required during this wake. The supplied local time remains future-dated relative to the authoritative current date of Saturday, July 25, 2026.",
-    "sponsorship": "At Saturday, July 25, 2026 23:07 UTC, with the supplied local time reporting Sunday, July 26, 2026 11:07 AM NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook. The supplied local time remains future-dated relative to the authoritative current date of Saturday, July 25, 2026."
+    "ticketing": "At Saturday, July 25, 2026 23:37 UTC, with the supplied local time reporting Sunday, July 26, 2026 11:37 AM NZST, a bounded live fetch of all four ticketing Summary!A1:F20 ranges completed cleanly and returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a as the 23:07 UTC wake. The current local Mission Control snapshot files still matched the live hash, so no ticketing file rewrite was required during this wake. The supplied local time remains future-dated relative to the authoritative current date of Saturday, July 25, 2026.",
+    "sponsorship": "At Saturday, July 25, 2026 23:37 UTC, with the supplied local time reporting Sunday, July 26, 2026 11:37 AM NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook. The supplied local time remains future-dated relative to the authoritative current date of Saturday, July 25, 2026."
   }
 }
