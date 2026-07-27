@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1785130620,
-    "sponsorship": 1785130620
+    "ticketing": 1785132420,
+    "sponsorship": 1785132420
   },
   "notes": {
-    "ticketing": "At the supplied reference timestamp Monday, July 27, 2026 5:37 AM UTC, with the supplied local time reporting Monday, July 27, 2026 5:37 PM NZST, a bounded live fetch of all four ticketing Summary!A1:F20 ranges completed cleanly and returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a as the prior wake. The current local Mission Control snapshot files still matched the live hash, so no ticketing file rewrite was required during this wake.",
-    "sponsorship": "At the supplied reference timestamp Monday, July 27, 2026 5:37 AM UTC, with the supplied local time reporting Monday, July 27, 2026 5:37 PM NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook."
+    "ticketing": "At the supplied reference timestamp Monday, July 27, 2026 6:07 AM UTC, with the supplied local time reporting Monday, July 27, 2026 6:07 PM NZST, a bounded live fetch of all four ticketing Summary!A1:F20 ranges completed cleanly and returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a as the prior wake. The current local Mission Control snapshot files still matched the live hash, so no ticketing file rewrite was required during this wake.",
+    "sponsorship": "At the supplied reference timestamp Monday, July 27, 2026 6:07 AM UTC, with the supplied local time reporting Monday, July 27, 2026 6:07 PM NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook."
   }
 }
