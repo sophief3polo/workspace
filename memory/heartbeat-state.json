@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1785173855,
-    "sponsorship": 1785173855
+    "ticketing": 1785175654,
+    "sponsorship": 1785175654
   },
   "notes": {
-    "ticketing": "At the supplied reference timestamp Monday, July 27, 2026 5:37 PM UTC, while the workspace clock showed Tuesday, July 28, 2026 5:38 AM NZST, a bounded live fetch of all four ticketing Summary!A1:F20 ranges completed cleanly and returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a as the prior wake. Running the existing Mission Control sync script left both snapshot files at that same hash, so no ticketing delta needed action in this wake. The authoritative current date remains Monday, July 27, 2026.",
-    "sponsorship": "At the supplied reference timestamp Monday, July 27, 2026 5:37 PM UTC, while the workspace clock showed Tuesday, July 28, 2026 5:38 AM NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3 from the prior wake. No sponsor-status change was detected across the live source workbook, so the Teams & Umpire, Pourage, and Title & Others boards required no update during this wake. The authoritative current date remains Monday, July 27, 2026."
+    "ticketing": "At the supplied reference timestamp Monday, July 27, 2026 6:07 PM UTC, while the workspace clock showed a local NZST time that had rolled into Tuesday, July 28, 2026 6:08 AM, a bounded live fetch of all four ticketing Summary!A1:F20 ranges completed cleanly and returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a as the prior wake. Running the existing Mission Control sync script left both snapshot files at that same hash, so no ticketing delta needed action in this wake. The authoritative current date remains Monday, July 27, 2026.",
+    "sponsorship": "At the supplied reference timestamp Monday, July 27, 2026 6:07 PM UTC, while the workspace clock showed a local NZST time that had rolled into Tuesday, July 28, 2026 6:08 AM, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3 from the prior wake. No sponsor-status change was detected across the live source workbook, so the Teams & Umpire, Pourage, and Title & Others boards required no update during this wake. The authoritative current date remains Monday, July 27, 2026."
   }
 }
