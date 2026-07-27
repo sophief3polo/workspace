@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1785161220,
-    "sponsorship": 1785161220
+    "ticketing": 1785163020,
+    "sponsorship": 1785163020
   },
   "notes": {
-    "ticketing": "At the supplied reference timestamp Monday, July 27, 2026 2:07 PM UTC, with the supplied local time reporting Tuesday, July 28, 2026 2:07 AM NZST, a bounded live fetch of all four ticketing Summary!A1:F20 ranges completed cleanly and returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a as the prior wake. The current local Mission Control snapshot files still matched the live hash, so no ticketing file rewrite was required during this wake. The supplied local date of Tuesday, July 28, 2026 is future-dated relative to the authoritative current date of Monday, July 27, 2026.",
-    "sponsorship": "At the supplied reference timestamp Monday, July 27, 2026 2:07 PM UTC, with the supplied local time reporting Tuesday, July 28, 2026 2:07 AM NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook. The supplied local date of Tuesday, July 28, 2026 is future-dated relative to the authoritative current date of Monday, July 27, 2026."
+    "ticketing": "At the supplied reference timestamp Monday, July 27, 2026 2:37 PM UTC, with the supplied local time reporting Tuesday, July 28, 2026 2:37 AM NZST, a bounded live fetch of all four ticketing Summary!A1:F20 ranges completed cleanly and returned the same snapshot hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a as the prior wake. The current local Mission Control snapshot files still matched the live hash, so no ticketing file rewrite was required during this wake. The supplied local date of Tuesday, July 28, 2026 is future-dated relative to the authoritative current date of Monday, July 27, 2026.",
+    "sponsorship": "At the supplied reference timestamp Monday, July 27, 2026 2:37 PM UTC, with the supplied local time reporting Tuesday, July 28, 2026 2:37 AM NZST, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook. The supplied local date of Tuesday, July 28, 2026 is future-dated relative to the authoritative current date of Monday, July 27, 2026."
   }
 }
