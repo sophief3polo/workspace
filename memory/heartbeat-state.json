@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1785542906,
-    "sponsorship": 1785542906
+    "ticketing": 1785544705,
+    "sponsorship": 1785544705
   },
   "notes": {
-    "ticketing": "At the supplied reference timestamp Saturday, August 1, 2026 12:07 AM UTC, while the heartbeat context also named the local time Saturday, August 1, 2026 12:07 PM Pacific/Auckland, rerunning the Mission Control ticketing sheet sync again left both local snapshot files at hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. No ticketing summary delta needed action in this wake. The authoritative current date remained Friday, July 31, 2026.",
-    "sponsorship": "At the supplied reference timestamp Saturday, August 1, 2026 12:07 AM UTC, while the heartbeat context also named the local time Saturday, August 1, 2026 12:07 PM Pacific/Auckland, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook, so the Teams & Umpire, Pourage, and Title & Others boards required no update during this wake. The authoritative current date remained Friday, July 31, 2026."
+    "ticketing": "At the supplied reference timestamp Saturday, August 1, 2026 12:37 AM UTC, while the heartbeat context also named the local time Saturday, August 1, 2026 12:37 PM Pacific/Auckland, rerunning the Mission Control ticketing sheet sync again left both local snapshot files at hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a. No ticketing summary delta needed action in this wake. The authoritative current date is Saturday, August 1, 2026.",
+    "sponsorship": "At the supplied reference timestamp Saturday, August 1, 2026 12:37 AM UTC, while the heartbeat context also named the local time Saturday, August 1, 2026 12:37 PM Pacific/Auckland, a fresh sponsorship workbook export still matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3. No sponsor-status change was detected across the live source workbook, so the Teams & Umpire, Pourage, and Title & Others boards required no update during this wake. The authoritative current date is Saturday, August 1, 2026."
   }
 }
