@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1785782245,
-    "sponsorship": 1785782245
+    "ticketing": 1785784043,
+    "sponsorship": 1785784043
   },
   "notes": {
-    "ticketing": "For the wake context that supplied the local timestamp Tuesday, August 4, 2026 6:37 AM Pacific/Auckland, paired with the UTC reference Monday, August 3, 2026 18:37 UTC, I reran the Mission Control ticketing sheet snapshot sync. That local date is future-dated relative to the authoritative current date of Monday, August 3, 2026, so I anchored the check to the supplied UTC reference. The ticketing snapshot hash stayed at 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a before and after the sync, so no ticketing summary delta was present during this wake.",
-    "sponsorship": "For the wake context that supplied the local timestamp Tuesday, August 4, 2026 6:37 AM Pacific/Auckland, paired with the UTC reference Monday, August 3, 2026 18:37 UTC, I downloaded a fresh sponsorship workbook export and compared it with the existing live snapshot. That local date is future-dated relative to the authoritative current date of Monday, August 3, 2026, so I anchored the check to the supplied UTC reference. Both files matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3, so no sponsor-status change was detected across Teams & Umpire, Pourage, or Title & Others during this wake."
+    "ticketing": "For the wake context that supplied the local timestamp Tuesday, August 4, 2026 7:07 AM Pacific/Auckland, paired with the UTC reference Monday, August 3, 2026 19:07 UTC, I reran the Mission Control ticketing sheet snapshot sync. That local timestamp is in the future relative to the authoritative current date of Monday, August 3, 2026, so I anchored the check to the supplied UTC reference. The ticketing snapshot hash stayed at 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a before and after the sync, so no ticketing summary delta was present during this wake.",
+    "sponsorship": "For the wake context that supplied the local timestamp Tuesday, August 4, 2026 7:07 AM Pacific/Auckland, paired with the UTC reference Monday, August 3, 2026 19:07 UTC, I downloaded a fresh sponsorship workbook export and compared it with the existing live snapshot. That local timestamp is in the future relative to the authoritative current date of Monday, August 3, 2026, so I anchored the check to the supplied UTC reference. Both files matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3, so no sponsor-status change was detected across Teams & Umpire, Pourage, or Title & Others during this wake."
   }
 }
