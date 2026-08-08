@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1786162123,
-    "sponsorship": 1786162123
+    "ticketing": 1786163931,
+    "sponsorship": 1786163931
   },
   "notes": {
-    "ticketing": "At the local timestamp Saturday, August 8, 2026 4:08 PM NZST, paired with the UTC reference 2026-08-08 04:08 UTC, I reran the Mission Control ticketing sheet snapshot sync and the Google Sheets read succeeded again after the earlier outage. The refreshed ticketing snapshot still matched hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a, so no ticketing summary delta was present during this wake.",
-    "sponsorship": "At the local timestamp Saturday, August 8, 2026 4:08 PM NZST, paired with the UTC reference 2026-08-08 04:08 UTC, I downloaded a fresh sponsorship workbook export and compared it with the existing live snapshot. Both files matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3, so no sponsor-status change was detected across Teams & Umpire, Pourage, or Title & Others during this wake."
+    "ticketing": "At the local timestamp Saturday, August 8, 2026 4:38 PM NZST, paired with the UTC reference 2026-08-08 04:38 UTC, I reran the Mission Control ticketing sheet snapshot sync. The refreshed ticketing snapshot still matched hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a, so no ticketing summary delta was present during this wake.",
+    "sponsorship": "At the local timestamp Saturday, August 8, 2026 4:38 PM NZST, paired with the UTC reference 2026-08-08 04:38 UTC, I downloaded a fresh sponsorship workbook export and compared it with the existing live snapshot. Both files matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3, so no sponsor-status change was detected across Teams & Umpire, Pourage, or Title & Others during this wake."
   }
 }
