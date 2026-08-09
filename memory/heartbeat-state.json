@@ -1,10 +1,10 @@
 {
   "lastChecks": {
-    "ticketing": 1786271894,
-    "sponsorship": 1786271894
+    "ticketing": 1786273695,
+    "sponsorship": 1786273695
   },
   "notes": {
-    "ticketing": "At the local timestamp 10:38 PM NZST, paired with the UTC reference 2026-08-09 10:38 UTC, the Mission Control ticketing sheet snapshot sync completed successfully and the refreshed live ticketing snapshot still matched hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a, so no ticketing summary delta was present during this wake.",
-    "sponsorship": "At the local timestamp 10:38 PM NZST, paired with the UTC reference 2026-08-09 10:38 UTC, I downloaded a fresh sponsorship workbook export and compared it with the existing live snapshot. Both files matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3, so no sponsor-status change was detected across Teams & Umpire, Pourage, or Title & Others during this wake."
+    "ticketing": "At the local timestamp 11:08 PM NZST, paired with the UTC reference 2026-08-09 11:08 UTC, the Mission Control ticketing sheet snapshot sync completed successfully and the refreshed live ticketing snapshot still matched hash 3a36a17eaec5048e5e38eff214d036d2ea246b0d1e28c33cf49567af9770424a, so no ticketing summary delta was present during this wake.",
+    "sponsorship": "At the local timestamp 11:08 PM NZST, paired with the UTC reference 2026-08-09 11:08 UTC, I downloaded a fresh sponsorship workbook export and compared it with the existing live snapshot. Both files matched hash f1fd423b5aa10752b44af0ae52591fad18cd6cb34b82b7cb69a6c0910513efb3, so no sponsor-status change was detected across Teams & Umpire, Pourage, or Title & Others during this wake."
   }
 }
